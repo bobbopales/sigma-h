@@ -1,4 +1,5 @@
 #summary Developer's Guide to ActivityInfo
+#labels Featured
 
 = Introduction =
 
