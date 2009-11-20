@@ -1,0 +1,12 @@
+#summary Outline of ActivityInfo's Core Domain Objects
+
+= Introduction =
+
+The Core Domain objects can be divided into three groups:
+
+  # Users
+  # Schema
+  # Geography
+  # Sites
+  
+= Users =
