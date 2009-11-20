@@ -7,7 +7,6 @@ This guide is for those who wish to contribute to the development of ActivityInf
 = Contents =
 
   # ReadingMaterialForDevelopers Resources for learning the technologies on which ActivityInfo is based. (Java, GWT, etc)
-  # Building
-  # SourceCodeOutline
+  # [Building]
+  # [SourceCodeOutline Outline of the Source Code]
     # DomainObjects
-
