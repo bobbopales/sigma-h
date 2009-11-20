@@ -1,0 +1,18 @@
+#summary Configuring SQL Server to work with ActivityInfo
+
+= Introduction =
+
+Add your content here.
+
+
+= Enabling TCP/IP Access on Port 1433 =
+
+  # Click Start > All Programs > Microsoft SQL Server 2005 > Configuration Tools > SQL Server Configuration Manager.
+  # In the left pane of the SQL Server Configuration Manager window, expand SQL Server 2005 Network Configuration and then click Protocols for SQLEXPRESS.
+  # In the right pane of the SQL Server Configuration Manager window, right-click TCP/IP and click Enable. Click OK to acknowledge the warning message.
+  # Right-click TCP/IP again and click Properties.
+  # In the TCP/IP Properties window, click the IP Addresses tab, and then expand IPALL.
+  # Under IPALL, clear the TCP Dynamic Ports field and then type a port number in the TCP Port field. Usually, the port number should be set to 1433.
+  # In the TCP/IP Properties window, click OK, and then click OK to acknowledge the warning message.
+  # In the left pane of the SQL Server Configuration Manager window, click SQL Server 2005 Services.
+  # In the right pane of the SQL Server Configuration Manager window, right-click SQL Server (SQLEXPRESS) and click Restart.
