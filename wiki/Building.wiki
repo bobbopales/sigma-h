@@ -1,0 +1,65 @@
+#summary Guide to building ActivityInfo on Windows
+
+= Introduction =
+
+This guide assumes that you're using Windows
+
+== Tools to download and Install ==
+
+Some of the functionality below is available through Eclipse or IntelliJ, but at some point you'll probably want to make a quick call to the command line.
+
+  # [http://download.java.net/jdk6/ JDK, v1.6]
+  # [http://tortoisesvn.net/downloads Tortoise SVN] - Windows explorer client for Subversion Version Control System
+  # [http://www.open.collab.net/downloads/subversion/ CollabNet Subversion Command-Line Client] - Command-line client for Windows
+  # [http://maven.apache.org/download.html Apache Maven] - a build manager for Java. You just need to unzip it in the c:\Program Files folder.
+  # Add the paths to the JDK, CollabNet subversion, and Maven paths to the path environment variable. (instructions for [http://www.computerhope.com/issues/ch000549.htm XP] [http://www.question-defense.com/2009/06/22/modify-a-users-path-in-windows-vista-vista-path-environment-variable/ Vista]
+  # [http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx Microsoft SQL Server Express 2005]
+  # [http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&displaylang=en Microsoft Management Studio Express]
+
+
+== Quick build ==
+
+We'll get to the IDE in a moment, but first it would be good to confirm that you can successfully build ActivityInfo
+
+  # Checkout a working copy 
+{{{
+svn checkout svn checkout http://activity-info.googlecode.com/svn/trunk/activityinfo 
+}}}
+  # Change directory to the working copy
+{{{
+cd activityinfo
+}}}
+  # Invoke the Maven compile phase
+{{{
+mvn compile
+}}}
+
+Maven will automatically download all required dependencies and compile the project.
+
+== Setting up the development and testing databases == 
+
+  # First, you need to enable TCP/IP support on Microsoft SQL Server Express and allow database authentication. See  [http://support.microsoft.com/default.aspx?scid=kb;EN-US;914277 here] and  . Set the password for `sa` to `adminpwd`.
+  # Create an empty database called `actinfo` as the development database
+  # Create an empty database called `act-test` as the test database
+  # From the folder `activityinfo\application`, execute
+{{{
+mvn hibernate3:hbm2ddl
+}}}
+
+This will create the tables, etc in your development database.
+
+== Running ActivityInfo Tests == 
+
+Verify that everything is in good order by running 
+{{{
+mvn test
+}}}
+
+== Starting GWT development mode ==
+
+You can launch GWT development mode by running
+{{{
+mvn gwt:run
+}}}
+
+Navigate to the URL provided by the development mode module.
