@@ -1,0 +1,13 @@
+#summary Developer's Guide to ActivityInfo
+
+= Introduction =
+
+This guide is for those who wish to contribute to the development of ActivityInfo
+
+= Contents =
+
+  # ReadingMaterialForDevelopers Resources for learning the technologies on which ActivityInfo is based. (Java, GWT, etc)
+  # Building
+  # SourceCodeOutline
+    # DomainObjects
+
