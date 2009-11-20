@@ -1,0 +1,60 @@
+#summary Introductory resources for ActivityInfo developpers
+
+= Introduction =
+
+ActivityInfo takes advantage of an array of Java technologies. Here are few resources for learning these different components
+
+== Resources for learning the technologies ==
+
+
+=== Google Web Toolkit (GWT) ===
+
+GWT was the main reason for choosing the Java platform for ActivityInfo rather than .NET.
+
+  * Project page : 
+
+  * [http://www.mkhelif.fr/2008/07/03/gwt-introduction-au-framework.html Introduction / Tutorial en français] 
+
+  * [http://code.google.com/webtoolkit/tutorials/1.6/gettingstarted.html Tutorial in English]
+
+
+=== Ext-GWT (GXT) ===
+
+Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy to implement an Office/Desktop-like interface for ActivityInfo. Though we're starting to have the time to branch out it more fluent, web-like interfaces, GXT still forms the core of the user interface.
+
+  * [http://www.extjs.com/products/gxt/ Product home page]
+  * [http://www.extjs.com/helpcenter/nav/0_0 Getting started screen cast]
+
+=== Dependency Injection (DI) ===
+
+ActivityInfo uses DI extensively to keep components decoupled and enable unit testing. 
+
+  * Here is an [http://www.youtube.com/watch?v=hBVJbzAagfs&feature=player_embedded introduction to DI and Guice specifically] 
+
+  * Article en français: [http://blog.xebia.fr/2009/04/15/google-guice-les-bases-de-linjection-de-dependances/ L'injection de dépendances]
+
+  * [http://code.google.com/p/google-guice/ The Guice project page]
+
+=== MVP + DI FTW === 
+
+The ActivityInfo client side application is built around two, really three key ideas:
+
+  * The Model-View-Presenter (MVP) pattern, wherein we try to build UI components such that they delegate all or most logic to an easy-to-test presenter class.
+  * Dependency Injection (see above)
+  * The remote command pattern
+  * The event bus pattern
+
+These concepts are layed out in an [http://code.google.com/events/io/2009/sessions/GoogleWebToolkitBestPractices.html excellent video presentation] by Ray Ryan.
+
+=== Other client side libraries ===
+
+  * [http://code.google.com/p/gwt-log/ Gwt-Log] from Fred Sauer helped solve the great November IE6 crisis. 
+
+=== Hibernate ===
+
+[http://www.hibernate.org Hibernate] is the Object-Relational Mapping toolkit that implements the JPA specification. It is responsible for moving the domain objects to and from the database.
+
+=== Apache POI ===
+
+
+
