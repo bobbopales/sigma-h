@@ -23,7 +23,7 @@ We'll get to the IDE in a moment, but first it would be good to confirm that you
 
   # Checkout a working copy 
 {{{
-svn checkout svn checkout http://activity-info.googlecode.com/svn/trunk/activityinfo 
+svn checkout http://activity-info.googlecode.com/svn/trunk/activityinfo 
 }}}
   # Change directory to the working copy
 {{{
