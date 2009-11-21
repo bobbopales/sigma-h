@@ -7,7 +7,7 @@ ActivityInfo uses the JDBC driver to connect to SQL server, which requires that 
 = Enabling Mixed Mode Authentication =
    
   # In SQL Server Management Studio Object Explorer, right-click the server, and then click Properties.
-  # On the Security page, under Server authentication, select the new server authentication mode, and then click OK.
+  # On the Security page, under Server authentication, select "SQL Server and Windows Authentication mode", and then click OK.
   # In the SQL Server Management Studio dialog box, click OK, to acknowledge the need to restart SQL Server.
   # In Object Explorer, right-click your server, and then click Restart. If SQL Server Agent is running, it must also be restarted.
 
