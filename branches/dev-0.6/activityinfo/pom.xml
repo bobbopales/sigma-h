@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.activityinfo</groupId>
+        <artifactId>activityinfo-parent</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
+        <relativePath>parent/pom.xml</relativePath>
+    </parent>
+
+    <groupId>org.activityinfo</groupId>
+    <artifactId>activityinfo</artifactId>
+    <packaging>pom</packaging>
+
+    <name>ActivityInfo Aggregator</name>
+    <description>Aggregator of the ActivityInfo modules.</description>
+
+    <modules>
+        <module>parent</module>
+        <module>core</module>
+        <module>report</module>
+        <module>api</module>
+       	<module>application</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.0-beta-7</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
