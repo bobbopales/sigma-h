@@ -22,6 +22,10 @@ Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy t
   * [http://www.extjs.com/products/gxt/ Product home page]
   * [http://www.extjs.com/helpcenter/nav/0_0 Getting started screen cast]
 
+=== GoogleMaps == 
+
+  * [http://code.google.com/apis/maps/documentation/index.html API Reference]
+
 === Dependency Injection (DI) ===
 
 ActivityInfo uses DI extensively to keep components decoupled and enable unit testing. 
@@ -48,4 +52,3 @@ These concepts are layed out in an [http://code.google.com/events/io/2009/sessio
 === Hibernate ===
 
 [http://www.hibernate.org Hibernate] is the Object-Relational Mapping toolkit that implements the JPA specification. It is responsible for moving the domain objects to and from the database.
-
