@@ -1,16 +1,16 @@
 #summary Contributor's Guide Sidebar
 
   * [ContributorGuide Overview]
-  * [ContributorReading] Introductory References
   * [Building How to Build]
      * SQLServerSetup
-  * [SourceCodeOutline]
+  * [SourceCodeOutline Architechture]
     * DomainObjects
-      * UserDomainObjects
-      * SchemaDomainObjects
-      * GeographyDomainObjects
-      * SiteObjects
-    * ObjectRelationalMapping
+      * [UserDomainObjects Users]
+      * [SchemaDomainObjects Schema]
+      * [GeographyDomainObjects Geography]
+      * [SiteObjects Sites]
+    * [ObjectRelationalMapping Object Relational Mapping Layer]
+  * [ContributorReading Reading Materials]
   
 
    
