@@ -43,10 +43,7 @@ http://activity-info.googlecode.com/svn/wiki/diagrams/schema-partners.png
 
 The (simplified) !UserDatabase includes three Partner organisations: Unicef, Solidarites, and NRC.  
 
-In this case, the Users belonging to the two operational partners, Solidarites and NRC, have not been given the View All permission, so 
-when they connect, they will see only data belonging to their own organisation. In this specific example, this was preferable because
-the partners worked in different geographic areas and were not necessarily concerned by the specifics of what other partners were 
-doing. In the case of a cluster database, however, it is useful to grant !ViewAll permission to all users so that !UserDatabase can
+In this case, the Users belonging to the two operational partners, Solidarites and NRC, have not been given the View All permission, so when they connect, they will see only data belonging to their own organisation. In this specific example, this was preferable because the partners worked in different geographic areas and were not necessarily concerned by the specifics of what other partners were doing. In the case of a cluster database, however, it is useful to grant !ViewAll permission to all users so that !UserDatabase can
 be a tool in coordination as well.
 
 Note that:
@@ -58,18 +55,13 @@ or Design permissions.
 
 While this security model will meet most needs, there are limits:
 
-  * You cannot define permissions by geography, so if a partner has offices in two provinces, users from one office will be able to
-see/edit data for the other office. If this is really a problem, you can create two Partner entities, for example, IRC-NK and IRC-SK
-for IRC's offices in North Kivu and South Kivu respectively.
-  * You cannot restrict permissions to a specific activities or indicators. If there are really elements of the schema that cannot 
-be visible by certain users, you would need to create two UserDatabases
+  * You cannot define permissions by geography, so if a partner has offices in two provinces, users from one office will be able to see/edit data for the other office. If this is really a problem, you can create two Partner entities, for example, IRC-NK and IRC-SK for IRC's offices in North Kivu and South Kivu respectively.
+  * You cannot restrict permissions to a specific activities or indicators. If there are really elements of the schema that cannot be visible by certain users, you would need to create two !UserDatabases
 
 
 = Activities, Attributes, and Indicators =
 
-The Activity, !AttributeGroup Attribute, and Indicator entities correspond to the logical framework model of the !UserDatabase. 
-The diagram in the beginning of this document also includes !ActivityCategories and !IndicatorCategories, but these are modeled as 
-simple string properties rather than seperate entities. (Mostly becuase they were an afterthought in the design)
+The Activity, !AttributeGroup Attribute, and Indicator entities correspond to the logical framework model of the !UserDatabase. The diagram in the beginning of this document also includes !ActivityCategories and !IndicatorCategories, but these are modeled as simple string properties rather than separate entities. (Mostly becuase they were an afterthought in the design)
 
 *TODO*: Entity documentation
 
