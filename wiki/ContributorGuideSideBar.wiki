@@ -1,7 +1,7 @@
 #summary Contributor's Guide Sidebar
 
   * [ContributorGuide Overview]
-  * [Building How to Build]
+  * [Building Compiling from SVN]
      * SQLServerSetup
   * [SourceCodeOutline Architechture]
     * DomainObjects
