@@ -11,15 +11,11 @@ and user access rights to the !UserDatabase's data.
 http://activity-info.googlecode.com/svn/wiki/diagrams/schema.png
 
 
-The root of the schema object model is the !UserDatabase. Each !UserDatabase is owned by one User, and this 
-User has full control over the definition of the database and user access to the database. !UserDatabases may
-eventually be linked to each other, but the goal is to assure that changes to other !UserDatabases will not
-affect a given !UserDatabase.
+The root of the schema object model is the !UserDatabase. Each !UserDatabase is owned by one User, and this User has full control over the definition of the database and user access to the database. !UserDatabases may eventually be linked to each other, but the goal is to assure that changes to other !UserDatabases will not affect a given !UserDatabase.
 
 = Partners and !UserPermissions =
 
-Each !UserDatabase must have at least one Partner organisation. Partners represent an additional level of granularity
-when it comes to defining access rights. Each [SiteDomainObjects Site] is owned by one Partner, and users my be restricted
+Each !UserDatabase must have at least one Partner organisation. Partners represent an additional level of granularity when it comes to defining access rights. Each [SiteDomainObjects Site] is owned by one Partner, and users my be restricted
 to viewing and/or modifying only data belonging to their partner. 
 
 The !UserDatabase's owner can grant access to additional users to add/modify the database. These permissions are modeled by the !UserPermission object, which links a User object to the database, and to a Partner within the database.
@@ -49,8 +45,7 @@ be a tool in coordination as well.
 Note that:
 
   * The UNICEF education specialist has the Design permission, which would allow him/her to modify or correct indicators for the program. This allows specialists to work directly with the structure of the indicators.
-  * The two program managers (3) and (5) have the permission to Manage Users, so they are able to add new user accounts when 
-new staff arrive, or remove accounts if staff leave. They do not have the right, however, to assign the View All, Edit All, Manage All Users,
+  * The two program managers (3) and (5) have the permission to Manage Users, so they are able to add new user accounts when new staff arrive, or remove accounts if staff leave. They do not have the right, however, to assign the View All, Edit All, Manage All Users,
 or Design permissions.
 
 While this security model will meet most needs, there are limits:
