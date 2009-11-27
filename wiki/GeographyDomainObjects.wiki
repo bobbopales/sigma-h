@@ -30,5 +30,4 @@ http://activity-info.googlecode.com/svn/wiki/diagrams/admin-rdc.png
 = Open Issues =
 
   * There is currently no hierarchial relationship between LocationTypes, even though this would be preferable in some cases, such as the link between villages and schools. 
-  * Currently, each Site can linked to no more than one AdminEntity per AdminLevel and no more than one Location of any LocationType. One of the cases in which this is annoying is that of school distributions, where it is not really useful to break down the distribution 
-counts by school, but we would like to know which schools have been served (or trained, etc). 
+  * Currently, each Site can linked to no more than one AdminEntity per AdminLevel and no more than one Location of any LocationType. One of the cases in which this is annoying is that of school distributions, where it is not really useful to break down the distribution  counts by school, but we would like to know which schools have been served (or trained, etc). 
