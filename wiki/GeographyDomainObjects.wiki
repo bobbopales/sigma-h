@@ -1,4 +1,5 @@
 #summary Description of ActivityInfo' Geographic Domain Objects
+#sidebar ContributorGuideSideBar
 
 = Goals = 
 

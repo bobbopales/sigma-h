@@ -1,0 +1,9 @@
+#summary Contributor's Guide to ActivityInfo
+#labels Featured
+#sidebar ContributorGuideSideBar
+
+= Audience =
+
+This guide is for those who wish to contribute to the development of the ActivityInfo server and GWT client. 
+
+

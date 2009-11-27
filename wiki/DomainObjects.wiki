@@ -1,4 +1,5 @@
 #summary Outline of ActivityInfo's Core Domain Objects
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 

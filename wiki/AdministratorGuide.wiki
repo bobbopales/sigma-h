@@ -1,0 +1,28 @@
+#summary Guide to running and administering ActivityInfo
+#labels Featured
+
+= Audience =
+
+This document is for those who wish deploy and run ActivityInfo on their own server. 
+Since those in the UN are often coming from a .NET background, the specifics in this 
+guide are for the Windows platform.
+
+= Required Software =
+
+To run an ActivityInfo Server, you will need to install the following software:
+
+  # [http://download.java.net/jdk6/ JDK, v1.6]
+  # [http://tomcat.apache.org/download-60.cgi Apache Tomcat 6.x]. There is a convenient Windows Service Installer available on the download page
+
+If you do not already have an SQL Server installation running, you can download and set up SQL Server Express 2005. 
+ActivityInfo has not been tested with SQL Server 2008, but that should work as well:
+
+  # [http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx Microsoft SQL Server Express 2005]
+  # [http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&displaylang=en Microsoft Management Studio Express]
+
+
+= Install Download the latest WAR = 
+
+A ready-to-run version of the ActivityInfo server is available as a Web Archive (WAR) from the downloads page. 
+
+

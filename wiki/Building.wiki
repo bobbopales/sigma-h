@@ -1,8 +1,9 @@
 #summary Guide to building ActivityInfo on Windows
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 
-This guide assumes that you're using Windows
+This guide assumes that you're using Windows. 
 
 == Tools to download and Install ==
 
