@@ -4,9 +4,10 @@
 
 The Core Domain objects can be divided into three groups:
 
-  # Users
-  # Schema
-  # Geography
-  # Sites
+  # [UserDomainObjects Users]
+  # [SchemaDomainObjects Schema]
+  # [GeographyDomainObjects Geography]
+  # [SiteDomainObjects Site]
+
+
   
-= Users =

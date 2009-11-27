@@ -1,0 +1,44 @@
+#summary Description of ActivityInfo' Geographic Domain Objects
+
+= Goals = 
+
+In modelling the Geographic Domain objects, there were several key design goals:
+
+  # Be able to analyze data both by geographic administrative entities (e.g. Provinces, Health Zones, Postal Zones,
+     etc) and spatially as lat/lng points
+  # Support any number of countries/territories, each with their own specific admin heirarchie(s). 
+  # Be able to analyze multiple geographical heirarchies within a single country when they exists, such as health management zones, 
+    postal heirarchies, church administration, whatever.
+  # Be able to analyze data by facility, such as camps, schools, health centers, etc
+  # Be able to validate GPS coordinate data
+  # Be able to localise data at any level of precision, for example some data at the province level, other more detailed data
+    might be attributed to the territory level
+
+
+= Entities = 
+
+To address each of these points, each country has two sets of objects: AdminEntities and Locations.
+
+*AdminEntities* are well-defined geographic areas (geographically modeled as polygons) that contain known populations (more or less) and that are expected to
+change infrequently. AdminEntities are organized into hiearchic levels defined by AdminLevel entities. A given country 
+can have multiple independent hierarchies, or multiple hierarchies that share common ancestors. 
+
+*Locations*, in contrast are *points* that fall in zero or more AdminEntities. Locations can be a physical facility, such as a 
+school, clinic, or camp, or may be an abritrarily defined population, such as a collection of villages that received assistance.
+Locations are organized into *LocationTypes*.
+
+http://activity-info.googlecode.com/svn/wiki/diagrams/admin.png
+
+Below is the example of the RDC:
+
+http://activity-info.googlecode.com/svn/wiki/diagrams/admin-rdc.png
+
+= Open Issues =
+
+  - There is currently no hierarchial relationship between LocationTypes, even though this would be preferable in some cases, such
+as the link between villages and schools. 
+  - Currently, each Site can linked to no more than one AdminEntity per AdminLevel and no more than one Location of any LocationType. 
+One of the cases in which this is annoying is that of school distributions, where it is not really useful to break down the distribution 
+counts by school, but we would like to know which schools have been served (or trained, etc). 
+
+
