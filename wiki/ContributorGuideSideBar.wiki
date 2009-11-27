@@ -3,13 +3,16 @@
   * [ContributorGuide Overview]
   * [Building Compiling from SVN]
      * SQLServerSetup
-  * [SourceCodeOutline Architechture]
-    * DomainObjects
+  * [SourceCodeOutline Server Architecture]
+    * [DomainObjects Domain Objects]
       * [UserDomainObjects Users]
       * [SchemaDomainObjects Schema]
       * [GeographyDomainObjects Geography]
       * [SiteObjects Sites]
     * [ObjectRelationalMapping Object Relational Mapping Layer]
+    * [DAOLayer DAO Layer]
+    * [ReportingLayer Reporting Layer]
+    * [CommandLayer Command Layer]
   * [ContributorReading Reading Materials]
   
 
