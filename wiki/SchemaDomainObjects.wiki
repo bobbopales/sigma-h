@@ -29,11 +29,9 @@ The !UserDatabase's owner can grant access to additional users to add/modify the
 ||Manage All Users||Permits the user to add/remove additional users for *any* partner, and to change their permissions||
 ||Design||Permits the user to change the structure of the UserDatabase, adding, modifying, or deleting Activities, Indicators, Attributes, and Partners||
 
-Note that Owner does not have a corresponding !UserPermission entity, their permissions are derived from their status as 
-the !UserDatabase owner.
+Note that Owner does not have a corresponding !UserPermission entity, their permissions are derived from their status as the !UserDatabase owner.
 
-Below is an example of the partner configuration of a !UserDatabase for monitoring the Program of Expanded Assistance to Returns (PEAR),
-one of the first programs to use ActivityInfo.
+Below is an example of the partner configuration of a !UserDatabase for monitoring the Program of Expanded Assistance to Returns (PEAR), one of the first programs to use ActivityInfo.
 
 http://activity-info.googlecode.com/svn/wiki/diagrams/schema-partners.png
 
@@ -45,8 +43,7 @@ be a tool in coordination as well.
 Note that:
 
   * The UNICEF education specialist has the Design permission, which would allow him/her to modify or correct indicators for the program. This allows specialists to work directly with the structure of the indicators.
-  * The two program managers (3) and (5) have the permission to Manage Users, so they are able to add new user accounts when new staff arrive, or remove accounts if staff leave. They do not have the right, however, to assign the View All, Edit All, Manage All Users,
-or Design permissions.
+  * The two program managers (3) and (5) have the permission to Manage Users, so they are able to add new user accounts when new staff arrive, or remove accounts if staff leave. They do not have the right, however, to assign the View All, Edit All, Manage All Users, or Design permissions.
 
 While this security model will meet most needs, there are limits:
 
