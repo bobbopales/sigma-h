@@ -4,6 +4,9 @@
 
 = Audience =
 
-This guide is for those who wish to contribute to the development of the ActivityInfo server and GWT client. 
+This guide is for those who wish to contribute to the development of the ActivityInfo server and GWT client. You will find step-by-step instructions on building ActivityInfo from the source
 
 
+
+
+	
