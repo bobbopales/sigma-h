@@ -15,7 +15,6 @@ GWT was the main reason for choosing the Java platform for ActivityInfo rather t
   * [http://www.mkhelif.fr/2008/07/03/gwt-introduction-au-framework.html Introduction / Tutorial en français] 
   * [http://code.google.com/webtoolkit/tutorials/1.6/gettingstarted.html Tutorial in English]
 
-
 === Ext-GWT (GXT) ===
 
 Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy to implement an Office/Desktop-like interface for ActivityInfo. Though we're starting to have the time to branch out it more fluent, web-like interfaces, GXT still forms the core of the user interface.
@@ -23,7 +22,7 @@ Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy t
   * [http://www.extjs.com/products/gxt/ Product home page]
   * [http://www.extjs.com/helpcenter/nav/0_0 Getting started screen cast]
 
-=== GoogleMaps == 
+=== GoogleMaps === 
 
   * [http://code.google.com/apis/maps/documentation/index.html API Reference]
 

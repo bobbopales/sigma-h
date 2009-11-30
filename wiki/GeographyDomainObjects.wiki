@@ -23,9 +23,46 @@ To address each of these points, each country has two sets of objects: AdminEnti
 
 http://activity-info.googlecode.com/svn/wiki/diagrams/admin.png
 
-Below is the example of the RDC:
+= Examples = 
+
+== "Decoupage" in the DRC ==
+
+In the DRC, as in many contexts, there are multiple geographic heirarchies that are relevant to different groups of actors. There is first the "adminstrative" hierarchy of 6 levels that is relevant to the most actors and includes Province, District, Territoire, Secteur, Groupement, and Localite (not pictured below). Health services, however, are organized along a parallel hierarchy of Province, District Sanitaire, Zone de Sante and Aire de Sante. For humanitarian actors, the relevant "decoupage" often depends on the sector. WASH projects, which have strong links to the health system, often operate by Aire de Sante. More "development-y" projects, particularly those of UNDP lend more importance to the groupement. To complicate things further, the Ministry of Education has its own heirarchy of Provinces, "Sous-divisions" and "Sites" (not pictured).
 
 http://activity-info.googlecode.com/svn/wiki/diagrams/admin-rdc.png
+
+One of the goals of ActivityInfo is to facilitate communication among actors of different sectors. That is, it is important to link an education activity with health hierarchy so that WASH actors with activities in that Zone de Sante where the school is located could potentially follow up. For this reason, "points" like Schools and Villages are modeled seperately in ActivityInfo from !AdminEntities can be linked to !AdminEntities in multiple levels.
+
+Below is what the diagram above looks like in the underlying SQL database. Note: bounds columns are not displayed.
+
+=== Country ===
+
+||CountryId||Name||
+||1||RDC||
+
+=== AdminLevel ===
+
+||AdminLevelId||CountryId||Name||ParentAdminLevelId||
+||1||1||Province||null||
+||2||1||District||1||
+||3||1||Territoire||2||
+||4||1||Secteur||3||
+||5||1||Groupement||4||
+||6||1||Zone de Sante||1||
+||7||1||Aire de Sante||2||
+||8||1||Sous-Division||1||
+
+=== AdminEntity ===
+
+||AdminEntityId||AdminLevelId||Code||Name||ParentAdminEntityId||
+||1||1||61||Nord Kivu||null||
+||2||1||50||Province Orientale||null||
+||3||2||611||Nord Kivu||1||
+||4||2||505||Ituri||2||
+||5||3||6111||Rutshuru||3||
+||6||3||5051||Irumu||4||
+||7||3||5052||Mahagi||4||
+
 
 = Open Issues =
 

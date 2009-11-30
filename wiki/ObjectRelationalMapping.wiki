@@ -78,11 +78,3 @@ The filter below, when activated, assures that only entities that have not been 
 Filters are activated automatically by the DependencyInjectionFramework upon the receipt of a new !HttpRequest and authentication 
 of the requesting user.
 
-
-= Enforcing permissions =
-
-While !UserPermissions to create, modify, and delete entities were initially handled at the Command layer, we are now moving towards an approach where 
-this is also enforced within the mapping layer through the use of Hibernate Interceptors. 
-
-
-TODO: document this
