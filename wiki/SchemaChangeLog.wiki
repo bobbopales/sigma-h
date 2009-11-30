@@ -1,0 +1,11 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Every attempt will be made to keep new versions of ActivityInfo backwards compatible with SQL databases created with earlier versions of ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
+
+
+= November 30, 2009 / Release 0.5.6 =
+
+  * The columns ManageUsers, ManageAllUsers have been added to the UserPermissions table. See r111 for a ddl patch.
+
