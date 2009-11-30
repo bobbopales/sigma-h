@@ -1,6 +1,6 @@
 #summary Outline
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 
-  # DomainObjects
- 
+TODO: to write 
