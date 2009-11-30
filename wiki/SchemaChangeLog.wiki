@@ -1,4 +1,5 @@
-#summary One-sentence summary of this page.
+#summary Breaking changes to the underlying SQL database schema
+#labels Featured
 
 = Introduction =
 
@@ -7,5 +8,11 @@ Every attempt will be made to keep new versions of ActivityInfo backwards compat
 
 = November 30, 2009 / Release 0.5.6 =
 
-  * The columns ManageUsers, ManageAllUsers have been added to the UserPermissions table. See r111 for a ddl patch.
-
+  * The columns !ManageUsers, !ManageAllUsers have been added to the !UserPermissions table.
+{{{
+ALTER TABLE UserPermission ADD
+  AllowManageUsers bit NOT NULL 
+     CONSTRAINT DF_UserPermission_AllowManageUsers DEFAULT 0,
+  AllowManageAllUsers bit NOT NULL 
+     CONSTRAINT DF_UserPermission_AllowManageAllusers DEFAULT 0
+}}}
