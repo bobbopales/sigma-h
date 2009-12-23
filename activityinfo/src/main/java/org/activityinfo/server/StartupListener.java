@@ -9,9 +9,6 @@ import freemarker.template.DefaultObjectWrapper;
 import org.activityinfo.server.filter.CacheFilter;
 import org.activityinfo.server.report.generator.MapIconPath;
 import org.activityinfo.server.servlet.*;
-import org.activityinfo.server.servlet.kml.KmlDataServlet;
-import org.activityinfo.server.servlet.kml.KmlLinkServlet;
-import org.activityinfo.server.servlet.wfs.WfsServlet;
 import org.quartz.Job;
 import org.quartz.SchedulerException;
 import org.quartz.spi.JobFactory;
@@ -74,10 +71,6 @@ public class StartupListener extends GuiceServletContextListener {
                 serve("/Application/download").with(DownloadServlet.class);
                 serve("/Application/export*").with(ExportServlet.class);
                 
-                serve("/wfs").with(WfsServlet.class);
-                serve("/wfs*").with(WfsServlet.class);
-                serve("/kml").with(KmlLinkServlet.class);
-                serve("/kml/data").with(KmlDataServlet.class);
                 serve("/icon").with(MapIconServlet.class);
                 serve("/report").with(ReportServlet.class);
 
