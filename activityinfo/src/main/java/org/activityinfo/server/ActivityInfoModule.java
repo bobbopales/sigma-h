@@ -29,8 +29,6 @@ import java.util.List;
  */
 public class ActivityInfoModule extends AbstractModule {
 
-    public static final String INJECTOR_NAME = ActivityInfoModule.class.getName();
-
     @Override
     protected void configure() {
 
