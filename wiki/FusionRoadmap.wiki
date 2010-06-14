@@ -32,7 +32,7 @@ The following steps need to be completed before the Sigmah-PM and Sigmah-QUAL do
     * UserDatabase => Project
     * Partner => OrganizationalUnit (hierarchical)
     * PartnersInDatabase => ProjectMembership
-  * SchemaDTO broken into List<ProjectDTO>, LogFrameDTO, and CountryDTO (the current design assumes a small number of projects per user)
+  * SchemaDTO broken into `List<ProjectDTO>, LogFrameDTO, and CountryDTO` (the current design assumes a small number of projects per user)
  
 == ECHO-Funded Sprints (Ideia.fr) == 
 
