@@ -1,4 +1,4 @@
-#summary Preparing for Sigmah-PM
+#summary Preparing for Sigmah 2011
 
 = Introduction =
 
@@ -19,8 +19,15 @@ Over the course of the next year, Sigmah will benefit from two seperate funding 
   * UNICEF-DRC : Exclusive focus on Sigmah-MON, particularly data sharing and improved usability analysis features. Oriented towards an online information hub. BeDataDriven.com is the contractor.
   * ECHO : Broader focus on tools for NGOs. Groupe URD coordinates on behalf of working group of NGOs. Ideia.fr is the primary contractor, BeDataDriven provides additional work on foundation on Sigmah-MON components. 
  
+= Modularisation =
+
+For maximizing productivity with GWT, it is preferable to keep SIGMAH as a single WAR, and a single maven module.
+
+However, during the initial ECHO-contributions, it would be useful to compile two separate GWT modules Sigmah-Dev and Sigmah-Stable. The entry point for Sigmah-stable will include only the previous ActivityInfo components until the SIGMAH-QUAL and Sigmah-PM functionalities are ready.
 
 = Roadmap =
+
+Common release schedule?
 
 == Preparation == 
 
@@ -51,7 +58,9 @@ The following steps need to be completed before the Sigmah-PM and Sigmah-QUAL do
 == UNICEF-Funded Sprints ==
 
   * Iteration 1 - begins 21st June - 23 July
-
+  * Iteration 2
+  * Iteration 3
+  * Iteration 4
 
 
 
