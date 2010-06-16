@@ -5,6 +5,9 @@
 
 https://lh6.googleusercontent.com/41gL5m_QcX6bYNiqdGHjOoSGhSqxQc3lwTmvVwppkoq5xO7xAjK08t3JsGpWhvz4CeNBYwWbVRwHOsjJt62hWwofag=s512?.jpg
 
+
+https://docs.google.com/drawings/edit?id=1Sk8fs3BPFd_H-Yp3v6Rj8i44tldrr2TjxxU7x-Uu1U0&hl=en
+
 = Modifications Proposed = 
 
 == OrganizationalUnit ==
@@ -81,6 +84,4 @@ With the proposed modifications above, the existing ActivityInfo model maps clea
 All other objects have no corollary in Activity and so can be defined without constraints.
 
 The ActivityInfo GeographyObjectModel remains unchanged.
-
-
 
