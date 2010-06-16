@@ -12,6 +12,7 @@ https://lh6.googleusercontent.com/41gL5m_QcX6bYNiqdGHjOoSGhSqxQc3lwTmvVwppkoq5xO
 Collapse "Zone d'Intervention", "Base Operationnelle" and "Départment" into single "OrganizationalUnit" entity. An Organization *posseses* a root OrganizationalUnit, and OrganizationalUnits can *manage* any number of subordinate units. 
 
 Rationale:
+  * This is essentially an Organizational object, which can sometimes follow geographic lines, but not always. 
   * NGOs can have very different structures, I think it's best to rest generic rather than imposing a single structure on all organizations (e.g. Base Operationnelle, Department, Zone d'Intervention) 
 
 An OrganizationalUnit _can_ have a Location (which is associated with a single Country) which represents the Unit's physical location for the purposes of mapping. [http://www.pear.cd/contenu/cartes/PEAR%20Contacts%20-%20Point%20Focaux%202009%2005%2012.pdf example] 
@@ -28,7 +29,7 @@ Projects are linked to geography through Project->Site->Location. See GeographyO
 
 == Project == 
 
-The relationship between a Project and an !OrganizationalUnit should many-to-many. The reality is that projects typically bring together a number of Organizations and !OrganizationalUnits.
+The relationship between a Project and an !OrganizationalUnit should be many-to-many. The reality is that projects typically bring together a number of Organizations and !OrganizationalUnits.
 
 For example, large NGOs often have parallel geographic and technical structures. A project to rehabilitate schools will be "line" managed by: 
   * The Katanga sub-office, who will have final say over all things logistic, financial, and HR, 
@@ -62,9 +63,24 @@ In addition to project-level permissions, certain users may be granted permissio
 
 Not all users associated with an OrgUnit (a field office, for example) would be granted automatic rights on all projects -- a field office can have 50+ staff and dozens of projects, so this kind of right would be reserved for Chiefs of Mission or Logistics Coordinator, etc. The rest of field office's staff would receive their rights on a project-by-project basis. 
 
+
 == Mapping to the existing ActivityInfo model ==
 
 With the proposed modifications above, the existing ActivityInfo model maps cleanly onto that required for the ECHO project:
 
 || Target Object || Mapped by ActivityInfo Object || Notes ||
-|| 
+|| Project || UserDatabase || ||
+|| ProjectPermission || UserPermission || ||
+|| Organisation || -new- || Organisations will be created for each existing Partner/OrgUnit ||
+|| OrgUnit || Partner || ||
+|| OrgUnitPermission || - new - || ||
+|| LogFrameRow || Activity || An Activity is typeof LogFrameRow ||
+|| Indicator || Indicator || Add a "target" property ||
+|| User || User || Need to seperate FirstName and LastName from Name || 
+
+All other objects have no corollary in Activity and so can be defined without constraints.
+
+The ActivityInfo GeographyObjectModel remains unchanged.
+
+
+
