@@ -12,8 +12,8 @@ ActivityInfo core objective is originally to make available an environment for s
 Sharing information horizontally between organisations is only possible for organizations sharing the same installation of Sigmah, for example for organizations having an account on the common SaaS server of sigmah.org.
 
 In order to merge the 2 objectives mentionned above, the following has been decided:
-* Each organization can choose between the list of all organizations having an account on the same server a subset of organizations which can be direct horizontal partners on their projects. If an organization prefers not to have even a single project horizontally shared, they can choose to keep the list empty as it is by default.
-* At the creation of a project, the project author can decide which organizations are stakeholders of the project, and what are their rights. If an organization is defined as stakeholder and is member of the list of accepted organizations for direct horizontal data sharing, it is possible to give the right to read and also modify the data of the project. If the organization is not member of that list, no right to read or modify the data of the projects is available.
+  * Each organization can choose between the list of all organizations having an account on the same server a subset of organizations which can be direct horizontal partners on their projects. If an organization prefers not to have even a single project horizontally shared, they can choose to keep the list empty as it is by default.
+  * At the creation of a project, the project author can decide which organizations are stakeholders of the project, and what are their rights. If an organization is defined as stakeholder and is member of the list of accepted organizations for direct horizontal data sharing, it is possible to give the right to read and also modify the data of the project. If the organization is not member of that list, no right to read or modify the data of the projects is available.
 
 = Modifications Proposed = 
 
