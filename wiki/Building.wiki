@@ -49,6 +49,11 @@ mvn hibernate3:hbm2ddl
 
 This will create the tables, etc in your development database.
 
+== Populate database with default data == 
+First, add the markup `<property name="hibernate.hbm2ddl.auto" value="create" />` in the file « META-INF/persistence.xml », and run the application. (take care to thoroughly delete this markup before the next run because it would in the contrary again reset at its default value the database).
+
+_To be finished soon..._
+
 == Running ActivityInfo Tests == 
 
 Verify that everything is in good order by running 
