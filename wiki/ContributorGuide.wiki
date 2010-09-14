@@ -1,10 +1,12 @@
-#summary Contributor's Guide to ActivityInfo
+#summary Contributor's Guide to Sigmah
 #labels Featured
 #sidebar ContributorGuideSideBar
 
 = Audience =
 
-This guide is for those who wish to contribute to the development of the ActivityInfo server and GWT client. You will find step-by-step instructions on building ActivityInfo from the source
+This guide is for those who wish to contribute to the development of the Sigmah server and GWT client. You will find step-by-step instructions on building Sigmah from the source 
+
+_(this guide is currently mostly a direct copy from the Contributor Guide to ActivityInfo... adaptation of this guide to some new specific requirements of Sigmah is under process)_
 
 
 
