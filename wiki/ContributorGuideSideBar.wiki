@@ -1,5 +1,7 @@
 #summary Contributor's Guide Sidebar
 
+  * [FusionRoadMap]
+    * [SigmahPMObjectModel]
   * [ContributorGuide Overview]
   * [Building Compiling from SVN]
      * SQLServerSetup
