@@ -1,8 +1,8 @@
 #summary Contributor's Guide Sidebar
 
+  * [ContributorGuide Overview]
   * [FusionRoadMap]
     * [SigmahPMObjectModel]
-  * [ContributorGuide Overview]
   * [Building Compiling from SVN]
      * SQLServerSetup
   * [SourceCodeOutline Server Architecture]
