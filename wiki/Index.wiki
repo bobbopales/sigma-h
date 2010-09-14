@@ -3,5 +3,4 @@
 
 Sigmah's technical documentation consist of 2 guides:
   * the [AdministratorGuide Administrator Guide] whose aim is to help people willing to install Sigmah on a computer
-  * the [ContibutorGuide Contributor Guide] whose aim is to help new developer get general knowledge about how to work with the source code
-
+  * the [ContributorGuide Contributor Guide] whose aim is to help new developer get general knowledge about how to work with the source code
