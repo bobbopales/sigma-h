@@ -15,6 +15,7 @@
     * [DAOLayer DAO Layer]
     * [ReportingLayer Reporting Layer]
     * [CommandLayer Command Layer]
+    * [Syncro Synchronization]
   * [ContributorReading Reading Materials]
   
 
