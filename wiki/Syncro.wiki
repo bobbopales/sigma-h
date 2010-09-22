@@ -1,5 +1,6 @@
 #summary Details of the Synchronizaton process
 #labels Phase-Implementation
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 
