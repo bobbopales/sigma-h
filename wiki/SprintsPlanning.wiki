@@ -1,0 +1,11 @@
+#summary Planning of the sprints of development.
+
+= Introduction =
+This page is used to share a global view where the 2 threads of development (by bedatadriven and Ideia) are going in a middle term in ordre to improve coordination prevision.
+
+
+= bedatadriven's planning =
+
+
+= Ideia's planning =
+
