@@ -3,7 +3,26 @@
 
 = Introduction =
 
-Every attempt will be made to keep new versions of ActivityInfo backwards compatible with SQL databases created with earlier versions of ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
+Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
+
+= Release 0.70 =
+
+A large number of domain objects have been added since the last full release of ActivityInfo (0.5.11). Users are advised to let hibernate create a new schema and import your existing data into the new structure with a mapping tool.
+
+[http://opendbcopy.sourceforge.net/ OpenDbCopy] is a good tool that we have used for ActivityInfo.org.
+
+* WARNING *: Do NOT attempt to use hibernate's schema update feature on production data! This is a [http://stackoverflow.com/questions/221379/hibernate-hbm2ddl-autoupdate-in-production good posting] on why this is not OK.
+
+In addition, to use the new offline features, you will need to update your data to meet certain assumptions made by the synchronization module. 
+
+Specifically, the synchronizer uses timestamps to divide updates into batches. Since early versions of AI did not maintain timestamps, your database may have a large number of records with the same timestamp. Future versions of AI/Sigmah may be capable of more sophisticated batching but for the time being you can "salt" your data with the following SQL:
+
+{{{
+UPDATE Location SET dateEdited = date_add(dateEdited, INTERVAL LocationId SECOND) where second(dateEdited) = 0;
+
+UPDATE Site SET dateEdited = date_add(dateEdited, INTERVAL LocationId SECOND) where second(dateEdited) = 0;
+}}}
+ 
 
 
 = Revision r138 = 
