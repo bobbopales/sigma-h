@@ -8,4 +8,26 @@ This page is used to share a global view where the 2 threads of development (by 
 
 
 = Ideia's planning =
+== Sprint 1 (09/27 to 10/14) ==
+  * ONG object
+  * Logical framework
+  * Calendar
+  * New flexibles elements
+  * Handler for project categories
 
+== Sprint 2 (10/15 to 11/04) ==
+  * Operational base object
+  * Funding object
+  * Quality framework
+  * Reports
+  * Authentication mechanism
+
+== Sprint 3 (11/05 to 11/25) ==
+  * Fields history
+  * Dashboards
+  * Notifications attached to file upload fields
+
+== Sprint 4 (11/26 to 12/16) ==
+  * Contextual manual
+  * Project revisions
+  * Administration: user management
