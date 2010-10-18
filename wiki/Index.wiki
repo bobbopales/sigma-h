@@ -8,4 +8,5 @@ Sigmah's technical documentation consist of 2 guides:
 
 =Project planning management=
 [Roadmap Roadmap of the project]
+
 [SprintsPlanning Planning of the sprints of development]
