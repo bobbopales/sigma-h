@@ -6,5 +6,6 @@ Sigmah's technical documentation consist of 2 guides:
   * the [ContributorGuide Contributor Guide] whose aim is to help new developer get general knowledge about how to work with the source code
 
 
-=Project live planning=
+=Project planning management=
+[Roadmap Roadmap of the project]
 [SprintsPlanning Planning of the sprints of development]
