@@ -1,0 +1,3 @@
+#summary Versioning rules
+
+A good rule is to increment the minor version number (0.$.0) whenever database schema changes or any other breaking changes beyond a drop-in update.
