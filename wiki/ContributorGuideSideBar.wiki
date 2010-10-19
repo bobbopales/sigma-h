@@ -3,6 +3,7 @@
   * [ContributorGuide Overview]
   * [FusionRoadMap]
     * [SigmahPMObjectModel]
+  * [Versioning]
   * [Building Compiling from SVN]
      * SQLServerSetup
   * [SourceCodeOutline Server Architecture]
