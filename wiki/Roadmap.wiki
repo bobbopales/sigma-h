@@ -36,7 +36,7 @@ Roadmap validated by the Steering Cooperative on 09/27/2010.
     * Indicators: indicator links and indicators' libraries
     * Quality framework
 
-=== v0.7.0 ActivityInfo / UNICEF release (end October 2010)
+=== v0.7.0 ActivityInfo / UNICEF release (end October 2010) ===
   * Offline data entry / analysis
   * Improved filtering for Site Grids
   * Pivoting by attributes
