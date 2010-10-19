@@ -23,7 +23,7 @@ Roadmap validated by the Steering Cooperative on 09/27/2010.
   * Management of the contacts list
 
 
-=== v0.7.5 Amazon (december 2010)===
+=== v0.8 Amazon (december 2010)===
   * Technical foundations for handling disconnected mode
   * Calendar
   * System for managing the contextual user manual
