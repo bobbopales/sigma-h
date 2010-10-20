@@ -5,7 +5,6 @@
     * [SigmahPMObjectModel]
   * [Versioning]
   * [Building Compiling from SVN]
-     * SQLServerSetup
   * [SourceCodeOutline Server Architecture]
     * [DomainObjects Domain Objects]
       * [UserDomainObjects Users]
