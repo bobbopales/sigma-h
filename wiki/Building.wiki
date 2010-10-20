@@ -14,58 +14,66 @@ Some of the functionality below is available through Eclipse or IntelliJ, but at
   # [http://www.open.collab.net/downloads/subversion/ CollabNet Subversion Command-Line Client] - Command-line client for Windows
   # [http://maven.apache.org/download.html Apache Maven] - a build manager for Java. You just need to unzip it in the c:\Program Files folder.
   # Add the paths to the JDK, CollabNet subversion, and Maven paths to the path environment variable. (instructions for [http://www.computerhope.com/issues/ch000549.htm XP] [http://www.question-defense.com/2009/06/22/modify-a-users-path-in-windows-vista-vista-path-environment-variable/ Vista]
-  # [http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx Microsoft SQL Server Express 2005]
-  # [http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&displaylang=en Microsoft Management Studio Express]
+  # [http://www.mysql.com/downloads/mysql/ MySQL v5]
 
+*Note:* Microsoft SQL server is no longer a supported database. We are now actively testing against MySQL 5.x and PostgreSQL.
 
 == Quick build ==
 
-We'll get to the IDE in a moment, but first it would be good to confirm that you can successfully build ActivityInfo
+We'll get to the IDE in a moment, but first it would be good to confirm that you can successfully build Sigmah/ActivityInfo
 
   # Checkout a working copy 
 {{{
-svn checkout http://activity-info.googlecode.com/svn/trunk/activityinfo 
+svn checkout http://sigma-h.googlecode.com/svn/trunk sigmah
 }}}
   # Change directory to the working copy
 {{{
-cd activityinfo
+cd sigmah
 }}}
-  # Invoke the Maven compile phase
-{{{
-mvn compile
-}}}
-
-Maven will automatically download all required dependencies and compile the project.
-
-== Setting up the development and testing databases == 
-
-  # First, you need to enable TCP/IP support on Microsoft SQL Server Express and allow database authentication. See  [http://support.microsoft.com/default.aspx?scid=kb;EN-US;914277 here] and  . Set the password for `sa` to `adminpwd`.
-  # Create an empty database called `actinfo` as the development database
-  # Create an empty database called `act-test` as the test database
-  # From the folder `activityinfo\application`, execute
-{{{
-mvn hibernate3:hbm2ddl
-}}}
-
-This will create the tables, etc in your development database.
-
-== Populate database with default data == 
-First, add the markup `<property name="hibernate.hbm2ddl.auto" value="create" />` in the file « META-INF/persistence.xml », and run the application. (take care to thoroughly delete this markup before the next run because it would in the contrary again reset at its default value the database).
-
-_To be finished soon..._
-
-== Running ActivityInfo Tests == 
-
-Verify that everything is in good order by running 
+  # Invoke the Maven compile and test phases
 {{{
 mvn test
 }}}
 
+Maven will automatically download all required dependencies, compile the project, and run unit and integration tests against an embedded database. 
+
+== Setting up a development database ==
+
+Out of the box, Sigmah will run against H2, an embedded database. As a developer, you will probably want to develop against a running database like MySQL that you can easily inspect and manipulate. 
+
+You can tell sigmah to connect to your local database by creating a sigmah.properties file and saving it to your home directory. (C:\Users\XXXX on Windows Vista and later)
+
+{{{
+#
+# All Sigmah code is released under the GNU General Public License v3
+# See COPYRIGHT.txt and LICENSE.txt.
+#
+
+hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.connection.driver_class=com.mysql.jdbc.Driver
+hibernate.connection.username=sa
+hibernate.connection.password=adminpwd
+hibernate.connection.url=jdbc:mysql://localhost/sigmah
+hibernate.hbm2ddl.auto=update
+hibernate.show_sql=true
+hibernate.format_sql=true
+}}}
+
+We are working on a "real-life" but anonymnized dataset that we can make available here on  the development site but it is not yet ready. In the mean time, you will need to create a row in the UserLogin table (leave the Password field null) and in the Country table.
+
+
 == Starting GWT development mode ==
 
-You can launch GWT development mode by running
+For the time being, we are maintaining two separate GWT entry points: ActivityInfoEntryPoint, which will continue to meet the day-to-day needs of existing users, and SigmahEntryPoint, which adds a great deal of new functionality but is not yet ready for production use. 
+
+You can launch GWT development mode for ActivityInfo by running
 {{{
 mvn gwt:run
 }}}
 
-Navigate to the URL provided by the development mode module.
+and 
+{{{
+mvn -P Sigmah gwt:run
+}}}
+
+for the Sigmah module
