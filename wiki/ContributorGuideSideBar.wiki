@@ -4,6 +4,7 @@
   * [FusionRoadMap]
     * [SigmahPMObjectModel]
   * [Versioning]
+  * [SigmahFlexibility Sigmah flexibility]
   * [Building Compiling from SVN]
   * [SourceCodeOutline Server Architecture]
     * [DomainObjects Domain Objects]
