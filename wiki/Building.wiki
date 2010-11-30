@@ -1,5 +1,4 @@
 #summary Guide to building Sigmah on Windows
-
 #sidebar ContributorGuideSideBar
 
 = Introduction =
