@@ -1,4 +1,5 @@
-#summary Guide to building ActivityInfo on Windows
+#summary Guide to building Sigmah on Windows
+
 #sidebar ContributorGuideSideBar
 
 = Introduction =
@@ -59,8 +60,7 @@ hibernate.show_sql=true
 hibernate.format_sql=true
 }}}
 
-We are working on a "real-life" but anonymnized dataset that we can make available here on  the development site but it is not yet ready. In the mean time, you will need to create a row in the UserLogin table (leave the Password field null) and in the Country table.
-
+In order to populate your database with default data, you can run step by step all the SQL scripts contained in this zip file: [https://docs.google.com/uc?id=0Bzg6KaEX0htuMTk4NzFmOWUtNGUyMi00ZjAxLWJkMWQtNmJjZTQ3MjhjMDMy&export=download&hl=en sigmah-postgresql-0.6.2.zip] (for PostGreSQL database)
 
 == Starting GWT development mode ==
 
