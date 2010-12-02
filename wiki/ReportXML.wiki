@@ -1,9 +1,10 @@
 #summary Report design
+#labels Featured
 
 = Introduction =
 
 Currently, reports for ActivityInfo/Sigmah must be defined in XML. 
-The canonical source for documentation is the [http://code.google.com/p/sigma-h/source/browse/trunk/sigmah/src/main/java/org/sigmah/shared/report/model/Report.java Java sources], but there is also an [ttp://sigma-h.googlecode.com/svn-history/r542/trunk/doc/reports/reports.xsd XML Schema] available.
+The canonical source for documentation is the [http://code.google.com/p/sigma-h/source/browse/trunk/sigmah/src/main/java/org/sigmah/shared/report/model/Report.java Java sources], but there is also an [http://sigma-h.googlecode.com/svn-history/r542/trunk/doc/reports/reports.xsd XML Schema] available.
 
 = Example =
 
