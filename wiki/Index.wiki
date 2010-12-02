@@ -1,9 +1,10 @@
 =Index of Sigmah's technical documentation=
 
 
-Sigmah's technical documentation consist of 2 guides:
+Sigmah's technical documentation consist of three guides:
   * the [AdministratorGuide Administrator Guide] whose aim is to help people willing to install Sigmah on a computer
   * the [ContributorGuide Contributor Guide] whose aim is to help new developer get general knowledge about how to work with the source code
+  * [ReportXML Report Designer's Guide]
 
 
 =Project planning management=
