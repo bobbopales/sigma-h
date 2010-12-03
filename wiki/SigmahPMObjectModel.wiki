@@ -1,4 +1,5 @@
 #summary Proposed Object Model for Sigmah-PM
+#sidebar ContributorGuideSideBar
 
 = Originally Proposed =
 
