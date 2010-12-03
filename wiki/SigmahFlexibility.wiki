@@ -1,4 +1,5 @@
 #summary How Sigmah is technically handling flexibility through models
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 
