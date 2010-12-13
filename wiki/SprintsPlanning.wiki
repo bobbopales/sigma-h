@@ -85,3 +85,8 @@ This page is used to share a global view where the 2 threads of development (by 
   * Contextual manual
   * Project revisions
   * Administration: user management
+
+== In'Tech Sprint 1 (12/13 to 12/17) - current ==
+  * Adding administration page.
+  * Adding button to administration page.
+  * Adding model page.
