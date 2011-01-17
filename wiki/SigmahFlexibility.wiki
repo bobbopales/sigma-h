@@ -18,6 +18,7 @@ Each organization can define what are the models of projects, organizational uni
 
 
 = Which kind of flexible elements are available? = 
+  * Checkbox
   * Number field
   * Date field
   * Simple text field
