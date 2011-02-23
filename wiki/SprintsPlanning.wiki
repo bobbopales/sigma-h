@@ -74,19 +74,30 @@ This page is used to share a global view where the 2 threads of development (by 
   * Reports
   * Authentication mechanism
 
-== Sprint 3 (11/30 to 12/17) - current ==
+== Sprint 3 (11/30 to 12/17) ==
   * Fields history
   * Dashboards
   * Notifications attached to file upload fields
   * Key questions
   * Report drafts
 
-== Sprint 4 (01/03 to 01/17) - estimated ==
+== Sprint 4 (01/03 to 01/18) ==
   * Contextual manual
   * Project revisions
   * Administration: user management
 
-== In'Tech Sprint 1 (12/13 to 12/17) - current ==
+== Sprint 5 (01/19 to 02/11) ==
+  * Project revisions history
+  * Copy/paste of the logical framework
+  * Reminders in the main dashboard
+  * Password retrieval
+
+== Sprint 6 (02/14 to 03/08) - current ==
+  * First features of the offline mode: access to the application in offline mode, on/offline toggle button, implicit connection, (organizational units list).
+  * Manage the change of the project manager and organizational unit.
+
+= In'Tech =
+== Sprint 1 (12/13 to 12/17) - current ==
   * Adding administration page.
   * Adding button to administration page.
   * Adding model page.
