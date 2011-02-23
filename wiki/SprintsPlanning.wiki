@@ -95,6 +95,7 @@ This page is used to share a global view where the 2 threads of development (by 
 == Sprint 6 (02/14 to 03/08) - current ==
   * First features of the offline mode: access to the application in offline mode, on/offline toggle button, implicit connection, (organizational units list).
   * Manage the change of the project manager and organizational unit.
+  * Performance enhancement when retrieving a projects list.
 
 = In'Tech =
 == Sprint 1 (12/13 to 12/17) - current ==
