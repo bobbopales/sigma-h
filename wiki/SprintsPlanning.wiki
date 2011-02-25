@@ -102,3 +102,10 @@ This page is used to share a global view where the 2 threads of development (by 
   * Adding administration page.
   * Adding button to administration page.
   * Adding model page.
+
+= Groupe URD =
+== Sprint 1 (02/23 to 03/12) - current ==
+  * Project models administration.
+== Sprint 2 (03/12 to 03/18)==
+  * Organizational unit models administration.
+  * Project report models administration.
