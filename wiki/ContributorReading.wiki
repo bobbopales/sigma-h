@@ -1,15 +1,14 @@
-#summary Introductory resources for ActivityInfo developpers
+#summary Introductory resources for Sigmah developpers
 #sidebar ContributorGuideSideBar
 
 = Introduction =
-
-ActivityInfo takes advantage of an array of Java technologies. Here are few resources for learning these different components
+Sigmah takes advantage of an array of Java technologies. Here are few resources for learning these different components
 
 = Resources =
 
 === Google Web Toolkit (GWT) ===
 
-GWT was the main reason for choosing the Java platform for ActivityInfo rather than .NET.
+GWT was the main reason for choosing the Java platform for Sigmah rather than .NET.
 
   * [http://code.google.com/webtoolkit/ Project page] 
   * [http://www.mkhelif.fr/2008/07/03/gwt-introduction-au-framework.html Introduction / Tutorial en français] 
@@ -17,10 +16,12 @@ GWT was the main reason for choosing the Java platform for ActivityInfo rather t
 
 === Ext-GWT (GXT) ===
 
-Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy to implement an Office/Desktop-like interface for ActivityInfo. Though we're starting to have the time to branch out it more fluent, web-like interfaces, GXT still forms the core of the user interface.
+Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy to implement an Office/Desktop-like interface for Sigmah. Though we're starting to have the time to branch out it more fluent, web-like interfaces, GXT still forms the core of the user interface.
 
   * [http://www.extjs.com/products/gxt/ Product home page]
   * [http://www.extjs.com/helpcenter/nav/0_0 Getting started screen cast]
+  * [http://vimeo.com/17796860 Video "Best practices in Ext-GWT"]
+
 
 === GoogleMaps === 
 
@@ -28,7 +29,7 @@ Ext-GWT or GXT is fairly complete widget library for GWT that has made it easy t
 
 === Dependency Injection (DI) ===
 
-ActivityInfo uses DI extensively to keep components decoupled and enable unit testing. 
+Sigmah uses DI extensively to keep components decoupled and enable unit testing. 
 
   * Here is an [http://www.youtube.com/watch?v=hBVJbzAagfs&feature=player_embedded introduction to DI and Guice specifically] 
   * Article en français: [http://blog.xebia.fr/2009/04/15/google-guice-les-bases-de-linjection-de-dependances/ L'injection de dépendances]
@@ -36,7 +37,7 @@ ActivityInfo uses DI extensively to keep components decoupled and enable unit te
 
 === MVP + DI FTW === 
 
-The ActivityInfo client side application is built around two, really three key ideas:
+The Sigmah client side application is built around two, really three key ideas:
 
   * The Model-View-Presenter (MVP) pattern, wherein we try to build UI components such that they delegate all or most logic to an easy-to-test presenter class.
   * Dependency Injection (see above)
