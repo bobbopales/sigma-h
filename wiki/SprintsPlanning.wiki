@@ -3,62 +3,6 @@
 = Introduction =
 This page is used to share a global view where the 2 threads of development (by bedatadriven and Ideia) are going in a middle term in order to improve coordination.
 
-
-= bedatadriven's planning =
-
-== UNICEF Funded (User story #, User Story Title, Priority) ==
-
-=== Sprint 1 (release end of October) ===		
-7.	Pivoting by attribute (1)
-15.	Filter by partner (1)
-35.	Static Report Elements (1)
-16.	Improved site filtering (1)
-19.	Offline data-entry (1)
-
-
-== ECHO Funded ==
-
-
-
-== UNICEF Funded - Probably begin Jan 2011 ==
-
-=== Sprint 2 (Pending) ===	
-
-5a.	Dynamic mapping (1)
-5b.	Mapping of sites with grouping by administrative level (1)
-5c.	Multi-layer mapping (1)
-5d.	Map legends (1)
-14.	Search Engine (1)
-
-=== Sprint 3 (Pending) ===	
-17a.	Locking data (1)
-18.	Link between indicators in different user databases (1)
-1.	Targets (2)
-
-=== Sprint 4 (Pending) ===
-
-4.	Dashboard (2)
-28.	Photo and document attachment (2)
-30.	Data collection forms (3)
-31.	User List Export (2)
-
-=== Sprint 5 (Pending) ===
-10.	Pivot by location (2)
-21.	Site TreeView (2)
-
-=== Sprint 6 (Pending) ===
-8.	Report Definition User Interface (3)
-34.	Pivot Graphs (3)
-29.	Public informational site (3)
-3.	Contextual documentation (3)
-
-=== Sprint 7 (Pending) ===
-
-12.	Publication of sites (4)
-33.	Link between assessments and response (3)
-6.	Chloropleth mapping (3)	
-
-
 = Ideia's planning =
 == Sprint 1 (09/27 to 11/03) ==
   * ONG object
@@ -109,3 +53,49 @@ This page is used to share a global view where the 2 threads of development (by 
 == Sprint 2 (03/12 to 03/18)==
   * Organizational unit models administration.
   * Project report models administration.
+
+= bedatadriven =
+
+== Sprint 3 (7-March - 18-March) - current ==
+  * Adaptation of the Site + Pivot table components to Sigmah style 
+  * Indicator linking / copying
+
+
+
+== UNICEF Funded - to begin sometime in 2011 ! ==
+
+=== Sprint 2 (Pending) ===	
+
+5a.	Dynamic mapping (1)
+5b.	Mapping of sites with grouping by administrative level (1)
+5c.	Multi-layer mapping (1)
+5d.	Map legends (1)
+14.	Search Engine (1)
+
+=== Sprint 3 (Pending) ===	
+17a.	Locking data (1)
+18.	Link between indicators in different user databases (1)
+1.	Targets (2)
+
+=== Sprint 4 (Pending) ===
+
+4.	Dashboard (2)
+28.	Photo and document attachment (2)
+30.	Data collection forms (3)
+31.	User List Export (2)
+
+=== Sprint 5 (Pending) ===
+10.	Pivot by location (2)
+21.	Site TreeView (2)
+
+=== Sprint 6 (Pending) ===
+8.	Report Definition User Interface (3)
+34.	Pivot Graphs (3)
+29.	Public informational site (3)
+3.	Contextual documentation (3)
+
+=== Sprint 7 (Pending) ===
+
+12.	Publication of sites (4)
+33.	Link between assessments and response (3)
+6.	Chloropleth mapping (3)	
