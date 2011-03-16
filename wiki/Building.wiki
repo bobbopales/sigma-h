@@ -75,4 +75,24 @@ and
 mvn -P Sigmah gwt:run
 }}}
 
-for the Sigmah module
+for the Sigmah module.
+
+In order to run maven goal in offline mode, add -o option :
+{{{
+mvn -o gwt:run
+}}}
+
+With th Maven plugin in Eclipse, you can launch the GWT development mode for ActivityInfo by creating a new run configuration of Maven build type with the following options :
+{{{
+Goals : gwt:run
+}}}
+
+and 
+{{{
+Goals : gwt:run
+Profiles : sigmah
+}}}
+
+for the Sigmah module.
+
+In order to run maven goal in offline mode, you must check the offline checkbox of your specific run configuration. Checking the offline mode in the Eclipse --> Window --> Preferences --> Maven is not sufficient.
