@@ -3,7 +3,7 @@
 = Audience =
 
 This document is for those who wish deploy and run ActivityInfo on their own server. 
-Since those in the UN are often coming from a .NET background, the specifics in this 
+Since those in the UN/NGOs are often coming from a .NET background, the specifics in this 
 guide are for the Windows platform.
 
 = Required Software =
@@ -13,21 +13,11 @@ To run an !ActivityInfo Server, you will need to install the following software:
   # [http://download.java.net/jdk6/ JDK, v1.6]
   # [http://tomcat.apache.org/download-60.cgi Apache Tomcat 6.x]. There is a convenient Windows Service Installer available on the download page
   # Download a ready-to-run version of the !ActivityInfo server, a ".war" archive, from the [http://code.google.com/p/activity-info/downloads/list downloads] page.
+  # [http://dev.mysql.com/downloads/mysql/ MySQL 5.5] 
 
-If you do not already have an SQL Server installation running, you can download and set up SQL Server Express 2005. 
-
-  # [http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx Microsoft SQL Server Express 2005]
-  # [http://www.microsoft.com/downloads/details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&displaylang=en Microsoft Management Studio Express]
-
-!ActivityInfo has not been tested with SQL Server 2008, but that should work as well.
+Note: Microsoft SQL Server is no longer supported for use with ActivityInfo.
 
 = Setup SQL Server = 
-
-== Configuring the SQL Server Instance ==
-
-By default, SQL Server is configured to use only Windows Authentication and the TCP/IP is disabled by default for some versions.
-
-In order for ActivityInfo to connect to the SQL Server, you must assure that your server is configured to use 'Mixed Mode' authentication and is accessible through TCP/IP, by default port 1433. Your SQL Server does not have to be located on the same server as Tomcat/ActivityInfo, but if not, you will need to assure that your firewall is configured to allow external connnections to port 1433.
 
 == Create the ActivityInfo database ==
 
@@ -100,7 +90,7 @@ Copy the ActivityInfo.war to the webapps folder, for example, `C:\Program Files\
 
 By default, ActivityInfo will connect to SQL server on localhost:1433, with the username 'sa' and password 'adminpwd'.
 
-If you need to change this (because, for example, your SQL server accepts remote connections and you wish to choose a password less obvious than 'adminpwd') you can change the connection URL in persistence.xml. Relative to ActivityInfo's context root, this can be found at
+If you need to change this (because, for example, your SQL server accepts remote connections and you wish to choose a password less obvious than 'adminpwd') you can change the connection URL in sigmah.properties. Relative to ActivityInfo's context root, this can be found in the war/WEB-INF folder.
 
 == Enabling GZIP compression ==
 
