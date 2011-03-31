@@ -19,6 +19,7 @@
     * [ReportingLayer Reporting Layer]
     * [CommandLayer Command Layer]
     * [Syncro Synchronization]
+  * [ReleaseCheckList  Release check-list]
   * [ContributorReading Reading Materials]
   
 
