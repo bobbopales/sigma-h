@@ -11,4 +11,4 @@ In order to ease this linkage process between the commit and the issue tracker, 
  * issue #45
  * Issue 45
  * ISSuE #45
-
+ * issue 0000045
