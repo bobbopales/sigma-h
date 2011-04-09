@@ -7,7 +7,7 @@
     * [IssueTrackingDrivenDevelopment Issue-tracking driven development]
     * [Versioning]
   * [SigmahFlexibility Sigmah flexibility]
-  * [Building Up Environment (Eclipse)]
+  * [BuildingGuide Set Up Environment (Eclipse)]
   * [SourceCodeOutline Server Architecture]
     * [DomainObjects Domain Objects]
       * [UserDomainObjects Users]
