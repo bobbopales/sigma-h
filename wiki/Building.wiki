@@ -96,7 +96,7 @@ You can use Eclipse Marketplace to search these plugins and then install them.Fo
 
 === Check Out Project from SVN ===
 
-  # Checkout a working copy in Eclipse
+  * Checkout a working copy in Eclipse
 
 {{{
 File->New->Other->SVN->Check Out Projects from SVN
@@ -109,11 +109,11 @@ Choose the folder Sigmah to check out.
 
 Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
 
- # Enable Maven Dependency Management
+ * Enable Maven Dependency Management
 
 After you check out the project to your IDE workspace, you may have many errors. It is normal because you should enable the Maven Dependency Management 
 {{{
-Right-Click project->Maven->Enable Dependency Management
+Right-Click Project->Maven->Enable Dependency Management
 }}} 
 
 Then you refresh your project.
@@ -123,7 +123,7 @@ Then you refresh your project.
 As a developer, before you test the sigmah project, you have to set up your own database system.
 Sigmah is now based on the database system MySql 5. But it also works with Postgresql.
 
- # Create the Database
+ * Create the Database
 
 In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:
 [http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
@@ -132,7 +132,7 @@ You can use some graphical management tools to accomplish that task, such as _ph
 
 *Note:* You should first run the scrips in zip file _MinimumDataKit-0.8.1.zip_ and then _DemoData-0.8.1.zip_
 
- # Configure Project to Use Local Database
+ * Configure Project to Use Local Database
 
 Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values in a properties file: _Sigmah.properties_,which is in _war/WEB-INF_. It looks like this:
 {{{
@@ -158,13 +158,13 @@ You should make sure the user that you specify for _username_ has enough rights 
 
 Now it is ready to build and debug our Sigmah project.
 
- # Set Up Debug Configuration
+ * Set Up Debug Configuration
 {{{
 Run->Debug Configuration->Maven Build
 }}}
 and then
 {{{
-Right-Click _Maven_ _Build_ ->New
+Right-Click Maven Build ->New
 }}}
 
 Rename the configuration as you want.Then you will have some properties to configure:
@@ -180,7 +180,7 @@ This kind of Debug configuration will launch the GWT Development Mode for Sigmah
 
 The _offline_ feature makes Maven use the local repository to build your project after the first build to save the time of building. If you want Maven to download all libraries every time, you uncheck that feature.
 
- # Resolve the "OutOfMemory" Problem
+ * Resolve the "OutOfMemory" Problem
 
 For this moment, when you luanch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace". To solve this error, you should specify a bigger PermSpace in the Pom.xml file, which is in your project root directory.
 {{{
