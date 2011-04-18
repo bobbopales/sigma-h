@@ -5,6 +5,27 @@
 
 Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
 
+
+= Release 0.9 =
+
+From 0.8.1 to 0.9, the following changes have to be performed on the schema:
+
+
+{{{
+DROP TABLE report;
+
+ALTER TABLE project_model ADD COLUMN status VARCHAR(20) DEFAULT 'READY';
+UPDATE project_model SET status = 'READY' WHERE status IS NULL;
+
+ALTER TABLE Indicator CHANGE ActivityId ActivityId int(11) NULL;
+ALTER TABLE Indicator CHANGE Units Units varchar(15) NULL;
+
+ALTER TABLE locationtype CHANGE LocationTypeId LocationTypeId int(11) NOT NULL AUTO_INCREMENT; 
+
+ALTER TABLE Site CHANGE ActivityId ActivityId int(11) NULL;
+
+}}}
+
 = Release 0.70 =
 
 A large number of domain objects have been added since the last full release of ActivityInfo (0.5.11). Users are advised to let hibernate create a new schema and import your existing data into the new structure with a mapping tool.
