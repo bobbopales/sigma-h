@@ -94,9 +94,9 @@ With IDE Eclipse, Java developer can benefit of many usefull plugins to edit the
  
 You can use Eclipse Marketplace to search these plugins and then install them.For Eclipse 3.6 Helios, Help->Eclipse Marketplace.
 
-=== Check Out Project from SVN ===
+=== Check Out Project from SVN Server===
 
-  * Checkout a working copy in Eclipse
+==== Checkout a working copy in Eclipse ====
 
 {{{
 File->New->Other->SVN->Check Out Projects from SVN
@@ -105,11 +105,11 @@ Then you enter the SVN server address
 {{{
 http://sigma-h.googlecode.com/svn/trunk
 }}} 
-Choose the folder Sigmah to check out.
+Choose the folder *Sigmah* to check out.
 
 Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
 
- * Enable Maven Dependency Management
+==== Enable Maven Dependency Management ====
 
 After you check out the project to your IDE workspace, you may have many errors. It is normal because you should enable the Maven Dependency Management 
 {{{
@@ -123,7 +123,7 @@ Then you refresh your project.
 As a developer, before you test the sigmah project, you have to set up your own database system.
 Sigmah is now based on the database system MySql 5. But it also works with Postgresql.
 
- * Create the Database
+==== Create the Database ====
 
 In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:
 [http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
@@ -131,8 +131,7 @@ In order to create a correct database for Sigmah and populate your database with
 You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_.
 
 *Note:* You should first run the scrips in zip file _MinimumDataKit-0.8.1.zip_ and then _DemoData-0.8.1.zip_
-
- * Configure Project to Use Local Database
+==== Configure Project to Use Local Database ====
 
 Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values in a properties file: _Sigmah.properties_,which is in _war/WEB-INF_. It looks like this:
 {{{
@@ -158,7 +157,8 @@ You should make sure the user that you specify for _username_ has enough rights 
 
 Now it is ready to build and debug our Sigmah project.
 
- * Set Up Debug Configuration
+==== Set Up Debug Configuration ====
+
 {{{
 Run->Debug Configuration->Maven Build
 }}}
@@ -169,20 +169,22 @@ Right-Click Maven Build ->New
 
 Rename the configuration as you want.Then you will have some properties to configure:
 {{{
-Base directory: your project directory
+Base Directory: your project directory
 Goals: gwt:run
 Profiles: sigmah
 Debug output: check
 Offline: check
 }}}
 
-This kind of Debug configuration will launch the GWT Development Mode for Sigmah project. Maven will be responsible for downloading all dependencies including GWT Libraries,GXT Libraries to a local repository(Normally, it is ~/.m2/repository). 
+This kind of Debug configuration will launch the GWT Development Mode for Sigmah project. Maven will be responsible for downloading all dependencies including GWT Libraries,GXT Libraries into a local repository(By default, it is ~/.m2/repository). 
 
-The _offline_ feature makes Maven use the local repository to build your project after the first build to save the time of building. If you want Maven to download all libraries every time, you uncheck that feature.
+The *_offline_ feature* makes Maven use the local repository to build your project after the first build. If you want Maven to download all libraries every time, you uncheck that feature.
 
- * Resolve the "OutOfMemory" Problem
+After you finish the configuration of the Debug, you could start to debug.
 
-For this moment, when you luanch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace". To solve this error, you should specify a bigger PermSpace in the Pom.xml file, which is in your project root directory.
+==== Resolve the "OutOfMemory" Problem ====
+
+For this moment, when you luanch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace" error. To solve this error, you should specify a bigger PermSpace in the *Pom.xml* file, which is in your project root directory.
 {{{
 
             <!--  configure the GWT-Maven plugin -->
