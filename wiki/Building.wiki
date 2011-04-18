@@ -18,7 +18,7 @@ Some of the functionality below is available through Eclipse or IntelliJ, but at
 
 *Note:* Microsoft SQL server is no longer a supported database. We are now actively testing against MySQL 5.x and PostgreSQL.
 
-== Quick build ==
+== Quick build in command line ==
 
 We'll get to the IDE in a moment, but first it would be good to confirm that you can successfully build Sigmah/ActivityInfo
 
@@ -49,7 +49,7 @@ You can tell sigmah to connect to your local database by creating a sigmah.prope
 # See COPYRIGHT.txt and LICENSE.txt.
 #
 
-hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
 hibernate.connection.driver_class=com.mysql.jdbc.Driver
 hibernate.connection.username=sa
 hibernate.connection.password=adminpwd
@@ -59,9 +59,9 @@ hibernate.show_sql=true
 hibernate.format_sql=true
 }}}
 
-In order to populate your database with default data, you can run step by step all the SQL scripts contained in this zip file: [https://docs.google.com/uc?id=0Bzg6KaEX0htuMTk4NzFmOWUtNGUyMi00ZjAxLWJkMWQtNmJjZTQ3MjhjMDMy&export=download&hl=en sigmah-postgresql-0.6.2.zip] (for PostGreSQL database)
+In order to populate your database with default data, you can run step by step all the SQL scripts contained in this zip file: [http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
 
-== Starting GWT development mode ==
+== Starting GWT development mode in command line ==
 
 For the time being, we are maintaining two separate GWT entry points: ActivityInfoEntryPoint, which will continue to meet the day-to-day needs of existing users, and SigmahEntryPoint, which adds a great deal of new functionality but is not yet ready for production use. 
 
@@ -82,17 +82,125 @@ In order to run maven goal in offline mode, add -o option :
 mvn -o gwt:run
 }}}
 
-With th Maven plugin in Eclipse, you can launch the GWT development mode for ActivityInfo by creating a new run configuration of Maven build type with the following options :
+== Build Sigmah under Eclipse ==
+
+With IDE Eclipse, Java developer can benefit of many usefull plugins to edit the codes, build up the project and debug the project.This guide is based on the Eclipse IDE 3.6 Helios. 
+
+=== Tools and Plugins to Install ===
+
+  # [http://www.eclipse.org/downloads/ Eclipse] - The Eclipse IDE for Java EE developers
+  # [http://subclipse.tigris.org/ Subclipse] - An Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
+  # [http://maven.apache.org/eclipse-plugin.html Maven plugin] - Plugins to allow developers to use Maven directly in Eclipse IDE
+ 
+You can use Eclipse Marketplace to search these plugins and then install them.For Eclipse 3.6 Helios, Help->Eclipse Marketplace.
+
+=== Check Out Project from SVN ===
+
+  # Checkout a working copy in Eclipse
 {{{
-Goals : gwt:run
+File->New->Other->SVN->Check Out Projects from SVN
+}}} 
+Then you enter the SVN server address
+{{{
+http://sigma-h.googlecode.com/svn/trunk
+}}} 
+Choose the folder Sigmah to check out.
+
+Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
+
+# Enable Maven Dependency Management
+
+After you check out the project to your IDE workspace, you may have many errors. It is normal because you should enable the Maven Dependency Management 
+{{{
+Right-click project->Maven->Enable Dependency Management
+}}} 
+
+Then you refresh your project.
+
+=== Set Up Local Database ===
+
+As a developer, before you test the sigmah project, you have to set up your own database system.
+Sigmah is now based on the database system MySql 5. But it also works with Postgresql.
+
+# Create the Database
+
+In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:[http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
+
+You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_.
+
+*Note:* You should first run the scrips in zip file _MinimumDataKit-0.8.1.zip_ and then _DemoData-0.8.1.zip_
+
+# Configure Project to Use Local Database
+
+Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values of a properties file: _Sigmah.properties_,which is in _war/WEB-INF_. It looks like this:
+{{{
+#
+# All Sigmah code is released under the GNU General Public License v3
+# See COPYRIGHT.txt and LICENSE.txt.
+#
+
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+hibernate.connection.driver_class=com.mysql.jdbc.Driver
+hibernate.connection.username=root
+hibernate.connection.password=adminpwd
+hibernate.connection.url=jdbc:mysql://localhost:3306/sigmah
+hibernate.hbm2ddl.auto=update
+hibernate.show_sql=true
+hibernate.format_sql=true
+
 }}}
 
-and 
+You should make sure the user that you specify for _username_ has enough rights to access and modify the database _sigmah_.
+
+=== Build and Debug Sigmah ===
+
+Now it is ready to build and debug our Sigmah project.
+
+# Set Up Debug Configuration
 {{{
-Goals : gwt:run
-Profiles : sigmah
+Run->Debug Configuration->Maven Build
+}}}
+and then
+{{{
+Right-click _Maven Build_ ->New
 }}}
 
-for the Sigmah module.
+Rename the configuration as you want.Then you will have some properties to configure:
+{{{
+Base directory: your project directory
+Goals: gwt:run
+Profiles: sigmah
+Debug output: Check
+Offline: Check
+}}}
 
-In order to run maven goal in offline mode, you must check the offline checkbox of your specific run configuration. Checking the offline mode in the Eclipse --> Window --> Preferences --> Maven is not sufficient.
+This kind of Debug configuration will launch the GWT development mode for Sigmah project. Maven will be responsible for downloading all dependencies including GWT Libraries,GXT Libraries to a local repository(Normally, it is ~/.m2/repository). 
+
+The _offline_ feature makes Maven use the local repository to build your project after the first build to save the time of building. If you want Maven to download all libraries every time, you uncheck that feature.
+
+# Resolve the "OutOfMemory" Problem
+
+For this moment, when you luanch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace". To solve this error, you should specify a bigger PermSpace in the Pom.xml file, which is in your project root directory.
+{{{
+
+            <!--  configure the GWT-Maven plugin -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>1.2</version>
+                <configuration>
+                    <runTarget>/</runTarget>
+                    <logLevel>TRACE</logLevel>
+                    <inplace>false</inplace>
+                    <gwtVersion>${gwtVersion}</gwtVersion>
+                    <port>9090</port>
+                    <module>org.sigmah.ActivityInfoProduction</module>
+                    <webappDirectory>${basedir}/war</webappDirectory>
+                    <warSourceDirectory>${basedir}/war</warSourceDirectory>
+                    <extraJvmArgs>-Xmx512M -Xss1M -XX:MaxPermSize=512M
+                    </extraJvmArgs>                                                                
+                </configuration>
+
+}}}
+
+For the _extraJvmArgs_ property, you can add a new option *-XX:MaxPermSize* to give a bigger Perm Space.
