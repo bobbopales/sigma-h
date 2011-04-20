@@ -1,10 +1,26 @@
 #summary Breaking changes to the underlying SQL database schema
 #labels Featured
+#sidebar ContributorGuideSideBar
 
 = Introduction =
 
 Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
 
+= Release 0.9.1 =
+
+From 0.9 to 0.9.1, the following changes have to be performed on the schema:
+
+{{{
+
+ALTER TABLE log_frame DROP COLUMN title;
+
+ALTER TABLE project ADD COLUMN activity_advancement INTEGER ;
+
+ALTER TABLE log_frame_activity ADD COLUMN advancement INTEGER ;
+
+ALTER TABLE projectreport ADD COLUMN orgunit_partnerid INTEGER ;
+
+}}}
 
 = Release 0.9 =
 
@@ -17,28 +33,17 @@ DROP TABLE report;
 ALTER TABLE project_model ADD COLUMN status VARCHAR(20) DEFAULT 'READY';
 UPDATE project_model SET status = 'READY' WHERE status IS NULL;
 
+ALTER TABLE org_unit_model ADD COLUMN status VARCHAR(20) DEFAULT 'READY';
+UPDATE org_unit_model SET status = 'READY' WHERE status IS NULL;
+
 ALTER TABLE Indicator CHANGE ActivityId ActivityId int(11) NULL;
 ALTER TABLE Indicator CHANGE Units Units varchar(15) NULL;
 
 ALTER TABLE locationtype CHANGE LocationTypeId LocationTypeId int(11) NOT NULL AUTO_INCREMENT; 
 
 ALTER TABLE Site CHANGE ActivityId ActivityId int(11) NULL;
-
-ALTER TABLE project ADD COLUMN activity_advancement INTEGER ;
-
-ALTER TABLE log_frame_activity ADD COLUMN advancement INTEGER ;
-
-ALTER TABLE projectreport ADD COLUMN orgunit_partnerid INTEGER ;
 }}}
 
-
-Delete the column "Title" of table "Log_frame". Logframe does not handle its own title.
-
-{{{
-
-ALTER TABLE log_frame DROP COLUMN title;
-
-}}}
 
 
 = Release 0.70 =
