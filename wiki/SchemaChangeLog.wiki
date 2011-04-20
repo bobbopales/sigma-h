@@ -24,6 +24,11 @@ ALTER TABLE locationtype CHANGE LocationTypeId LocationTypeId int(11) NOT NULL A
 
 ALTER TABLE Site CHANGE ActivityId ActivityId int(11) NULL;
 
+ALTER TABLE project ADD COLUMN activity_advancement INTEGER ;
+
+ALTER TABLE log_frame_activity ADD COLUMN advancement INTEGER ;
+
+ALTER TABLE projectreport ADD COLUMN orgunit_partnerid INTEGER ;
 }}}
 
 
@@ -34,6 +39,7 @@ Delete the column "Title" of table "Log_frame". Logframe does not handle its own
 ALTER TABLE log_frame DROP COLUMN title;
 
 }}}
+
 
 = Release 0.70 =
 
