@@ -1,4 +1,5 @@
 #summary Check-list of operations to conduct for a release
+#sidebar ContributorGuideSideBar
 
 == Introduction ==
 
