@@ -26,6 +26,15 @@ ALTER TABLE Site CHANGE ActivityId ActivityId int(11) NULL;
 
 }}}
 
+
+Delete the column "Title" of table "Log_frame". Logframe does not handle its own title.
+
+{{{
+
+ALTER TABLE log_frame DROP COLUMN title;
+
+}}}
+
 = Release 0.70 =
 
 A large number of domain objects have been added since the last full release of ActivityInfo (0.5.11). Users are advised to let hibernate create a new schema and import your existing data into the new structure with a mapping tool.
