@@ -20,6 +20,7 @@
     * [CommandLayer Command Layer]
     * [Syncro Synchronization]
   * [ReleaseCheckList  Release check-list]
+  * [SchemaChangeLog Schema changelog]
   * [ContributorReading Reading Materials]
   
 
