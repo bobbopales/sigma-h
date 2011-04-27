@@ -10,7 +10,7 @@ This page gives the list of all operations to follow when relasing a new version
 
   # Check on the [http://www.sigmah.org/issues/roadmap_page.php Mantis_Roadmap] that you have resolved all the issue tickets of your version
   # If your version has made changes in the database model, update the SchemaChangeLog wiki page accordingly
-  # Update the MinimumDataKit.zip and DemoData.zip sql bunch archives with the updated sql files required by your version, and replace the old version of those files in the Downloads section of this forge
+  # Update the MinimumDataKit.zip and DemoData.zip sql bunch archives with the updated sql files (in PostGreSQL format) required by your version, and replace the old version of those files in the Downloads section of this forge
   # Update the version number of Sigmah in the code with the appropriate version number (see the [Versioning] rules for more details)
   # Tag the SVN revision of your release with the version number
   # Export a .war file of your release to be able to easily deploy it on testing environments
