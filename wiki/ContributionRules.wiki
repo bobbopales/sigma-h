@@ -1,0 +1,19 @@
+#summary General rules and habits when contributing to Sigmah
+#sidebar ContributorGuideSideBar
+
+= Introduction =
+
+This page gathers all the rules and habits that have been taken by the contributors on the Sigmah code.
+It is useful to read it as an introduction when joining the project, to be acknowledgeed of how to fit your contribution in the same trend, in order to keep the development and the final perception of the user homogeneous.
+Later on, if you perceive explicitly a new habit or wants to describe an implicit rule, you're welcome to update this page !
+
+
+= Rules for user perception =
+
+  * Avoid to display in final release buttons or link to non-working or half-working part of the application: users will always get disappointed that something is not working yet.
+
+
+
+= Rules on the code =
+  * [IssueTrackingDrivenDevelopment Issue-tracking driven development]
+  * [Versioning]
