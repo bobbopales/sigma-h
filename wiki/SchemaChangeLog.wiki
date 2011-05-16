@@ -20,6 +20,22 @@ ALTER TABLE log_frame_activity ADD COLUMN advancement INTEGER ;
 
 ALTER TABLE projectreport ADD COLUMN orgunit_partnerid INTEGER ;
 
+ALTER TABLE category_type ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE category_element ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE quality_framework ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE quality_criterion ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE privacy_group ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE profile ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE projectreportmodel ADD COLUMN id_organization INTEGER ;
+
+ALTER TABLE org_unit_model ADD COLUMN id_organization INTEGER ;
+
 }}}
 
 = Release 0.9 =
