@@ -8,6 +8,8 @@ Every attempt will be made to keep new versions of Sigmah backwards compatible w
 
 = Release 0.9.1 =
 
+== 1. Schema changes ==
+
 From 0.9 to 0.9.1, the following changes have to be performed on the schema:
 
 {{{
@@ -35,6 +37,31 @@ ALTER TABLE profile ADD COLUMN id_organization INTEGER ;
 ALTER TABLE projectreportmodel ADD COLUMN id_organization INTEGER ;
 
 ALTER TABLE org_unit_model ADD COLUMN id_organization INTEGER ;
+
+}}}
+
+== 2. Existing data updates ==
+
+*After the schema is updated*, in order to update the existing data, the following requests have to be applied: (requests only valid for database with a single organization)
+
+
+{{{
+
+UPDATE category_type SET id_organization = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL) ;
+
+UPDATE category_element SET id_organization = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE quality_framework SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE quality_criterion SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE privacy_group SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE profile SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE projectreportmodel SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
+
+UPDATE org_unit_model SET id_organization  = (SELECT MAX(id_organization) FROM organization WHERE id_root_org_unit IS NOT NULL);
 
 }}}
 
