@@ -6,6 +6,16 @@
 
 Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
 
+= Release 1.0 =
+
+== 1. Schema changes ==
+
+{{{
+
+ALTER TABLE partner ADD COLUMN deleted timestamp without time zone;
+
+}}}
+
 = Release 0.9.1 =
 
 == 1. Schema changes ==
