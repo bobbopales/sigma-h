@@ -17,3 +17,9 @@ Later on, if you perceive explicitly a new habit or wants to describe an implici
 = Rules on the code =
   * [IssueTrackingDrivenDevelopment Issue-tracking driven development]
   * [Versioning]
+
+
+
+= Rules for coordination with translators =
+
+  * _Developers develop & translators translate_: In order to reduce the risks of conflict on the UIConstants and UIMessages properties files, developers should avoid to edit the translated version of them (the ones with a `_`fr, `_`en or `_`es suffix). The French or Spanish developers can write the translation of the new strings they create, but the modification of already existing strings should be avoided as much as possible.
