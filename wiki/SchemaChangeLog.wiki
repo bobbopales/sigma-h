@@ -16,6 +16,76 @@ ALTER TABLE partner ADD COLUMN deleted timestamp without time zone;
 
 }}}
 
+{{{ 
+CREATE TABLE  indicator_datasource (
+  IndicatorId int(11) NOT NULL,
+  IndicatorSourceId int(11) NOT NULL,
+  PRIMARY KEY (IndicatorId,IndicatorSourceId),
+  KEY `FK7A87F87547C62157` (IndicatorId),
+  KEY `FK7A87F8755038B772` (IndicatorSourceId)
+) 
+
+}}}
+
+Note: all existing logframe elements will be lost. I'm not aware of any real logframes in the wild yet, but if there are they will have to be migrated by hand to redo the ids. 
+
+{{{
+
+DROP TABLE log_frame_expected_result;
+DROP TABLE log_frame_specific_objective;
+DROP TABLE log_frame_activity;
+
+CREATE TABLE  log_frame_element (
+  id_element int(11) NOT NULL AUTO_INCREMENT,
+  assumptions text,
+  code int(11) NOT NULL,
+  position int(11) DEFAULT NULL,
+  risks text,
+  id_group int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_element`),
+  KEY `FK5A2E206F4F6005EE` (id_group)
+)
+
+CREATE TABLE  log_frame_specific_objective (
+  `intervention_logic` text,
+  `id_element` int(11) NOT NULL,
+  `id_log_frame` int(11) NOT NULL,
+  PRIMARY KEY (`id_element`),
+  KEY `FKC979EF199BC5C4DA` (`id_log_frame`),
+  KEY `FKC979EF19E41DAE8` (`id_element`)
+) 
+
+CREATE TABLE  log_frame_expected_result (
+  `intervention_logic` text,
+  `id_element` int(11) NOT NULL,
+  `id_specific_objective` int(11) NOT NULL,
+  PRIMARY KEY (`id_element`),
+  KEY `FK99D3DDF7D88379D4` (`id_specific_objective`),
+  KEY `FK99D3DDF7E41DAE8` (`id_element`)
+) 
+
+CREATE TABLE log_frame_activity (
+  advancement int(11) DEFAULT NULL,
+  endDate datetime DEFAULT NULL,
+  startDate datetime DEFAULT NULL,
+  title text,
+  id_element int(11) NOT NULL,
+  id_result int(11) NOT NULL,
+  PRIMARY KEY (`id_element`),
+  KEY `FK89611FFC8012BC39` (`id_result`),
+  KEY `FK89611FFCE41DAE8` (`id_element`)
+) 
+
+CREATE TABLE  log_frame_indicators (
+  `log_frame_element_id_element` int(11) NOT NULL,
+  `indicators_IndicatorId` int(11) NOT NULL,
+  PRIMARY KEY (`log_frame_element_id_element`,`indicators_IndicatorId`),
+  KEY `FK17E5A9F1F6E4C4B8` (`log_frame_element_id_element`),
+  KEY `FK17E5A9F1A023DDC` (`indicators_IndicatorId`)
+)
+
+}}}
+
 = Release 0.9.1 =
 
 == 1. Schema changes ==
