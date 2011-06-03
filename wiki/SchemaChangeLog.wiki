@@ -17,7 +17,7 @@ ALTER TABLE partner ADD COLUMN deleted timestamp without time zone;
 }}}
 
 _For MySQL databases, use instead:_
-ALTER TABLE partner ADD COLUMN deleted timestamp;
+ALTER TABLE partner ADD COLUMN deleted DATETIME DEFAULT NULL;
 
 {{{ 
 CREATE TABLE  indicator_datasource (
@@ -26,7 +26,7 @@ CREATE TABLE  indicator_datasource (
   PRIMARY KEY (IndicatorId,IndicatorSourceId),
   KEY `FK7A87F87547C62157` (IndicatorId),
   KEY `FK7A87F8755038B772` (IndicatorSourceId)
-) 
+);
 
 }}}
 
@@ -47,7 +47,7 @@ CREATE TABLE  log_frame_element (
   id_group int(11) DEFAULT NULL,
   PRIMARY KEY (`id_element`),
   KEY `FK5A2E206F4F6005EE` (id_group)
-)
+);
 
 CREATE TABLE  log_frame_specific_objective (
   `intervention_logic` text,
@@ -56,7 +56,7 @@ CREATE TABLE  log_frame_specific_objective (
   PRIMARY KEY (`id_element`),
   KEY `FKC979EF199BC5C4DA` (`id_log_frame`),
   KEY `FKC979EF19E41DAE8` (`id_element`)
-) 
+);
 
 CREATE TABLE  log_frame_expected_result (
   `intervention_logic` text,
@@ -65,7 +65,7 @@ CREATE TABLE  log_frame_expected_result (
   PRIMARY KEY (`id_element`),
   KEY `FK99D3DDF7D88379D4` (`id_specific_objective`),
   KEY `FK99D3DDF7E41DAE8` (`id_element`)
-) 
+);
 
 CREATE TABLE log_frame_activity (
   advancement int(11) DEFAULT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE log_frame_activity (
   PRIMARY KEY (`id_element`),
   KEY `FK89611FFC8012BC39` (`id_result`),
   KEY `FK89611FFCE41DAE8` (`id_element`)
-) 
+);
 
 CREATE TABLE  log_frame_indicators (
   `log_frame_element_id_element` int(11) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE  log_frame_indicators (
   PRIMARY KEY (`log_frame_element_id_element`,`indicators_IndicatorId`),
   KEY `FK17E5A9F1F6E4C4B8` (`log_frame_element_id_element`),
   KEY `FK17E5A9F1A023DDC` (`indicators_IndicatorId`)
-)
+);
 
 }}}
 
