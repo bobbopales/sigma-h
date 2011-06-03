@@ -16,6 +16,9 @@ ALTER TABLE partner ADD COLUMN deleted timestamp without time zone;
 
 }}}
 
+_For MySQL databases, use instead:_
+ALTER TABLE partner ADD COLUMN deleted timestamp;
+
 {{{ 
 CREATE TABLE  indicator_datasource (
   IndicatorId int(11) NOT NULL,
