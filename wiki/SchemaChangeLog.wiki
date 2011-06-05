@@ -121,6 +121,10 @@ ALTER TABLE projectreportmodel ADD COLUMN id_organization INTEGER ;
 
 ALTER TABLE org_unit_model ADD COLUMN id_organization INTEGER ;
 
+ALTER TABLE monitored_point ADD COLUMN deleted BIT(1);
+
+ALTER TABLE reminder ADD COLUMN deleted BIT(1);
+
 }}}
 
 == 2. Existing data updates ==
