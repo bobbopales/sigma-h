@@ -12,6 +12,8 @@ Every attempt will be made to keep new versions of Sigmah backwards compatible w
 
 {{{
 
+ALTER TABLE userdatabase CHANGE COLUMN FullName FullName VARCHAR(500) NULL DEFAULT NULL;
+
 ALTER TABLE org_unit_model DROP COLUMN min_level;
 
 ALTER TABLE org_unit_model DROP COLUMN max_level;
