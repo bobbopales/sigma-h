@@ -6,6 +6,18 @@
 
 Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
 
+= Release 1.0-rc2 =
+
+== 1. Schema changes ==
+
+{{{
+
+ALTER TABLE org_unit_model DROP COLUMN min_level;
+
+ALTER TABLE org_unit_model DROP COLUMN max_level;
+
+}}}
+
 = Release 1.0 =
 
 == 1. Schema changes ==
