@@ -6,4 +6,6 @@ To be completed soon.
 
 = Details =
 
-To be completed soon.
+*To be finished soon.*
+
+  # Edit the file WEB-INF/sigmah.client.js and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
