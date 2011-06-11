@@ -15,12 +15,12 @@ The community of the Liferay project has written a good introduction guide for P
 
 == Lessons learnt for translators ==
   # *In doubt for a translation?* Write a comment, and send your translation as "Fuzzy" ("Approximatif" in French). If the software release on which you're working is not planned to be a public one, you can also add the string number as a suffix to your translation to see where this string is used in Sigmah.  
-  # *No simple quote (')* We know, it is not obvious and natural when you're typing... but the exported file from Pootle won't do the job for you, and if a you don't enter the simple quote by pairs ('' instead of ' (ie: -window''s title- instead of -window's title-)), the file generated from your translation will break the build. Of course, your file will be controlled before being used in the code, but two controls are always better than only one. :)
+  # *No simple quote (')* in the UIMessages files. (Does not apply to UIConstants files) We know, it is not obvious and natural when you're typing... but the exported file from Pootle won't do the job for you, and if a you don't enter the simple quote by pairs ('' instead of ' (ie: -window''s title- instead of -window's title-)), the file generated from your translation will break the build. Of course, your file will be controlled before being used in the code, but two controls are always better than only one. :)
 
 
 = Guidelines for Pootle admin =
 == Source strings removal ==
-"*check better before removing a translation string*": the search for strings perceived as unused could be done faster and more efficiently with [http://www.google.com/codesearch#search&q=package:http://sigma-h\.googlecode\.com+ Google Code Search Engine]
+Do not remove source strings from the property files. Static analysis via the Java will safely indentify unused methods in the UIConstants and UIMessages interfaces. Removal of unused methods should be conducted periodically by the development team.
 
 == File upload ==
 The management of the file upload, in the "Overview" tab of the language translation project, can be quite tricky and is not very intuitive in the first place.
