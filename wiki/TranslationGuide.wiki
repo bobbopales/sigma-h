@@ -1,0 +1,38 @@
+#summary Guidelines for Sigmah translation.
+
+= Introduction =
+
+Some lessons have been learnt while translating Sigmah internationalization files, and this wiki page is here to share them for new translators.
+
+
+= Guidelines for translators =
+
+  # *In doubt for a translation?* Write a comment, and send your transaltion as "Fuzzy" ("Approximatif" in French). If the software release on which you're working is not planned to be a public one, you can also add the string number as a suffix to your translation to see where this string in use in Sigmah.
+  
+  # *No simple quote (')* We know, it is not obvious and natural when you're typing... but the exported file from Pootle won't do the job for you, and if a you don't enter the simple quote by pairs ('' instead of ' (ie: -window''s title- instead of -window's title-)), the file generated from your translation will break the build. Of course, your file will be controlled before being used in the code, but two controls are always better than only one. :)
+
+
+= Guidelines for Pootle admin =
+== File upload ==
+The management of the file upload, in the "Overview" tab of the language translation project, can be quite tricky and is not very intuitive in the first place.
+
+A good general lesson to remember is: "*a `*`.properties file for first importation, and XLIFF generated file for second one*".
+
+=== Files importation order ==
+The first importation of a file in a language takes as granted that you send this file as a new source file in the original language for this new translation project. The name of the file has to be strictly the same as the potential similar one in other language, in order to let translators be able to see translations of a string in all available languages. You have to go to the "Files" tab of the language translation project and click on "Rescan project files" to actually process this source file.
+
+All second importations are taken as importation of translations, if similar file name exist, and no more as import of source file, whatever the option used for importation.
+
+=== Update source strings of a file ===
+To update source strings of a file, the following procedure has to be used:
+  # Export as XLIFF the file of which you want to update the source strings (with the command "Translate offline" in the "Review" tab of the translation project)
+  # Delete the file of which you want to update the source strings (action available in the "Files" tab of the translation project)
+  # Import your new version of the source file containing the new source strings (with the file upload available in the "Overview" tab of the translation project, and any option can be used for the upload as it is a first importation)
+  # Import then your just generated XLIFF file with the option "Merge", and force the upload to the new source file you've just added.
+
+
+== Importing files from translators into the code ==
+Things to take in mind:
+  * Check that no file exported from Pootle contain a simple quote ('). Each simple quote should be preceded by a second one ('' instead of ' (ie: -window''s title- instead of -window's title-)).
+  * An update of your working copy of the source code is naturally required.
+  * Check for potential conflicts with the current copy in the source code repository.
