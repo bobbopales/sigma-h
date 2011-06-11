@@ -4,9 +4,16 @@
 
 Some lessons have been learnt while translating Sigmah internationalization files, and this wiki page is here to share them for new translators.
 
+Sigmah is using the Pootle server kindly shared by the Sahana HFOSS project on: * http://pootle.sahanafoundation.org/pootle/ *
 
 = Guidelines for translators =
 
+== Pootle User manual ==
+The community of the Liferay project has written a good introduction guide for Pootle. You can read the following and replace each word "Liferay" by "Sigmah" and you'll get a user manuel !
+
+* [http://www.liferay.com/community/wiki/-/wiki/Main/Translating+Liferay+using+Pootle Pootle User manual] *for project Liferay
+
+== Lessons learnt for translators ==
   # *In doubt for a translation?* Write a comment, and send your translation as "Fuzzy" ("Approximatif" in French). If the software release on which you're working is not planned to be a public one, you can also add the string number as a suffix to your translation to see where this string is used in Sigmah.  
   # *No simple quote (')* We know, it is not obvious and natural when you're typing... but the exported file from Pootle won't do the job for you, and if a you don't enter the simple quote by pairs ('' instead of ' (ie: -window''s title- instead of -window's title-)), the file generated from your translation will break the build. Of course, your file will be controlled before being used in the code, but two controls are always better than only one. :)
 
@@ -35,6 +42,6 @@ To update source strings of a file, the following procedure has to be used:
 
 == Importing files from translators into the code ==
 Things to take in mind:
-  * Check that no file exported from Pootle contain a simple quote ('). Each simple quote should be preceded by a second one ('' instead of ' (ie: -window''s title- instead of -window's title-)).
+  * Check that no file exported from Pootle contain a simple quote ('). Each simple quote should be preceded by a second one ('' instead of ' (ie: -window''s title- instead of -window's title-)). You can use the "singlequoting" option of the "Review" tab of your translation project to see faster all strings which have translated with a different number of single quotes.
   * An update of your working copy of the source code is naturally required.
   * Check for potential conflicts with the current copy in the source code repository.
