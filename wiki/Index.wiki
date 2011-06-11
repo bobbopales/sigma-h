@@ -1,10 +1,11 @@
 =Index of Sigmah's technical documentation=
 
 
-Sigmah's technical documentation consist of three guides:
+Sigmah's technical documentation consist of four guides:
   * the [AdministratorGuide Administrator Guide] whose aim is to help people willing to install Sigmah on a computer
   * the [ContributorGuide Contributor Guide] whose aim is to help new developer get general knowledge about how to work with the source code
-  * [ReportXML Report Designer's Guide]
+  * the [TranslationGuide Translation Guide] which sum up all the lessons learnt for translators and Pootle admin
+  * ActivityInfo [ReportXML Report Designer's Guide]
 
 
 =Project planning management=
