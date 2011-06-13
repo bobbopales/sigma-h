@@ -1,7 +1,7 @@
 #summary Guide to run and install Sigmah
 = Introduction =
 
-To be completed soon.
+To be completed before June 16th.
 
 
 = Details =
