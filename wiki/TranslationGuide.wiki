@@ -14,7 +14,8 @@ The community of the Liferay project has written a good introduction guide for P
 * [http://www.liferay.com/community/wiki/-/wiki/Main/Translating+Liferay+using+Pootle Pootle User manual] *for project Liferay
 
 == Lessons learnt for translators ==
-  # *In doubt for a translation?* Write a comment, and send your translation as "Fuzzy" ("Approximatif" in French). If the software release on which you're working is not planned to be a public one, you can also add the string number as a suffix to your translation to see where this string is used in Sigmah.  
+  # *In doubt for a translation? _Solution 1_* Look at the string code (the text written at the top of your string translation box in very small font), it could give you an hint about what exactly is the usage of the string you have to translate (ie: the string "Calendar" has for code "projectTabCalendar", so the translator can get that this word is used for the tab named "Calendar" in a project page).
+  # *In doubt for a translation? _Solution 2_* Write a comment, and send your translation as "Fuzzy" ("Approximatif" in French). If the software release on which you're working is not planned to be a public one, you can also add the string number as a suffix to your translation to see where this string is used in Sigmah.  
   # *No simple quote (')* in the UIMessages files. (Does not apply to UIConstants files) We know, it is not obvious and natural when you're typing... but the exported file from Pootle won't do the job for you, and if a you don't enter the simple quote by pairs ('' instead of ' (ie: -window''s title- instead of -window's title-)), the file generated from your translation will break the build. Of course, your file will be controlled before being used in the code, but two controls are always better than only one. :)
 
 
