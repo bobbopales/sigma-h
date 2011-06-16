@@ -1,11 +1,29 @@
 #summary Guide to run and install Sigmah
 = Introduction =
 
-To be completed before June 16th.
+This installation guide only covers installation of Sigmah on a Windows platform.
+
+Installation on other kind of Operating System (Ubuntu, MacOS) will treated later on. Any contribution to this installation guide for installation on other platforms are warmly welcomed.
 
 
-= Details =
+= Installing Sigmah on a Windows platform =
 
-*To be finished soon.*
+== Prerequisites == 
+Prior to the installation of Sigmah itself, the following components should be installed:
+  * *Java 1.6*: visit http://www.java.com to download and get installation procedures for the Java runtime environment
+  * *PostgreSQL 9*: download and run the One-click-installer available at http://www.postgresql.org/download/windows to get your copy of the PostgreSQL relational database management system
+  * *Jetty 7*: download and get installation procedures of the Jetty Java application server at http://wiki.eclipse.org/Jetty/Howto/Install_Jetty (Jetty core version @eclipse recommended, but Jetty hightide version @codehaus perfectly working also on demo.sigmah.org)
 
+
+
+== Preparing the Sigmah database ==
+  # Download the MinimumDataKit zip file of the latest version of Sigmah at http://code.google.com/p/sigma-h/downloads/list .
+  # Create a new database on your PostgreSQL server. For the rest of this procedure, we'll assume you've called your database `sigmah_db`.
+  # Run all the files of the MinimumDataKit in this new database .
+  # Execute 
+
+== Installing Sigmah ==
+  # Download the webapp archive (`*`.war) of the latest version of Sigmah at http://code.google.com/p/sigma-h/downloads/list .
+  # Decompress the .war file into the `webapps` folder of your Jetty installation.
+  # Start or reboot your Jetty application server to make it deploy automatically your new Sigmah webapp. To start the Jetty application server, type the following command in the root folder of your Jetty instance: `java -jar start.jar` (more information on web application deployment at http://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications)
   # Edit the file WEB-INF/classes/sigmah.client.js and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
