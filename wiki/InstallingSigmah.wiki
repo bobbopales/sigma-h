@@ -1,4 +1,8 @@
 #summary Guide to run and install Sigmah
+
+
+*To be finished soon.*
+
 = Introduction =
 
 This installation guide only covers installation of Sigmah on a Windows platform.
