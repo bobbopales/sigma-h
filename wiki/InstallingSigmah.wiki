@@ -1,13 +1,17 @@
 #summary Guide to run and install Sigmah
 
 
-*To be finished soon.*
+= Table of contents =
+<wiki:toc max_depth="2" />
+
 
 = Introduction =
 
-This installation guide only covers installation of Sigmah on a Windows platform.
+This installation guide describes the technical procedure to follow to install Sigmah.
 
-Installation on other kind of Operating System (Ubuntu, MacOS) will treated later on. Any contribution to this installation guide for installation on other platforms are warmly welcomed.
+If you want to install Sigmah just for a trial purpose, you might be interested to know that Sigmah has a live demo available at: http://demo.sigmah.org . You might also be interested to read about the the [http://www.sigmah.org/organisational-use#sigmah_central Sigmah Central service] if you want to use Sigmah but are in doubt whether you have the human or financial capacities to maintain such a system.
+
+This installation guide only covers installation of Sigmah on a Windows platform. Installation on other kind of Operating System (Ubuntu, MacOS) will treated later on. Any contribution to this installation guide for installation on other platforms is warmly welcomed.
 
 
 = Installing Sigmah on a Windows platform =
@@ -15,19 +19,56 @@ Installation on other kind of Operating System (Ubuntu, MacOS) will treated late
 == Prerequisites == 
 Prior to the installation of Sigmah itself, the following components should be installed:
   * *Java 1.6*: visit http://www.java.com to download and get installation procedures for the Java runtime environment
-  * *PostgreSQL 9*: download and run the One-click-installer available at http://www.postgresql.org/download/windows to get your copy of the PostgreSQL relational database management system
+  * *PostgreSQL 9*: download and run the One-click-installer available at http://www.postgresql.org/download/windows to get your copy of the PostgreSQL relational database management system. For the rest of this procedure, we'll assume that the PostgreSQL database will be installed on same server as Jetty (database server name will be <font color="blue">`localhost`</font>), and that to connect to the database man should use the default port number <font color="blue">`5432`</font>.
   * *Jetty 7*: download and get installation procedures of the Jetty Java application server at http://wiki.eclipse.org/Jetty/Howto/Install_Jetty (Jetty core version @eclipse recommended, but Jetty hightide version @codehaus perfectly working also on demo.sigmah.org)
 
 
 
 == Preparing the Sigmah database ==
   # Download the MinimumDataKit zip file of the latest version of Sigmah at http://code.google.com/p/sigma-h/downloads/list .
-  # Create a new database on your PostgreSQL server. For the rest of this procedure, we'll assume you've called your database `sigmah_db`.
-  # Run all the files of the MinimumDataKit in this new database .
-  # Execute 
+  # Create a new database on your PostgreSQL server. For the rest of this procedure, we'll assume your database is called <font color="blue">`sigmah_db`</font>. We'll also assume that to access this new database your database username is <font color="blue">`db_username`</font>, and your database password is <font color="blue">`db_password`</font>.
+  # Run all the files of the MinimumDataKit in this new `sigmah_db` database, in the order given by their filename.
 
 == Installing Sigmah ==
   # Download the webapp archive (`*`.war) of the latest version of Sigmah at http://code.google.com/p/sigma-h/downloads/list .
-  # Decompress the .war file into the `webapps` folder of your Jetty installation.
-  # Start or reboot your Jetty application server to make it deploy automatically your new Sigmah webapp. To start the Jetty application server, type the following command in the root folder of your Jetty instance: `java -jar start.jar` (more information on web application deployment at http://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications)
-  # Edit the file WEB-INF/classes/sigmah.client.js and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
+  # Create a folder in the `webapps` directory of your Jetty installation. This folder will be used as context name for your Sigmah webapp. For the rest of this procedure, we'll assume that you've created a webapp folder named <font color="blue">`sigmah`</font>. All paths, if the contrary is not explicitly specified, will be considered starting from the root of this `sigmah` folder.
+  # Decompress the .war file into your just created `sigmah` folder.
+  # Edit the file `WEB-INF/sigmah.properties` and set the database parameters as the following for an installation using PostgreSQL as recommended:
+{{{
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+hibernate.connection.driver_class=org.postgresql.Driver
+hibernate.connection.username=db_username
+hibernate.connection.password=db_password
+hibernate.connection.url=jdbc:postgresql://localhost:5432/sigmah_db
+hibernate.hbm2ddl.auto=update
+hibernate.show_sql=false
+hibernate.format_sql=false
+}}}
+  # Edit the file `WEB-INF/classes/sigmah.properties` to set the files management and mail parameters. Each folder set must of course exist before running Sigmah. Edit each key of the file as following:
+    * _`repository.files`_: Folder where the files uploaded by users will be stored. (ie: `repository.files=C:\\Sigmah\\Files`)
+    * _`repository.images`_: Folder where the organization's logos have to be stored. (ie: `repository.images=C:\\Sigmah\\Images`)
+    * _`mail.hostname`_: SMTP hostname used to send emails by the application. (ie: `mail.hostname=smtp.myngo.org`)
+    * _`mail.from.address`_: SMTP sender email address used to send emails by the application. (ie: `mail.from.address=sigmah@myngo.org`)
+    * _`mail.from.name`_: SMTP sender name as shown to recipient used to send emails by the application. (ie: `mail.from.name=Sigmah`)
+    * _`newUserConfirm.host.url`_: URL used in the confirmation email sent to new users, to confirm their registration. (ie: `newUserConfirm.host.url=http://www.myngo.org:8080/sigmah/NewUserConfirm?`)
+  # Edit the file `WEB-INF/classes/sigmah.client.js` and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
+  # Optionally, edit the file `WEB-INF/classes/log4j.properties` to specify your own path for the log file. If you want to do so, replace the value `activityinfo.log` of the key `log4j.appender.file.File` by the value you wish.
+  # Start or reboot your Jetty application server to make it deploy your new Sigmah webapp. To start the Jetty application server, type the following command in the root folder of your Jetty instance: `java -jar start.jar` (more information on web application deployment at http://wiki.eclipse.org/Jetty/Howto/Deploy_Web_Applications)
+
+Sigmah should be now technically installed on your server, congratulations! The procedure is almost finished: next step will be to create an organization and a first user (see below).
+
+
+== Creating your first organization ==
+  # Download the newOrganizationLaunchScript.postgresql.sql script from http://code.google.com/p/sigma-h/downloads/list .
+  # Edit the logo of your organization to produce a PNG file of 126x56 pixels, and save this file in the images folder of your Sigmah installation (ie: `C:\Sigmah\Images`).
+  # Edit the script, and use the search&replace tool of your text editor to replace all the parameters (strings which starts and ends by a '§') by the values you wan to give to them.
+  # Run the script on your database.
+
+*Your installation of Sigmah is fully finished!*
+
+You're ready to use it.
+
+To start to use your Sigmah installation:
+  # Open your browser at http://localhost:8080/sigmah/ (or another URL if you have not used all the default parameters suggested in this procedure)
+  # Enter the email used as parameter in the newOrganizationLaunchScript.postgresql.sql script, and "sigmah" as password.
+  # You're in!
