@@ -25,4 +25,4 @@ To run a Sigmah or ActivityInfo Server, you will need to have a machine with the
 [AdministeringActivityInfo Guide to run and install ActivityInfo]
 
 = Guide to run and install Sigmah = 
-[InstallingSigmah Guide to run and install Sigmah] (to be completed soon)
+[InstallingSigmah Guide to run and install Sigmah]
