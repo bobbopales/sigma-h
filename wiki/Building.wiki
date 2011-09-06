@@ -119,7 +119,9 @@ After you check out the project to your IDE workspace, you may have many errors.
 Right-Click Project->Maven->Enable Dependency Management
 }}} 
 
-Then you refresh your project.
+Then you refresh your project. 
+
+*Note:* If you do not have a Maven menu by right clicking your project in Eclipse, that means your maven plugin is not completely installed.
 
 === Set Up Local Database ===
 
@@ -129,8 +131,10 @@ Sigmah is now based on the database system MySql 5. But it also works with Postg
 ==== Create the Database ====
 
 In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:
-[http://code.google.com/p/sigma-h/downloads/list MinimumDataKit-1.0-postgresql]
-[http://code.google.com/p/sigma-h/downloads/list New Organization creation script (for Postgresql or Mysql)]
+
+# [http://code.google.com/p/sigma-h/downloads/list MinimumDataKit-1.0-postgresql]
+
+# [http://code.google.com/p/sigma-h/downloads/list New Organization creation script (for Postgresql or Mysql)]
 
 You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_ for Mysal and _phpPgAdmin_ for postgresql.
 
