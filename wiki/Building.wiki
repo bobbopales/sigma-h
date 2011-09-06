@@ -89,10 +89,13 @@ With IDE Eclipse, Java developer can benefit of many usefull plugins to edit the
 === Tools and Plugins to Install ===
 
   # [http://www.eclipse.org/downloads/ Eclipse] - The Eclipse IDE for Java EE developers
-  # [http://subclipse.tigris.org/ Subclipse] - An Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
-  # [http://maven.apache.org/eclipse-plugin.html Maven plugin] - Plugins to allow developers to use Maven directly in Eclipse IDE
+  #  [http://maven.apache.org/download.html Apache Maven] - a build manager for Java.
+  # [http://subclipse.tigris.org/ Subclipse] or [http://nileshk.com/2009/06/05/svn-in-eclipse-subversive-and-svnkit-for-subversion.html/ Subversive] - Two Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
+  # [http://m2eclipse.sonatype.org/installing-m2eclipse.html/ Maven plugin] - Plugins to allow developers to use Maven directly in Eclipse IDE
  
-You can use Eclipse Marketplace to search these plugins and then install them.For Eclipse 3.6 Helios, Help->Eclipse Marketplace.
+*Note:* You should add path of JDK and Maven into the environment PATH. See the instructions for both Windows and Unix [http://maven.apache.org/download.html/]
+
+ 
 
 === Check Out Project from SVN Server===
 
@@ -121,19 +124,23 @@ Then you refresh your project.
 === Set Up Local Database ===
 
 As a developer, before you test the sigmah project, you have to set up your own database system.
-Sigmah is now based on the database system MySql 5. But it also works with Postgresql.
+Sigmah is now based on the database system MySql 5. But it also works with Postgresql 8 +.
 
 ==== Create the Database ====
 
 In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:
-[http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
+[http://code.google.com/p/sigma-h/downloads/list MinimumDataKit-1.0-postgresql]
+[http://code.google.com/p/sigma-h/downloads/list New Organization creation script (for Postgresql or Mysql)]
 
-You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_.
+You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_ for Mysal and _phpPgAdmin_ for postgresql.
 
-*Note:* You should first run the scrips in zip file _MinimumDataKit-0.8.1.zip_ and then _DemoData-0.8.1.zip_
+
 ==== Configure Project to Use Local Database ====
 
-Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values in a properties file: _Sigmah.properties_,which is in _war/WEB-INF_. It looks like this:
+Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values in a properties file: _Sigmah.properties_,which is in _main/resources/sigmah.properties_. 
+
+For Mysql 5, it should like this:
+
 {{{
 #
 # All Sigmah code is released under the GNU General Public License v3
@@ -142,16 +149,32 @@ Now you should tell Sigmah project to use your own database. All you need to do 
 
 hibernate.dialect=org.hibernate.dialect.MySQLDialect
 hibernate.connection.driver_class=com.mysql.jdbc.Driver
-hibernate.connection.username=root
-hibernate.connection.password=adminpwd
-hibernate.connection.url=jdbc:mysql://localhost:3306/sigmah
+hibernate.connection.username=your_username
+hibernate.connection.password=your_password
+hibernate.connection.url=jdbc:mysql://localhost:3306/your_database
 hibernate.hbm2ddl.auto=update
 hibernate.show_sql=true
 hibernate.format_sql=true
 
 }}}
 
-You should make sure the user that you specify for _username_ has enough rights to access and modify the database _sigmah_.
+For Postgresql it should like this:
+
+{{{
+
+hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+hibernate.connection.driver_class=org.postgresql.Driver
+hibernate.connection.username=your_username
+hibernate.connection.password=your_password
+hibernate.connection.url=jdbc:postgresql://localhost:5432/your_database
+hibernate.hbm2ddl.auto=update
+hibernate.show_sql=false
+hibernate.format_sql=false
+
+
+}}}
+
+You should make sure the user that you specify has enough rights to access and modify the database. The user is the owner is of the database, for example.
 
 === Build and Debug Sigmah ===
 
@@ -174,7 +197,20 @@ Goals: gwt:run
 Profiles: sigmah
 Debug output: check
 Offline: check
+
+Add a parameter
+  Parameter name: -Dgwt:run  Value:9999
 }}}
+
+Create another run configuration for generation of the sources automatically.For example,every time you create a new key/value paire in the .properties files, you could run eclipse with this configuration to generate the Java code.
+{{{
+Base Directory: your project directory
+Goals: generate-sources
+Profiles: sigmah
+Debug output: check
+Offline: check
+}}}
+
 
 This kind of Debug configuration will launch the GWT Development Mode for Sigmah project. Maven will be responsible for downloading all dependencies including GWT Libraries,GXT Libraries into a local repository(By default, it is ~/.m2/repository). 
 
