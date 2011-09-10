@@ -1,8 +1,7 @@
 #summary Contributor's Guide Sidebar
 
   * [ContributorGuide Overview]
-  * [FusionRoadMap]
-    * [SigmahPMObjectModel]
+  * [http://www.sigmah.org/node/272 Main Sigmah concepts] _(in User Guide)_
   * [ContributionRules Contribution rules]
     * [IssueTrackingDrivenDevelopment Issue-tracking driven development]
     * [Versioning]
@@ -21,6 +20,8 @@
     * [Syncro Synchronization]
   * [ReleaseCheckList  Release check-list]
   * [SchemaChangeLog Schema changelog]
+  * [FusionRoadMap]
+    * [SigmahPMObjectModel]
   * [ContributorReading Reading Materials]
   
 
