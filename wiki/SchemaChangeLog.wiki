@@ -28,6 +28,9 @@ CREATE TABLE project_userlogin
       ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
+ALTER TABLE indicator ADD COLUMN directdataentryenabled boolean;
+ALTER TABLE indicator ALTER COLUMN directdataentryenabled SET NOT NULL;
+ALTER TABLE indicator ALTER COLUMN directdataentryenabled SET DEFAULT true;
 
 }}}
 
