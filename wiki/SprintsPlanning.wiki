@@ -22,48 +22,8 @@ This sprint will produce independantly the version *0.8.3*.
   * Project report models administration.
 This sprint will produce the version *0.9*, in coordination with bedatadriven's sprint 3.
 
-= bedatadriven =
+= ActivityInfo Development =
 
-== Sprint 3 (7-March - 18-March) - current ==
-  * Adaptation of the Site + Pivot table components to Sigmah style 
-  * Indicator linking / copying
-This sprint will produce the version *0.9*, in coordination with Groupe URD's sprint 2.
+ActivityInfo development is currently taking placing on [http://www.github.com/akbertram/activityinfo GitHub] 
 
-
-== UNICEF Funded - to begin sometime in 2011 ! ==
-
-=== Sprint 2 (Pending) ===	
-
-5a.	Dynamic mapping (1)
-5b.	Mapping of sites with grouping by administrative level (1)
-5c.	Multi-layer mapping (1)
-5d.	Map legends (1)
-14.	Search Engine (1)
-
-=== Sprint 3 (Pending) ===	
-17a.	Locking data (1)
-18.	Link between indicators in different user databases (1)
-1.	Targets (2)
-
-=== Sprint 4 (Pending) ===
-
-4.	Dashboard (2)
-28.	Photo and document attachment (2)
-30.	Data collection forms (3)
-31.	User List Export (2)
-
-=== Sprint 5 (Pending) ===
-10.	Pivot by location (2)
-21.	Site TreeView (2)
-
-=== Sprint 6 (Pending) ===
-8.	Report Definition User Interface (3)
-34.	Pivot Graphs (3)
-29.	Public informational site (3)
-3.	Contextual documentation (3)
-
-=== Sprint 7 (Pending) ===
-
-12.	Publication of sites (4)
-33.	Link between assessments and response (3)
-6.	Chloropleth mapping (3)	
+Version 2.1 - 2.6 will be released on a monthly schedule, August - December 2011. 
