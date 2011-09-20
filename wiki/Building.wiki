@@ -90,8 +90,8 @@ With IDE Eclipse, Java developer can benefit of many usefull plugins to edit the
 
   # [http://www.eclipse.org/downloads/ Eclipse] - The Eclipse IDE for Java EE developers
   #  [http://maven.apache.org/download.html Apache Maven] - a build manager for Java.
-  # [http://subclipse.tigris.org/ Subclipse] or [http://nileshk.com/2009/06/05/svn-in-eclipse-subversive-and-svnkit-for-subversion.html/ Subversive] - Two Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
-  # [http://m2eclipse.sonatype.org/installing-m2eclipse.html/ Maven plugin] - Plugins to allow developers to use Maven directly in Eclipse IDE
+  # [http://subclipse.tigris.org/ Subclipse] or [http://www.eclipse.org/subversive/documentation/gettingStarted/aboutSubversive/install.php Subversive] - Two Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
+  # [http://m2eclipse.sonatype.org/installing-m2eclipse.html Maven plugin] - Plugins to allow developers to use Maven directly in Eclipse IDE
  
 *Note:* You should add path of JDK and Maven into the environment PATH. See the instructions for both Windows and Unix [http://maven.apache.org/download.html/]
 
