@@ -38,6 +38,7 @@ To update source strings of a file, the following procedure has to be used:
   # Export as XLIFF the file of which you want to update the source strings (with the command "Translate offline" in the "Review" tab of the translation project)
   # Delete the file of which you want to update the source strings (action available in the "Files" tab of the translation project)
   # Import your new version of the source file containing the new source strings (with the file upload available in the "Overview" tab of the translation project, and any option can be used for the upload as it is a first importation)
+  # Analyze your imported file (with the command "Review the project's files" in the "Files" tab of the translation project)
   # Import then your just generated XLIFF file with the option "Merge", and force the upload to the new source file you've just added.
 
 
