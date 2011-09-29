@@ -36,7 +36,7 @@ Prior to the installation of Sigmah itself, the following components should be i
 
   3. Decompress the .war file into your just created `sigmah` folder.
 
-  4. Edit the file `WEB-INF/sigmah.properties` and set the database parameters as the following for an installation using PostgreSQL as recommended:
+  4. Edit the file `WEB-INF/classes/sigmah.properties` and set the database parameters as the following for an installation using PostgreSQL as recommended:
 {{{
 hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 hibernate.connection.driver_class=org.postgresql.Driver
@@ -48,9 +48,10 @@ hibernate.show_sql=false
 hibernate.format_sql=false
 }}}
 
-  5. Edit the file `WEB-INF/classes/sigmah.properties` to set the files management and mail parameters. Each folder set must of course exist before running Sigmah. Edit each key of the file as following:
+  5. In the same file `WEB-INF/classes/sigmah.properties`, set the files management and mail parameters. Each folder set must of course exist before running Sigmah. Edit each key of the file as following:
 
 || *Key* || *Supported version* || *Description* ||
+||_`repository.file_storage_provider_class`_|| 1.1 and later ||Use `repository.file_storage_provider_class=org.sigmah.server.endpoint.file.LocalStorageProvider`, except if you install Sigmah on the Amazon platform.||
 ||_`repository.files`_|| 1.0 and later ||Folder where the files uploaded by users will be stored. (ie: `repository.files=C:\\Sigmah\\Files`)||
 ||_`repository.images`_|| 1.0 and later ||Folder where the organization's logos have to be stored. (ie: `repository.images=C:\\Sigmah\\Images`)||
 ||_`mail.hostname`_|| 1.0 and later ||SMTP hostname used to send emails by the application. (ie: `mail.hostname=smtp.myngo.org`)||
@@ -71,7 +72,7 @@ Sigmah should be now technically installed on your server, congratulations! The 
 == Creating your first organization ==
   # Download the newOrganizationLaunchScript.postgresql.sql script from http://code.google.com/p/sigma-h/downloads/list .
   # Edit the logo of your organization to produce a PNG file of 126x56 pixels, and save this file in the images folder of your Sigmah installation (ie: `C:\Sigmah\Images`).
-  # Edit the script, and use the search&replace tool of your text editor to replace all the parameters (strings which starts and ends by a '§') by the values you wan to give to them.
+  # Edit the script, and use the search&replace tool of your text editor to replace all the parameters (strings which starts and ends by a '§') by the values you want to give to them.
   # Run the script on your database.
 
 *Your installation of Sigmah is fully finished!*
