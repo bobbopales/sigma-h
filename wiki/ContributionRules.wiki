@@ -23,5 +23,9 @@ Later on, if you perceive explicitly a new habit or wants to describe an implici
 = Rules for coordination with translators =
 
   * "_Developers develop & translators translate_": In order to reduce the risks of conflict on the UIConstants and UIMessages properties files, developers should avoid to edit the translated version of them (the ones with a `_`fr, `_`en or `_`es suffix). The French or Spanish developers can write the translation of the new strings they create, but the modification of already existing strings should be avoided as much as possible.
-  * "_I delete code, I check the constant strings_": Translators, as developers, don't like to work for no reason. So if a developer deletes some code containing an I18N string, and has a doubt whether this string is used anywhere else and could be deleted, he should check in ths code if this string is still used after his deletion. If it is no more used, it should be deleted.
+    * In simpler words:
+      * Developers only add new strings on UI`**`.properties files (without suffix), and if possible always with a comment (see below)
+      * Translators work only on the UI`**_**`.properties files (with suffix)
   * "_Give context to all my strings_": Translators *love* to have as much context as possible about what they have to translate, because it really helps their job. Thus, developers should try to add a comment (starting with the "#" character) on the line before each string they add. This comment should describe the string, and gives at best at least one screen in which it appears.
+
+  * "_I delete code, I check the constant strings_": Translators, as developers, don't like to work for no reason. So if a developer deletes some code containing an I18N string, and has a doubt whether this string is used anywhere else and could be deleted, he should check in ths code if this string is still used after his deletion. If it is no more used, it should be deleted.
