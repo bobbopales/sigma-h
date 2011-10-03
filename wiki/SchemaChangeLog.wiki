@@ -6,6 +6,7 @@
 
 Every attempt will be made to keep new versions of Sigmah backwards compatible with SQL databases created with earlier versions of Sigmah/ActivityInfo, but sometimes there will be a need for breaking changes. These can be found here.
 
+All SQL commands below should be able to be runned on PostgreSQL database. Ideally, they should be written respecting the ANSI SQL norm. 
 
 = Release 1.1 =
 
