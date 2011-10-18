@@ -45,13 +45,15 @@ The first importation of a file in a language takes as granted that you send thi
 
 All second importations are taken as importation of translations, if similar file name exist, and no more as import of source file, whatever the option used for importation.
 
-=== Update source strings of a file ===
-To update source strings of a file, the following procedure has to be used:
-  # Export as XLIFF the file of which you want to update the source strings (with the command "Translate offline" in the "Review" tab of the translation project)
-  # Delete the file of which you want to update the source strings (action available in the "Files" tab of the translation project)
-  # Import your new version of the source file containing the new source strings (with the file upload available in the "Overview" tab of the translation project, and any option can be used for the upload as it is a first importation)
-  # Analyze your imported file (with the command "Review the project's files" in the "Files" tab of the translation project)
-  # Import then your just generated XLIFF file with the option "Merge", and force the upload to the new source file you've just added.
+=== Update source strings of a translation project ===
+_NB: since you need to use the command "Review the project's files" in the procedure to update the source strings of a file, you always need to update the strings of all the files of a translation project because this command has effect on all files of the project and can put the other files of your project in an incoherent status._
+
+To update source strings of a translation project, the following procedure has to be used:
+  # Export as XLIFF all the files of your translation project (with the command "Translate offline" in the "Review" tab of the translation project)
+  # Delete all the files of your translation project (action available in the "Files" tab of the translation project)
+  # Import your new version of the source files containing the new source strings (with the file upload available in the "Overview" tab of the translation project, and any option can be used for the upload as it is a first importation)
+  # Analyze your imported files (with the command "Review the project's files" in the "Files" tab of the translation project)
+  # Import then your just generated XLIFF files with the option "Merge", and force the upload to the new source files you've just added.
 
 
 == Importing files from translators into the code ==
