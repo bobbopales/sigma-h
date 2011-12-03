@@ -59,7 +59,7 @@ hibernate.show_sql=true
 hibernate.format_sql=true
 }}}
 
-In order to populate your database with default data, you can run step by step all the SQL scripts contained in this zip file: [http://code.google.com/p/sigma-h/downloads/list Sigmah-Mysql-0.8.1]
+In order to populate your database with minimum data, you can run follow the procedure to populate a new Sigmah instance as defined in the Administrator Guide at the following pages: 1.[http://code.google.com/p/sigma-h/wiki/InstallingSigmah#Preparing_the_Sigmah_database Preparing_the_Sigmah_database] and 2.[http://code.google.com/p/sigma-h/wiki/InstallingSigmah#Creating_your_first_organization Creating_your_first_organization]
 
 == Starting GWT development mode in command line ==
 
