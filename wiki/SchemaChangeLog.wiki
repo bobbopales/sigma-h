@@ -35,6 +35,17 @@ ALTER TABLE indicator ALTER COLUMN directdataentryenabled SET DEFAULT true;
 
 }}}
 
+== 2. Existing data updates ==
+
+*After the schema is updated*, in order to update the existing data, the following request has to be applied (request required because of the issue [http://www.sigmah.org/issues/view.php?id=352 000352: OrgUnit administration lacking orgunit model status management] which lets user create orgunit from deletable draft orgunit models) 
+
+{{{
+UPDATE org_unit_model
+SET status = 'USED'
+WHERE status='DRAFT' and org_unit_model_id in (select id_org_unit_model from partner where 1);
+}}}
+
+
 = Release 1.0-rc2 =
 
 == 1. Schema changes ==
