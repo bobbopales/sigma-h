@@ -3,26 +3,22 @@
 
 = Audience =
 
-This guide is for those who wish deploy and run Sigmah or ActivityInfo on their own server. 
+This guide is for those who wish deploy and run Sigmah on their own server. 
 
 
 = Required hardware =
 
-To run a Sigmah or ActivityInfo Server, you will need to have a machine with the following requirements:
+To run a Sigmah Server, you will need to have a machine with the following requirements:
 
 
 || *Application type* || Java web application (for information: 30Mb .war file) ||
 || *Server type* || Java application server (Jetty recommended but working also with Tomcat) accepting Hibernate, or dedicated server ||
-|| *Database type* || The current version has been tested with PostGreSQL 9 (recommended until bug [http://sigmah.org/issues/view.php?id=210 0000210: MySQL connection implicitly closes after a while] gets fixed) and MySQL 5.5. It is possible to configure Sigmah to work with [http://community.jboss.org/wiki/SupportedDatabases other databases], but these have not been tested and may not work. ||
+|| *Database type* || The current version has been tested with PostGreSQL 9 and MySQL 5.5. It is possible to configure Sigmah to work with [http://community.jboss.org/wiki/SupportedDatabases other databases], but these have not been tested and may not work. ||
 || *Processor* || 2Ghz recommended, dual-core if possible ||
 || *Live memory* || 2Gb recommended ||
 || *Hard drive* || At least 50Gb, but depends strongly on the volume of data and files stored by the user of the organization ||
 
 
-
-
-= Guide to run and install ActivityInfo = 
-[AdministeringActivityInfo Guide to run and install ActivityInfo]
 
 = Guide to run and install Sigmah = 
 [InstallingSigmah Guide to run and install Sigmah]
