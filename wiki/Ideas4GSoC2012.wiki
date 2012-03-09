@@ -20,14 +20,14 @@ The key of the sustainability of the Sigmah project is the many partnerships on 
 
 
 == Technical details ==
-Sigmah software is developed in Java using GWT + ExtJS. Access to database is done with Hibernate. Sigmah application forge is available at http://code.google.com/p/sigma-h/. Sigmah application is a very large and rich application. A strong effort to learn how to work on it is absolutely necessary. Not in GSoC, we have already experienced students who felt discouraged by the complexity of the application and give up even though they get a lot of attention from their mentor.
+Sigmah software is developed in Java using GWT + ExtJS. Access to database is done with Hibernate. Sigmah application forge is available at http://code.google.com/p/sigma-h/. Sigmah application is a very large and rich application. A strong effort to learn how to work on it is absolutely necessary. Don't expect to be able to do anything meaningful before one month of full time work to get easy with all functional and technical concepts. But.. if you like big challenges, you'll definetly get a rewarding one with this application!
 
 Some of the projects listed below are linked with Sigmah community website. Sigmah community website is developed in PHP using Drupal, and its forge is available at https://github.com/osarrat/sigmah-website.
 
 == Sigmah project and GSoC2012 ==
 For Google Summer of Code 2012, Sigmah will be represented by 2 organizations:
  * [http://www.urd.org/ Groupe URD], functional project leader, will play the role of organization administrator
- * [http://www.ideia.fr/ Ideia], technial project leader, will plays of the mentor
+ * [http://www.ideia.fr/ Ideia], technical project leader, will play of the mentor
 
 
 == Resources ==
