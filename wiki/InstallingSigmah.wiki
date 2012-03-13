@@ -63,6 +63,7 @@ hibernate.format_sql=false
 ||_`mail.auth.password`_|| 1.1 and later ||Password in case of a required authentication when using the given SMTP server (ie:`mail.auth.password=sig42mah`)||
 ||_`newUserConfirm.host.url`_|| 1.0|| URL used in the confirmation email sent to new users, to confirm their registration. (ie: `newUserConfirm.host.url=http://www.myngo.org:8080/sigmah/NewUserConfirm?`) (*deprecated*: replaced by `host.url` since 1.1) ||
 ||_`host.url`_|| 1.1 and later ||URL on which the Sigmah instance is running.This URL will be used widely on Sigmah. For example, we use the URL: `[host.url]/NewUserConfirm?userid1234/` to do the confirmation of new created user .* _Notice_: Do not add any sign at the end. It should be like 'http://www.sigmah.org',not 'http://www.sigmah.org/'*.||
+||_`default.interface`_|| 1.1 and later ||Interface switch between Sigmah & ActivityInfo. This parameter MUST remain with value `default.interface=Sigmah`*.||
 
   6. Edit the file `WEB-INF/classes/sigmah.client.js` and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
 
