@@ -1,6 +1,7 @@
 #summary Contributor's Guide Sidebar
 
   * [ContributorGuide Overview]
+  * [http://www.euromedcp.eu/images/stories/infocommunications/hidden_disaster_en.pdf A comic book to get familiarized with the humanitarian sector]
   * [http://www.sigmah.org/node/272 Main Sigmah concepts] _(in User Guide)_
   * [ContributionRules Contribution rules]
     * [IssueTrackingDrivenDevelopment Issue-tracking driven development]
