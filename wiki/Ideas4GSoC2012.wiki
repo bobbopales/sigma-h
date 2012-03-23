@@ -88,10 +88,13 @@ Right now, Sigmah can only be installed through a tedious procedure. Deployment 
 
 *Examples*
 
-The 2 following feature requests give examples of features which could be developed:
+The 3 following feature requests give examples of features which could be developed:
  * [http://www.sigmah.org/issues/view.php?id=131 0000131: Sigmah installer]
  * [http://www.sigmah.org/issues/view.php?id=125 0000125: Sigmah version update system]
-Another work to be done is to develop means to easily install Sigmah on Ubuntu.
+ * [http://www.sigmah.org/issues/view.php?id=129 0000129: Sigmah instance registering system]
+Issue 129 is not linked with the objective to directly ease deployment, but is more linked with the long term objective to keep some donors interested by showing the usage of a more easily spread Sigmah.
+
+Another work to be done is to develop means to easily install Sigmah on Ubuntu (collaboration with [https://lists.launchpad.net/ubuntu-ngo/ Ubuntu-NGO] team might be fruitful for that).
 
 *Impact*
 
@@ -101,6 +104,7 @@ With easier deployments facilities, organizations would be more able to try easi
 
 Java/GWT.
 Knowledge of NSIS would also be a plus.
+
 
 
 == Project 4: a full wiki for Sigmah online manual ==
