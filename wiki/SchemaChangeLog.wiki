@@ -8,6 +8,26 @@ Every attempt will be made to keep new versions of Sigmah backwards compatible w
 
 All SQL commands below should be able to be runned on PostgreSQL database. Ideally, they should be written respecting the ANSI SQL norm. 
 
+= Release 1.1.2 =
+
+== 1. Schema changes ==
+
+{{{
+
+-- Changes the date type columns to timestamp to avoid time difference (issue #463)
+
+-- POSTGRESQL
+ALTER TABLE userdatabase ALTER COLUMN startdate TYPE TIMESTAMP;
+ALTER TABLE project ALTER COLUMN end_date TYPE TIMESTAMP;
+ALTER TABLE project ALTER COLUMN close_date TYPE TIMESTAMP;
+
+-- MYSQL
+ALTER TABLE userdatabase CHANGE startdate startdate TIMESTAMP;
+ALTER TABLE project CHANGE end_date end_date TIMESTAMP;
+ALTER TABLE project CHANGE close_date close_date TIMESTAMP;
+
+}}}
+
 = Release 1.1 =
 
 == 1. Schema changes ==
