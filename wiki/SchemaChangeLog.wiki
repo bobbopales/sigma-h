@@ -26,6 +26,20 @@ ALTER TABLE userdatabase CHANGE startdate startdate TIMESTAMP;
 ALTER TABLE project CHANGE end_date end_date TIMESTAMP;
 ALTER TABLE project CHANGE close_date close_date TIMESTAMP;
 
+-- Updates the countries ISO codes (issue #457)
+UPDATE Country SET ISO2 = 'BN' WHERE CountryId = 281;
+UPDATE Country SET ISO2 = 'CN' WHERE CountryId = 293;
+UPDATE Country SET ISO2 = 'GN' WHERE CountryId = 339;
+UPDATE Country SET ISO2 = 'HN' WHERE CountryId = 345;
+UPDATE Country SET ISO2 = 'IN' WHERE CountryId = 349;
+UPDATE Country SET ISO2 = 'MN' WHERE CountryId = 394;
+UPDATE Country SET ISO2 = 'AN' WHERE CountryId = 404;
+UPDATE Country SET ISO2 = 'PN' WHERE CountryId = 423;
+UPDATE Country SET ISO2 = 'KN' WHERE CountryId = 434;
+UPDATE Country SET ISO2 = 'SN' WHERE CountryId = 443;
+UPDATE Country SET ISO2 = 'TN' WHERE CountryId = 472;
+UPDATE Country SET ISO2 = 'VN' WHERE CountryId = 487;
+
 }}}
 
 = Release 1.1 =
