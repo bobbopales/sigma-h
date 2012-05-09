@@ -22,3 +22,6 @@ To run a Sigmah Server, you will need to have a machine with the following requi
 
 = Guide to run and install Sigmah = 
 [InstallingSigmah Guide to run and install Sigmah]
+
+= Data separation = 
+[DataSeparation How to use the data separation scripts]
