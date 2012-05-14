@@ -40,6 +40,10 @@ UPDATE Country SET ISO2 = 'SN' WHERE CountryId = 443;
 UPDATE Country SET ISO2 = 'TN' WHERE CountryId = 472;
 UPDATE Country SET ISO2 = 'VN' WHERE CountryId = 487;
 
+-- Increases the indicator name length (issue #408).
+
+ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
+
 }}}
 
 = Release 1.1 =
