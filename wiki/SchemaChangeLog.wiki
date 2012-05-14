@@ -8,7 +8,7 @@ Every attempt will be made to keep new versions of Sigmah backwards compatible w
 
 All SQL commands below should be able to be runned on PostgreSQL database. Ideally, they should be written respecting the ANSI SQL norm. 
 
-= Release 1.1.2 =
+= Release 1.2 =
 
 == 1. Schema changes ==
 
@@ -26,6 +26,18 @@ ALTER TABLE userdatabase CHANGE startdate startdate TIMESTAMP;
 ALTER TABLE project CHANGE end_date end_date TIMESTAMP;
 ALTER TABLE project CHANGE close_date close_date TIMESTAMP;
 
+-- Increases the indicator name length (issue #408).
+
+ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
+
+}}}
+
+
+
+== 2. Existing data updates ==
+
+{{{
+
 -- Updates the countries ISO codes (issue #457)
 UPDATE Country SET ISO2 = 'BN' WHERE CountryId = 281;
 UPDATE Country SET ISO2 = 'CN' WHERE CountryId = 293;
@@ -39,10 +51,6 @@ UPDATE Country SET ISO2 = 'KN' WHERE CountryId = 434;
 UPDATE Country SET ISO2 = 'SN' WHERE CountryId = 443;
 UPDATE Country SET ISO2 = 'TN' WHERE CountryId = 472;
 UPDATE Country SET ISO2 = 'VN' WHERE CountryId = 487;
-
--- Increases the indicator name length (issue #408).
-
-ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
 
 }}}
 
