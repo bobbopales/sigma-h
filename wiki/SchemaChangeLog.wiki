@@ -30,6 +30,10 @@ ALTER TABLE project CHANGE close_date close_date TIMESTAMP;
 
 ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
 
+-- Increases the indicator category length (issue #434).
+
+ALTER TABLE indicator ALTER COLUMN category TYPE varchar(1024);
+
 }}}
 
 
