@@ -34,8 +34,23 @@ ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
 
 ALTER TABLE indicator ALTER COLUMN category TYPE varchar(1024);
 
-}}}
 
+-- Merges 'risks' and 'hypothesis' columns of the log frame (issue #189).
+
+-- POSTGRESQL
+ALTER TABLE log_frame_element ADD COLUMN risksAndAssumptions TEXT;
+
+-- MYSQL
+ALTER TABLE log_frame_element ADD risksAndAssumptions TEXT;
+
+-- MYSQL AND POSTGRESQL
+UPDATE log_frame_element SET risksAndAssumptions=( risks  || '\n' || assumptions) WHERE char_length(assumptions)>0 and char_length(risks)>0;
+UPDATE log_frame_element SET risksAndAssumptions=risks WHERE (char_length(assumptions)=0 or assumptions is null)  and char_length(risks)>0;  
+UPDATE log_frame_element SET risksAndAssumptions=assumptions WHERE (char_length(risks)=0 or risks is null)  and char_length(assumptions)>0;   
+ALTER TABLE log_frame_element DROP risks;
+ALTER TABLE log_frame_element DROP assumptions;
+
+}}}
 
 
 == 2. Existing data updates ==
@@ -55,6 +70,11 @@ UPDATE Country SET ISO2 = 'KN' WHERE CountryId = 434;
 UPDATE Country SET ISO2 = 'SN' WHERE CountryId = 443;
 UPDATE Country SET ISO2 = 'TN' WHERE CountryId = 472;
 UPDATE Country SET ISO2 = 'VN' WHERE CountryId = 487;
+
+
+-- Fixes issue with old inconsistent data in the log_frame_model table (issue #189)
+UPDATE log_frame_model SET a_gp_max=1, a_max=1, a_per_er_max=1, a_per_gp_max=1, a_enable_groups=false, er_enable_groups=false, p_enable_groups=false, so_enable_groups=false, er_gp_max=1, er_max=1, er_per_gp_max=1, er_per_so_max=1, p_gp_max=1, p_max=1, p_per_gp_max=1, so_gp_max=1, so_max=1, so_per_gp_max=1 
+WHERE name LIKE 'Auto-created default model at%';
 
 }}}
 
