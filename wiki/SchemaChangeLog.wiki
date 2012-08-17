@@ -340,3 +340,19 @@ ALTER TABLE UserPermission ADD
   AllowManageAllUsers bit NOT NULL 
      CONSTRAINT DF_UserPermission_AllowManageAllusers DEFAULT 0
 }}}
+
+
+= Revision r1215 = 
+
+  * Default global export settings one organization
+
+{{{
+INSERT INTO global_export_settings (id, export_format,auto_export_frequency, locale_string, organization_id) 
+SELECT nextval('hibernate_sequence'),'XLS',1,'fr', o.id_organization from organization o limit 1;
+}}}
+
+* two added export related flags 
+{{{
+update flexible_element set exportable =true;
+update flexible_element set globally_exportable =false;
+}}}
