@@ -343,8 +343,48 @@ ALTER TABLE UserPermission ADD
 
 
 = Revision r1215 = 
+  * Global export(export logger), Global export content (CSV content of export) and Global export settings (export settings per organization) 
+{{{
+CREATE TABLE global_export
+(
+  id bigint NOT NULL,
+  generated_date timestamp without time zone,
+  organization_id integer NOT NULL,
+  CONSTRAINT global_export_pkey PRIMARY KEY (id ),
+  CONSTRAINT fk9e763fd0f85c2c3c FOREIGN KEY (organization_id)
+      REFERENCES organization (id_organization) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
 
-  * Default global export settings for one organization
+CREATE TABLE global_export_content
+(
+  id bigint NOT NULL,
+  csv_content text,
+  project_model_name character varying(8192) NOT NULL,
+  global_export_id bigint NOT NULL,
+  CONSTRAINT global_export_content_pkey PRIMARY KEY (id ),
+  CONSTRAINT fkdca84b0af33647b9 FOREIGN KEY (global_export_id)
+      REFERENCES global_export (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE global_export_settings
+(
+  id bigint NOT NULL,
+  auto_delete_frequency integer,
+  auto_export_frequency integer,
+  export_format character varying(255),
+  last_export_date timestamp without time zone,
+  locale_string character varying(4) NOT NULL,
+  organization_id integer NOT NULL,
+  CONSTRAINT global_export_settings_pkey PRIMARY KEY (id ),
+  CONSTRAINT fk2fb477b2f85c2c3c FOREIGN KEY (organization_id)
+      REFERENCES organization (id_organization) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+}}}
+  * Default global export settings 
 
 {{{
 INSERT INTO global_export_settings (id, export_format,auto_export_frequency, locale_string, organization_id) 
