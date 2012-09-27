@@ -14,7 +14,20 @@ All SQL commands below should be able to be runned on PostgreSQL database. Ideal
 
 {{{
 
+-- Add the exportable preferences columns to the fields table (issue #388)
+-- ------
+
+-- POSTGRESQL
+ALTER TABLE flexible_element ADD COLUMN exportable BOOLEAN NOT NULL DEFAULT TRUE;
+ALTER TABLE flexible_element ADD COLUMN globally_exportable BOOLEAN NOT NULL DEFAULT TRUE;
+
+-- MYSQL
+ALTER TABLE flexible_element ADD exportable bit(1) NOT NULL DEFAULT b'1';
+ALTER TABLE flexible_element ADD globally_exportable bit(1) NOT NULL DEFAULT b'1';
+
+
 -- Changes the date type columns to timestamp to avoid time difference (issue #463)
+-- ------
 
 -- POSTGRESQL
 ALTER TABLE userdatabase ALTER COLUMN startdate TYPE TIMESTAMP;
@@ -27,21 +40,24 @@ ALTER TABLE project CHANGE end_date end_date TIMESTAMP;
 ALTER TABLE project CHANGE close_date close_date TIMESTAMP;
 
 -- Increases the indicator name length (issue #408).
-
+-- ------
 ALTER TABLE indicator ALTER COLUMN name TYPE varchar(1024);
 
--- Increases the indicator category length (issue #434).
 
+-- Increases the indicator category length (issue #434).
+-- ------
 ALTER TABLE indicator ALTER COLUMN category TYPE varchar(1024);
 
 
 -- Merges 'risks' and 'hypothesis' columns of the log frame (issue #189).
+-- ------
 
 -- POSTGRESQL
 ALTER TABLE log_frame_element ADD COLUMN risksAndAssumptions TEXT;
 
 -- MYSQL
 ALTER TABLE log_frame_element ADD risksAndAssumptions TEXT;
+
 
 -- MYSQL AND POSTGRESQL
 UPDATE log_frame_element SET risksAndAssumptions=( risks  || '\n' || assumptions) WHERE char_length(assumptions)>0 and char_length(risks)>0;
@@ -51,6 +67,7 @@ ALTER TABLE log_frame_element DROP risks;
 ALTER TABLE log_frame_element DROP assumptions;
 
 -- Add a date_deleted column to the table project_model and org_unit_model (issue #489)
+-- ------
 
 -- POSTGRESQL
 ALTER TABLE org_unit_model ADD COLUMN date_deleted DATE;
