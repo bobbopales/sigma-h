@@ -424,3 +424,9 @@ SELECT nextval('hibernate_sequence'),'ODS',1,'fr', o.id_organization from organi
 update flexible_element set exportable =true;
 update flexible_element set globally_exportable =false;
 }}}
+
+ * Adds default GLOBAL_EXPORT permission to default "PioneerAdministrator" profile 
+
+{{{
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'GLOBAL_EXPORT', id_profile FROM profile WHERE name = 'PioneerAdministrator' AND id_organization = (SELECT MAX(id_organization) FROM organization WHERE logo = 'logo');
+}}}
