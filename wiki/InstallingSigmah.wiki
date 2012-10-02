@@ -136,7 +136,7 @@ Password for user sigmah:
 
 == Installing Sigmah and creating your first organization ==
 
-You can follow the [WindowsInstallation#Windows_installation] part as the process is the same.
+You can follow the [WikiSyntax#Windows_installation] part as the process is the same.
 
 However, keep in mind the 2 following comments:
 
