@@ -134,22 +134,27 @@ user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./2-compas_q
 Password for user sigmah: 
 }}}
 
-== Final comments ==
+== Installing Sigmah and creating your first organization ==
 
-The rest of the process is the same than for Windows, with 2 comments:
+You can follow the [WindowsInstallation#Windows_installation] part as the process is the same.
 
-* 1) Installing Sigmah 8.: To restart Jetty:
+However, keep in mind the 2 following comments:
+
+* To restart Jetty (point 8.):
 {{{
 user@hostname:~$ sudo /etc/init.d/jetty restart
 }}}
 
-* 2) Restart PostgreSQL: I had an issue with the log file:
+* PostgreSQL: when restarting PostgreSQL, I had an issue with the log file (missing the folder _/var/log/postgresql_):
+
 {{{
 user@hostname:/var/log$ sudo /etc/init.d/postgresql restart
- * Restarting PostgreSQL 9.1 database server                                                                                                                               * Error: Could not create log file /var/log/postgresql/postgresql-9.1-main.log
+* Restarting PostgreSQL 9.1 database server
+* Error: Could not create log file /var/log/postgresql/postgresql-9.1-main.log
 
-# https://bugs.launchpad.net/ubuntu/+source/postgresql-common/+bug/1048664
 user@hostname:/var/log$ sudo mkdir postgresql
 user@hostname:/var/log$ sudo chmod 777 postgresql/
 user@hostname:/var/log$ sudo /etc/init.d/postgresql restart
 }}}
+
+See also: http://bugs.launchpad.net/ubuntu/+source/postgresql-common/+bug/1048664
