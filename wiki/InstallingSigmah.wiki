@@ -88,3 +88,68 @@ To start to use your Sigmah installation:
   # Open your browser at http://localhost:8080/sigmah/ (or another URL if you have not used all the default parameters suggested in this procedure)
   # Enter the email used as parameter in the newOrganizationLaunchScript.postgresql.sql script, and "sigmah" as password.
   # You're in!
+
+
+= Installing Sigmah on Ubuntu =
+== Prerequisites ==
+=== Install the java jre environment ===
+{{{
+user@hostname:~$ sudo apt-get install default-jre
+}}}
+
+=== Download and install Jetty ===
+{{{
+user@hostname:~$ cd /usr/local/src
+user@hostname:/usr/local/src$ sudo wget http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-8.1.7.v20120910.tar.gz
+user@hostname:/usr/local/src$ sudo tar xfz jetty-distribution-8.1.7.v20120910.tar.gz
+user@hostname:/usr/local/src$ sudo mv jetty-distribution-8.1.7.v20120910 /opt/jetty
+user@hostname:/usr/local/src$ sudo cp /opt/jetty/bin/jetty.sh /etc/init.d/jetty
+user@hostname:/usr/local/src$ sudo useradd jetty -U -s /bin/false
+user@hostname:/usr/local/src$ sudo chown -R jetty:jetty /opt/jetty
+}}}
+
+=== Install PostreSQL ===
+{{{
+user@hostname:~$ sudo apt-get install postgresql
+user@hostname:~$ sudo -i -u postgres
+postgres@hostname:~$ psql
+postgres=# CREATE USER sigmah;
+# CREATE ROLE
+postgres=# ALTER ROLE sigmah WITH CREATEDB;
+# ALTER ROLE
+postgres=# CREATE DATABASE sigmah_db OWNER sigmah;
+# CREATE DATABASE
+postgres=# ALTER USER sigmah WITH ENCRYPTED PASSWORD 'sigmah';
+# ALTER ROLE
+postgres=# \q
+}}}
+
+== Preparing the Sigmah Database ==
+{{{
+user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./0-structure.postgresql.sql
+Password for user sigmah: 
+user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./1-actinfo-data-withoutUser.postgresql.sql 
+Password for user sigmah: 
+user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./2-compas_quality_framework.postgresql.sql 
+Password for user sigmah: 
+}}}
+
+== Final comments ==
+
+The rest of the process is the same than for Windows, with 2 comments:
+
+* 1) Installing Sigmah 8.: To restart Jetty:
+{{{
+user@hostname:~$ sudo /etc/init.d/jetty restart
+}}}
+
+* 2) Restart PostgreSQL: I had an issue with the log file:
+{{{
+user@hostname:/var/log$ sudo /etc/init.d/postgresql restart
+ * Restarting PostgreSQL 9.1 database server                                                                                                                               * Error: Could not create log file /var/log/postgresql/postgresql-9.1-main.log
+
+# https://bugs.launchpad.net/ubuntu/+source/postgresql-common/+bug/1048664
+user@hostname:/var/log$ sudo mkdir postgresql
+user@hostname:/var/log$ sudo chmod 777 postgresql/
+user@hostname:/var/log$ sudo /etc/init.d/postgresql restart
+}}}
