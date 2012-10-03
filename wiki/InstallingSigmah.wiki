@@ -97,6 +97,8 @@ To start to use your Sigmah installation:
 user@hostname:~$ sudo apt-get install default-jre
 }}}
 
+Or the easy way: <a href="apt://default-jre" class="interwiki iw_apt" title="apt://default-jre">default-jre</a> (testing the apt:// link, may not work..).
+
 === Download and install Jetty ===
 {{{
 user@hostname:~$ cd /usr/local/src
