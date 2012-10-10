@@ -14,12 +14,62 @@ All SQL commands below should be able to be runned on PostgreSQL database. Ideal
 
 {{{
 
--- Add the exportable preferences columns to the fields table (issue #388)
+-- Add the exportable preferences columns to the fields table and the required new tables (issue #388)
 -- ------
 
 -- POSTGRESQL
 ALTER TABLE flexible_element ADD COLUMN exportable BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE flexible_element ADD COLUMN globally_exportable BOOLEAN NOT NULL DEFAULT TRUE;
+CREATE TABLE globalexport
+(
+  id bigint NOT NULL,
+  generated_date timestamp without time zone NOT NULL,
+  organization_id integer NOT NULL,
+  CONSTRAINT globalexport_pkey PRIMARY KEY (id ),
+  CONSTRAINT fk9e763fd0f85c2c3c FOREIGN KEY (organization_id)
+      REFERENCES organization (id_organization) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE globalexportcontent
+(
+  id bigint NOT NULL,
+  csv_content text,
+  project_model_name character varying(8192) NOT NULL,
+  globalexport_id bigint NOT NULL,
+  CONSTRAINT globalexportcontent_pkey PRIMARY KEY (id ),
+  CONSTRAINT fkdca84b0af33647b9 FOREIGN KEY (globalexport_id)
+      REFERENCES globalexport (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+CREATE TABLE globalexportsettings
+(
+  id bigint NOT NULL,
+  auto_delete_frequency integer,
+  auto_export_frequency integer,
+  default_organization_export_format character varying(255),
+  export_format character varying(255),
+  last_export_date timestamp without time zone,
+  locale_string character varying(4) NOT NULL,
+  organization_id integer NOT NULL,
+  CONSTRAINT globalexportsettings_pkey PRIMARY KEY (id ),
+  CONSTRAINT fk2fb477b2f85c2c3c FOREIGN KEY (organization_id)
+      REFERENCES organization (id_organization) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ 
+
 
 -- MYSQL
 ALTER TABLE flexible_element ADD exportable bit(1) NOT NULL DEFAULT b'1';
