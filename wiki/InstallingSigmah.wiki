@@ -98,6 +98,9 @@ user@hostname:~$ sudo apt-get install default-jre
 }}}
 
 === Download and install Jetty ===
+
+It looks like the version 9 of Jetty is not working (version 8 does).
+
 {{{
 user@hostname:~$ cd /usr/local/src
 user@hostname:/usr/local/src$ sudo wget http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-8.1.7.v20120910.tar.gz
@@ -130,7 +133,7 @@ user@hostname:~$
 
 You can follow the "Preparing the Sigmah database" part to download the MinimumDataKit-1.1-postgresql.zip file. Unzip the file and open a terminal in the unzipped folder "MinimumDataKit-1.1-postgresql".
 
-Note: I got errors with the 2-compas_quality_framework.postgresql.sql file due to the escape caracter "\'" not escaped... (i.e. "People|'s"). I edited the file and removed them: "people\'s" -> "peoples".
+Note: I got errors with the 2-compas_quality_framework.postgresql.sql file due to the escape caracter "\'" not escaped... (i.e. "People\'s"). I edited the file and removed them: "people\'s" -> "peoples".
 
 {{{
 user@hostname:~/MinimumDataKit-1.1-postgresql$ psql -U sigmah -d sigmah_db -h localhost -f ./0-structure.postgresql.sql
