@@ -122,21 +122,26 @@ postgres=# CREATE DATABASE sigmah_db OWNER sigmah;
 postgres=# ALTER USER sigmah WITH ENCRYPTED PASSWORD 'sigmah';
 # ALTER ROLE
 postgres=# \q
+postgres@EeePC-Maya13 ~ $ [ctrl+d] to logout
+user@hostname:~$
 }}}
 
 == Preparing the Sigmah Database ==
+
+You can follow the "Preparing the Sigmah database" part to download the MinimumDataKit-1.1-postgresql.zip file. Unzip the file and open a terminal in the unzipped folder "MinimumDataKit-1.1-postgresql".
+
 {{{
-user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./0-structure.postgresql.sql
+user@hostname:~/MinimumDataKit-1.1-postgresql$ psql -U sigmah -d sigmah_db -h localhost -f ./0-structure.postgresql.sql
 Password for user sigmah: 
-user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./1-actinfo-data-withoutUser.postgresql.sql 
+user@hostname:~/MinimumDataKit-1.1-postgresql$ psql -U sigmah -d sigmah_db -h localhost -f ./1-actinfo-data-withoutUser.postgresql.sql 
 Password for user sigmah: 
-user@hostname:~/Sigmah$ psql -U sigmah -d sigmah_db -h localhost -f ./2-compas_quality_framework.postgresql.sql 
+user@hostname:~/MinimumDataKit-1.1-postgresql$ psql -U sigmah -d sigmah_db -h localhost -f ./2-compas_quality_framework.postgresql.sql 
 Password for user sigmah: 
 }}}
 
 == Installing Sigmah and creating your first organization ==
 
-You can follow the [InstallingSigmah#Installing_Sigmah] part as the process is the same.
+You can follow the "Installing Sigmah" part as the process is the same.
 
 However, keep in mind the 2 following comments:
 
