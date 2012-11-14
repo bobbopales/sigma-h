@@ -130,6 +130,8 @@ user@hostname:~$
 
 You can follow the "Preparing the Sigmah database" part to download the MinimumDataKit-1.1-postgresql.zip file. Unzip the file and open a terminal in the unzipped folder "MinimumDataKit-1.1-postgresql".
 
+Note: I got errors with the 2-compas_quality_framework.postgresql.sql file due to the escape caracter "\'" not escaped... (i.e. "People|'s"). I edited the file and removed them: "people\'s" -> "peoples".
+
 {{{
 user@hostname:~/MinimumDataKit-1.1-postgresql$ psql -U sigmah -d sigmah_db -h localhost -f ./0-structure.postgresql.sql
 Password for user sigmah: 
