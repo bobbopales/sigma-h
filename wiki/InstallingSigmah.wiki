@@ -65,7 +65,7 @@ hibernate.format_sql=false
 ||_`host.url`_|| 1.1 and later ||URL on which the Sigmah instance is running.This URL will be used widely on Sigmah. For example, we use the URL: `[host.url]/NewUserConfirm?userid1234/` to do the confirmation of new created user .* _Notice_: Do not add any sign at the end. It should be like 'http://www.sigmah.org',not 'http://www.sigmah.org/'*.||
 ||_`default.interface`_|| 1.1 and later ||Interface switch between Sigmah & ActivityInfo. This parameter MUST remain with value `default.interface=Sigmah`*.||
 
-  6. Edit the file `WEB-INF/classes/sigmah.client.js` and replace the GoogleMapsAPI key by a one you've generated for your domain name at http://code.google.com/apis/maps/signup.html
+  6. Edit the file `WEB-INF/classes/sigmah.client.js` and replace the GoogleMapsAPI key by a one you've generated with your Google account at https://developers.google.com/maps/documentation/javascript/v2/introduction#Obtaining_Key
 
   7. Optionally, edit the file `WEB-INF/classes/log4j.properties` to specify your own path for the log file. If you want to do so, replace the value `activityinfo.log` of the key `log4j.appender.file.File` by the value you wish.
 
