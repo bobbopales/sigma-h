@@ -1,0 +1,44 @@
+#summary Test Scenario on Dashbboard Projects Table (DTC)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the demo data set.
+
+
+= Test cases =
+
+== DTC1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== DTC2 ==
+=== _Title:_ Projects table loading ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> Just after signing in, the user sees the projects table getting loaded. </td><td> - A progress bar show the progress of the loading of the projects in the table
+- The projects table has the following column shown by default
+  * code
+  * title
+  * current phase
+  * organizational unit
+  * budget consumption
+  * available time consumption
+  * activity progress
+  * categories to which this project belongs to </td></tr></table>
+== DTC3 ==
+=== _Title:_ Global export live data ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> From the projects table, click on the "Export all" button </td><td> The Global export popup opens up. </td></tr>
+<tr><td> 2 </td><td> Let the "Live data" checked by default and click on the "Export" button. </td><td> After a while, an Excel file should be proposed to be downloaded. </td></tr>
+<tr><td> 3 </td><td> Save the Excel file on your hard drive and open it. </td><td> The Excel file should contain a tab per project model which has projects associated to it.
+In each tab, all the fields of the project model should be given as column and each row should be a project.
+All projects, except test and deleted projects, should be in one or another tab of this Excel file. </td></tr></table>
+== DTC4 ==
+=== _Title:_ Global export other format exportation ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> From the projects table, click on the "Export all" button </td><td> The Global export popup opens up. </td></tr>
+<tr><td> 2 </td><td> Click on the "Change configuration" button </td><td> The Global export configuration popup opens up on top of the Global export popup. </td></tr>
+<tr><td> 3 </td><td> Change the "file type" parameter to the other value. (if it was Excel, switch it to Open document: for the rest of the test case, we assume that the new format is Open document), and click on the "Save configuration" button. </td><td> The Global export configuration popup closes itself, a status message "Global export configuration has been successfully updated is displayed", and the user is now back in front of the Global export popup. </td></tr>
+<tr><td> 4 </td><td> Let the "Live data" checked by default and click on the "Export" button. </td><td> After a while, an open document spreadsheet (*.ods) should be proposed to be downloaded. </td></tr>
+<tr><td> 5 </td><td> Save the ODS file on your hard drive, open it and compare it with the Excel file generated in previous test case. </td><td> Both files should contain exactly the same tabs, with the same columns and rows in each tab. </td></tr></table>
