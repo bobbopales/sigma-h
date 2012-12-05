@@ -1,0 +1,13 @@
+#summary Test Scenario on Users, Sessions & Rights (USR)
+
+= Introduction =
+
+This scenario is based on the 1.2 demo data.
+
+
+= Test cases =
+
+== USR1: User signing in  ==
+
+|| *Steps to reproduce* || *Result expected* ||
+|| Enter 'demo@sigmah.org' as email, and 'sigmah' as password, and click on 'Sign in' || The dashboard opens up as home page, and the 'demo@sigmah.org' email address is visible on top of the page. ||
