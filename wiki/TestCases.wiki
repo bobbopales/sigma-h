@@ -28,6 +28,7 @@ The list of test cases is under migration from its original form as a Word file 
 || Test 2.5 || Tableau croisé dynamique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 2.6 || Lien projet – base d’indicateurs || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || 3 || Tableau de bord général, locale EN || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| DPT3 || Global export live data || [TestScenario4DashboardProjectTable#DPT3] ||
 || Test 3.1 || Chargement du tableau des projets || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 3.2 || Manipulation des regroupements du tableau des projets || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 3.3 || Limitation d’accès aux projets en fonction des droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
