@@ -103,9 +103,9 @@ It looks like the version 9 of Jetty is not working (version 8 does).
 
 {{{
 user@hostname:~$ cd /usr/local/src
-user@hostname:/usr/local/src$ sudo wget http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-8.1.7.v20120910.tar.gz
-user@hostname:/usr/local/src$ sudo tar xfz jetty-distribution-8.1.7.v20120910.tar.gz
-user@hostname:/usr/local/src$ sudo mv jetty-distribution-8.1.7.v20120910 /opt/jetty
+user@hostname:/usr/local/src$ sudo wget http://download.eclipse.org/jetty/stable-8/dist/jetty-distribution-8.1.8.v20121106.tar.gz
+user@hostname:/usr/local/src$ sudo tar xfz jetty-distribution-8.1.8.v20121106.tar.gz
+user@hostname:/usr/local/src$ sudo mv jetty-distribution-8.1.8.v20121106 /opt/jetty
 user@hostname:/usr/local/src$ sudo cp /opt/jetty/bin/jetty.sh /etc/init.d/jetty
 user@hostname:/usr/local/src$ sudo useradd jetty -U -s /bin/false
 user@hostname:/usr/local/src$ sudo chown -R jetty:jetty /opt/jetty
