@@ -2,9 +2,29 @@
 #labels Featured
 #sidebar ContributorGuideSideBar
 
-= Audience =
+= Welcome on the Sigmah project developers' community! =
 
-This guide is for those who wish to contribute to the development of the Sigmah server and GWT client. You will find step-by-step instructions on building Sigmah from the source.
+Hi!
+
+If you've opened this page, you're normally a software developer wishing to contribute to the development of Sigmah. This guide is then you're main tool to build step-by-step your capacity to work on the project.
+
+First of all: *Welcome*!
+
+The best way to start is to send an email to our [http://groups.google.com/group/sigmah-dev "sigmah-dev" developer mailing list]. All the developer community is on this mailing list, and you're invited to post any question you may have on this list.
+
+Then, you can read step this Contributor Guide from general introduction about the humanitarian sector up to the installation of your software development environment:
+
+  # [http://www.euromedcp.eu/images/stories/infocommunications/hidden_disaster_en.pdf A comic book to get familiarized with the humanitarian sector] : useful as general introduction if you're curious about the humanitarian sector
+  # [http://www.sigmah.org/node/272 Main Sigmah concepts] _(in User Guide)_ : this page is really important to read completely to be able to understand the main business concepts used in Sigmah
+  # [ContributionRules Contribution rules] Good to read all of them right now at the beginning, and come back to them later on when you will have doubts
+  # [SigmahFlexibility Sigmah flexibility] An important page to understand the core concepts to handle the high flexibility let to users with Sigmah
+  # [Building Build Up Environment (Eclipse)] Finally, the page explaining how to install your environment
+
+When you will have finished to install your environment, you can take a look at the [http://www.sigmah.org/issues/roadmap_page.php project roadmap page] and pick some simple bugs to start to build your capacity to work on the project by solving simple issues. If you don't know which issue you should pick up, please feel free to ask on the sigmah-dev mailing list.
+
+*And very important*: please feel free to ask questions to the mailing list anytime you have one! :) There are no stupid questions, only people stupid enough not to ask them. :)
+
+*Welcome once again and looking forward to your first message on sigmah-dev!*
 
 
 _(this guide is currently mostly a direct copy from the Contributor Guide to ActivityInfo... adaptation of this guide to some new specific requirements of Sigmah is under process)_
