@@ -14,6 +14,7 @@ The best way to start is to send an email to our [http://groups.google.com/group
 
 Then, you can read step this Contributor Guide from general introduction about the humanitarian sector up to the installation of your software development environment:
 
+  # [http://code.google.com/p/sigma-h/wiki/ProjectCommunityCommunication#New_project_contributors:_where_to_register? New project contributors: where to register?]
   # [http://www.euromedcp.eu/images/stories/infocommunications/hidden_disaster_en.pdf A comic book to get familiarized with the humanitarian sector] : useful as general introduction if you're curious about the humanitarian sector
   # [http://www.sigmah.org/node/272 Main Sigmah concepts] _(in User Guide)_ : this page is really important to read completely to be able to understand the main business concepts used in Sigmah
   # [ContributionRules Contribution rules] Good to read all of them right now at the beginning, and come back to them later on when you will have doubts
