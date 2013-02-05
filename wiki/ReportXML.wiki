@@ -1,5 +1,5 @@
 #summary Report design
-#labels Featured
+#labels Deprecated
 
 = Introduction =
 
