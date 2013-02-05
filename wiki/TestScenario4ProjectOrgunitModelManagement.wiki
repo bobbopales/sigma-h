@@ -31,5 +31,43 @@ This scenario is based on the demo data set.
 <tr><td> 5 </td>
 <td> Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.</td>
 <td>A status message pops up with the message "The project model has been imported", and a new project model appears in the list in "Draft status.</td></tr>
+</table>
 
+
+== POMM3 ==
+=== _Title:_ Duplicate a project model ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> From the "Project models" part of the Administration, click on the "Duplicate" button for any of the existing project models.</td>
+<td>A status box titled "Project model duplication" opens up with the message "The project model has been duplicated", and a new row appears in the list of project models with a "Draft" project title "Copy of" the title of existing project selected for duplication.</td></tr>
+</table>
+
+
+== POMM4 ==
+=== _Title:_ Delete project model with test projects ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> On the Main dashboard, click on the "Draft project" button </td>
+<td>The "Create new draft project" popup opens up.</td></tr>
+<tr><td> 2 </td>
+<td> Give any Code, Title to your new draft project, select as Model a project model you're ready to delete afterwards, and click on the "Create" button.</td>
+<td>A status message informing you that "your draft project has been successfully created" pops up, and a new row with your project appears in "Your draft projects" list of the "Create new draft project" popup and in the Dashboard project table behing the popup.</td></tr>
+<tr><td> 3 </td>
+<td> Close the "Create new draft project" popup.</td>
+<td>The popup closes.</td></tr>
+<tr><td> 4 </td>
+<td>Go to the "Project models" part of the Administration.</td>
+<td>The list of existing project models is loaded on the right of the screen.</td></tr>
+<tr><td> 5 </td>
+<td>Click on the "Delete" button for the project model you've just created a draft project from.</td>
+<td>A confirmation message box pops up asking you "Warning: all objects and projects using this project model will be deleted. Are you sure you want to delete it?".</td></tr>
+<tr><td> 6 </td>
+<td>Click on "Yes".</td>
+<td>A status message informing you that "The project model has been deleted", and the row with the selected project model is removed from the project models list.</td></tr>
+<tr><td> 7 </td>
+<td>Go back to the main dashboard.</td>
+<td>The draft project created earlier is nowhere in the projects table.</td></tr>
+<tr><td> 8 </td>
+<td>Click on "Draft project" button.</td>
+<td>The draft project created earlier is no more in the "Your draft projects" list.</td></tr>
 </table>
