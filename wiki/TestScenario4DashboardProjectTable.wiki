@@ -1,4 +1,4 @@
-#summary Test Scenario on Dashbboard Projects Table (DTC)
+#summary Test Scenario on Dashbboard Projects Table (DPT)
 
 <wiki:toc max_depth="3" />
 
@@ -9,11 +9,11 @@ This scenario is based on the demo data set.
 
 = Test cases =
 
-== DTC1 ==
+== DPT1 ==
 === _Title:_ User signing in ===
 === _See test on:_ [TestScenario4UserSessionRight#USR1] ===
 
-== DTC2 ==
+== DPT2 ==
 === _Title:_ Projects table loading ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td> 1 </td><td> Just after signing in, the user sees the projects table getting loaded. </td><td> - A progress bar show the progress of the loading of the projects in the table
@@ -26,7 +26,9 @@ This scenario is based on the demo data set.
   * available time consumption
   * activity progress
   * categories to which this project belongs to </td></tr></table>
-== DTC3 ==
+
+
+== DPT3 ==
 === _Title:_ Global export live data ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td> 1 </td><td> From the projects table, click on the "Export all" button </td><td> The Global export popup opens up. </td></tr>
@@ -34,7 +36,9 @@ This scenario is based on the demo data set.
 <tr><td> 3 </td><td> Save the Excel file on your hard drive and open it. </td><td> The Excel file should contain a tab per project model which has projects associated to it.
 In each tab, all the fields of the project model should be given as column and each row should be a project.
 All projects, except test and deleted projects, should be in one or another tab of this Excel file. </td></tr></table>
-== DTC4 ==
+
+
+== DPT4 ==
 === _Title:_ Global export other format exportation ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td> 1 </td><td> From the projects table, click on the "Export all" button </td><td> The Global export popup opens up. </td></tr>
