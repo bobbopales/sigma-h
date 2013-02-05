@@ -1,0 +1,72 @@
+#summary Test Scenario on Logical Framework (LF)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the v1.2 demo data set.
+
+
+= Test cases =
+
+== LF1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== LF2 ==
+=== _Title:_ Create a minimal logframe without indicators ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> From the Main dashboard, create a new project from the model "Contrat de financement v1" (code and title free to choose).</td>
+<td>The new project gets available in the Projects table (visible only if table is grouped by "Source of Funding project".</td></tr>
+<tr><td> 2 </td>
+<td>Open the new project.</td>
+<td>A new tab opens up in the application with the new project.</td></tr>
+<tr><td> 3 </td>
+<td>Open the "Log frame" sub-tab of this new project.</td>
+<td>A screen with an empty logical framework is displayed.</td></tr>
+<tr><td> 4 </td>
+<td> Modify the content of the Main objective, and click on the "Add" button of the "Specific objectives" row.</td>
+<td>This first specific objective gets code "SO A.", and the cells "Intervention logic" and "Risks and assumptions" become open for modification.</td></tr>
+<tr><td> 5 </td>
+<td>Enter any data in the "Intervention logic" and "Risks and assumptions" cells for this specific objective, and click on the "Add" button of the "Expected result" row.</td>
+<td>A popup opens up asking you to choose a parent specific objective for this expected result.</td></tr>
+<tr><td> 6 </td>
+<td>Select "SO A." and click on "Save".</td>
+<td>This first expected result gets code "ER A.1.", and the cells "Intervention logic" and "Risks and assumptions" become open for modification for this row.</td></tr>
+<tr><td> 7 </td>
+<td>Enter any data in the "Intervention logic" and "Risks and assumptions" cells for this expected result, and click on the "Add" button of the "Activities" row.</td>
+<td>A popup opens up asking you to choose a parent expected result, a start and end dates for this new activity.</td></tr>
+<tr><td> 8 </td>
+<td>Select "ER A.1." and choose any date and click on "Save".</td>
+<td>This first expected result gets code "A A.1.1.", and the cell "Intervention logic" becomes open for modification for this row.</td></tr>
+<tr><td> 9 </td>
+<td>Enter any data in the "Intervention logic" cell for this activity, and click on the "Add" button of the "Prerequisites" row.</td>
+<td>This first prerequisite gets code "P 1.", and the a long cell "Intervention logic" becomes open for modification for this row.</td></tr>
+<tr><td> 10 </td>
+<td>Enter any data in the "Intervention logic" cell for this prequisite, and click on the "Save" button of this screen</td>
+<td>You get a confirmation message that your data has been correctly saved, and the "Save" button becomes disabled.</td></tr>
+<tr><td> 11 </td>
+<td>Go to another sub-tab and comes back to this "Log frame" sub-tab.</td>
+<td>All the data you've entered are still here.</td></tr>
+</table>
+
+
+
+
+== LF3 ==
+=== _Title:_ Create indicators in a logframe ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td>Opens the "Log frame" sub-tab of any project which has already a minimal logframe you're ready to modify</td>
+<td>A screen with a logical framework is displayed.</td></tr>
+<tr><td> 2 </td>
+<td> For each row of the logframe (Specific objectives, Expected results, Activities), create a new indicator by clicking accordingly on the "New indicator" hyperlink.</td>
+<td>In each row, an indicator should be visible with its name in the "Indicators" column, and its source of verification in the "Means of verification" column.</td></tr>
+<tr><td> 3 </td>
+<td>Click on the "Save" button of this screen</td>
+<td>You get a confirmation message that your data has been correctly saved, and the "Save" button becomes disabled.</td></tr>
+<tr><td> 4 </td>
+<td>Go to another sub-tab and comes back to this "Log frame" sub-tab.</td>
+<td>All the data you've entered are still here.</td></tr>
+</table>
