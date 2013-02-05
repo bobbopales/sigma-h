@@ -1,0 +1,53 @@
+#summary Test Scenario on Administration Global Management tab (AGM).
+
+= Introduction =
+
+This scenario is based on the v1.2 demo data set. 
+
+
+== AGM1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+
+== AGM2 ==
+=== _Title:_ Open Administration Global Management ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> From the main dashboard, click on the Administration button</td>
+<td>A new tab named "Administration" opens up in the application.</td></tr>
+<tr><td> 2 </td>
+<td>Click on "Global management" hyperlink on the left part of screen</td>
+<td>A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format".</td></tr>
+</table>
+
+
+
+== AGM3 ==
+=== _Title:_ Backup all last versions of files from top orgunit ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td>1 </td>
+<td> From the "Global management part" of the Administration area, select "Only the last version of each file" as "Download" option in the "Back up all files" block, and the headquarters ("Siège" in French) as root orgunit to build the backup from.</td>
+<td></td></tr>
+<tr><td> 2 </td>
+<td>Click on "Backup All Files" button</td>
+<td>A file named as the organization name is proposed for download.</td></tr>
+<tr><td> 3 </td>
+<td>Accept to save the file somewhere on your hard drive, and opens it once downloaded.</td>
+<td>The zip contains the full hierarchy of all orgunits and projects of the organization as folders, and in each folder the latest version of the files attached to each object.</td></tr>
+</table>
+
+
+== AGM4 ==
+=== _Title:_ Backup all versions of each file from one orgunit ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td>1 </td>
+<td> From the "Global management part" of the Administration area, select "All versions of each file" as "Download" option in the "Back up all files" block, and "Myanmar" as root orgunit to build the backup from.</td>
+<td></td></tr>
+<tr><td> 2 </td>
+<td>Click on "Backup All Files" button</td>
+<td>A file named as the organization name is proposed for download.</td></tr>
+<tr><td> 3 </td>
+<td>Accept to save the file somewhere on your hard drive, and opens it once downloaded.</td>
+<td>The zip contains a folder named Myanmar. In this Myanmar folder, there should be a folder "PosterSigmah_inEnglish_f1632" instead of a single file, and this folder contains 2 files which are the 2 versions of the files attached for test purpose. Those 2 files have 2 different suffix with version numbers.</td></tr>
+</table>
