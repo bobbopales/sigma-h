@@ -51,3 +51,22 @@ This scenario is based on the v1.2 demo data set.
 <td>Accept to save the file somewhere on your hard drive, and opens it once downloaded.</td>
 <td>The zip contains a folder named Myanmar. In this Myanmar folder, there should be a folder "PosterSigmah_inEnglish_f1632" instead of a single file, and this folder contains 2 files which are the 2 versions of the files attached for test purpose. Those 2 files have 2 different suffix with version numbers.</td></tr>
 </table>
+
+
+== AGM5 ==
+=== _Title:_ Change organization's logo and name ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td>1 </td>
+<td> Go to the "Global management part" of the Administration area</td>
+
+<td>A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format".</td></tr>
+<tr><td> 2 </td>
+<td>Change the content of "Name of the organization" and "Logo of the organization" fields, and click on the "Save changes" button.</td>
+<td>Confirmation status messages are sent, and you see the logo changed only inside this screen.</td></tr>
+<tr><td> 3 </td>
+<td>Click on the "Log out" hyperlink</td>
+<td>The Log In screen opens up.</td></tr>
+<tr><td> 4 </td>
+<td>Log in back (see [TestScenario4UserSessionRight#USR1] for more info)</td>
+<td>The logo and the name of the organization are changed on the top banner of the application.</td></tr>
+</table>
