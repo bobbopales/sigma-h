@@ -46,3 +46,18 @@ All projects, except test and deleted projects, should be in one or another tab 
 <tr><td> 3 </td><td> Change the "file type" parameter to the other value. (if it was Excel, switch it to Open document: for the rest of the test case, we assume that the new format is Open document), and click on the "Save configuration" button. </td><td> The Global export configuration popup closes itself, a status message "Global export configuration has been successfully updated is displayed", and the user is now back in front of the Global export popup. </td></tr>
 <tr><td> 4 </td><td> Let the "Live data" checked by default and click on the "Export" button. </td><td> After a while, an open document spreadsheet (*.ods) should be proposed to be downloaded. </td></tr>
 <tr><td> 5 </td><td> Save the ODS file on your hard drive, open it and compare it with the Excel file generated in previous test case. </td><td> Both files should contain exactly the same tabs, with the same columns and rows in each tab. </td></tr></table>
+
+
+
+
+== DPT5 ==
+=== _Title:_ Columns filter ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> From the projects table, move your mouse above any of the following columns: Code, Title, Active Phase, Organizational Unit </td><td> On the right of the column, a column contextual menu button in the form of triangle facing down shows up.</td></tr>
+<tr><td> 2 </td><td> Click on the column contextual menu button </td><td> The column contextual menu opens up.</td></tr>
+<tr><td> 3 </td><td> Move your mouse cursor until the "Filters" menu item. </td><td> A text field appears on the right of the menu item with the text invitation: "Enter filter text"</td></tr>
+<tr><td> 4 </td><td> Type any text that you see in the content of the selected column </td><td>The checkbox in front of the "Filters" menu item gets automatically checked, and in the projects table only the rows containing the text put in the filter text field remain.</td></tr>
+<tr><td> 5 </td><td> Uncheck the checkbox in front of the "Filters" item menu you've just filled </td><td>The project table gets back all the rows available at the beginning of this test case.</td></tr>
+<tr><td> 6 </td><td> Open now the "Filters" menu item for the "Category" column </td><td>A list with checkboxes of all the categories group by category type opens up.</td></tr>
+<tr><td> 7 </td><td> Check one or several categories item among the ones available in the column </td><td>The project table gets filtered accordingly.</td></tr>
+</table>
