@@ -1,4 +1,5 @@
 #summary Summary of all test cases
+#labels Featured,Phase-QA
 
 = Introduction =
 
@@ -52,6 +53,7 @@ The list of test cases is under migration from its original form as a Word file 
 || Test 4.17 || Modification du responsable de projet (#92) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 4.18 || Modification de la zone d’intervention d’un projet (#93) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || 5 || Flexibilité d’un projet, en locale EN || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || Test 5.1 || Création d’un modèle de projet (#94) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 5.2 || Création d’un nouveau champ dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 5.3 || Création d’une nouvelle phase dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
