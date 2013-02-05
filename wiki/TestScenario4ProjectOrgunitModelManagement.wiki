@@ -1,0 +1,35 @@
+#summary Test Scenario on Project/Orgunit Model Management (POMM)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the demo data set.
+
+
+= Test cases =
+
+== POMM1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== POMM2 ==
+=== _Title:_ Import project model ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> From the Main dashboard, click on the "Administration" button </td>
+<td>The Administration tab opens up.</td></tr>
+<tr><td> 2 </td>
+<td> Click on the "Project models" hyperlink</td>
+<td>The list of existing project models is loaded on the right of the screen.</td></tr>
+<tr><td> 3 </td>
+<td> Click on the "Import" Button</td>
+<td>The "Importing project model..." popup opens up.</td></tr>
+<tr><td> 4 </td>
+<td> Click on the "Project models" hyperlink</td>
+<td>The list of existing project models is loaded on the right of the screen.</td></tr>
+<tr><td> 5 </td>
+<td> Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.</td>
+<td>A status message pops up with the message "The project model has been imported", and a new project model appears in the list in "Draft status.</td></tr>
+
+</table>
