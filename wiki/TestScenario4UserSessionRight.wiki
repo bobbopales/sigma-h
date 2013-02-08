@@ -13,5 +13,21 @@ This scenario is based on the 1.2 demo data.
 == USR1 ==
 === _Title:_ User signing in ===
 
-|| *Steps to reproduce* || *Result expected* ||
-|| Enter 'demo@sigmah.org' as email, and 'sigmah' as password, and click on 'Sign in' || The dashboard opens up as home page, and the 'demo@sigmah.org' email address is visible on top of the page. ||
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Enter 'demo@sigmah.org' as email, and 'sigmah' as password, and click on 'Sign in' || The dashboard opens up as home page, and the 'demo@sigmah.org' email address is visible on top of the page. ||
+
+== USR2 ==
+=== _Title:_ User logging out ===
+
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Once in the application, click on the "Logout" hyperlink || The sign in page should replace the current page left in the application. ||
+
+== USR3 ==
+=== _Title:_ Recovering lost password ===
+
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the "Sign in" page, click on the "Have you forgotten your password?" hyperlink || A window pops up asking you to enter your e-mail address. ||
+|| 2 || Enter a valid email address which is also the email address of a user already registered in the Sigmah version you're testing, and click on the "OK" button. || After a couple of seconds, you should receive an email containing a temporary URL to change your password. ||
+|| 3 || From the email you've received in your mailbox from Sigmah, click on the URL || A new pageopens up in your web browser with 3 fields: your email address (locked field), a new password field, and a confirmation password field. ||
+|| 4 || Enter a new password and its confirmation, and click on "Save" || You get a confirmation message informing you that your password has been changed. ||
+|| 5 || Log in with your new password and the email address used for the passsword recovery procedure || You should be able to enter the application with this new password. ||
