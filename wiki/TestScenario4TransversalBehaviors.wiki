@@ -1,0 +1,38 @@
+#summary Test Scenario on Transversal Behaviors (TB)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the v1.2 demo data set.
+
+
+= Test cases =
+
+== TB1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== TB2 ==
+=== _Title:_ Quit without saving ===
+
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td>For each of the following screen, try to enter some data in the screen, and leave the screen without saving:
+  * Project "Management board" sub-tab
+  * Project "Details" sub-tab
+  * Project "Logical Framework" sub-tab
+  * Project "Manage Indicators" sub-tab
+  * Project "Indicator Data Entry" sub-tab
+  * Project "Calendar" sub-tab
+  * Project "Reports & documents" sub-tab
+  * Orgunit "Overview" sub-tab
+  * Orgunit "Information" sub-tab
+  * Orgunit "Calendar" sub-tab
+  * Orgunit "Reports & documents" sub-tab
+  * Administration "Project model" edition screen
+  * Administration "Orgunit model" edition screen
+  * Administration "Report models" screen
+  * Administration "Global management" screen    </td>
+<td>For each screen, when trying to leave without having saved, a small window should popup to ask you to confirm you want to quit without saving.</td></tr>
+</table>
