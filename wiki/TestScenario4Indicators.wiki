@@ -1,0 +1,48 @@
+#summary Test Scenario on Indicators (I)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the v1.2 demo data set.
+
+
+= Test cases =
+
+== I10 ==
+
+_We start with 10 for this test case because we know it is a quite advanced test case, and it won't remain 1 if we would have chosen to call it "I1"..._
+
+=== _Title:_ Team work on indicators data entry ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td>
+<td> Sign in the application with login user1@sigmah.org (password: sigmah).</td>
+<td></td></tr>
+<tr><td> 2 </td>
+<td>Open the project IF1389, which is taking place in DRC.</td>
+<td></td></tr>
+<tr><td> 3 </td>
+<td>Open the "Manage Indicators" sub-tab of the IF1389 project.</td>
+<td></td></tr>
+<tr><td> 4 </td>
+<td>Create 2 different sites.</td>
+<td></td></tr>
+<tr><td> 5 </td>
+<td>Create one quantitative indicator.</td>
+<td></td></tr>
+<tr><td> 6 </td>
+<td>Open the "Indicator Data Entry" sub-tab of the IF1389 project.</td>
+<td></td></tr>
+<tr><td> 7 </td>
+<td>Add some value for one site for the indicator just created, and click on save.</td>
+<td></td></tr>
+<tr><td> 8 </td>
+<td>Log off, and sign in the application with login user2@sigmah.org (password: sigmah).</td>
+<td></td></tr>
+<tr><td> 9 </td>
+<td>Open the sub-tab "Indicator Data Entry" of the IF1389 project.</td>
+<td>You should see the value entered just before by user1.</td></tr>
+<tr><td> 10 </td>
+<td>Add some value for the other site for the indicator just created by user1, and click on save.</td>
+<td>The saving process should work without any problem.</td></tr>
+</table>
