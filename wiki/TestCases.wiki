@@ -6,12 +6,6 @@
 This page sums up all test cases written for the Sigmah project.
 Each time a new relase of Sigmah is made, the full list of tests below should be runned.
 
-<img src="http://code.google.com/p/sigma-h/source/browse/media/sigmah-logo.svg">
-
-<img src="http://code.google.com/p/sigma-h/source/browse/media/sigmah-logo.svg" height=30 width=20>
-
-<img src="http://code.google.com/p/sigma-h/source/browse/media/icons/projects/financier.png">
-
 
 = Summary of all test cases =
 
