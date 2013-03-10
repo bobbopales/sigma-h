@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1048 743 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="230" y="773.5" x="1377.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="230" y="813.5" x="1377.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/value">
+<text font-weight="bold" font-size="20" fill="darkred" y="803.5" x="1387.5">value</text>
+</a>
+<text font-size="15" y="813.5" x="1387.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1387.5">id_value : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">id_project : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">action_last_modif : bpchar</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">date_last_modif : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">value : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1387.5">id_user_last_modif : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="280" width="314" y="885.6999999999999" x="978.75"/>
+<rect stroke-width="3" stroke="black" fill="white" height="230" width="314" y="925.6999999999999" x="978.75"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/userlogin">
+<text font-weight="bold" font-size="20" fill="darkred" y="915.6999999999999" x="988.75">userlogin</text>
+</a>
+<text font-size="15" y="925.6999999999999" x="988.75">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="988.75">userid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">active : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">changepasswordkey : character varying(34)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">datechangepasswordkeyissued : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">email : character varying(75)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">firstname : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">password : character varying(150)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">locale : character varying(10)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">newuser : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="988.75">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="969.8530054644808" x2="1335.125" y1="969.8530054644808" x1="1292.75"/>
+<line stroke-width="3" stroke="red" y2="904.2086614173228" x2="1335.125" y1="969.8530054644808" x1="1335.125"/>
+<line stroke-width="3" stroke="red" y2="904.2086614173228" x2="1377.5" y1="904.2086614173228" x1="1335.125"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1292.75,969.8530054644808 1302.75,962.8530054644808 1302.75,976.8530054644808"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1065.8999999999999" x="1349.95"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1105.8999999999999" x="1349.95"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1095.8999999999999" x="1359.95">flexible_element</text>
+</a>
+<text font-size="15" y="1105.8999999999999" x="1359.95">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1359.95">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1019.6999999999999" x2="1487.98550295858" y1="1065.8999999999999" x1="1487.98550295858"/>
+<line stroke-width="3" stroke="red" y2="1019.6999999999999" x2="1454.6022727272727" y1="1019.6999999999999" x1="1487.98550295858"/>
+<line stroke-width="3" stroke="red" y2="973.5" x2="1454.6022727272727" y1="1019.6999999999999" x1="1454.6022727272727"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1487.98550295858,1065.8999999999999 1480.98550295858,1055.8999999999999 1494.98550295858,1055.8999999999999"/>
+</svg>

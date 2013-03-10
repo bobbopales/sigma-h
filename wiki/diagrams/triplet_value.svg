@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="165 1408 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="202" y="1438.2" x="95.7"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="202" y="1478.2" x="95.7"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/triplet_value">
+<text font-weight="bold" font-size="20" fill="darkred" y="1468.2" x="105.7">triplet_value</text>
+</a>
+<text font-size="15" y="1478.2" x="105.7">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="105.7">id_triplet : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="105.7">code : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="105.7">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="105.7">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="105.7">period : text</tspan>
+</text>
+</svg>

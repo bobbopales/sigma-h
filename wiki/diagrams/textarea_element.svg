@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="280 1047 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="216" y="1142.3999999999999" x="210.25"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="216" y="1182.3999999999999" x="210.25"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/textarea_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1172.3999999999999" x="220.25">textarea_element</text>
+</a>
+<text font-size="15" y="1182.3999999999999" x="220.25">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="220.25">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="220.25">is_decimal : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="220.25">length : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="220.25">max_value : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="220.25">min_value : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="220.25">type : bpchar</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1077.8" x="524.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1117.8" x="524.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1107.8" x="534.9">flexible_element</text>
+</a>
+<text font-size="15" y="1117.8" x="534.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="534.9">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1214.0814159292033" x2="475.575" y1="1214.0814159292033" x1="426.25"/>
+<line stroke-width="3" stroke="red" y2="1195.7797979797979" x2="475.575" y1="1214.0814159292033" x1="475.575"/>
+<line stroke-width="3" stroke="red" y2="1195.7797979797979" x2="524.9" y1="1195.7797979797979" x1="475.575"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="524.9,1195.7797979797979 514.9,1188.7797979797979 514.9,1202.7797979797979"/>
+</svg>

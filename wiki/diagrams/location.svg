@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1483 988 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="240" width="272" y="1018.2999999999998" x="1577.6"/>
+<rect stroke-width="3" stroke="black" fill="white" height="190" width="272" y="1058.2999999999997" x="1577.6"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/location">
+<text font-weight="bold" font-size="20" fill="darkred" y="1048.2999999999997" x="1587.6">location</text>
+</a>
+<text font-size="15" y="1058.2999999999997" x="1587.6">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1587.6">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">axe : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">locationguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">x : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">y : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1587.6">locationtypeid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1365.0999999999997" x="1413.7499999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1405.0999999999997" x="1413.7499999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/locationtype">
+<text font-weight="bold" font-size="20" fill="darkred" y="1395.0999999999997" x="1423.7499999999998">locationtype</text>
+</a>
+<text font-size="15" y="1405.0999999999997" x="1423.7499999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1423.7499999999998">locationtypeid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.7499999999998">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.7499999999998">reuse : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.7499999999998">boundadminlevelid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.7499999999998">countryid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1311.6999999999998" x2="1547.8676470588234" y1="1365.0999999999997" x1="1547.8676470588234"/>
+<line stroke-width="3" stroke="red" y2="1311.6999999999998" x2="1659.3777777777777" y1="1311.6999999999998" x1="1547.8676470588234"/>
+<line stroke-width="3" stroke="red" y2="1258.2999999999997" x2="1659.3777777777777" y1="1311.6999999999998" x1="1659.3777777777777"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1547.8676470588234,1365.0999999999997 1540.8676470588234,1355.0999999999997 1554.8676470588234,1355.0999999999997"/>
+</svg>

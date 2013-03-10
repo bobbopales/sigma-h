@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="779 316 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="229" y="346.8" x="961.35"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="229" y="386.8" x="961.35"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/report_list_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="376.8" x="971.35">report_list_element</text>
+</a>
+<text font-size="15" y="386.8" x="971.35">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="971.35">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="971.35">model_id : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="223" y="532.1" x="1020.8"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="223" y="572.1" x="1020.8"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/projectreportmodel">
+<text font-weight="bold" font-size="20" fill="darkred" y="562.1" x="1030.8">projectreportmodel</text>
+</a>
+<text font-size="15" y="572.1" x="1030.8">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1030.8">id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1030.8">name : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1030.8">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="489.45000000000005" x2="1123.1836477987422" y1="532.1" x1="1123.1836477987422"/>
+<line stroke-width="3" stroke="red" y2="489.45000000000005" x2="1071.27" y1="489.45000000000005" x1="1123.1836477987422"/>
+<line stroke-width="3" stroke="red" y2="446.8" x2="1071.27" y1="489.45000000000005" x1="1071.27"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1123.1836477987422,532.1 1116.1836477987422,522.1 1130.1836477987422,522.1"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="508.29999999999995" x="709.05"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="548.3" x="709.05"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="538.3" x="719.05">flexible_element</text>
+</a>
+<text font-size="15" y="548.3" x="719.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="719.05">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="719.05">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="719.05">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="719.05">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="719.05">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="477.54999999999995" x2="905.8784023668638" y1="508.29999999999995" x1="905.8784023668638"/>
+<line stroke-width="3" stroke="red" y2="477.54999999999995" x2="982.2871428571428" y1="477.54999999999995" x1="905.8784023668638"/>
+<line stroke-width="3" stroke="red" y2="446.8" x2="982.2871428571428" y1="477.54999999999995" x1="982.2871428571428"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="905.8784023668638,508.29999999999995 898.8784023668638,498.29999999999995 912.8784023668638,498.29999999999995"/>
+</svg>

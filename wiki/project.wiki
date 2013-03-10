@@ -1,0 +1,27 @@
+=Table project=
+==Remarks==
+The table project contains all projects of the organizations. 
+A project is set by a project_model that defines how it will be displayed.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| databaseid || integer || X || X || [userdatabase](databaseid) || This is the primary key of the table. It is also a foreign key to the table userdatabase that contains some metadata of the project. ||
+|| activity_advancement || integer ||  ||  ||  || This column indicates the progression of the activity ||
+|| amendment_revision || integer ||  ||  ||  || This column corresponds to the current number of the amendment revision ||
+|| amendment_status || character varying(255) ||  ||  ||  || This columns defines the status of the amendment (DRAFT, LOCKED, ACTIVE, REJECTED or ARCHIVED) ||
+|| amendment_version || integer ||  ||  ||  || This column sepcifies the cureent number of the amendment version. ||
+|| calendarid || integer ||  ||  ||  || This column is a link to the table personalcalendar ||
+|| close_date || date ||  ||  ||  || It specifies when the project will be finished. ||
+|| end_date || date ||  ||  ||  || It specifies when the project will begin. ||
+|| planned_budget || double precision ||  ||  ||  || It defines the amount of funds expected ||
+|| received_budget || double precision ||  ||  ||  || It defines the amount of funds received ||
+|| spend_budget || double precision ||  ||  ||  || It defines the amount of funds spent ||
+|| id_current_phase || bigint || X ||  || [phase](id_phase) || This column defines which is the current phase of the project. ||
+|| id_manager || integer || X ||  || [userlogin](userid) || It's a foreign key to the table userlogin and corresponds to the manager of the project. ||
+|| id_monitored_points_list || integer || X ||  || [monitored_point_list](id_monitored_point_list) || This is a foreign key to the table monitored_point_list. ||
+|| id_project_model || bigint || X ||  || [project_model](id_project_model) || This column specifies the type of the project. ||
+|| id_reminder_list || integer || X ||  || [reminder_list](id_reminder_list) || This is the foreign key to a reminder list. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/project.svg" />
+

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1389 1035 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1065.8999999999999" x="1349.95"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1105.8999999999999" x="1349.95"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1095.8999999999999" x="1359.95">flexible_element</text>
+</a>
+<text font-size="15" y="1105.8999999999999" x="1359.95">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1359.95">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1359.95">id_privacy_group : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="237" y="1315.8" x="1319.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="237" y="1355.8" x="1319.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/privacy_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="1345.8" x="1329.5">privacy_group</text>
+</a>
+<text font-size="15" y="1355.8" x="1329.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1329.5">id_privacy_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1329.5">code : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1329.5">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1329.5">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1270.85" x2="1449.560975609756" y1="1315.8" x1="1449.560975609756"/>
+<line stroke-width="3" stroke="red" y2="1270.85" x2="1445.8079881656804" y1="1270.85" x1="1449.560975609756"/>
+<line stroke-width="3" stroke="red" y2="1225.8999999999999" x2="1445.8079881656804" y1="1270.85" x1="1445.8079881656804"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1449.560975609756,1315.8 1442.560975609756,1305.8 1456.560975609756,1305.8"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="731 1518 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="230" y="1548.7" x="687.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="230" y="1588.7" x="687.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_criterion">
+<text font-weight="bold" font-size="20" fill="darkred" y="1578.7" x="697.3">quality_criterion</text>
+</a>
+<text font-size="15" y="1588.7" x="697.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="697.3">id_quality_criterion : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3">code : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3">id_quality_framework : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="237" y="1747.6" x="974.3999999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="237" y="1787.6" x="974.3999999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_framework">
+<text font-weight="bold" font-size="20" fill="darkred" y="1777.6" x="984.3999999999999">quality_framework</text>
+</a>
+<text font-size="15" y="1787.6" x="984.3999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="984.3999999999999">id_quality_framework : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="984.3999999999999">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="984.3999999999999">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1666.679797979798" x2="1005.7492063492062" y1="1666.679797979798" x1="917.3"/>
+<line stroke-width="3" stroke="red" y2="1747.6" x2="1005.7492063492062" y1="1666.679797979798" x1="1005.7492063492062"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1005.7492063492062,1747.6 998.7492063492062,1737.6 1012.7492063492062,1737.6"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="202" y="1798.6" x="661.1999999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="202" y="1838.6" x="661.1999999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/organization">
+<text font-weight="bold" font-size="20" fill="darkred" y="1828.6" x="671.1999999999999">organization</text>
+</a>
+<text font-size="15" y="1838.6" x="671.1999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="671.1999999999999">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.1999999999999">logo : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.1999999999999">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.1999999999999">id_root_org_unit : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1753.65" x2="794.5962264150943" y1="1798.6" x1="794.5962264150943"/>
+<line stroke-width="3" stroke="red" y2="1753.65" x2="832.1148148148147" y1="1753.65" x1="794.5962264150943"/>
+<line stroke-width="3" stroke="red" y2="1708.7" x2="832.1148148148147" y1="1753.65" x1="832.1148148148147"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="794.5962264150943,1798.6 787.5962264150943,1788.6 801.5962264150943,1788.6"/>
+</svg>

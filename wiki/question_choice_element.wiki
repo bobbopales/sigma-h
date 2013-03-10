@@ -1,0 +1,16 @@
+=Table question_choice_element=
+==Remarks==
+Each entry of this table corresponds to an element of an entry of the table Question_Element. In other words, an entry of the table Question_Element has several entry of the table Question_Choice_Element. So in Java code, the class Question_Element has a list of Question_Element.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_choice || bigint || X || X ||  || This is the primary key of the table. ||
+|| label || character varying(8192) || X ||  ||  || This column is the label of the choice which will be displayed in the listbox. ||
+|| sort_order || integer ||  ||  ||  || The sor_order column indicates the order in which choices will be displayed ||
+|| id_category_element || integer || X ||  || [category_element](id_category_element) || This is a foreign key to the table category_element ||
+|| id_question || bigint || X ||  || [question_element](id_flexible_element) ||  ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/question_choice_element.svg" />
+
+

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="880 1343 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="218" y="1788.3999999999999" x="1122.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="218" y="1828.3999999999999" x="1122.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/reportsubscription">
+<text font-weight="bold" font-size="20" fill="darkred" y="1818.3999999999999" x="1132.3">reportsubscription</text>
+</a>
+<text font-size="15" y="1828.3999999999999" x="1132.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1132.3">reporttemplateid : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1132.3">userid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1132.3">subscribed : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1132.3">invitinguserid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="260" width="258" y="1552.1" x="810.5500000000001"/>
+<rect stroke-width="3" stroke="black" fill="white" height="210" width="258" y="1592.1" x="810.5500000000001"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/reporttemplate">
+<text font-weight="bold" font-size="20" fill="darkred" y="1582.1" x="820.5500000000001">reporttemplate</text>
+</a>
+<text font-size="15" y="1592.1" x="820.5500000000001">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="820.5500000000001">reporttemplateid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">day : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">description : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">frequency : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">title : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">visibility : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">xml : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="820.5500000000001">owneruserid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1764.4076923076923" x2="1095.4250000000002" y1="1764.4076923076923" x1="1068.5500000000002"/>
+<line stroke-width="3" stroke="red" y2="1832.870588235294" x2="1095.4250000000002" y1="1764.4076923076923" x1="1095.4250000000002"/>
+<line stroke-width="3" stroke="red" y2="1832.870588235294" x2="1122.3" y1="1832.870588235294" x1="1095.4250000000002"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1068.5500000000002,1764.4076923076923 1078.5500000000002,1757.4076923076923 1078.5500000000002,1771.4076923076923"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="280" width="314" y="1373.6" x="1133.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="230" width="314" y="1413.6" x="1133.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/userlogin">
+<text font-weight="bold" font-size="20" fill="darkred" y="1403.6" x="1143.9">userlogin</text>
+</a>
+<text font-size="15" y="1413.6" x="1143.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1143.9">userid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">active : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">changepasswordkey : character varying(34)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">datechangepasswordkeyissued : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">email : character varying(75)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">firstname : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">password : character varying(150)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">locale : character varying(10)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">newuser : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1721" x2="1249.0441860465116" y1="1788.3999999999999" x1="1249.0441860465116"/>
+<line stroke-width="3" stroke="red" y2="1721" x2="1236.1660550458716" y1="1721" x1="1249.0441860465116"/>
+<line stroke-width="3" stroke="red" y2="1653.6" x2="1236.1660550458716" y1="1721" x1="1236.1660550458716"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1236.1660550458716,1653.6 1229.1660550458716,1663.6 1243.1660550458716,1663.6"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="280" width="314" y="1373.6" x="1133.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="230" width="314" y="1413.6" x="1133.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/userlogin">
+<text font-weight="bold" font-size="20" fill="darkred" y="1403.6" x="1143.9">userlogin</text>
+</a>
+<text font-size="15" y="1413.6" x="1143.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1143.9">userid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">active : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">changepasswordkey : character varying(34)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">datechangepasswordkeyissued : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">email : character varying(75)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">firstname : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">password : character varying(150)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">locale : character varying(10)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">newuser : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1143.9">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1721" x2="1308.613953488372" y1="1788.3999999999999" x1="1308.613953488372"/>
+<line stroke-width="3" stroke="red" y2="1721" x2="1375.881651376147" y1="1721" x1="1308.613953488372"/>
+<line stroke-width="3" stroke="red" y2="1653.6" x2="1375.881651376147" y1="1721" x1="1375.881651376147"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1375.881651376147,1653.6 1368.881651376147,1663.6 1382.881651376147,1663.6"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="141 1306 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="273" y="1422.9" x="204.45000000000002"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="273" y="1462.9" x="204.45000000000002"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/question_choice_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1452.9" x="214.45000000000002">question_choice_element</text>
+</a>
+<text font-size="15" y="1462.9" x="214.45000000000002">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="214.45000000000002">id_choice : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="214.45000000000002">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="214.45000000000002">sort_order : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="214.45000000000002">id_category_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="214.45000000000002">id_question : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="230" y="1336.2" x="495.90000000000003"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="230" y="1376.2" x="495.90000000000003"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/question_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1366.2" x="505.90000000000003">question_element</text>
+</a>
+<text font-size="15" y="1376.2" x="505.90000000000003">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="505.90000000000003">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">is_multiple : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">id_category_type : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">id_quality_criterion : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1523.1020202020204" x2="544.5285714285715" y1="1523.1020202020204" x1="477.45000000000005"/>
+<line stroke-width="3" stroke="red" y2="1476.2" x2="544.5285714285715" y1="1523.1020202020204" x1="544.5285714285715"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="544.5285714285715,1476.2 537.5285714285715,1486.2 551.5285714285715,1486.2"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="244" y="1650.7" x="71.05"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="244" y="1690.7" x="71.05"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/category_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1680.7" x="81.05">category_element</text>
+</a>
+<text font-size="15" y="1690.7" x="81.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="81.05">id_category_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="81.05">color_hex : character varying(6)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="81.05">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="81.05">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="81.05">id_category_type : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1616.8000000000002" x2="195.0072192513369" y1="1650.7" x1="195.0072192513369"/>
+<line stroke-width="3" stroke="red" y2="1616.8000000000002" x2="248.24679144385027" y1="1616.8000000000002" x1="195.0072192513369"/>
+<line stroke-width="3" stroke="red" y2="1582.9" x2="248.24679144385027" y1="1616.8000000000002" x1="248.24679144385027"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="195.0072192513369,1650.7 188.0072192513369,1640.7 202.0072192513369,1640.7"/>
+</svg>

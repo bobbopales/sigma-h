@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="146 347 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="220" width="272" y="377.4" x="76.85"/>
+<rect stroke-width="3" stroke="black" fill="white" height="170" width="272" y="417.4" x="76.85"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/personalevent">
+<text font-weight="bold" font-size="20" fill="darkred" y="407.4" x="86.85">personalevent</text>
+</a>
+<text font-size="15" y="417.4" x="86.85">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="86.85">id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">description : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">enddate : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">startdate : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="86.85">summary : character varying(255)</tspan>
+</text>
+</svg>

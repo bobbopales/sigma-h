@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1325 1833 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="223" y="2096.1" x="1257.1499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="223" y="2136.1" x="1257.1499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout_constraint">
+<text font-weight="bold" font-size="20" fill="darkred" y="2126.1" x="1267.1499999999999">layout_constraint</text>
+</a>
+<text font-size="15" y="2136.1" x="1267.1499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1267.1499999999999">id_layout_constraint : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1267.1499999999999">sort_order : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1267.1499999999999">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1267.1499999999999">id_layout_group : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="237" y="2065.5" x="1580.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="237" y="2105.5" x="1580.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="2095.5" x="1590.5">layout_group</text>
+</a>
+<text font-size="15" y="2105.5" x="1590.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1590.5">id_layout_group : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">column_index : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">row_index : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">id_layout : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="2196.570588235294" x2="1530.3249999999998" y1="2196.570588235294" x1="1480.1499999999999"/>
+<line stroke-width="3" stroke="red" y2="2151.156565656566" x2="1530.3249999999998" y1="2196.570588235294" x1="1530.3249999999998"/>
+<line stroke-width="3" stroke="red" y2="2151.156565656566" x2="1580.5" y1="2151.156565656566" x1="1530.3249999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1580.5,2151.156565656566 1570.5,2144.156565656566 1570.5,2158.156565656566"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1863.2" x="1255.6999999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1903.2" x="1255.6999999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1893.2" x="1265.6999999999998">flexible_element</text>
+</a>
+<text font-size="15" y="1903.2" x="1265.6999999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1265.6999999999998">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1265.6999999999998">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1265.6999999999998">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1265.6999999999998">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1265.6999999999998">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="2059.65" x2="1376.932857142857" y1="2096.1" x1="1376.932857142857"/>
+<line stroke-width="3" stroke="red" y2="2059.65" x2="1350.5901734104045" y1="2059.65" x1="1376.932857142857"/>
+<line stroke-width="3" stroke="red" y2="2023.2" x2="1350.5901734104045" y1="2059.65" x1="1350.5901734104045"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1350.5901734104045,2023.2 1343.5901734104045,2033.2 1357.5901734104045,2033.2"/>
+</svg>

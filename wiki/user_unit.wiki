@@ -1,0 +1,13 @@
+=Table user_unit=
+==Remarks==
+This table associates an user to an organizational unit.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_user_unit || integer || X || X ||  || This is the primary key of the table. ||
+|| id_org_unit || integer || X ||  || [partner](partnerid) || This is a foreign key to the table partner. ||
+|| id_user || integer || X ||  || [userlogin](userid) || This is a foreign key to the table userlogin. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/user_unit.svg" />
+

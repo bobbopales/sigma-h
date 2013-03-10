@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1525 1290 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="230" y="1564" x="1590.65"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="230" y="1604" x="1590.65"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/phase_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1594" x="1600.65">phase_model</text>
+</a>
+<text font-size="15" y="1604" x="1600.65">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1600.65">id_phase_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">display_order : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">guide : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">definition_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.65">id_project_model : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="181" y="1876.7999999999997" x="1589.2"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="181" y="1916.7999999999997" x="1589.2"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout">
+<text font-weight="bold" font-size="20" fill="darkred" y="1906.7999999999997" x="1599.2">layout</text>
+</a>
+<text font-size="15" y="1916.7999999999997" x="1599.2">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1599.2">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1599.2">columns_count : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1599.2">rows_count : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1820.3999999999999" x2="1710.832" y1="1876.7999999999997" x1="1710.832"/>
+<line stroke-width="3" stroke="red" y2="1820.3999999999999" x2="1677.4424528301888" y1="1820.3999999999999" x1="1710.832"/>
+<line stroke-width="3" stroke="red" y2="1764" x2="1677.4424528301888" y1="1820.3999999999999" x1="1677.4424528301888"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1710.832,1876.7999999999997 1703.832,1866.7999999999997 1717.832,1866.7999999999997"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="237" y="1320.8999999999999" x="1455.8"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="237" y="1360.8999999999999" x="1455.8"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1350.8999999999999" x="1465.8">project_model</text>
+</a>
+<text font-size="15" y="1360.8999999999999" x="1465.8">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1465.8">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.8">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.8">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.8">id_root_phase_model : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1512.4499999999998" x2="1641.2789308176102" y1="1564" x1="1641.2789308176102"/>
+<line stroke-width="3" stroke="red" y2="1512.4499999999998" x2="1576.9333333333334" y1="1512.4499999999998" x1="1641.2789308176102"/>
+<line stroke-width="3" stroke="red" y2="1460.8999999999999" x2="1576.9333333333334" y1="1512.4499999999998" x1="1576.9333333333334"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1576.9333333333334,1460.8999999999999 1569.9333333333334,1470.8999999999999 1583.9333333333334,1470.8999999999999"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="80" width="265" y="1414.3999999999999" x="1760.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="30" width="265" y="1454.3999999999999" x="1760.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/phase_model_definition">
+<text font-weight="bold" font-size="20" fill="darkred" y="1444.3999999999999" x="1770.3">phase_model_definition</text>
+</a>
+<text font-size="15" y="1454.3999999999999" x="1770.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1770.3">id_phase_model_definition : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1611.244094488189" x2="1861.0746478873239" y1="1611.244094488189" x1="1820.65"/>
+<line stroke-width="3" stroke="red" y2="1494.3999999999999" x2="1861.0746478873239" y1="1611.244094488189" x1="1861.0746478873239"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1861.0746478873239,1494.3999999999999 1854.0746478873239,1504.3999999999999 1868.0746478873239,1504.3999999999999"/>
+</svg>

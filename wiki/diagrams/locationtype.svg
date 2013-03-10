@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1216 1008 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1365.1" x="1413.75"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1405.1" x="1413.75"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/locationtype">
+<text font-weight="bold" font-size="20" fill="darkred" y="1395.1" x="1423.75">locationtype</text>
+</a>
+<text font-size="15" y="1405.1" x="1423.75">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1423.75">locationtypeid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.75">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.75">reuse : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.75">boundadminlevelid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1423.75">countryid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="216" y="1038.6999999999998" x="1332.55"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="216" y="1078.6999999999998" x="1332.55"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/country">
+<text font-weight="bold" font-size="20" fill="darkred" y="1068.6999999999998" x="1342.55">country</text>
+</a>
+<text font-size="15" y="1078.6999999999998" x="1342.55">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1342.55">countryid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">x1 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">x2 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">y1 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">y2 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">iso2 : character varying(2)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1342.55">name : character varying(50)</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1301.8999999999999" x2="1480.1029411764705" y1="1365.1" x1="1480.1029411764705"/>
+<line stroke-width="3" stroke="red" y2="1301.8999999999999" x2="1395.2064885496184" y1="1301.8999999999999" x1="1480.1029411764705"/>
+<line stroke-width="3" stroke="red" y2="1238.6999999999998" x2="1395.2064885496184" y1="1301.8999999999999" x1="1395.2064885496184"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1395.2064885496184,1238.6999999999998 1388.2064885496184,1248.6999999999998 1402.2064885496184,1248.6999999999998"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1331.1" x="1146.95"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1371.1" x="1146.95"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/adminlevel">
+<text font-weight="bold" font-size="20" fill="darkred" y="1361.1" x="1156.95">adminlevel</text>
+</a>
+<text font-size="15" y="1371.1" x="1156.95">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1156.95">adminlevelid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1156.95">allowadd : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1156.95">name : character varying(30)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1156.95">countryid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1156.95">parentid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1463.6252525252526" x2="1388.35" y1="1463.6252525252526" x1="1362.95"/>
+<line stroke-width="3" stroke="red" y2="1439.4434343434343" x2="1388.35" y1="1463.6252525252526" x1="1388.35"/>
+<line stroke-width="3" stroke="red" y2="1439.4434343434343" x2="1413.75" y1="1439.4434343434343" x1="1388.35"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1362.95,1463.6252525252526 1372.95,1456.6252525252526 1372.95,1470.6252525252526"/>
+</svg>

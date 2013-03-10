@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="903 952 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="223" y="1031.9" x="833.75"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="223" y="1071.9" x="833.75"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="1061.9" x="843.75">log_frame_group</text>
+</a>
+<text font-size="15" y="1071.9" x="843.75">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="843.75">id_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">type : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">id_log_frame : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="216" y="982.6000000000001" x="1116.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="216" y="1022.6000000000001" x="1116.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame">
+<text font-weight="bold" font-size="20" fill="darkred" y="1012.6000000000001" x="1126.5">log_frame</text>
+</a>
+<text font-size="15" y="1022.6000000000001" x="1126.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1126.5">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">main_objective : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_log_frame_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_project : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1071.429411764706" x2="1086.625" y1="1071.429411764706" x1="1056.75"/>
+<line stroke-width="3" stroke="red" y2="1032.0117647058826" x2="1086.625" y1="1071.429411764706" x1="1086.625"/>
+<line stroke-width="3" stroke="red" y2="1032.0117647058826" x2="1116.5" y1="1032.0117647058826" x1="1086.625"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1116.5,1032.0117647058826 1106.5,1025.0117647058826 1106.5,1039.0117647058826"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="640 537 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="273" y="567.8" x="556.8"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="273" y="607.8" x="556.8"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/budget_parts_list_value">
+<text font-weight="bold" font-size="20" fill="darkred" y="597.8" x="566.8">budget_parts_list_value</text>
+</a>
+<text font-size="15" y="607.8" x="566.8">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="566.8">id_budget_parts_list : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="566.8">id_budget : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="153" y="567.8" x="898.9999999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="153" y="607.8" x="898.9999999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/budget">
+<text font-weight="bold" font-size="20" fill="darkred" y="597.8" x="908.9999999999999">budget</text>
+</a>
+<text font-size="15" y="607.8" x="908.9999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="908.9999999999999">id_budget : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="908.9999999999999">total_amount : real</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="618.6771929824561" x2="864.3999999999999" y1="618.6771929824561" x1="829.8"/>
+<line stroke-width="3" stroke="red" y2="618.6771929824561" x2="864.3999999999999" y1="618.6771929824561" x1="864.3999999999999"/>
+<line stroke-width="3" stroke="red" y2="618.6771929824561" x2="898.9999999999999" y1="618.6771929824561" x1="864.3999999999999"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="898.9999999999999,618.6771929824561 888.9999999999999,611.6771929824561 888.9999999999999,625.6771929824561"/>
+</svg>

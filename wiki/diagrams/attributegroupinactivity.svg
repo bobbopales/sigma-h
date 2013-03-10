@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1050 707 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="284" y="831.3000000000001" x="962.8"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="284" y="871.3000000000001" x="962.8"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/attributegroupinactivity">
+<text font-weight="bold" font-size="20" fill="darkred" y="861.3000000000001" x="972.8">attributegroupinactivity</text>
+</a>
+<text font-size="15" y="871.3000000000001" x="972.8">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="972.8">activityid : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="972.8">attributegroupid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="244" y="737.8000000000001" x="1274.55"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="244" y="777.8000000000001" x="1274.55"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/attributegroup">
+<text font-weight="bold" font-size="20" fill="darkred" y="767.8000000000001" x="1284.55">attributegroup</text>
+</a>
+<text font-size="15" y="777.8000000000001" x="1284.55">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1284.55">attributegroupid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1284.55">category : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1284.55">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1284.55">multipleallowed : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1284.55">name : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1284.55">sortorder : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="875.1596491228071" x2="1260.675" y1="875.1596491228071" x1="1246.8"/>
+<line stroke-width="3" stroke="red" y2="836.5610619469027" x2="1260.675" y1="875.1596491228071" x1="1260.675"/>
+<line stroke-width="3" stroke="red" y2="836.5610619469027" x2="1274.55" y1="836.5610619469027" x1="1260.675"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1274.55,836.5610619469027 1264.55,829.5610619469027 1264.55,843.5610619469027"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="280" width="251" y="989.4" x="959.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="230" width="251" y="1029.4" x="959.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/activity">
+<text font-weight="bold" font-size="20" fill="darkred" y="1019.4" x="969.9">activity</text>
+</a>
+<text font-size="15" y="1029.4" x="969.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="969.9">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">allowedit : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">isassessment : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">category : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">mapicon : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">name : character varying(45)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">reportingfrequency : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">sortorder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">locationtypeid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="960.35" x2="1124.4629139072847" y1="989.4" x1="1124.4629139072847"/>
+<line stroke-width="3" stroke="red" y2="960.35" x2="1091.4352941176471" y1="960.35" x1="1124.4629139072847"/>
+<line stroke-width="3" stroke="red" y2="931.3000000000001" x2="1091.4352941176471" y1="960.35" x1="1091.4352941176471"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1124.4629139072847,989.4 1117.4629139072847,979.4 1131.4629139072847,979.4"/>
+</svg>

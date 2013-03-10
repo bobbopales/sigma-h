@@ -1,0 +1,12 @@
+﻿=Table files_list_element=
+==Remarks==
+With a File_List_Element, the user can add several files to a project.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_flexible_element || bigint || X || X || [flexible_element](id_flexible_element) || This is the primary key of the table and also a foreign key on the table flexible_element which is its parent table. ||
+|| max_limit || integer ||  ||  ||  || A limit can be placed so the user can’t add much files than this limit. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/files_list_element.svg" />
+

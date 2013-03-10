@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1524 746 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="195" y="1307.3" x="1709.5499999999997"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="195" y="1347.3" x="1709.5499999999997"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/phase">
+<text font-weight="bold" font-size="20" fill="darkred" y="1337.3" x="1719.5499999999997">phase</text>
+</a>
+<text font-size="15" y="1347.3" x="1719.5499999999997">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1719.5499999999997">id_phase : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1719.5499999999997">end_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1719.5499999999997">start_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1719.5499999999997">id_phase_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1719.5499999999997">id_project : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="307" y="776.9" x="1454.35"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="307" y="816.9" x="1454.35"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project">
+<text font-weight="bold" font-size="20" fill="darkred" y="806.9" x="1464.35">project</text>
+</a>
+<text font-size="15" y="816.9" x="1464.35">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1464.35">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">activity_advancement : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">amendment_revision : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">amendment_status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">amendment_version : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">close_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">end_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">planned_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">received_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">spend_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">id_current_phase : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">id_manager : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">id_monitored_points_list : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.35">id_reminder_list : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1116.3466403162056" x2="1796.9201298701296" y1="1307.3" x1="1796.9201298701296"/>
+<line stroke-width="3" stroke="red" y2="1116.3466403162056" x2="1761.35" y1="1116.3466403162056" x1="1796.9201298701296"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1761.35,1116.3466403162056 1771.35,1109.3466403162056 1771.35,1123.3466403162056"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="230" y="1564" x="1590.6499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="230" y="1604" x="1590.6499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/phase_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1594" x="1600.6499999999999">phase_model</text>
+</a>
+<text font-size="15" y="1604" x="1600.6499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1600.6499999999999">id_phase_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">display_order : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">guide : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">definition_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1600.6499999999999">id_project_model : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1515.65" x2="1783.0399371069182" y1="1564" x1="1783.0399371069182"/>
+<line stroke-width="3" stroke="red" y2="1515.65" x2="1765.2642857142855" y1="1515.65" x1="1783.0399371069182"/>
+<line stroke-width="3" stroke="red" y2="1467.3" x2="1765.2642857142855" y1="1515.65" x1="1765.2642857142855"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1783.0399371069182,1564 1776.0399371069182,1554 1790.0399371069182,1554"/>
+</svg>

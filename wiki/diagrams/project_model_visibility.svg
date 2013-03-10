@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="515 1369 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="284" y="1625.2" x="445.15"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="284" y="1665.2" x="445.15"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project_model_visibility">
+<text font-weight="bold" font-size="20" fill="darkred" y="1655.2" x="455.15">project_model_visibility</text>
+</a>
+<text font-size="15" y="1665.2" x="455.15">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="455.15">id_visibility : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="455.15">type : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="455.15">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="455.15">id_organization : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="237" y="1399.1000000000001" x="582.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="237" y="1439.1000000000001" x="582.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1429.1000000000001" x="592.9">project_model</text>
+</a>
+<text font-size="15" y="1439.1000000000001" x="592.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="592.9">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="592.9">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="592.9">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="592.9">id_root_phase_model : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1582.15" x2="684.4959119496855" y1="1625.2" x1="684.4959119496855"/>
+<line stroke-width="3" stroke="red" y2="1582.15" x2="610.5257668711656" y1="1582.15" x1="684.4959119496855"/>
+<line stroke-width="3" stroke="red" y2="1539.1000000000001" x2="610.5257668711656" y1="1582.15" x1="610.5257668711656"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="610.5257668711656,1539.1000000000001 603.5257668711656,1549.1000000000001 617.5257668711656,1549.1000000000001"/>
+</svg>

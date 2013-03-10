@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1830 1384 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="80" width="265" y="1414.4" x="1760.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="30" width="265" y="1454.4" x="1760.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/phase_model_definition">
+<text font-weight="bold" font-size="20" fill="darkred" y="1444.4" x="1770.3">phase_model_definition</text>
+</a>
+<text font-size="15" y="1454.4" x="1770.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1770.3">id_phase_model_definition : integer</tspan>
+</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="154 639 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="223" y="669.8" x="84.1"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="223" y="709.8" x="84.1"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/personalcalendar">
+<text font-weight="bold" font-size="20" fill="darkred" y="699.8" x="94.1">personalcalendar</text>
+</a>
+<text font-size="15" y="709.8" x="94.1">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="94.1">id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="94.1">name : character varying(255)</tspan>
+</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1650 1846 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="237" y="2065.4999999999995" x="1580.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="237" y="2105.4999999999995" x="1580.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="2095.4999999999995" x="1590.5">layout_group</text>
+</a>
+<text font-size="15" y="2105.4999999999995" x="1590.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1590.5">id_layout_group : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">column_index : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">row_index : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1590.5">id_layout : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="181" y="1876.7999999999997" x="1589.2"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="181" y="1916.7999999999997" x="1589.2"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout">
+<text font-weight="bold" font-size="20" fill="darkred" y="1906.7999999999997" x="1599.2">layout</text>
+</a>
+<text font-size="15" y="1916.7999999999997" x="1599.2">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1599.2">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1599.2">columns_count : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1599.2">rows_count : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="2031.1499999999996" x2="1692.1193548387096" y1="2065.4999999999995" x1="1692.1193548387096"/>
+<line stroke-width="3" stroke="red" y2="2031.1499999999996" x2="1683.3200000000002" y1="2031.1499999999996" x1="1692.1193548387096"/>
+<line stroke-width="3" stroke="red" y2="1996.7999999999997" x2="1683.3200000000002" y1="2031.1499999999996" x1="1683.3200000000002"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1683.3200000000002,1996.7999999999997 1676.3200000000002,2006.7999999999997 1690.3200000000002,2006.7999999999997"/>
+</svg>

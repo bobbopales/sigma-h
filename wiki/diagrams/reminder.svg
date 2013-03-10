@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="919 998 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="237" y="1183.1999999999998" x="959.8999999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="237" y="1223.1999999999998" x="959.8999999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/reminder">
+<text font-weight="bold" font-size="20" fill="darkred" y="1213.1999999999998" x="969.8999999999999">reminder</text>
+</a>
+<text font-size="15" y="1223.1999999999998" x="969.8999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="969.8999999999999">id_reminder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.8999999999999">completion_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.8999999999999">deleted : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.8999999999999">expected_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.8999999999999">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.8999999999999">id_list : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="80" width="202" y="1028.4999999999998" x="849.6999999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="30" width="202" y="1068.4999999999998" x="849.6999999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/reminder_list">
+<text font-weight="bold" font-size="20" fill="darkred" y="1058.4999999999998" x="859.6999999999999">reminder_list</text>
+</a>
+<text font-size="15" y="1068.4999999999998" x="859.6999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="859.6999999999999">id_reminder_list : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1145.85" x2="1029.2265306122447" y1="1183.1999999999998" x1="1029.2265306122447"/>
+<line stroke-width="3" stroke="red" y2="1145.85" x2="975.1658385093167" y1="1145.85" x1="1029.2265306122447"/>
+<line stroke-width="3" stroke="red" y2="1108.4999999999998" x2="975.1658385093167" y1="1145.85" x1="975.1658385093167"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="975.1658385093167,1108.4999999999998 968.1658385093167,1118.4999999999998 982.1658385093167,1118.4999999999998"/>
+</svg>

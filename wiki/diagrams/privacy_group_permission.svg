@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="950 1117 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="284" y="1356.6000000000001" x="880.15"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="284" y="1396.6000000000001" x="880.15"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/privacy_group_permission">
+<text font-weight="bold" font-size="20" fill="darkred" y="1386.6000000000001" x="890.15">privacy_group_permission</text>
+</a>
+<text font-size="15" y="1396.6000000000001" x="890.15">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="890.15">id_permission : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="890.15">permission : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="890.15">id_privacy_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="890.15">id_profile : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="237" y="1147.5" x="948.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="237" y="1187.5" x="948.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/privacy_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="1177.5" x="958.3">privacy_group</text>
+</a>
+<text font-size="15" y="1187.5" x="958.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="958.3">id_privacy_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="958.3">code : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="958.3">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="958.3">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1322.0500000000002" x2="991.0612426035502" y1="1356.6000000000001" x1="991.0612426035502"/>
+<line stroke-width="3" stroke="red" y2="1322.0500000000002" x2="1018.4183431952663" y1="1322.0500000000002" x1="991.0612426035502"/>
+<line stroke-width="3" stroke="red" y2="1287.5" x2="1018.4183431952663" y1="1322.0500000000002" x1="1018.4183431952663"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1018.4183431952663,1287.5 1011.4183431952663,1297.5 1025.4183431952663,1297.5"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="230" y="1450.1000000000001" x="1199.15"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="230" y="1490.1000000000001" x="1199.15"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/profile">
+<text font-weight="bold" font-size="20" fill="darkred" y="1480.1000000000001" x="1209.15">profile</text>
+</a>
+<text font-size="15" y="1490.1000000000001" x="1209.15">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1209.15">id_profile : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1209.15">name : character varying(8196)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1209.15">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1462.0117647058826" x2="1181.65" y1="1462.0117647058826" x1="1164.15"/>
+<line stroke-width="3" stroke="red" y2="1495.7338028169015" x2="1181.65" y1="1462.0117647058826" x1="1181.65"/>
+<line stroke-width="3" stroke="red" y2="1495.7338028169015" x2="1199.15" y1="1495.7338028169015" x1="1181.65"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1199.15,1495.7338028169015 1189.15,1488.7338028169015 1189.15,1502.7338028169015"/>
+</svg>

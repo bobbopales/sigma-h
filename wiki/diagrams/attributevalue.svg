@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="730 447 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="174" y="634.0999999999999" x="906.25"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="174" y="674.0999999999999" x="906.25"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/attributevalue">
+<text font-weight="bold" font-size="20" fill="darkred" y="664.0999999999999" x="916.25">attributevalue</text>
+</a>
+<text font-size="15" y="674.0999999999999" x="916.25">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="916.25">attributeid : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="916.25">siteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="916.25">value : bool</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="477.7" x="1167.25"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="517.7" x="1167.25"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/attribute">
+<text font-weight="bold" font-size="20" fill="darkred" y="507.7" x="1177.25">attribute</text>
+</a>
+<text font-size="15" y="517.7" x="1177.25">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1177.25">attributeid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1177.25">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1177.25">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1177.25">sortorder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1177.25">attributegroupid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="681.4239436619717" x2="1123.75" y1="681.4239436619717" x1="1080.25"/>
+<line stroke-width="3" stroke="red" y2="605.3767676767677" x2="1123.75" y1="681.4239436619717" x1="1123.75"/>
+<line stroke-width="3" stroke="red" y2="605.3767676767677" x2="1167.25" y1="605.3767676767677" x1="1123.75"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1167.25,605.3767676767677 1157.25,598.3767676767677 1157.25,612.3767676767677"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="244" y="610.3000000000001" x="638"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="244" y="650.3000000000001" x="638"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/site">
+<text font-weight="bold" font-size="20" fill="darkred" y="640.3000000000001" x="648">site</text>
+</a>
+<text font-size="15" y="650.3000000000001" x="648">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="648">siteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">comments : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date1 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date2 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datesynchronized : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">siteguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">status : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">target : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">assessmentsiteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">partnerid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="781.5252964426878" x2="929.5316901408451" y1="754.0999999999999" x1="929.5316901408451"/>
+<line stroke-width="3" stroke="red" y2="781.5252964426878" x2="882" y1="781.5252964426878" x1="929.5316901408451"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="882,781.5252964426878 892,774.5252964426878 892,788.5252964426878"/>
+</svg>

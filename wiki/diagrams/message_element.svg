@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="232 58 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="80" width="216" y="144.5" x="162.4"/>
+<rect stroke-width="3" stroke="black" fill="white" height="30" width="216" y="184.5" x="162.4"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/message_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="174.5" x="172.4">message_element</text>
+</a>
+<text font-size="15" y="184.5" x="172.4">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="172.4">id_flexible_element : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="88.39999999999999" x="506.05"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="128.39999999999998" x="506.05"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="118.39999999999999" x="516.05">flexible_element</text>
+</a>
+<text font-size="15" y="128.39999999999998" x="516.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="516.05">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="179.84883720930233" x2="442.225" y1="179.84883720930233" x1="378.4"/>
+<line stroke-width="3" stroke="red" y2="209.61212121212122" x2="442.225" y1="179.84883720930233" x1="442.225"/>
+<line stroke-width="3" stroke="red" y2="209.61212121212122" x2="506.05" y1="209.61212121212122" x1="442.225"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="506.05,209.61212121212122 496.05,202.61212121212122 496.05,216.61212121212122"/>
+</svg>

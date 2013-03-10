@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1118 524 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="202" y="610.3" x="1048.3500000000001"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="202" y="650.3" x="1048.3500000000001"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/organization">
+<text font-weight="bold" font-size="20" fill="darkred" y="640.3" x="1058.3500000000001">organization</text>
+</a>
+<text font-size="15" y="650.3" x="1058.3500000000001">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1058.3500000000001">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.3500000000001">logo : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.3500000000001">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.3500000000001">id_root_org_unit : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="320" width="286" y="554.1999999999999" x="1384.75"/>
+<rect stroke-width="3" stroke="black" fill="white" height="270" width="286" y="594.1999999999999" x="1384.75"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/partner">
+<text font-weight="bold" font-size="20" fill="darkred" y="584.1999999999999" x="1394.75">partner</text>
+</a>
+<text font-size="15" y="594.1999999999999" x="1394.75">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1394.75">partnerid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">deleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">fullname : character varying(64)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">name : character varying(16)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">planned_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">received_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">spend_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">location_locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">office_country_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">id_org_unit_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">organization_id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1394.75">parent_partnerid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="712.4176470588235" x2="1317.5500000000002" y1="712.4176470588235" x1="1250.3500000000001"/>
+<line stroke-width="3" stroke="red" y2="736.1905213270142" x2="1317.5500000000002" y1="712.4176470588235" x1="1317.5500000000002"/>
+<line stroke-width="3" stroke="red" y2="736.1905213270142" x2="1384.75" y1="736.1905213270142" x1="1317.5500000000002"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1384.75,736.1905213270142 1374.75,729.1905213270142 1374.75,743.1905213270142"/>
+</svg>

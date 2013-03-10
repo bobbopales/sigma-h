@@ -1,0 +1,12 @@
+=Table log_frame_indicators=
+==Remarks==
+This table is created for associates the table log_frame_element and the table indicator. In Java, it corresponds to a many to many relation between the class LogFrameElement and the class Indicator
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| log_frame_element_id_element || integer || X || X ||  || This is a foreign key to the table log_frame_element. It is also contained in the primary key constraint of the table. ||
+|| indicators_indicatorid || integer || X || X ||  || This is a foreign key to the table indicator. It is also contained in the primary key constraint of the table. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/log_frame_indicators.svg" />
+

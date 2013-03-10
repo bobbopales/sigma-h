@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="900 380 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="273" y="419.90000000000003" x="961.35"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="273" y="459.90000000000003" x="961.35"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/amendment_history_token">
+<text font-weight="bold" font-size="20" fill="darkred" y="449.90000000000003" x="971.35">amendment_history_token</text>
+</a>
+<text font-size="15" y="459.90000000000003" x="971.35">
+<tspan font-weight="normal" fill="black" dy="20" x="971.35">amendment_id_amendment : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="971.35">values_id_history_token : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="237" y="413.1" x="1487.6999999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="237" y="453.1" x="1487.6999999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/amendment">
+<text font-weight="bold" font-size="20" fill="darkred" y="443.1" x="1497.6999999999998">amendment</text>
+</a>
+<text font-size="15" y="453.1" x="1497.6999999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1497.6999999999998">id_amendment : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">history_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">revision : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">version : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1497.6999999999998">id_project : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="469.02280701754387" x2="1361.0249999999999" y1="469.02280701754387" x1="1234.35"/>
+<line stroke-width="3" stroke="red" y2="472.94251968503943" x2="1361.0249999999999" y1="469.02280701754387" x1="1361.0249999999999"/>
+<line stroke-width="3" stroke="red" y2="472.94251968503943" x2="1487.6999999999998" y1="472.94251968503943" x1="1361.0249999999999"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1487.6999999999998,472.94251968503943 1477.6999999999998,465.94251968503943 1477.6999999999998,479.94251968503943"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="272" y="596.7" x="822.15"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="272" y="636.7" x="822.15"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/history_token">
+<text font-weight="bold" font-size="20" fill="darkred" y="626.7" x="832.15">history_token</text>
+</a>
+<text font-size="15" y="636.7" x="832.15">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="832.15">id_history_token : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">history_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">id_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">id_project : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">change_type : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">value : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="832.15">id_user : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="558.3000000000001" x2="1077.2555900621119" y1="596.7" x1="1077.2555900621119"/>
+<line stroke-width="3" stroke="red" y2="558.3000000000001" x2="1055.272018348624" y1="558.3000000000001" x1="1077.2555900621119"/>
+<line stroke-width="3" stroke="red" y2="519.9000000000001" x2="1055.272018348624" y1="558.3000000000001" x1="1055.272018348624"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1077.2555900621119,596.7 1070.2555900621119,586.7 1084.2555900621119,586.7"/>
+</svg>

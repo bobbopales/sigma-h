@@ -1,0 +1,17 @@
+=Table value=
+==Remarks==
+A flexible_element in an available project can have a value. This table corresponds to the current value of the flexible_element. Old values are sent to the table [history_token].
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_value || bigint || X || X ||  || This is the primary key of the table. ||
+|| id_project || integer || X ||  ||  || This column is linked to either the table project or the table partner. ||
+|| action_last_modif || bpchar || X ||  ||  || This column contains a character that corresponds to the last action made on the flexible_element linked. ||
+|| date_last_modif || timestamp(0) || X ||  ||  || This column correspond to the date of the last action made on the flexible_element linked. ||
+|| value || text ||  ||  ||  || This columns contains the value of the flexible element in a string representation ||
+|| id_flexible_element || bigint || X ||  || [flexible_element](id_flexible_element) || This is a foreign key to the table flexible_element. This value belong to this flexible_element. ||
+|| id_user_last_modif || integer || X ||  || [userlogin](userid) || This is a foreign key to the table userlogin. This user corresponds to the last contributor on the flexible element associated. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/value.svg" />
+

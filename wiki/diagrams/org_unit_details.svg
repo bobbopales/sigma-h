@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="576 1024 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="209" y="1246.1" x="829.4"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="209" y="1286.1" x="829.4"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/org_unit_details">
+<text font-weight="bold" font-size="20" fill="darkred" y="1276.1" x="839.4">org_unit_details</text>
+</a>
+<text font-size="15" y="1286.1" x="839.4">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="839.4">details_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="839.4">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="839.4">id_org_unit_model : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="237" y="1217.2" x="506.04999999999995"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="237" y="1257.2" x="506.04999999999995"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/org_unit_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1247.2" x="516.05">org_unit_model</text>
+</a>
+<text font-size="15" y="1257.2" x="516.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="516.05">org_unit_model_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">can_contain_projects : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">has_budget : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1330.5858267716535" x2="786.2249999999999" y1="1330.5858267716535" x1="743.05"/>
+<line stroke-width="3" stroke="red" y2="1305.2549295774647" x2="786.2249999999999" y1="1330.5858267716535" x1="786.2249999999999"/>
+<line stroke-width="3" stroke="red" y2="1305.2549295774647" x2="829.4" y1="1305.2549295774647" x1="786.2249999999999"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="743.05,1330.5858267716535 753.05,1323.5858267716535 753.05,1337.5858267716535"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="181" y="1054" x="891.7499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="181" y="1094" x="891.7499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/layout">
+<text font-weight="bold" font-size="20" fill="darkred" y="1084" x="901.7499999999999">layout</text>
+</a>
+<text font-size="15" y="1094" x="901.7499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="901.7499999999999">id_layout : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="901.7499999999999">columns_count : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="901.7499999999999">rows_count : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1210.05" x2="912.2793103448275" y1="1246.1" x1="912.2793103448275"/>
+<line stroke-width="3" stroke="red" y2="1210.05" x2="981.5259999999998" y1="1210.05" x1="912.2793103448275"/>
+<line stroke-width="3" stroke="red" y2="1174" x2="981.5259999999998" y1="1210.05" x1="981.5259999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="981.5259999999998,1174 974.5259999999998,1184 988.5259999999998,1184"/>
+</svg>

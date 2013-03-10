@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1071 952 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="328" y="1230.7999999999997" x="1001.9499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="328" y="1270.7999999999997" x="1001.9499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_specific_objective">
+<text font-weight="bold" font-size="20" fill="darkred" y="1260.7999999999997" x="1011.9499999999999">log_frame_specific_objective</text>
+</a>
+<text font-size="15" y="1270.7999999999997" x="1011.9499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1011.9499999999999">id_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1011.9499999999999">intervention_logic : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1011.9499999999999">id_log_frame : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="216" y="982.5999999999999" x="1116.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="216" y="1022.5999999999999" x="1116.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame">
+<text font-weight="bold" font-size="20" fill="darkred" y="1012.5999999999999" x="1126.5">log_frame</text>
+</a>
+<text font-size="15" y="1022.5999999999999" x="1126.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1126.5">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">main_objective : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_log_frame_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_project : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1176.6999999999998" x2="1196.2543478260868" y1="1230.7999999999997" x1="1196.2543478260868"/>
+<line stroke-width="3" stroke="red" y2="1176.6999999999998" x2="1179.401098901099" y1="1176.6999999999998" x1="1196.2543478260868"/>
+<line stroke-width="3" stroke="red" y2="1122.6" x2="1179.401098901099" y1="1176.6999999999998" x1="1179.401098901099"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1179.401098901099,1122.6 1172.401098901099,1132.6 1186.401098901099,1132.6"/>
+</svg>

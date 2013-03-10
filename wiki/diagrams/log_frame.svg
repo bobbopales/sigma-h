@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1186 746.9 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="216" y="982.6" x="1116.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="216" y="1022.6" x="1116.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame">
+<text font-weight="bold" font-size="20" fill="darkred" y="1012.6" x="1126.5">log_frame</text>
+</a>
+<text font-size="15" y="1022.6" x="1126.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1126.5">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">main_objective : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_log_frame_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_project : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="307" y="776.9" x="1454.3500000000001"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="307" y="816.9" x="1454.3500000000001"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project">
+<text font-weight="bold" font-size="20" fill="darkred" y="806.9" x="1464.3500000000001">project</text>
+</a>
+<text font-size="15" y="816.9" x="1464.3500000000001">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1464.3500000000001">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">activity_advancement : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">amendment_revision : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">amendment_status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">amendment_version : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">close_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">end_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">planned_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">received_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">spend_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">id_current_phase : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">id_manager : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">id_monitored_points_list : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1464.3500000000001">id_reminder_list : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="910.5758893280632" x2="1263.6648351648353" y1="982.6" x1="1263.6648351648353"/>
+<line stroke-width="3" stroke="red" y2="910.5758893280632" x2="1454.3500000000001" y1="910.5758893280632" x1="1263.6648351648353"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1454.3500000000001,910.5758893280632 1444.3500000000001,903.5758893280632 1444.3500000000001,917.5758893280632"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="480" width="230" y="1213.8" x="1149.8500000000001"/>
+<rect stroke-width="3" stroke="black" fill="white" height="430" width="230" y="1253.8" x="1149.8500000000001"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1243.8" x="1159.8500000000001">log_frame_model</text>
+</a>
+<text font-size="15" y="1253.8" x="1159.8500000000001">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1159.8500000000001">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">a_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">a_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">a_per_er_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">a_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">a_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">er_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">p_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">so_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">er_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">er_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">er_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">er_per_so_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">p_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">p_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">p_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">so_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">so_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">so_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.8500000000001">id_project_model : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1168.1999999999998" x2="1224.4445945945947" y1="1213.8" x1="1224.4445945945947"/>
+<line stroke-width="3" stroke="red" y2="1168.1999999999998" x2="1231.6208791208792" y1="1168.1999999999998" x1="1224.4445945945947"/>
+<line stroke-width="3" stroke="red" y2="1122.6" x2="1231.6208791208792" y1="1168.1999999999998" x1="1231.6208791208792"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1224.4445945945947,1213.8 1217.4445945945947,1203.8 1231.4445945945947,1203.8"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="370 587 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="153" y="617.1" x="272.6"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="153" y="657.1" x="272.6"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/budget">
+<text font-weight="bold" font-size="20" fill="darkred" y="647.1" x="282.6">budget</text>
+</a>
+<text font-size="15" y="657.1" x="282.6">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="282.6">id_budget : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="282.6">total_amount : real</tspan>
+</text>
+</svg>

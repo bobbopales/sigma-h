@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1090 415 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="223" y="532.1" x="1020.7999999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="223" y="572.1" x="1020.7999999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/projectreportmodel">
+<text font-weight="bold" font-size="20" fill="darkred" y="562.1" x="1030.7999999999997">projectreportmodel</text>
+</a>
+<text font-size="15" y="572.1" x="1030.7999999999997">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1030.7999999999997">id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1030.7999999999997">name : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1030.7999999999997">id_organization : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="202" y="445.4" x="1331.0999999999997"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="202" y="485.4" x="1331.0999999999997"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/organization">
+<text font-weight="bold" font-size="20" fill="darkred" y="475.4" x="1341.0999999999997">organization</text>
+</a>
+<text font-size="15" y="485.4" x="1341.0999999999997">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1341.0999999999997">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1341.0999999999997">logo : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1341.0999999999997">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1341.0999999999997">id_root_org_unit : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="587.8746478873239" x2="1287.4499999999998" y1="587.8746478873239" x1="1243.7999999999997"/>
+<line stroke-width="3" stroke="red" y2="539.2823529411764" x2="1287.4499999999998" y1="587.8746478873239" x1="1287.4499999999998"/>
+<line stroke-width="3" stroke="red" y2="539.2823529411764" x2="1331.0999999999997" y1="539.2823529411764" x1="1287.4499999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1331.0999999999997,539.2823529411764 1321.0999999999997,532.2823529411764 1321.0999999999997,546.2823529411764"/>
+</svg>

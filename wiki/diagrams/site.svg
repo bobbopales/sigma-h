@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="377 145 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="244" y="610.3000000000001" x="638"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="244" y="650.3000000000001" x="638"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/site">
+<text font-weight="bold" font-size="20" fill="darkred" y="640.3000000000001" x="648">site</text>
+</a>
+<text font-size="15" y="650.3000000000001" x="648">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="648">siteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">comments : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date1 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date2 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datesynchronized : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">siteguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">status : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">target : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">assessmentsiteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">partnerid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="280" width="251" y="989.4" x="959.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="230" width="251" y="1029.4" x="959.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/activity">
+<text font-weight="bold" font-size="20" fill="darkred" y="1019.4" x="969.9">activity</text>
+</a>
+<text font-size="15" y="1029.4" x="969.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="969.9">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">allowedit : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">isassessment : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">category : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">mapicon : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">name : character varying(45)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">reportingfrequency : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">sortorder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="969.9">locationtypeid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="964.7664031620554" x2="920.95" y1="964.7664031620554" x1="882"/>
+<line stroke-width="3" stroke="red" y2="1075.0830601092896" x2="920.95" y1="964.7664031620554" x1="920.95"/>
+<line stroke-width="3" stroke="red" y2="1075.0830601092896" x2="959.9" y1="1075.0830601092896" x1="920.95"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="959.9,1075.0830601092896 949.9,1068.0830601092896 949.9,1082.0830601092896"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="320" width="286" y="175.1" x="610.45"/>
+<rect stroke-width="3" stroke="black" fill="white" height="270" width="286" y="215.1" x="610.45"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/partner">
+<text font-weight="bold" font-size="20" fill="darkred" y="205.1" x="620.45">partner</text>
+</a>
+<text font-size="15" y="215.1" x="620.45">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="620.45">partnerid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">deleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">fullname : character varying(64)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">name : character varying(16)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">planned_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">received_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">spend_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">location_locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">office_country_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">id_org_unit_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">organization_id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="620.45">parent_partnerid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="552.7" x2="738.814371257485" y1="610.3000000000001" x1="738.814371257485"/>
+<line stroke-width="3" stroke="red" y2="552.7" x2="771.325" y1="552.7" x1="738.814371257485"/>
+<line stroke-width="3" stroke="red" y2="495.1" x2="771.325" y1="552.7" x1="771.325"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="771.325,495.1 764.325,505.1 778.325,505.1"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="240" width="272" y="797.3" x="307.4"/>
+<rect stroke-width="3" stroke="black" fill="white" height="190" width="272" y="837.3" x="307.4"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/location">
+<text font-weight="bold" font-size="20" fill="darkred" y="827.3" x="317.4">location</text>
+</a>
+<text font-size="15" y="837.3" x="317.4">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="317.4">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">axe : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">locationguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">x : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">y : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="317.4">locationtypeid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="888.6548387096774" x2="608.7" y1="888.6548387096774" x1="579.4"/>
+<line stroke-width="3" stroke="red" y2="829.5885375494072" x2="608.7" y1="888.6548387096774" x1="608.7"/>
+<line stroke-width="3" stroke="red" y2="829.5885375494072" x2="638" y1="829.5885375494072" x1="608.7"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="579.4,888.6548387096774 589.4,881.6548387096774 589.4,895.6548387096774"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="220" width="251" y="498.09999999999997" x="330.6"/>
+<rect stroke-width="3" stroke="black" fill="white" height="170" width="251" y="538.0999999999999" x="330.6"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/userdatabase">
+<text font-weight="bold" font-size="20" fill="darkred" y="528.0999999999999" x="340.6">userdatabase</text>
+</a>
+<text font-size="15" y="538.0999999999999" x="340.6">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="340.6">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">fullname : character varying(500)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">lastschemaupdate : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">name : character varying(16)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">startdate : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">countryid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="340.6">owneruserid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="627.6035460992907" x2="609.8" y1="627.6035460992907" x1="581.6"/>
+<line stroke-width="3" stroke="red" y2="676.3869565217392" x2="609.8" y1="627.6035460992907" x1="609.8"/>
+<line stroke-width="3" stroke="red" y2="676.3869565217392" x2="638" y1="676.3869565217392" x1="609.8"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="581.6,627.6035460992907 591.6,620.6035460992907 591.6,634.6035460992907"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="244" y="610.3000000000001" x="638"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="244" y="650.3000000000001" x="638"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/site">
+<text font-weight="bold" font-size="20" fill="darkred" y="640.3000000000001" x="648">site</text>
+</a>
+<text font-size="15" y="650.3000000000001" x="648">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="648">siteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">comments : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date1 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">date2 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">datesynchronized : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">siteguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">status : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">target : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">assessmentsiteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="648">partnerid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="943.7387351778657" x2="618" y1="943.7387351778657" x1="638"/>
+<line stroke-width="3" stroke="red" y2="1010.3000000000001" x2="618" y1="943.7387351778657" x1="618"/>
+<line stroke-width="3" stroke="red" y2="1010.3000000000001" x2="677.4491017964071" y1="1010.3000000000001" x1="618"/>
+<line stroke-width="3" stroke="red" y2="990.3000000000001" x2="677.4491017964071" y1="1010.3000000000001" x1="677.4491017964071"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="677.4491017964071,990.3000000000001 670.4491017964071,1000.3000000000001 684.4491017964071,1000.3000000000001"/>
+</svg>

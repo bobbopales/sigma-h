@@ -1,0 +1,14 @@
+=Table log_frame_group=
+==Remarks==
+A log_frame_group is used in order to organize all logical framework elements in the view. Each group can have several elements according to the configuration written in the table log_frame (table that is related with a foreign key).
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_group || integer || X || X ||  || This is the primary key of the table. ||
+|| label || text ||  ||  ||  || This is an human-readable name for the group. ||
+|| type || character varying(255) ||  ||  ||  || This column corresponds to an enumeration of values in Java (SPECIFIC_OBJECTIVE, EXPECTED_RESULT, ACTIVITY, PREREQUISITE). It indicates the type which can be contained in the group. ||
+|| id_log_frame || integer || X ||  || [log_frame](id_log_frame) || This is a foreign key to the table log_frame. The group belongs to the log_frame related. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/log_frame_group.svg" />
+

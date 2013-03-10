@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="903 724 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="262" y="754.8000000000001" x="875.8"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="262" y="794.8000000000001" x="875.8"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_prerequisite">
+<text font-weight="bold" font-size="20" fill="darkred" y="784.8000000000001" x="885.8">log_frame_prerequisite</text>
+</a>
+<text font-size="15" y="794.8000000000001" x="885.8">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="885.8">id_prerequisite : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="885.8">code : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="885.8">content : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="885.8">position : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="885.8">id_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="885.8">id_log_frame : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="216" y="982.6" x="1116.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="216" y="1022.6" x="1116.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame">
+<text font-weight="bold" font-size="20" fill="darkred" y="1012.6" x="1126.5">log_frame</text>
+</a>
+<text font-size="15" y="1022.6" x="1126.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1126.5">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">main_objective : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_log_frame_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1126.5">id_project : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="882.2336283185841" x2="1186.521978021978" y1="882.2336283185841" x1="1137.8"/>
+<line stroke-width="3" stroke="red" y2="982.6" x2="1186.521978021978" y1="882.2336283185841" x1="1186.521978021978"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1186.521978021978,982.6 1179.521978021978,972.6 1193.521978021978,972.6"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="223" y="1031.9" x="833.75"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="223" y="1071.9" x="833.75"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="1061.9" x="843.75">log_frame_group</text>
+</a>
+<text font-size="15" y="1071.9" x="843.75">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="843.75">id_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">type : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.75">id_log_frame : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="983.3500000000001" x2="972.3716216216217" y1="1031.9" x1="972.3716216216217"/>
+<line stroke-width="3" stroke="red" y2="983.3500000000001" x2="963.707894736842" y1="983.3500000000001" x1="972.3716216216217"/>
+<line stroke-width="3" stroke="red" y2="934.8000000000001" x2="963.707894736842" y1="983.3500000000001" x1="963.707894736842"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="972.3716216216217,1031.9 965.3716216216217,1021.9000000000001 979.3716216216217,1021.9000000000001"/>
+</svg>

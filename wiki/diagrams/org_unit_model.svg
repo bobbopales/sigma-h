@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1118 281 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="237" y="311.09999999999997" x="1104.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="237" y="351.09999999999997" x="1104.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/org_unit_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="341.09999999999997" x="1114.9">org_unit_model</text>
+</a>
+<text font-size="15" y="351.09999999999997" x="1114.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1114.9">org_unit_model_id : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">can_contain_projects : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">has_budget : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">title : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1114.9">id_organization : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="202" y="610.3" x="1048.35"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="202" y="650.3" x="1048.35"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/organization">
+<text font-weight="bold" font-size="20" fill="darkred" y="640.3" x="1058.35">organization</text>
+</a>
+<text font-size="15" y="650.3" x="1058.35">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1058.35">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.35">logo : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.35">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1058.35">id_root_org_unit : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="560.6999999999999" x2="1191.940361445783" y1="610.3" x1="1191.940361445783"/>
+<line stroke-width="3" stroke="red" y2="560.6999999999999" x2="1174.3655172413794" y1="560.6999999999999" x1="1191.940361445783"/>
+<line stroke-width="3" stroke="red" y2="511.09999999999997" x2="1174.3655172413794" y1="560.6999999999999" x1="1174.3655172413794"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1191.940361445783,610.3 1184.940361445783,600.3 1198.940361445783,600.3"/>
+</svg>

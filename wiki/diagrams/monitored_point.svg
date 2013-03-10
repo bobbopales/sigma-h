@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="413 480 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="237" y="510" x="594.5"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="237" y="550" x="594.5"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/monitored_point">
+<text font-weight="bold" font-size="20" fill="darkred" y="540" x="604.5">monitored_point</text>
+</a>
+<text font-size="15" y="550" x="604.5">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="604.5">id_monitored_point : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">completion_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">deleted : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">expected_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">id_file : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="604.5">id_list : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="202" y="591.5999999999999" x="343.65"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="202" y="631.5999999999999" x="343.65"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/file_meta">
+<text font-weight="bold" font-size="20" fill="darkred" y="621.5999999999999" x="353.65">file_meta</text>
+</a>
+<text font-size="15" y="631.5999999999999" x="353.65">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="353.65">id_file : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="353.65">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="353.65">name : text</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="659.2056338028168" x2="570.075" y1="659.2056338028168" x1="545.65"/>
+<line stroke-width="3" stroke="red" y2="593.4645669291339" x2="570.075" y1="659.2056338028168" x1="570.075"/>
+<line stroke-width="3" stroke="red" y2="593.4645669291339" x2="594.5" y1="593.4645669291339" x1="570.075"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="545.65,659.2056338028168 555.65,652.2056338028168 555.65,666.2056338028168"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="80" width="251" y="810.9" x="600.3"/>
+<rect stroke-width="3" stroke="black" fill="white" height="30" width="251" y="850.9" x="600.3"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/monitored_point_list">
+<text font-weight="bold" font-size="20" fill="darkred" y="840.9" x="610.3">monitored_point_list</text>
+</a>
+<text font-size="15" y="850.9" x="610.3">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="610.3">id_monitored_point_list : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="760.45" x2="686.9395939086294" y1="810.9" x1="686.9395939086294"/>
+<line stroke-width="3" stroke="red" y2="760.45" x2="730.3089887640449" y1="760.45" x1="686.9395939086294"/>
+<line stroke-width="3" stroke="red" y2="710" x2="730.3089887640449" y1="760.45" x1="730.3089887640449"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="686.9395939086294,810.9 679.9395939086294,800.9 693.9395939086294,800.9"/>
+</svg>

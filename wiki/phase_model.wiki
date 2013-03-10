@@ -1,0 +1,17 @@
+=Table phase_model=
+==Remarks==
+A phase_model corresponds to a model of phase that can be modified while the model of project is in draft mode.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_phase_model || bigint || X || X ||  || This is the primary key of the table. ||
+|| display_order || integer ||  ||  ||  || It corresponds to the order it will be displayed. ||
+|| guide || text ||  ||  ||  ||  ||
+|| name || character varying(8192) || X ||  ||  ||  ||
+|| definition_id || integer || X ||  || [phase_model_definition](id_phase_model_definition) ||  ||
+|| id_layout || bigint ||  ||  || [layout](id_layout) ||  ||
+|| id_project_model || bigint || X ||  || [project_model](id_project_model) ||  ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/phase_model.svg" />
+

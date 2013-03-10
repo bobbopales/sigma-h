@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="757 1506.8 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="306" y="1536.8" x="1055.6"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="306" y="1576.8" x="1055.6"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_criterion_children">
+<text font-weight="bold" font-size="20" fill="darkred" y="1566.8" x="1065.6">quality_criterion_children</text>
+</a>
+<text font-size="15" y="1576.8" x="1065.6">
+<tspan font-weight="normal" fill="black" dy="20" x="1065.6">id_quality_criterion_child : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1065.6">id_quality_criterion : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="230" y="1548.6999999999998" x="687.2999999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="230" y="1588.6999999999998" x="687.2999999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_criterion">
+<text font-weight="bold" font-size="20" fill="darkred" y="1578.6999999999998" x="697.2999999999998">quality_criterion</text>
+</a>
+<text font-size="15" y="1588.6999999999998" x="697.2999999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="697.2999999999998">id_quality_criterion : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">code : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">id_quality_framework : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1619.811111111111" x2="986.4499999999998" y1="1619.811111111111" x1="917.2999999999998"/>
+<line stroke-width="3" stroke="red" y2="1613.9929824561402" x2="986.4499999999998" y1="1619.811111111111" x1="986.4499999999998"/>
+<line stroke-width="3" stroke="red" y2="1613.9929824561402" x2="1055.6" y1="1613.9929824561402" x1="986.4499999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="917.2999999999998,1619.811111111111 927.2999999999998,1612.811111111111 927.2999999999998,1626.811111111111"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="230" y="1548.6999999999998" x="687.2999999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="230" y="1588.6999999999998" x="687.2999999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_criterion">
+<text font-weight="bold" font-size="20" fill="darkred" y="1578.6999999999998" x="697.2999999999998">quality_criterion</text>
+</a>
+<text font-size="15" y="1588.6999999999998" x="697.2999999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="697.2999999999998">id_quality_criterion : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">code : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.2999999999998">id_quality_framework : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1572.942424242424" x2="986.4499999999998" y1="1572.942424242424" x1="917.2999999999998"/>
+<line stroke-width="3" stroke="red" y2="1571.8877192982457" x2="986.4499999999998" y1="1572.942424242424" x1="986.4499999999998"/>
+<line stroke-width="3" stroke="red" y2="1571.8877192982457" x2="1055.6" y1="1571.8877192982457" x1="986.4499999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="917.2999999999998,1572.942424242424 927.2999999999998,1565.942424242424 927.2999999999998,1579.942424242424"/>
+</svg>

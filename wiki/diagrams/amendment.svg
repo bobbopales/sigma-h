@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="450 100 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="200" width="237" y="124.1" x="510.4"/>
+<rect stroke-width="3" stroke="black" fill="white" height="150" width="237" y="164.1" x="510.4"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/amendment">
+<text font-weight="bold" font-size="20" fill="darkred" y="154.1" x="520.4">amendment</text>
+</a>
+<text font-size="15" y="164.1" x="520.4">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="520.4">id_amendment : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">history_date : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">revision : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">version : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="520.4">id_project : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="307" y="493" x="758.3499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="307" y="533" x="758.3499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project">
+<text font-weight="bold" font-size="20" fill="darkred" y="523" x="768.3499999999999">project</text>
+</a>
+<text font-size="15" y="533" x="768.3499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="768.3499999999999">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">activity_advancement : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">amendment_revision : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">amendment_status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">amendment_version : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">calendarid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">close_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">end_date : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">planned_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">received_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">spend_budget : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">id_current_phase : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">id_manager : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">id_monitored_points_list : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="768.3499999999999">id_reminder_list : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="511.02371541501975" x2="715.4961538461539" y1="324.1" x1="715.4961538461539"/>
+<line stroke-width="3" stroke="red" y2="511.02371541501975" x2="758.3499999999999" y1="511.02371541501975" x1="715.4961538461539"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="758.3499999999999,511.02371541501975 748.3499999999999,504.02371541501975 748.3499999999999,518.0237154150198"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="216" y="421.59999999999997" x="353.79999999999995"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="216" y="461.59999999999997" x="353.79999999999995"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame">
+<text font-weight="bold" font-size="20" fill="darkred" y="451.59999999999997" x="363.79999999999995">log_frame</text>
+</a>
+<text font-size="15" y="461.59999999999997" x="363.79999999999995">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="363.79999999999995">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="363.79999999999995">main_objective : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="363.79999999999995">id_log_frame_model : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="363.79999999999995">id_project : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="372.85" x2="523.0631578947368" y1="421.59999999999997" x1="523.0631578947368"/>
+<line stroke-width="3" stroke="red" y2="372.85" x2="581.8038461538462" y1="372.85" x1="523.0631578947368"/>
+<line stroke-width="3" stroke="red" y2="324.1" x2="581.8038461538462" y1="372.85" x1="581.8038461538462"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="523.0631578947368,421.59999999999997 516.0631578947368,411.59999999999997 530.0631578947368,411.59999999999997"/>
+</svg>

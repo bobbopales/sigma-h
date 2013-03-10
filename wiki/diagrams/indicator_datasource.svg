@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="535 531 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="240" y="561" x="504.59999999999997"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="240" y="601" x="504.59999999999997"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/indicator_datasource">
+<text font-weight="bold" font-size="20" fill="darkred" y="591" x="514.5999999999999">indicator_datasource</text>
+</a>
+<text font-size="15" y="601" x="514.5999999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="514.5999999999999">indicatorid : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="514.5999999999999">indicatorsourceid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="400" width="258" y="759.9" x="465.45"/>
+<rect stroke-width="3" stroke="black" fill="white" height="350" width="258" y="799.9" x="465.45"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/indicator">
+<text font-weight="bold" font-size="20" fill="darkred" y="789.9" x="475.45">indicator</text>
+</a>
+<text font-size="15" y="799.9" x="475.45">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="475.45">indicatorid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">aggregation : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">category : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">listheader : character varying(30)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">collectintervention : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">collectmonitoring : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">description : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">directdataentryenabled : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">name : character varying(128)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">objective : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">sortorder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">sourceofverification : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">units : character varying(15)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">id_quality_criterion : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="710.45" x2="640.9963917525773" y1="759.9" x1="640.9963917525773"/>
+<line stroke-width="3" stroke="red" y2="710.45" x2="620.1555555555556" y1="710.45" x1="640.9963917525773"/>
+<line stroke-width="3" stroke="red" y2="661" x2="620.1555555555556" y1="710.45" x1="620.1555555555556"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="640.9963917525773,759.9 633.9963917525773,749.9 647.9963917525773,749.9"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="400" width="258" y="759.9" x="465.45"/>
+<rect stroke-width="3" stroke="black" fill="white" height="350" width="258" y="799.9" x="465.45"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/indicator">
+<text font-weight="bold" font-size="20" fill="darkred" y="789.9" x="475.45">indicator</text>
+</a>
+<text font-size="15" y="799.9" x="475.45">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="475.45">indicatorid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">aggregation : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">category : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">listheader : character varying(30)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">collectintervention : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">collectmonitoring : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">description : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">directdataentryenabled : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">name : character varying(128)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">objective : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">sortorder : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">sourceofverification : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">units : character varying(15)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="475.45">id_quality_criterion : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="710.45" x2="534.6046391752577" y1="759.9" x1="534.6046391752577"/>
+<line stroke-width="3" stroke="red" y2="710.45" x2="560.0913294797688" y1="710.45" x1="534.6046391752577"/>
+<line stroke-width="3" stroke="red" y2="661" x2="560.0913294797688" y1="710.45" x1="560.0913294797688"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="534.6046391752577,759.9 527.6046391752577,749.9 541.6046391752577,749.9"/>
+</svg>

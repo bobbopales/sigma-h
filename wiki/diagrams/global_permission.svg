@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1372 656 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="265" y="686.7999999999998" x="1302.1"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="265" y="726.7999999999998" x="1302.1"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/global_permission">
+<text font-weight="bold" font-size="20" fill="darkred" y="716.7999999999998" x="1312.1">global_permission</text>
+</a>
+<text font-size="15" y="726.7999999999998" x="1312.1">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1312.1">id_global_permission : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1312.1">permission : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1312.1">id_profile : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="230" y="875.4999999999999" x="1390.55"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="230" y="915.4999999999999" x="1390.55"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/profile">
+<text font-weight="bold" font-size="20" fill="darkred" y="905.4999999999999" x="1400.55">profile</text>
+</a>
+<text font-size="15" y="915.4999999999999" x="1400.55">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1400.55">id_profile : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1400.55">name : character varying(8196)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1400.55">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="841.1499999999999" x2="1446.9650943396225" y1="875.4999999999999" x1="1446.9650943396225"/>
+<line stroke-width="3" stroke="red" y2="841.1499999999999" x2="1483.5673913043477" y1="841.1499999999999" x1="1446.9650943396225"/>
+<line stroke-width="3" stroke="red" y2="806.7999999999998" x2="1483.5673913043477" y1="841.1499999999999" x1="1483.5673913043477"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1446.9650943396225,875.4999999999999 1439.9650943396225,865.4999999999999 1453.9650943396225,865.4999999999999"/>
+</svg>

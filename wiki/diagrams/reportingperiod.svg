@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1225 1001 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="240" width="209" y="1031.9" x="1155.6499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="190" width="209" y="1071.9" x="1155.6499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/reportingperiod">
+<text font-weight="bold" font-size="20" fill="darkred" y="1061.9" x="1165.6499999999999">reportingperiod</text>
+</a>
+<text font-size="15" y="1071.9" x="1165.6499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1165.6499999999999">reportingperiodid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">comments : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">date1 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">date2 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">monitoring : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1165.6499999999999">siteid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="380" width="244" y="1057.4" x="1480.4499999999998"/>
+<rect stroke-width="3" stroke="black" fill="white" height="330" width="244" y="1097.4" x="1480.4499999999998"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/site">
+<text font-weight="bold" font-size="20" fill="darkred" y="1087.4" x="1490.4499999999998">site</text>
+</a>
+<text font-size="15" y="1097.4" x="1490.4499999999998">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1490.4499999999998">siteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">comments : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">date1 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">date2 : date</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">datedeleted : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">datesynchronized : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">siteguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">status : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">target : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">activityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">assessmentsiteid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">databaseid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1490.4499999999998">partnerid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1144.9322580645162" x2="1422.5499999999997" y1="1144.9322580645162" x1="1364.6499999999999"/>
+<line stroke-width="3" stroke="red" y2="1186.5699604743083" x2="1422.5499999999997" y1="1144.9322580645162" x1="1422.5499999999997"/>
+<line stroke-width="3" stroke="red" y2="1186.5699604743083" x2="1480.4499999999998" y1="1186.5699604743083" x1="1422.5499999999997"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1480.4499999999998,1186.5699604743083 1470.4499999999998,1179.5699604743083 1470.4499999999998,1193.5699604743083"/>
+</svg>

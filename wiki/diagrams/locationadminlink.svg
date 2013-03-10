@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1174 90 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="207" y="479.4" x="1104.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="207" y="519.4" x="1104.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/locationadminlink">
+<text font-weight="bold" font-size="20" fill="darkred" y="509.4" x="1114.9">locationadminlink</text>
+</a>
+<text font-size="15" y="519.4" x="1114.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1114.9">locationid : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1114.9">adminentityid : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="260" width="237" y="120.69999999999999" x="1138.25"/>
+<rect stroke-width="3" stroke="black" fill="white" height="210" width="237" y="160.7" x="1138.25"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/adminentity">
+<text font-weight="bold" font-size="20" fill="darkred" y="150.7" x="1148.25">adminentity</text>
+</a>
+<text font-size="15" y="160.7" x="1148.25">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1148.25">adminentityid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">x1 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">x2 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">y1 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">y2 : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">code : character varying(15)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">soundex : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">adminlevelid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1148.25">adminentityparentid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="430.04999999999995" x2="1234.6200000000001" y1="479.4" x1="1234.6200000000001"/>
+<line stroke-width="3" stroke="red" y2="430.04999999999995" x2="1184.07" y1="430.04999999999995" x1="1234.6200000000001"/>
+<line stroke-width="3" stroke="red" y2="380.7" x2="1184.07" y1="430.04999999999995" x1="1184.07"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1184.07,380.7 1177.07,390.7 1191.07,390.7"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="240" width="272" y="382.49999999999994" x="1428.25"/>
+<rect stroke-width="3" stroke="black" fill="white" height="190" width="272" y="422.49999999999994" x="1428.25"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/location">
+<text font-weight="bold" font-size="20" fill="darkred" y="412.49999999999994" x="1438.25">location</text>
+</a>
+<text font-size="15" y="422.49999999999994" x="1438.25">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1438.25">locationid : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">axe : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">datecreated : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">dateedited : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">locationguid : character varying(36)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">name : character varying(50)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">x : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">y : double precision</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1438.25">locationtypeid : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="532.0315789473684" x2="1370.075" y1="532.0315789473684" x1="1311.9"/>
+<line stroke-width="3" stroke="red" y2="484.6935483870967" x2="1370.075" y1="532.0315789473684" x1="1370.075"/>
+<line stroke-width="3" stroke="red" y2="484.6935483870967" x2="1428.25" y1="484.6935483870967" x1="1370.075"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1428.25,484.6935483870967 1418.25,477.6935483870967 1418.25,491.6935483870967"/>
+</svg>

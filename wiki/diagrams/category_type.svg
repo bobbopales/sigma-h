@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="462 1610 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="265" y="1640.5" x="392.95"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="265" y="1680.5" x="392.95"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/category_type">
+<text font-weight="bold" font-size="20" fill="darkred" y="1670.5" x="402.95">category_type</text>
+</a>
+<text font-size="15" y="1680.5" x="402.95">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="402.95">id_category_type : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">icon_name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">id_organization : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="202" y="1798.6000000000001" x="661.2"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="202" y="1838.6000000000001" x="661.2"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/organization">
+<text font-weight="bold" font-size="20" fill="darkred" y="1828.6000000000001" x="671.2">organization</text>
+</a>
+<text font-size="15" y="1838.6000000000001" x="671.2">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="671.2">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.2">logo : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.2">name : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="671.2">id_root_org_unit : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1851.3058823529414" x2="622.3067251461988" y1="1780.5" x1="622.3067251461988"/>
+<line stroke-width="3" stroke="red" y2="1851.3058823529414" x2="661.2" y1="1851.3058823529414" x1="622.3067251461988"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="661.2,1851.3058823529414 651.2,1844.3058823529414 651.2,1858.3058823529414"/>
+</svg>

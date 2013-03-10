@@ -1,0 +1,13 @@
+=Table org_unit_details=
+==Remarks==
+The table org_unit_details is an association table between the table org_unit_model and the table Layout. It defines the layout which is associated with a project model on the details view.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| details_id || integer || X || X ||  || This is the primary key of the table. ||
+|| id_layout || bigint || X ||  || [layout](id_layout) || This is a foreign key to the table layout. ||
+|| id_org_unit_model || integer ||  ||  || [org_unit_model](org_unit_model_id) || This is a foreign key to the table org_unit_model. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/org_unit_details.svg" />
+

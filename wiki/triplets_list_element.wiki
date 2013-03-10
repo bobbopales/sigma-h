@@ -1,0 +1,12 @@
+=Table triplets_list_element=
+==Remarks==
+A Triplet_List_Element corresponds to a table of three columns (Code, Name, Period).
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_flexible_element || bigint || X || X || [flexible_element](id_flexible_element) || This is the primary key of the table and also a foreign key on the table flexible_element which is its parent table. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/triplets_list_element.svg" />
+
+

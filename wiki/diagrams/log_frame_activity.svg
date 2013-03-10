@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="445 979 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="218" y="1271.6" x="375.54999999999995"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="218" y="1311.6" x="375.54999999999995"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_activity">
+<text font-weight="bold" font-size="20" fill="darkred" y="1301.6" x="385.54999999999995">log_frame_activity</text>
+</a>
+<text font-size="15" y="1311.6" x="385.54999999999995">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="385.54999999999995">id_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="385.54999999999995">advancement : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="385.54999999999995">enddate : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="385.54999999999995">startdate : timestamp(0)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="385.54999999999995">title : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="385.54999999999995">id_result : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="207" y="1009.7999999999998" x="506.04999999999995"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="207" y="1049.7999999999997" x="506.04999999999995"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1039.7999999999997" x="516.05">log_frame_element</text>
+</a>
+<text font-size="15" y="1049.7999999999997" x="516.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="516.05">id_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">assumptions : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">code : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">position : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">risks : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">id_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1230.6999999999998" x2="505.7444444444444" y1="1271.6" x1="505.7444444444444"/>
+<line stroke-width="3" stroke="red" y2="1230.6999999999998" x2="527.0120253164556" y1="1230.6999999999998" x1="505.7444444444444"/>
+<line stroke-width="3" stroke="red" y2="1189.7999999999997" x2="527.0120253164556" y1="1230.6999999999998" x1="527.0120253164556"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="527.0120253164556,1189.7999999999997 520.0120253164556,1199.7999999999997 534.0120253164556,1199.7999999999997"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="120" width="295" y="1266.4999999999998" x="645.2499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="70" width="295" y="1306.4999999999998" x="645.2499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_expected_result">
+<text font-weight="bold" font-size="20" fill="darkred" y="1296.4999999999998" x="655.2499999999999">log_frame_expected_result</text>
+</a>
+<text font-size="15" y="1306.4999999999998" x="655.2499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="655.2499999999999">id_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="655.2499999999999">intervention_logic : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="655.2499999999999">id_specific_objective : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1351.2460176991149" x2="619.3999999999999" y1="1351.2460176991149" x1="593.55"/>
+<line stroke-width="3" stroke="red" y2="1317.2042253521124" x2="619.3999999999999" y1="1351.2460176991149" x1="619.3999999999999"/>
+<line stroke-width="3" stroke="red" y2="1317.2042253521124" x2="645.2499999999999" y1="1317.2042253521124" x1="619.3999999999999"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="645.2499999999999,1317.2042253521124 635.2499999999999,1310.2042253521124 635.2499999999999,1324.2042253521124"/>
+</svg>

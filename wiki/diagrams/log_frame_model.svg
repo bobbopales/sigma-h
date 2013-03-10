@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="1219 1183 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="480" width="230" y="1213.8000000000002" x="1149.85"/>
+<rect stroke-width="3" stroke="black" fill="white" height="430" width="230" y="1253.8000000000002" x="1149.85"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1243.8000000000002" x="1159.85">log_frame_model</text>
+</a>
+<text font-size="15" y="1253.8000000000002" x="1159.85">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1159.85">id_log_frame : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">a_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">a_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">a_per_er_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">a_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">a_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">er_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">p_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">so_enable_groups : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">er_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">er_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">er_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">er_per_so_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">p_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">p_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">p_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">so_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">so_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">so_per_gp_max : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1159.85">id_project_model : bigint</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="237" y="1320.9" x="1455.7999999999997"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="237" y="1360.9" x="1455.7999999999997"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/project_model">
+<text font-weight="bold" font-size="20" fill="darkred" y="1350.9" x="1465.7999999999997">project_model</text>
+</a>
+<text font-size="15" y="1360.9" x="1465.7999999999997">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="1465.7999999999997">id_project_model : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.7999999999997">name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.7999999999997">status : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="1465.7999999999997">id_root_phase_model : bigint</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1432.252012383901" x2="1417.8249999999998" y1="1432.252012383901" x1="1379.85"/>
+<line stroke-width="3" stroke="red" y2="1413.1352941176472" x2="1417.8249999999998" y1="1432.252012383901" x1="1417.8249999999998"/>
+<line stroke-width="3" stroke="red" y2="1413.1352941176472" x2="1455.7999999999997" y1="1413.1352941176472" x1="1417.8249999999998"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="1455.7999999999997,1413.1352941176472 1445.7999999999997,1406.1352941176472 1445.7999999999997,1420.1352941176472"/>
+</svg>

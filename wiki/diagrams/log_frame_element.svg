@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="576 979 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="180" width="207" y="1009.7999999999998" x="506.04999999999995"/>
+<rect stroke-width="3" stroke="black" fill="white" height="130" width="207" y="1049.7999999999997" x="506.04999999999995"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1039.7999999999997" x="516.05">log_frame_element</text>
+</a>
+<text font-size="15" y="1049.7999999999997" x="516.05">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="516.05">id_element : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">assumptions : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">code : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">position : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">risks : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="516.05">id_group : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="223" y="1031.8999999999999" x="833.7499999999999"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="223" y="1071.8999999999999" x="833.7499999999999"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_group">
+<text font-weight="bold" font-size="20" fill="darkred" y="1061.8999999999999" x="843.7499999999999">log_frame_group</text>
+</a>
+<text font-size="15" y="1071.8999999999999" x="843.7499999999999">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="843.7499999999999">id_group : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.7499999999999">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.7499999999999">type : character varying(255)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="843.7499999999999">id_log_frame : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1142.0123893805307" x2="773.3999999999999" y1="1142.0123893805307" x1="713.05"/>
+<line stroke-width="3" stroke="red" y2="1107.6647058823528" x2="773.3999999999999" y1="1142.0123893805307" x1="773.3999999999999"/>
+<line stroke-width="3" stroke="red" y2="1107.6647058823528" x2="833.7499999999999" y1="1107.6647058823528" x1="773.3999999999999"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="833.7499999999999,1107.6647058823528 823.7499999999999,1100.6647058823528 823.7499999999999,1114.6647058823528"/>
+</svg>

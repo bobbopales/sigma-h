@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="462 1047 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="230" y="1336.1999999999998" x="495.90000000000003"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="230" y="1376.1999999999998" x="495.90000000000003"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/question_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1366.1999999999998" x="505.90000000000003">question_element</text>
+</a>
+<text font-size="15" y="1376.1999999999998" x="505.90000000000003">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="505.90000000000003">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">is_multiple : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">id_category_type : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="505.90000000000003">id_quality_criterion : integer</tspan>
+</text>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="216" y="1077.8" x="524.9"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="216" y="1117.8" x="524.9"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/flexible_element">
+<text font-weight="bold" font-size="20" fill="darkred" y="1107.8" x="534.9">flexible_element</text>
+</a>
+<text font-size="15" y="1117.8" x="534.9">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="534.9">id_flexible_element : bigint</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">amendable : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">validates : bool</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="534.9">id_privacy_group : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1287" x2="603.6714285714286" y1="1336.1999999999998" x1="603.6714285714286"/>
+<line stroke-width="3" stroke="red" y2="1287" x2="622.0360946745562" y1="1287" x1="603.6714285714286"/>
+<line stroke-width="3" stroke="red" y2="1237.8" x2="622.0360946745562" y1="1287" x1="622.0360946745562"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="622.0360946745562,1237.8 615.0360946745562,1247.8 629.0360946745562,1247.8"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="160" width="230" y="1548.6999999999998" x="687.3000000000001"/>
+<rect stroke-width="3" stroke="black" fill="white" height="110" width="230" y="1588.6999999999998" x="687.3000000000001"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/quality_criterion">
+<text font-weight="bold" font-size="20" fill="darkred" y="1578.6999999999998" x="697.3000000000001">quality_criterion</text>
+</a>
+<text font-size="15" y="1588.6999999999998" x="697.3000000000001">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="697.3000000000001">id_quality_criterion : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3000000000001">code : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3000000000001">label : text</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3000000000001">id_organization : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="697.3000000000001">id_quality_framework : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1512.4499999999998" x2="727.4162790697675" y1="1548.6999999999998" x1="727.4162790697675"/>
+<line stroke-width="3" stroke="red" y2="1512.4499999999998" x2="673.3285714285714" y1="1512.4499999999998" x1="727.4162790697675"/>
+<line stroke-width="3" stroke="red" y2="1476.1999999999998" x2="673.3285714285714" y1="1512.4499999999998" x1="673.3285714285714"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="727.4162790697675,1548.6999999999998 720.4162790697675,1538.6999999999998 734.4162790697675,1538.6999999999998"/>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="140" width="265" y="1640.4999999999998" x="392.95"/>
+<rect stroke-width="3" stroke="black" fill="white" height="90" width="265" y="1680.4999999999998" x="392.95"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/category_type">
+<text font-weight="bold" font-size="20" fill="darkred" y="1670.4999999999998" x="402.95">category_type</text>
+</a>
+<text font-size="15" y="1680.4999999999998" x="402.95">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="402.95">id_category_type : integer</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">icon_name : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">label : character varying(8192)</tspan>
+<tspan font-weight="normal" fill="black" dy="20" x="402.95">id_organization : integer</tspan>
+</text>
+<line stroke-width="3" stroke="red" y2="1558.35" x2="603.7102339181287" y1="1640.4999999999998" x1="603.7102339181287"/>
+<line stroke-width="3" stroke="red" y2="1558.35" x2="605.0525423728814" y1="1558.35" x1="603.7102339181287"/>
+<line stroke-width="3" stroke="red" y2="1476.1999999999998" x2="605.0525423728814" y1="1558.35" x1="605.0525423728814"/>
+<polygon stroke-width="1" stroke="red" fill="red" points="603.7102339181287,1640.4999999999998 596.7102339181287,1630.4999999999998 610.7102339181287,1630.4999999999998"/>
+</svg>

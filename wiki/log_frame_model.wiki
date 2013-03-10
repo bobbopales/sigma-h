@@ -1,0 +1,31 @@
+=Table log_frame_model=
+==Remarks==
+The table log_frame_model corresponds to a logical framework model created in the same time that a project model. It has some informations used for each tab of a log_frame (Specific Objectives, Expected Results, Activities and Prerequisites).
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_log_frame || integer || X || X ||  || This is the primary key of the table. ||
+|| a_gp_max || integer ||  ||  ||  || It corresponds to the maximum of group in the tab named Activities ||
+|| a_max || integer ||  ||  ||  || It corresponds to the maximum of group of activities in the tab named Activities ||
+|| a_per_er_max || integer ||  ||  ||  || It corresponds to the maximum of activities related to an expected result in the tab named Activities ||
+|| a_per_gp_max || integer ||  ||  ||  || It corresponds to the maximum of activities in a group in the tab named Activities ||
+|| a_enable_groups || bool ||  ||  ||  || This column indicates if groups are enabled in the tab named Activities. ||
+|| er_enable_groups || bool ||  ||  ||  || This column indicates if groups are enabled in the tab named Expected Results. ||
+|| p_enable_groups || bool ||  ||  ||  || This column indicates if groups are enabled in the tab named Prerequisites. ||
+|| so_enable_groups || bool ||  ||  ||  || This column indicates if groups are enabled in the tab named Specific Objectives. ||
+|| er_gp_max || integer ||  ||  ||  || It corresponds to the maximum of groups in the tab named Expected Results. ||
+|| er_max || integer ||  ||  ||  || It corresponds to the maximum of expected results in the tab named Expected Results. ||
+|| er_per_gp_max || integer ||  ||  ||  || It corresponds to the maximum of expected results in a group in the tab named Expected Results. ||
+|| er_per_so_max || integer ||  ||  ||  || It corresponds to the maximum of expected results related to a specific objective in the tab named Expected Results. ||
+|| name || character varying(8192) || X ||  ||  || This column corresponds to the name of the logical framework model. ||
+|| p_gp_max || integer ||  ||  ||  || It corresponds to the maximum of groups in the tab named Prerequisites ||
+|| p_max || integer ||  ||  ||  || It corresponds to the maximum of prerequisites in the tab named Prerequisites ||
+|| p_per_gp_max || integer ||  ||  ||  || It corresponds to the maximum of prerequisites in a group in the tab named Prerequisites. ||
+|| so_gp_max || integer ||  ||  ||  || It corresponds to the maximum of groups in the tab named Specific Objectives. ||
+|| so_max || integer ||  ||  ||  || It corresponds to the maximum of specific objectives in the tab named Specific Objectives. ||
+|| so_per_gp_max || integer ||  ||  ||  || It corresponds to the maximum of specific objectives in a group in the tab named Specific Objectives. ||
+|| id_project_model || bigint || X ||  || [project_model](id_project_model) || This is a foreign key to the table project_model. The project model related is the project model with which the logical framework model had been created. ||
+
+==Diagram==
+<img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/log_frame_model.svg" />
+

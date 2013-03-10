@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://exslt.org/math" viewBox="726 1443 1024 1024" height="1024" width="1280" version="1.1">
+<style>
+		a text{
+			fill : darkred;
+		}
+		a text:hover{
+			fill : #ff5555;
+		}
+	</style>
+<rect ry="8" rx="8" stroke-width="3" stroke="black" fill="rgb(200,200,200)" height="100" width="286" y="1473.9" x="656.85"/>
+<rect stroke-width="3" stroke="black" fill="white" height="50" width="286" y="1513.9" x="656.85"/>
+<a target="_blank" xlink:href="http://code.google.com/p/sigma-h/wiki/log_frame_indicators">
+<text font-weight="bold" font-size="20" fill="darkred" y="1503.9" x="666.85">log_frame_indicators</text>
+</a>
+<text font-size="15" y="1513.9" x="666.85">
+<tspan font-weight="bold" fill="darkblue" dy="20" x="666.85">log_frame_element_id_element : integer</tspan>
+<tspan font-weight="bold" fill="darkblue" dy="20" x="666.85">indicators_indicatorid : integer</tspan>
+</text>
+</svg>
