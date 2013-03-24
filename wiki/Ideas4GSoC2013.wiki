@@ -138,8 +138,6 @@ _User Prority:_ 2
   * [http://www.sigmah.org/issues/view.php?id=419 0000419: Project/orgunit models modifications with Available status]
   * [http://www.sigmah.org/issues/view.php?id=147 0000147: Display reminders linked project code on dashboard]
   * [http://www.sigmah.org/issues/view.php?id=501 0000501: Group iterations]
-  * [http://www.sigmah.org/issues/view.php?id=337 0000337: Hide by default in Dashboard closed projects]
-
 
 *Impact*
 
