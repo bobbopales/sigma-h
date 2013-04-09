@@ -122,6 +122,7 @@ Here is the list of feature requests or ideas as forum posts expressed by users 
 
 _User Prority:_ 1
 
+  * [http://www.sigmah.org/issues/view.php?id=419 0000419: Project/orgunit models modifications with Available status]
   * [http://www.sigmah.org/issues/view.php?id=468 0000468: Advanced indicator management privileges]
   * [http://www.sigmah.org/issues/view.php?id=550 0000550: Advanced reminders management privileges]
   * [http://www.sigmah.org/issues/view.php?id=551 0000551: Advanced agenda management privileges]
@@ -135,7 +136,6 @@ _User Prority:_ 1
 
 _User Prority:_ 2
 
-  * [http://www.sigmah.org/issues/view.php?id=419 0000419: Project/orgunit models modifications with Available status]
   * [http://www.sigmah.org/issues/view.php?id=147 0000147: Display reminders linked project code on dashboard]
   * [http://www.sigmah.org/issues/view.php?id=501 0000501: Group iterations]
 
