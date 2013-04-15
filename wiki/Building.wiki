@@ -112,6 +112,8 @@ Choose the folder *Sigmah* to check out.
 
 Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
 
+<font color="red"><strong><i>Important temporary note:</i></strong></font> currently, the maven build will not work due to missing library on the Maven repository. We're fixing this by setting up a new Maven repository elsewhere. In the meantime, the solution is to download and install those libraries manually. Those jar libraries can be downloaded from this location: http://code.google.com/p/sigma-h/downloads/detail?name=missing-jar-to-build-Sigmah.zip
+
 ==== Enable Maven Dependency Management ====
 
 After you check out the project to your IDE workspace, you may have many errors. It is normal because you should enable the Maven Dependency Management 
