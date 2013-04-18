@@ -35,6 +35,8 @@ cd sigmah
 mvn test
 }}}
 
+Note :: the maven build fails on ubuntu if a subversion client 1.7 or greater is used to checkout the project. Please downgrade your subversion client to v1.6, and that should solve the issue. You can use synaptic package manager on ubuntu to easily downgrade libsvn1 and subversion to v1.6
+
 Maven will automatically download all required dependencies, compile the project, and run unit and integration tests against an embedded database. 
 
 == Setting up a development database ==
