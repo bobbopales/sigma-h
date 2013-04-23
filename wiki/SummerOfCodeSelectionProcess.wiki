@@ -1,0 +1,30 @@
+#summary Students selection process to Google Summer of Code
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+This page describe the process the Sigmah project is following to select students as part of the Google Summer of Code programme.
+
+= Content of your application =
+
+== Project ideas and general contributions ==
+First of all, as you may have guess it, the [Ideas4GSoC2013 given project ideas] will be mainly the core of the actual contribution you would be able to give to the Sigmah project.
+The process in which we are now is more the setting of a team to work this summer together on the Sigmah project (each member with his own core responsability) than a set of individuals working totally individually on their own separate topic.
+Outside your main contribution (the project idea(s)) you've chosen to work on, you can thus already select some features you would like to develop and list them in your application. The roadmap is full of them. All of those issues are suggested originally by the NGOs using Sigmah and are looking for their contributors!
+
+== Patches are expected as part of the application ==
+On the Sigmah project, we consider each GSoC candidate as a project contributor like all others. As such, in order to evaluate technical level, we request from each contributor to send one or several patche(s) as part of the application.
+
+
+== ... and a Skype meeting ==
+We'll be working together all summer with selected students! It would be good to have a videocall to better know each other.
+Those meetings will be organized with all students having submitted an application which will be part of our first round of selection.
+
+
+
+= Steps in the application process =
+Here is the process which we will follow:
+  # 22nd of April : student applications period opens
+  # 3rd of May: application deadline for students. The applications should respect the application template and include at least one patch fixing an issue.
+  # 6th of May - 22nd of May: after the first round of selection, selected students will be invited to have a Skype interview.
+  # 27th of May: accepted student proposals published on Google Melange
