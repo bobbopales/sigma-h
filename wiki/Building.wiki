@@ -114,6 +114,8 @@ Choose the folder *Sigmah* to check out.
 
 Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
 
+*Note:* You may have a "Missing artifact com.sun:tools:jar:1.5.0" error on the pom.xml. To solve it, add the argument -vm path\to\jdk\bin(ex. C:\Program Files\Java\jdk1.6.0_43\bin) in the eclipse.ini in the eclipse folder. Beware of adding this option before the -vmargs option.
+
 <font color="red"><strong><i>Important temporary note:</i></strong></font> currently, the maven build will not work due to missing library on the Maven repository. We're fixing this by setting up a new Maven repository elsewhere. In the meantime, the solution is to download and install those libraries manually. Those jar libraries can be downloaded from this location: http://code.google.com/p/sigma-h/downloads/detail?name=missing-jar-to-build-Sigmah.zip
 
 ==== Enable Maven Dependency Management ====
@@ -125,7 +127,11 @@ Right-Click Project->Maven->Enable Dependency Management
 
 Then you refresh your project. 
 
-*Note:* If you do not have a Maven menu by right clicking your project in Eclipse, that means your maven plugin is not completely installed.
+*Note:* If you do not have a Maven menu by right clicking your project in Eclipse, you might need to convert it to a Maven project.
+{{{
+Right-Click Project->Configure->Convert to Maven project
+}}}
+If you can't see this option or it doesn't work, it means your maven plugin is not completely installed.
 
 === Set Up Local Database ===
 
@@ -140,7 +146,7 @@ In order to create a correct database for Sigmah and populate your database with
 
 # [http://code.google.com/p/sigma-h/downloads/list New Organization creation script (for Postgresql or Mysql)]
 
-You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_ for Mysal and _phpPgAdmin_ for postgresql.
+You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_ for Mysql and _phpPgAdmin_ for postgresql.
 
 
 ==== Configure Project to Use Local Database ====
@@ -228,7 +234,7 @@ After you finish the configuration of the Debug, you could start to debug.
 
 ==== Resolve the "OutOfMemory" Problem ====
 
-For this moment, when you luanch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace" error. To solve this error, you should specify a bigger PermSpace in the *Pom.xml* file, which is in your project root directory.
+For this moment, when you launch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace" error. To solve this error, you should specify a bigger PermSpace in the *Pom.xml* file, which is in your project root directory.
 {{{
 
             <!--  configure the GWT-Maven plugin -->
