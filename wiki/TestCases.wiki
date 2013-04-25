@@ -13,15 +13,15 @@ _Preliminary note=
 The list of test cases is under migration from its original form as a Word file in French into this set of wiki pages in English.
 
 || *Code*|| *Name* || *URL* ||
-|| LPC || Liste de points à contrôler || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *1* || *Gestion des utilisateurs et des sessions* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LPC || List of checkpoints || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *1* || *Users and sessions management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || USR1 || User signing in || [TestScenario4UserSessionRight#USR1] ||
 || USR2 || User logging out || [TestScenario4UserSessionRight#USR2] ||
 || USR3 || Recovering lost password || [TestScenario4UserSessionRight#USR3] ||
-|| Test 1.3 || Pages inaccessibles si aucune connexion || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 1.4 || Affichage des informations de l’organisation de l’utilisateur || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 1.5 || Aide contextuelle (#82) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 1.6 || Fenêtre de crédits (#91) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| Test 1.4 || Unreachable pages if no user is logged in || [TestScenario4UserSessionRight#Test1.4] ||
+|| Test 1.5 || Display of user's NGO 's information || [TestScenario4UserSessionRight#Test1.5] ||
+|| Test 1.6 || Pop-up help (#82) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| Test 1.7 || Pop-up credits (#91) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || *2* || *Intégration avec ActivityInfo* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 2.1 || Création d’une base de données d’indicateurs || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || Test 2.2 || Création d’un site || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
