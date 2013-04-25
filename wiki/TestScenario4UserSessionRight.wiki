@@ -28,6 +28,18 @@ This scenario is based on the 1.2 demo data.
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From the "Sign in" page, click on the "Have you forgotten your password?" hyperlink || A window pops up asking you to enter your e-mail address. ||
 || 2 || Enter a valid email address which is also the email address of a user already registered in the Sigmah version you're testing, and click on the "OK" button. || After a couple of seconds, you should receive an email containing a temporary URL to change your password. ||
-|| 3 || From the email you've received in your mailbox from Sigmah, click on the URL || A new pageopens up in your web browser with 3 fields: your email address (locked field), a new password field, and a confirmation password field. ||
+|| 3 || From the email you've received in your mailbox from Sigmah, click on the URL || A new page opens up in your web browser with 3 fields: your email address (locked field), a new password field, and a confirmation password field. ||
 || 4 || Enter a new password and its confirmation, and click on "Save" || You get a confirmation message informing you that your password has been changed. ||
-|| 5 || Log in with your new password and the email address used for the passsword recovery procedure || You should be able to enter the application with this new password. ||
+|| 5 || Log in with your new password and the email address used for the password recovery procedure || You should be able to enter the application with this new password. ||
+
+== Test 1.4 ==
+=== _Title:_ Unreachable pages if no user is logged in ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || When you are logged in into the application, copy any URL different from the welcome page. Then, log out.|| You should be redirected to the sign in page||
+|| 2 || Paste the copied URL into your brother's address bar and try to access the page of the URL|| You should be redirected to the sign in page.||
+
+== Test 1.5 ==
+=== _Title:_ Display of user's NGO 's information ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Open the "Administration " tab, then click on the link "Global management".|| A page where you can modify tour NGO's information is displayed. ||
+|| 2 || In the section "Organization management", change the logo end the name of the connected user's NGO, click on the "Save Changes" button and reload the page.|| The logo of the NGO, in the upper-left, has been modified.||
