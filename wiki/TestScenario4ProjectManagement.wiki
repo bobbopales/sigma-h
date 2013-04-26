@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This scenario is based on the demo data set.
+The test project available in the application is supposed to have the necessary properties to pass these following tests. These tests have been realized with the application configured with the language EN.
 
 
 = Test cases =
@@ -15,54 +15,94 @@ This scenario is based on the demo data set.
 
 == PRJM2 ==
 === _Title:_ Open a project page ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the home page, click on a project's name link. || The project management page should appear in a new tab. The page is open with the subtab « Dashboard » displayed by default. ||
+
 
 == PRJM3 ==
 === _Title:_ Modify a project's attributes ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the project page, modify the following attributes'type in the current phase (a number; a date; a text; a paragraph; a simple choice list among a triplet (code, name, validity period); a single choice list; a multiple choice list; a files list) then save the page. || If you  close and reopen, the modifications should be retained. || 
 
 == PRJM4 ==
 === _Title:_ Fill project mandatory field ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 2 || From the project page, Fill a mandatory field for the current phase. || Automatically, the field should be noted as filled in the mandatory fields list for the current phase. ||
 
 == PRJM5 ==
 === _Title:_ Switch from a phase to another ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the project page, fill all the mandatory fields, click on the next phase, and make the following phase the active phase. || On the home page, the phase indicated for the project has changed. ||
 
 == PRJM6 ==
 === _Title:_ Out of phase project attribute modification ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the project page, click on the sub-tab « Details », modify several attributes and click on « Save ». || If you  close and reopen, the modifications should be retained.||
 
 == PRJM7 ==
 === _Title:_ Link a new project as source of funding of an existing project ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the dashboard of an NGO project, click on the « Create » button in the « Funding sources » table. || A pop-up to create a project should open where you can specify the amount that the new project is going to give to the NGO project. ||
+|| 2 || Fill the pop-up and click on « Ok ». || A new line should appear in the table « Funding sources » with the new project's code, title and amount of money coming from this new project. ||
+|| 3 || Open the dashboard of the new funding project. || The NGO project used for creating the project should appear in the « Funded projects » table. ||
 
 == PRJM8 ==
 === _Title:_ Link an existing project as source of funding of an existing project ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the dashboard of an NGO project, click on the « Attach » button in the « Funding sources » table. || A pop-up should open where you can select the project that you want to attach and specify the amount that the project is going to give to the NGO project. ||
+|| 2 || Fill the pop-up and click on « Ok ». || A new line should appear in the table « Funding sources » with the project's code, title and the amount of money coming from the attached project. ||
+|| 3 || Open the dashboard of the new funding project. || The NGO project used should appear in the « Funded projects » table with the amount of money attributed. ||
 
 == PRJM9 ==
 === _Title:_ Link a new project as funded project of an existing project ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the dashboard of an NGO project, click on the « Create » button in the « Funded projects » table. || A pop-up to create a project should open with an additional field allowing you to specify the amount that the new project will receive from the NGO project. ||
+|| 2 || Fill the pop-up and click on « Ok ». || A new line should appear in the table « Funded projects » with the new project's code, title and amount of money coming from this new project. ||
+|| 3 || Open the dashboard of the new funded project. || The NGO project used for creating the project should appear in the « Funding sources » table with the amount given. ||
 
 == PRJM10 ==
 === _Title:_ Link a existing project as funded project of an existing project ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the dashboard of an NGO project, click on the « Attach » button in the « Funded projects » table. || A pop-up should open where you can select the project that you want to attach and specify the amount that the project will receive from the NGO project. ||
+|| 2 || Fill the pop-up and click on « Ok ». || A new line should appear in the table « Funded projects » with the project's code, title and the amount of money coming from the attached project. ||
+|| 3 || Open the dashboard of the funded project. || The NGO project used should appear in the « Funding sources » table with the amount of money attributed. ||
 
 == PRJM11 ==
 === _Title:_ Project's attribute history consultation ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From an open phase tab in the project dashboard or the « Details » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
+|| 2 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the other and the value given on the modification. ||
 
 == PRJM12 ==
 === _Title:_ Add a reminder ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From a project dashboard, in the « Reminders » panel, in the « To do » table or in the « Expected » table, click on the « Add » button. || A pop-up should open where you can specify the title and the date of the reminder. ||
+|| 2 || Fill the fields and click on « Ok ». || The reminder should appear in the « Reminders » panel in the corresponding table ||
 
 == PRJM13 ==
 === _Title:_ Add a late reminder ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM14 ==
 === _Title:_ Check a reminder ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM15 ==
 === _Title:_ Add a reminder after attaching files ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM16 ==
 === _Title:_ Accessing project's information according to user's rights ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM17 ==
 === _Title:_ Lock information with an amendment (#89) ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM18 ==
 === _Title:_ Project manager modification (#92) ===
+|| # || *Steps to reproduce* || *Result expected* ||
 
 == PRJM19 ==
 === _Title:_ Project's organizational unit modification (#93) ===
+|| # || *Steps to reproduce* || *Result expected* ||
