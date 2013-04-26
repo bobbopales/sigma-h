@@ -61,3 +61,29 @@ All projects, except test and deleted projects, should be in one or another tab 
 <tr><td> 6 </td><td> Open now the "Filters" menu item for the "Category" column </td><td>A list with checkboxes of all the categories group by category type opens up.</td></tr>
 <tr><td> 7 </td><td> Check one or several categories item among the ones available in the column </td><td>The project table gets filtered accordingly.</td></tr>
 </table>
+
+== DPT6 ==
+=== _Title:_ Projects' table grouping manipulation ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> In the project table from the home page, click successively  on three  project grouping action: 
+ * grouping by NGO projects
+ * grouping by funding projects
+ * grouping by local partner projects </td>
+<td>For each grouping mode, it should display : 
+ * every projects of the right type are displayed once in the beginning of each row
+ * if the project has linked projects :
+  * it is displayed in bold font
+  * a small triangle appear next to the project's name, letting you display or hide the linked projects
+  * by default, the linked projects are displayed
+  * each linked project of any type is displayed in this order:
+   * first, the project as source of funding
+   * second, the funded projects
+  * thus, a project can appears several times as a linked project but not as a project in the beginning of the line </td></tr></table>
+
+
+== DPT7 ==
+=== _Title:_ Limited project's access according on user's rights ===
+<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
+<tr><td> 1 </td><td> Connect to the application as user1. </td><td> The home page should be displayed. </td></tr>
+<tr><td> 2 </td><td> Create a project P1 accessible to the user3's OrgUnit and a project P2 which shouldn't be accessible to user3 because it is attached to an OrgUnit of an upper-level or same level as his. Disconnect. </td><td> You should be redirected to the sign in page. </td></tr>  
+<tr><td> 3 </td><td> Connect as user3. </td><td> On your project table, you should see the project P1 but not the project P2. </td></tr></table>
