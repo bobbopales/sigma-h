@@ -1,0 +1,68 @@
+#summary Test Scenario on Project Management (PRJM)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the demo data set.
+
+
+= Test cases =
+
+== PRJM1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== PRJM2 ==
+=== _Title:_ Open a project page ===
+
+== PRJM3 ==
+=== _Title:_ Modify a project's attributes ===
+
+== PRJM4 ==
+=== _Title:_ Fill project mandatory field ===
+
+== PRJM5 ==
+=== _Title:_ Switch from a phase to another ===
+
+== PRJM6 ==
+=== _Title:_ Out of phase project attribute modification ===
+
+== PRJM7 ==
+=== _Title:_ Link a new project as source of funding of an existing project ===
+
+== PRJM8 ==
+=== _Title:_ Link an existing project as source of funding of an existing project ===
+
+== PRJM9 ==
+=== _Title:_ Link a new project as funded project of an existing project ===
+
+== PRJM10 ==
+=== _Title:_ Link a existing project as funded project of an existing project ===
+
+== PRJM11 ==
+=== _Title:_ Project's attribute history consultation ===
+
+== PRJM12 ==
+=== _Title:_ Add a reminder ===
+
+== PRJM13 ==
+=== _Title:_ Add a late reminder ===
+
+== PRJM14 ==
+=== _Title:_ Check a reminder ===
+
+== PRJM15 ==
+=== _Title:_ Add a reminder after attaching files ===
+
+== PRJM16 ==
+=== _Title:_ Accessing project's information according to user's rights ===
+
+== PRJM17 ==
+=== _Title:_ Lock information with an amendment (#89) ===
+
+== PRJM18 ==
+=== _Title:_ Project manager modification (#92) ===
+
+== PRJM19 ==
+=== _Title:_ Project's organizational unit modification (#93) ===
