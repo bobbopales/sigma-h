@@ -64,6 +64,8 @@ _User Prority:_ 1
 
 This project idea corresponds to feature request [http://www.sigmah.org/issues/view.php?id=167 0000167: Revise Amendments system behavior].
 
+A preliminary mockup of the desired behavior is available at [http://www.sigmah.org/issues/file_download.php?file_id=74&type=bug this URL].  This mockup will be completely reviewed and can change totally in terms of graphic design with the help of the Google UX designer.
+
 *Impact*
 
 The current unsatisfying design of this feature makes it almost unused: with this new design which has been discussed a lot with users, Sigmah will be really able to provide to users the flexibility they need in their project, and the ease of use that produces a good versioning system.
