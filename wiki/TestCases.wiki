@@ -13,113 +13,107 @@ _Preliminary note=
 The list of test cases is under migration from its original form as a Word file in French into this set of wiki pages in English.
 
 || *Code*|| *Name* || *URL* ||
-|| LPC || List of checkpoints || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *1* || *Users and sessions management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LPC || List of checkpoints || [ListCheckPoints] ||
+|| *1* || *Users and sessions management* || [TestScenario4UserSessionRight] ||
 || USR1 || User signing in || [TestScenario4UserSessionRight#USR1] ||
 || USR2 || User logging out || [TestScenario4UserSessionRight#USR2] ||
 || USR3 || Recovering lost password || [TestScenario4UserSessionRight#USR3] ||
-|| Test 1.4 || Unreachable pages if no user is logged in || [TestScenario4UserSessionRight#Test1.4] ||
-|| Test 1.5 || Display of user's NGO 's information || [TestScenario4UserSessionRight#Test1.5] ||
-|| Test 1.6 || Pop-up help (#82) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 1.7 || Pop-up credits (#91) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *2* || *Intégration avec ActivityInfo* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.1 || Création d’une base de données d’indicateurs || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.2 || Création d’un site || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.3 || Modification de la valeur d’un indicateur || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.4 || Cartographie d’un indicateur || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.5 || Tableau croisé dynamique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 2.6 || Lien projet – base d’indicateurs || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *3* || *Dashbboard Projects Table* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| USR4 || Unreachable pages if no user is logged in || [TestScenario4UserSessionRight#USR4] ||
+|| USR5 || Display of user's NGO 's information || [TestScenario4UserSessionRight#USR5] ||
+|| USR6 || Pop-up help (#82) || [TestScenario4UserSessionRight#USR6] ||
+|| USR7 || Pop-up credits (#91) || [TestScenario4UserSessionRight#USR7] ||
+|| *2* || *Dashbboard Projects Table* || [TestScenario4DashboardProjectTable] ||
 || DPT2 || Projects table loading|| [TestScenario4DashboardProjectTable#DPT2] ||
 || DPT3 || Global export live data || [TestScenario4DashboardProjectTable#DPT3] ||
 || DPT4 || Global export other format exportation || [TestScenario4DashboardProjectTable#DPT4] ||
 || DPT5 || Columns filter || [TestScenario4DashboardProjectTable#DPT5] ||
-|| Test 3.2 || Manipulation des regroupements du tableau des projets || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 3.3 || Limitation d’accès aux projets en fonction des droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *4* || *Manipulation d’un projet* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.1 || Ouverture de la page de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.2 || Modification des attributs d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.3 || Remplissage d’un attribut obligatoire d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.4 || Passage de phase || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.5 || Changement des caractéristiques hors-phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.6 || Attachement d’un nouveau projet comme source de financement à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.7 || Attachement d’un projet existant comme nouvelle source de financement à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.8 || Attachement d’un nouveau projet comme projet financé à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.9 || Attachement d’un projet existant comme projet financé à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.10 || Consultation de l’historique d’un attribut de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.11 || Ajout d’un rappel || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.12 || Ajout d’un rappel en retard || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.13 || Clôturer un rappel || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.14 || Ajout de rappel suite à l’attachement de fichiers || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.15 || Accès aux informations de projet selon les droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.16 || Verrouillage d’informations avec un amendement (#89) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.17 || Modification du responsable de projet (#92) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 4.18 || Modification de la zone d’intervention d’un projet (#93) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *5* || *Project/Orgunit Model Management*  || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| DPT6 || Manipulation des regroupements du tableau des projets || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| DPT7 || Limitation d’accès aux projets en fonction des droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *3* || *Project management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM2 || Ouverture de la page de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM3 || Modification des attributs d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM4 || Remplissage d’un attribut obligatoire d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM5 || Passage de phase || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM6 || Changement des caractéristiques hors-phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM7 || Attachement d’un nouveau projet comme source de financement à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM8 || Attachement d’un projet existant comme nouvelle source de financement à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM9 || Attachement d’un nouveau projet comme projet financé à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM10 || Attachement d’un projet existant comme projet financé à un projet propre existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM11 || Consultation de l’historique d’un attribut de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM12 || Ajout d’un rappel || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM13 || Ajout d’un rappel en retard || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM14 || Clôturer un rappel || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM15 || Ajout de rappel suite à l’attachement de fichiers || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM16 || Accès aux informations de projet selon les droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM17 || Verrouillage d’informations avec un amendement (#89) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM18 || Modification du responsable de projet (#92) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| PRJM19 || Modification de la zone d’intervention d’un projet (#93) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *4* || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
 || POMM4 || Delete project model with test projects || [TestScenario4ProjectOrgunitModelManagement#POMM4] ||
-|| Test 5.1 || Création d’un modèle de projet (#94) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.2 || Création d’un nouveau champ dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.3 || Création d’une nouvelle phase dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.4 || Inversion de deux champs dans un modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.5 || Ajout d’un attribut obligatoire à un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.6 || Réorganisation des attributs du bandeau de synthèse || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.7 || Ajout d’une phase à un modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.8 || Modification des types de groupes disponibles d’un modèle de cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.9 || Modification des contraintes de création d’éléments d’un cadre logique depuis son modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.10 || Modification des contraintes d’un champ Date || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.11 || Modification des contraintes d’un champ Number || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.12 || Modification du type numérique d’un champ Number || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.13 || Modification des contraintes d’un champ texte || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.14 || Passage en obligatoire d’un champ de Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.15 || Modification d’une question clé d’un Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.16 || Ajout d’une question clé à un Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.17 || Modification de la confidentialité des informations || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.18 || Limitation de modification en fonction des amendements || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 5.19 || Modification des contraintes d’un champ Fichier (#83) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *6* || *Agenda* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 6.1 || Navigation dans le temps au sein de l’Agenda || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 6.2 || Ajout d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 6.3 || Modification d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 6.4 || Suppression d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *7* || *Logical Framework* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM5 || Création d’un modèle de projet (#94) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM6 || Création d’un nouveau champ dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM7 || Création d’une nouvelle phase dans un modèle de projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM8 || Inversion de deux champs dans un modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM9 || Ajout d’un attribut obligatoire à un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM10 || Réorganisation des attributs du bandeau de synthèse || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM11 || Ajout d’une phase à un modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM12 || Modification des types de groupes disponibles d’un modèle de cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM13 || Modification des contraintes de création d’éléments d’un cadre logique depuis son modèle || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM14 || Modification des contraintes d’un champ Date || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM15 || Modification des contraintes d’un champ Number || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM16 || Modification du type numérique d’un champ Number || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM17 || Modification des contraintes d’un champ texte || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM18 || Passage en obligatoire d’un champ de Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM19 || Modification d’une question clé d’un Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM20 || Ajout d’une question clé à un Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM21 || Modification de la confidentialité des informations || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM22 || Limitation de modification en fonction des amendements || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM23 || Modification des contraintes d’un champ Fichier (#83) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *5* || *Agenda* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| AGN2 || Navigation dans le temps au sein de l’Agenda || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| AGN3 || Ajout d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| AGN4 || Modification d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| AGN5 || Suppression d’un évènement || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *6* || *Logical Framework* || [TestScenario4LogicalFramework] ||
 || LF2 || Create a minimal logframe without indicators || [TestScenario4LogicalFramework#LF2] ||
 || LF3 || Create indicators in a logframe || [TestScenario4LogicalFramework#LF3] ||
-|| Test 7.2 || Enregistrement d’un cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 7.3 || Déplacement d’un élément du cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 7.4 || Suppression d’un élément du cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 7.5 || Ajout d’une activité en lien avec l’agenda || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *8* || *Gestion des rapports & documents* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.1 || Création d’un nouveau rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.2 || Ouverture d’un rapport existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.3 || Fermeture d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.4 || Sauvegarde d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.5 || Manipulation d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.6 || Création d’un rapport depuis une page de phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.7 || Accès à un rapport créé dans « Reports & documents » depuis une page de phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.8 || Création impossible d’un rapport d’une phase future || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.9 || Création impossible de 2 rapports pour un champ de rapport « single » || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.10 || Visibilité des documents attachés dans « Reports & documents » || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.11 || Réponse à une question-clé de rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.12 || Cycle d’un brouillon personnel de Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 8.13 || Sauvegarde automatique de rapports (#88) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *9* || *Gestion des Organizational Units* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 9.1 || Lien Projet - OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 9.2 || Flexibilité d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 9.3 || Modification des caractéristiques d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 9.4 || Modification de l’agenda d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *10* || *Tests sur les Zones d’intervention* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 10.1 || Tests de manipulation || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 10.2 || Tests de flexibilité || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| 11 || Tests de droits || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| Test 11.1 || Droits globaux || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *12* || *Administration Global Management tab* ||  ||
+|| LF4 || Enregistrement d’un cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LF5 || Déplacement d’un élément du cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LF6 || Suppression d’un élément du cadre logique || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LF7 || Ajout d’une activité en lien avec l’agenda || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *7* || *Reports & Documents Management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM2 || Création d’un nouveau rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM3 || Ouverture d’un rapport existant || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM4 || Fermeture d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM5 || Sauvegarde d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM6 || Manipulation d’un rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM7 || Création d’un rapport depuis une page de phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM8 || Accès à un rapport créé dans « Reports & documents » depuis une page de phase d’un projet || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM9 || Création impossible d’un rapport d’une phase future || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM10 || Création impossible de 2 rapports pour un champ de rapport « single » || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM11 || Visibilité des documents attachés dans « Reports & documents » || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM12 || Réponse à une question-clé de rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM13 || Cycle d’un brouillon personnel de Rapport || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RDM14 || Sauvegarde automatique de rapports (#88) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *8* || *Organizational Units Management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM2 || Lien Projet - OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM3 || Flexibilité d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM4 || Modification des caractéristiques d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM5 || Modification de l’agenda d’un OrgUnit || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM6 || Tests de manipulation || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| OUM7 || Tests de flexibilité || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *9* || Rights Tests || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RT1 || Rights test with user 4 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RT2 || Rights test with user 5 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| RT3 || Rights test with user 6 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *10* || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
 || AGM2 || Open Administration Global Management || [TestScenario4AdministrationGlobalManagement#AGM2] ||
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
 || AGM4 || Backup all versions of each file from one orgunit || [TestScenario4AdministrationGlobalManagement#AGM4] ||
 || AGM5 || Change organization's logo and name || [TestScenario4AdministrationGlobalManagement#AGM5] ||
-|| *13* || *Indicators* ||  ||
+|| *11* || *Indicators* || [TestScenario4Indicators] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
-|| *14* || *Transversal Behaviors* ||  ||
+|| *12* || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
