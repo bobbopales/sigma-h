@@ -15,59 +15,112 @@ This scenario is based on the demo data set.
 
 == POMM2 ==
 === _Title:_ Import project model ===
-<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
-<tr><td> 1 </td>
-<td> From the Main dashboard, click on the "Administration" button </td>
-<td>The Administration tab opens up.</td></tr>
-<tr><td> 2 </td>
-<td> Click on the "Project models" hyperlink</td>
-<td>The list of existing project models is loaded on the right of the screen.</td></tr>
-<tr><td> 3 </td>
-<td> Click on the "Import" Button</td>
-<td>The "Importing project model..." popup opens up.</td></tr>
-<tr><td> 4 </td>
-<td> Click on the "Project models" hyperlink</td>
-<td>The list of existing project models is loaded on the right of the screen.</td></tr>
-<tr><td> 5 </td>
-<td> Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.</td>
-<td>A status message pops up with the message "The project model has been imported", and a new project model appears in the list in "Draft status.</td></tr>
-</table>
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 ||From the Main dashboard, click on the "Administration" button || The Administration tab opens up.||
+|| 2 || Click on the "Project models" hyperlink|| The list of existing project models is loaded on the right of the screen.||
+|| 3 || Click on the "Import" Button|| The "Importing project model..." popup opens up.||
+|| 4 || Click on the "Project models" hyperlink. || The list of existing project models is loaded on the right of the screen.||
+|| 5 || Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.|| A status message pops up with the message "The project model has been imported", and a new project model appears in the list in "Draft status.||
+
 
 
 == POMM3 ==
 === _Title:_ Duplicate a project model ===
-<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
-<tr><td> 1 </td>
-<td> From the "Project models" part of the Administration, click on the "Duplicate" button for any of the existing project models.</td>
-<td>A status box titled "Project model duplication" opens up with the message "The project model has been duplicated", and a new row appears in the list of project models with a "Draft" project title "Copy of" the title of existing project selected for duplication.</td></tr>
-</table>
-
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || From the "Project models" part of the Administration, click on the "Duplicate" button for any of the existing project models.|| A status box titled "Project model duplication" opens up with the message "The project model has been duplicated", and a new row appears in the list of project models with a "Draft" project title "Copy of" the title of existing project selected for duplication.||
 
 == POMM4 ==
 === _Title:_ Delete project model with test projects ===
-<table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
-<tr><td> 1 </td>
-<td> On the Main dashboard, click on the "Draft project" button </td>
-<td>The "Create new draft project" popup opens up.</td></tr>
-<tr><td> 2 </td>
-<td> Give any Code, Title to your new draft project, select as Model a project model you're ready to delete afterwards, and click on the "Create" button.</td>
-<td>A status message informing you that "your draft project has been successfully created" pops up, and a new row with your project appears in "Your draft projects" list of the "Create new draft project" popup and in the Dashboard project table behing the popup.</td></tr>
-<tr><td> 3 </td>
-<td> Close the "Create new draft project" popup.</td>
-<td>The popup closes.</td></tr>
-<tr><td> 4 </td>
-<td>Go to the "Project models" part of the Administration.</td>
-<td>The list of existing project models is loaded on the right of the screen.</td></tr>
-<tr><td> 5 </td>
-<td>Click on the "Delete" button for the project model you've just created a draft project from.</td>
-<td>A confirmation message box pops up asking you "Warning: all objects and projects using this project model will be deleted. Are you sure you want to delete it?".</td></tr>
-<tr><td> 6 </td>
-<td>Click on "Yes".</td>
-<td>A status message informing you that "The project model has been deleted", and the row with the selected project model is removed from the project models list.</td></tr>
-<tr><td> 7 </td>
-<td>Go back to the main dashboard.</td>
-<td>The draft project created earlier is nowhere in the projects table.</td></tr>
-<tr><td> 8 </td>
-<td>Click on "Draft project" button.</td>
-<td>The draft project created earlier is no more in the "Your draft projects" list.</td></tr>
-</table>
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the Main dashboard, click on the "Draft project" button ||
+The "Create new draft project" popup opens up.||
+|| 2 || Give any Code, Title to your new draft project, select as Model a project model you're ready to delete afterwards, and click on the "Create" button.|| A status message informing you that "your draft project has been successfully created" pops up, and a new row with your project appears in "Your draft projects" list of the "Create new draft project" popup and in the Dashboard project table behind the popup.||
+|| 3 || Close the "Create new draft project" popup.|| The popup closes.||
+|| 4 || Go to the "Project models" part of the Administration.|| The list of existing project models is loaded on the right of the screen.||
+|| 5 || Click on the "Delete" button for the project model you've just created a draft project from.|| A confirmation message box pops up asking you "Warning: all objects and projects using this project model will be deleted. Are you sure you want to delete it?".||
+|| 6 ||Click on "Yes".|| A status message informing you that "The project model has been deleted", and the row with the selected project model is removed from the project models list.||
+|| 7 || Go back to the main dashboard.|| The draft project created earlier is nowhere in the projects table.||
+|| 8 || Click on "Draft project" button.|| The draft project created earlier is no more in the "Your draft projects" list.||
+
+== POMM5 ==
+=== _Title:_ Create a project model (#94) ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Click on the « Administration » button on the home page. || The « Administration » page should appear. ||
+|| 2 || Click on the « Project models » link. || A table of the existing project model should be displayed. ||
+|| 3 || Click on the « Add » button on the top of the table. || A pop-up where you can specify the information of the new project model should open. ||
+|| 4 || Fill the new project's attributes and click on the « Save » button. || A row should be added to the table with the name that you have given to the project model. ||
+|| 5 || Click on the name of the new project model. || You should be able to see and modify the name and the type of the new project model. You should also see a table with, by default, the fields Code, Title, Start date, End date, Org Unit, Country, Manager, Author and Budget. ||
+
+== POMM6 ==
+=== _Title:_ Add a new field to a project model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Open a project model in draft status and click on the « Add » button in the « Fields » tab. || A pop-up should open where you can specify the attributes of the new field. ||
+|| 2 || Fill the different fields and click on the « Save » button. || A row should be added in the Fields table with the information that you have entered. ||
+
+== POMM7 ==
+=== _Title:_ Add a new phase to a project model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM8 ==
+=== _Title:_ Switch two fields in a model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM9 ==
+=== _Title:_ Add a mandatory field to a project ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM10 ==
+=== _Title:_ Reorganize a project model's attributes of the synthesis section ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM11 ==
+=== _Title:_ Add a phase to a model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM12 ==
+=== _Title:_ Modify available groups' types from a logical frame model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM13 ==
+=== _Title:_ Modify elements creation's constraints of a logical frame from its model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM14 ==
+=== _Title:_ Modify Date field's constraints ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM15 ==
+=== _Title:_ Modify Number field's constraints ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM16 ==
+=== _Title:_ Modify a Number field's numeric type ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM17 ==
+=== _Title:_ Modify text field's constraints ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM18 ==
+=== _Title:_ Convert a report list field to a mandatory field ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM19 ==
+=== _Title:_ Key question modification of a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM20 ==
+=== _Title:_ Add a key question to a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM21 ==
+=== _Title:_ Modify the information's confidentiality ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM22 ==
+=== _Title:_ Restricted modification rights according to amendments ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== POMM23 ==
+=== _Title:_ Modify files list field's constraints (#83) ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
