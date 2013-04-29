@@ -27,7 +27,7 @@ The test project available in the application is supposed to have the necessary 
 == PRJM4 ==
 === _Title:_ Fill project mandatory field ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 2 || From the project page, Fill a mandatory field for the current phase. || Automatically, the field should be noted as filled in the mandatory fields list for the current phase. ||
+|| 2 || From the project page, fill a mandatory field for the current phase. || Automatically, the field should be noted as filled in the mandatory fields list for the current phase. ||
 
 == PRJM5 ==
 === _Title:_ Switch from a phase to another ===
@@ -77,32 +77,46 @@ The test project available in the application is supposed to have the necessary 
 === _Title:_ Add a reminder ===
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From a project dashboard, in the « Reminders » panel, in the « To do » table or in the « Expected » table, click on the « Add » button. || A pop-up should open where you can specify the title and the date of the reminder. ||
-|| 2 || Fill the fields and click on « Ok ». || The reminder should appear in the « Reminders » panel in the corresponding table ||
+|| 2 || Fill the fields and click on « Ok ». || The reminder should appear in the « Reminders » panel in the corresponding table, in the position corresponding to its date in a chronological order. ||
 
 == PRJM13 ==
 === _Title:_ Add a late reminder ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From a project dashboard, in the « Reminders » panel, in the « To do » table or in the « Expected » table, click on the « Add » button. || A pop-up should open where you can specify the title and the date of the reminder. ||
+|| 2 || Fill the fields, the Date field must be filled with an already passed date and click on « Ok ». || The reminder should appear in the « Reminders » panel in the corresponding table, in the position corresponding to its date in a chronological order. Its icon should have a red arrow. ||
 
 == PRJM14 ==
 === _Title:_ Check a reminder ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From a project's dashboard, in the « Reminders » panel,  in the « To do » table or in the « Expected » table, click on the checkbox, on the left of a reminder which is not already checked. || The checkbox should remain checked and the reminder's icon should be grayed. The reminder's title should be crossed out and the closed date should be filled with today's date on the right-hand column.
 
 == PRJM15 ==
 === _Title:_ Add a reminder after attaching files ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the « Details » or on an active phase allowing file attachment, click on the « Add » or « New version » button. || A pop-up opens to let you choose the file that you want to attach. ||
+|| 2 || Choose a file to attach. Click on the « Open » button to attach the file. || A pop-up should open to the user to offer you to add a reminder. ||
+|| 3 || Click on « Yes ». || A pop-up should open where you can specify the title and the date of the reminder. ||
+|| 4 || Fill the fields and click on « Ok ». || The reminder should appear in the « Reminders » panel, from the dashboard tab in the « Expected » table, in the position corresponding to its date in a chronological order. ||
 
 == PRJM16 ==
 === _Title:_ Accessing project's information according to user's rights ===
+_This test has to reconsidered because it is not up to date._
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Connect as user1. Create a NGO project P1 in an OrgUnit accessible to any other user. Fill the field « Nombre de bénéficiaires » in the « Details » sub-tab and any other field from the « Préliminaire » phase in the project's dashboard.|| ||
+|| 2 || Disconnect and connect as user3, open the « Details » sub-tab of the project P1 and modify the « Nombre de bénéficiaires »  field. || You should not be able to access the information in the « Préliminaire » phase but can see the information entered by user1 for the « Nombre de bénéficiaires »  field and modify it. ||
+|| 3 || Disconnect, connect as user2 and consult the project P1. || You should be able to consult the information entered by user1 in the « Préliminaire » phase but also the last value given to the « Nombre de bénéficiaires »  field by user3 in the « Details » sub-tab. ||
 
 == PRJM17 ==
 === _Title:_ Lock information with an amendment (#89) ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || On a project's dashboard, in the « Amendments » panel, click on the « Lock amendments » link. || You shouldn't be able to modify the logical frame, the project budget (planned budget only) and the beginning and ending dates. ||
 
 == PRJM18 ==
 === _Title:_ Project manager modification (#92) ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the « Details » tab on a project's dashboard, modify the project manager and click on the « Save » button. || If you close and reopen the project's dashboard, the information about the project's manager has been retained. ||
 
 == PRJM19 ==
 === _Title:_ Project's organizational unit modification (#93) ===
 || # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the « Details » tab on a project's dashboard, modify the OrgUnit and click on the « Save » button. || If you close and reopen the project's dashboard, the information about the project's OrgUnit has been retained. ||
