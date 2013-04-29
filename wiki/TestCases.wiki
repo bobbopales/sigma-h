@@ -52,25 +52,24 @@ The list of test cases is under migration from its original form as a Word file 
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
 || POMM4 || Delete project model with test projects || [TestScenario4ProjectOrgunitModelManagement#POMM4] ||
-|| POMM5 || Create a project model (#94) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM6 || Add a new field to a project model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM7 || Add a new phase to a project model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM8 || Switch two fields in a model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM9 || Add a mandatory field to a project || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM10 || Reorganize a project model's attributes of the synthesis section|| [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM11 || Add a phase to a model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM12 || Modify available groups' types from a logical frame model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM13 || Modify elements creation's constraints of a logical frame from its model || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM14 || Modify Date field's constraints || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM15 || Modify Number field's constraints || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM16 || Modify a Number field's numeric type || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM17 || Modify text field's constraints || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM18 || Convert a report list field to a mandatory field || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM19 || Key question modification of a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM20 || Add a key question to a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM21 || Modify the information's confidentiality || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM22 || Restricted modification rights according to amendments || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| POMM23 || Modify files list field's constraints (#83) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| POMM5 || Create a project model (#94) || [TestScenario4ProjectOrgunitModelManagement#POMM5] ||
+|| POMM6 || Add a new field to a project model || [TestScenario4ProjectOrgunitModelManagement#POMM6] ||
+|| POMM7 || Add a new phase to a project model || [TestScenario4ProjectOrgunitModelManagement#POMM7] ||
+|| POMM8 || Switch two fields in a model || [TestScenario4ProjectOrgunitModelManagement#POMM8] ||
+|| POMM9 || Add a mandatory field to a project || [TestScenario4ProjectOrgunitModelManagement#POMM9] ||
+|| POMM10 || Reorganize a project model's attributes of the synthesis section|| [TestScenario4ProjectOrgunitModelManagement#POMM10] ||
+|| POMM11 || Modify available groups' types from a logical frame model || [TestScenario4ProjectOrgunitModelManagement#POMM11] ||
+|| POMM12 || Modify elements creation's constraints of a logical frame from its model || [TestScenario4ProjectOrgunitModelManagement#POMM12] ||
+|| POMM13 || Modify Date field's constraints || [TestScenario4ProjectOrgunitModelManagement#POMM13] ||
+|| POMM14 || Modify Number field's constraints || [TestScenario4ProjectOrgunitModelManagement#POMM14] ||
+|| POMM15 || Modify a Number field's numeric type || [TestScenario4ProjectOrgunitModelManagement#POMM15] ||
+|| POMM16 || Modify text field's constraints || [TestScenario4ProjectOrgunitModelManagement#POMM16] ||
+|| POMM17 || Convert a report list field to a mandatory field || [TestScenario4ProjectOrgunitModelManagement#POMM17] ||
+|| POMM18 || Key question modification of a report || [TestScenario4ProjectOrgunitModelManagement#POMM18] ||
+|| POMM19 || Add a key question to a report || [TestScenario4ProjectOrgunitModelManagement#POMM19] ||
+|| POMM20 || Modify the information's confidentiality || [TestScenario4ProjectOrgunitModelManagement#POMM20] ||
+|| POMM21 || Restricted modification rights according to amendments || [TestScenario4ProjectOrgunitModelManagement#POMM21] ||
+|| POMM22 || Modify files list field's constraints (#83) || [TestScenario4ProjectOrgunitModelManagement#POMM22] ||
 || *5* || *Agenda* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || AGN2 || Time navigation through the calendar|| [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || AGN3 || Add an event|| [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
