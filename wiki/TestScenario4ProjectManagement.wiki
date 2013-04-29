@@ -109,7 +109,7 @@ _This test has to reconsidered because it is not up to date._
 == PRJM17 ==
 === _Title:_ Lock information with an amendment (#89) ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || On a project's dashboard, in the « Amendments » panel, click on the « Lock amendments » link. || You shouldn't be able to modify the logical frame, the project budget (planned budget only) and the beginning and ending dates. ||
+|| 1 || On a the dashboard of a project which the project budget and the beginning and ending dates are amendable, in the « Amendments » panel, click on the « Lock amendments » link. || You shouldn't be able to modify the logical frame, the project budget (planned budget only) and the beginning and ending dates. ||
 
 == PRJM18 ==
 === _Title:_ Project manager modification (#92) ===
