@@ -96,11 +96,11 @@ The list of test cases is under migration from its original form as a Word file 
 || RDM13 || Personal draft cycle of a report || [TestScenario4ReportsDocumentsManagement#RDM13] ||
 || RDM14 || Automatic saving of reports (#88) || [TestScenario4ReportsDocumentsManagement#RDM14] ||
 || *8* || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
-|| OUM2 || Project - OrgUnit link || [TestScenario4OrgUnitManagement#OUM2] ||
-|| OUM3 || OrgUnit's flexibility || [TestScenario4OrgUnitManagement#OUM3] ||
-|| OUM4 || Modify an OrgUnit attributes || [TestScenario4OrgUnitManagement#OUM4] ||
-|| OUM5 || Modify an OrgUnit's calendar || [TestScenario4OrgUnitManagement#OUM5] ||
-|| OUM6 || Manipulate an OrgUnit || [TestScenario4OrgUnitManagement#OUM6] ||
+|| OUM2 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM2] ||
+|| OUM3 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM3] ||
+|| OUM4 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM4] ||
+|| OUM5 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM5] ||
+|| OUM6 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM6] ||
 || *9* || *Rights Tests* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || RT1 || Rights test with user 4 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || RT2 || Rights test with user 5 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
