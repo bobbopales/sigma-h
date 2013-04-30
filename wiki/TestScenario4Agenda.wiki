@@ -11,7 +11,7 @@ This scenario is based on the demo data set.
 
 == AGN1 ==
 === _Title:_ User signing in ===
-=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+====_See test on:_ [TestScenario4UserSessionRight#USR1] ====
 
 == AGN2 ==
 === _Title :_ Time navigation through the calendar ===
