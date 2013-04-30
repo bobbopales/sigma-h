@@ -70,11 +70,11 @@ The list of test cases is under migration from its original form as a Word file 
 || POMM20 || Modify the information's confidentiality || [TestScenario4ProjectOrgunitModelManagement#POMM20] ||
 || POMM21 || Restricted modification rights according to amendments || [TestScenario4ProjectOrgunitModelManagement#POMM21] ||
 || POMM22 || Modify files list field's constraints (#83) || [TestScenario4ProjectOrgunitModelManagement#POMM22] ||
-|| *5* || *Agenda* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| AGN2 || Time navigation through the calendar|| [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| AGN3 || Add an event|| [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| AGN4 || Modify an event || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| AGN5 || Delete an event || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *5* || *Agenda* || [TestScenario4Agenda] ||
+|| AGN2 || Time navigation through the calendar|| [TestScenario4Agenda#AGN2] ||
+|| AGN3 || Add an event|| [TestScenario4Agenda#AGN3] ||
+|| AGN4 || Modify an event || [TestScenario4Agenda#AGN4] ||
+|| AGN5 || Delete an event || [TestScenario4Agenda#AGN5] ||
 || *6* || *Logical Framework* || [TestScenario4LogicalFramework] ||
 || LF2 || Create a minimal logframe without indicators || [TestScenario4LogicalFramework#LF2] ||
 || LF3 || Create indicators in a logframe || [TestScenario4LogicalFramework#LF3] ||
