@@ -25,6 +25,7 @@ Those meetings will be organized with all students having submitted an applicati
 = Steps in the application process =
 Here is the process which we will follow:
   # 22nd of April : student applications period opens
-  # 3rd of May: application deadline for students. The applications should respect the application template and include at least one patch fixing an issue.
-  # 6th of May - 22nd of May: after the first round of selection, selected students will be invited to have a Skype interview.
+  # 3rd of May: application deadline for students. The applications should respect the application template and include at least one patch fixing an issue. If a student doesn't submit his/her proposal before this deadline, he won't be able in any case to partipate in the Google Summer of Code 2013.
+  # 6th of May - 15th of May: first revision of the proposals, discussion, and possibility to modify the proposals and send more patchs to illustrate your technical ability. No more modifications allowed on the proposal or patches accepted after the 15th of May.
+  # 16th of May - 22nd of May: after the first round of selection, selected students will be invited to have a Skype interview.
   # 27th of May: accepted student proposals published on Google Melange
