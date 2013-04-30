@@ -11,7 +11,7 @@ This scenario is based on the demo data set.
 
 == RDM1 ==
 === _Title:_ User signing in ===
-=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+==== _See test on:_ [TestScenario4UserSessionRight#USR1] ====
 
 == RDM2 ==
 === _Title:_ Create a new report ===
@@ -57,31 +57,54 @@ This scenario is based on the demo data set.
 == RDM7 ==
 === _Title:_ Create a report from a project's phase page ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a dashboard of a project depending on a project model with a reports list field, click on the phase where the report list is attached to and click on « Add report ». || A pop-up should open where you can specify the title of the report. ||
+|| 2 || Enter the title of the report and click on « Ok ». || A row corresponding to the report is added to the report's list section and to the left-hand panel of the « Reports & Documents » sub-tab. ||
 
 == RDM8 ==
-=== _Title:_ Access a report created through the « Reports & documents » tab from a project's phase page	 ===
+=== _Title:_ Access a report created through the « Reports & documents » tab from a project's phase page ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a project page depending on a project model with a reports list field, in the « Reports & Documents » sub-tab, add a report. || The report should be added to the left-hand panel of the sub-tab. ||
+|| 2 || On the project's dashboard, click on the phase corresponding to the reports list field in which you added the report. || You should see a row corresponding of the report just created in the reports list field table corresponding. ||  
 
 == RDM9 ==
 === _Title:_ Impossible to create a report in a future phase ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a project's page in its initial phase, click on the « Reports & Documents » sub-tab and click on « New report ». || The report's model listed should only be the ones available in the current phase. ||
+
 
 == RDM10 ==
 === _Title:_ Impossible to create two reports for a « single » reports list field ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a project's page in its initial phase, click on the « Reports & Documents » sub-tab and click on « New report » and click on the reports list field that can contain only one report. ||
+|| 2 || Try to add another report to the same report model. || You should not be able to add a new report. || 
 
 == RDM11 ==
 === _Title:_ Visibility of attached documents in the « Reports & documents » tab ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a project's page in its current phase, click on « Attach file ». || A pop-up should open where you can select the file that you want to attach. ||
+|| 2 || Select the file wanted and click on « Ok ». || A row corresponding to the file is added to the left-hand panel of the « Reports & Documents » sub-tab. ||
+|| 3 || Click on the « Reports & Documents » sub-tab. || You should see a row corresponding to the report that you have just added. ||
+
 
 == RDM12 ==
 === _Title:_ Answer to a report's key question ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On a project's page in its initial phase, click on the « Reports & Documents » sub-tab and open an existing report. || The report should be displayed on the right-hand panel of the sub-tab. ||
+|| 2 || Click on the icon in the form of a compass of a key question || A pop-up should open where you can answer the key question. ||
+|| 3 || Answer the key question and click on « Ok ». || The icon next to the question should go from red to green and the number of answered key questions should  increment. ||
+
+
 
 == RDM13 ==
 === _Title:_ Personal draft cycle of a report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Connect as user1, who has the right to modify a report. Modify the report and save it in this state called « A » and click on « Share ». || ||
+|| 2 || Reopen the same report, modify it and save it in this state called « B ». || ||
+|| 3 || Close the report and the project and reopen them. || The report should be displayed as it was in the state « B ». || 
+|| 4 || Connect as user2 who only has the right to consult the report and open it. || You should see the report as it was in state « A ». ||   
 
 == RDM14 ==
 === _Title:_ Automatic saving of reports (#88) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the « Reports & Documents » sub-tab, open a report. || The report should be displayed on the right-hand panel of the sub-tab. ||
+|| 2 || Without saving it, go back to the home page (main dashboard), open another project and stay on this project for about 10 minutes. || During the 10 minutes, the opened report has at least been saved once and you have been informed of it. ||
