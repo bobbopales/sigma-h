@@ -78,24 +78,23 @@ The list of test cases is under migration from its original form as a Word file 
 || *6* || *Logical Framework* || [TestScenario4LogicalFramework] ||
 || LF2 || Create a minimal logframe without indicators || [TestScenario4LogicalFramework#LF2] ||
 || LF3 || Create indicators in a logframe || [TestScenario4LogicalFramework#LF3] ||
-|| LF4 || Save a logical frame || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| LF5 || Move an element from a logical frame || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| LF6 || Delete an element from a logical frame || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| LF7 || Add an activity linked to the calendar || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| *7* || *Reports & Documents Management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM2 || Create a new report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM3 || Open an existing report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM4 || Close a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM5 || Save a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM6 || Manipulate a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM7 || Create a report from a project's phase page || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM8 || Access a report created through the « Reports & documents » tab from a project's phase page || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM9 || Impossible to create a report in a future phase || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM10 || Impossible to create two reports for a « single » reports list field || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM11 || Visibility of attached documents in the « Reports & documents » tab || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM12 || Answer to a report's key question || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM13 || Personal draft cycle of a report || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RDM14 || Automatic saving of reports (#88) || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| LF4 || Move an element from a logical frame || [TestScenario4LogicalFramework#LF4] ||
+|| LF5 || Delete an element from a logical frame || [TestScenario4LogicalFramework#LF5] ||
+|| LF6 || Add an activity linked to the calendar || [TestScenario4LogicalFramework#LF6] ||
+|| *7* || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
+|| RDM2 || Create a new report || [TestScenario4ReportsDocumentsManagement#RDM2] ||
+|| RDM3 || Open an existing report || [TestScenario4ReportsDocumentsManagement#RDM3] ||
+|| RDM4 || Close a report || [TestScenario4ReportsDocumentsManagement#RDM4] ||
+|| RDM5 || Save a report || [TestScenario4ReportsDocumentsManagement#RDM5] ||
+|| RDM6 || Manipulate a report || [TestScenario4ReportsDocumentsManagement#RDM6] ||
+|| RDM7 || Create a report from a project's phase page || [TestScenario4ReportsDocumentsManagement#RDM7] ||
+|| RDM8 || Access a report created through the « Reports & documents » tab from a project's phase page || [TestScenario4ReportsDocumentsManagement#RDM8] ||
+|| RDM9 || Impossible to create a report in a future phase || [TestScenario4ReportsDocumentsManagement#RDM9] ||
+|| RDM10 || Impossible to create two reports for a « single » reports list field || [TestScenario4ReportsDocumentsManagement#RDM10] ||
+|| RDM11 || Visibility of attached documents in the « Reports & documents » tab || [TestScenario4ReportsDocumentsManagement#RDM11] ||
+|| RDM12 || Answer to a report's key question || [TestScenario4ReportsDocumentsManagement#RDM12] ||
+|| RDM13 || Personal draft cycle of a report || [TestScenario4ReportsDocumentsManagement#RDM13] ||
+|| RDM14 || Automatic saving of reports (#88) || [TestScenario4ReportsDocumentsManagement#RDM14] ||
 || *8* || *Organizational Units Management* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || OUM2 || Project - OrgUnit link || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
 || OUM3 || OrgUnit's flexibility || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
