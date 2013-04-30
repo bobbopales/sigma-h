@@ -1,0 +1,87 @@
+#summary Test Scenario on Reports & Documents Management (RDM)
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the demo data set.
+
+
+= Test cases =
+
+== RDM1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== RDM2 ==
+=== _Title:_ Create a new report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on « Add report » and choose to which report list you want to add the report. || A pop-up should open letting you specify the new report's title. ||
+|| 2 || Enter a title and click on « Ok ». || A row should be added to the reports and documents table with the title that you have specified. ||
+|| 3 || Click on the report's title. || An empty report should be displayed on the right-hand panel of the sub-tab. ||
+
+
+== RDM3 ==
+=== _Title:_ Open an existing report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on a report's title.  || The report should be displayed on the right-hand panel of the sub-tab. ||
+
+
+== RDM4 ==
+=== _Title:_ Close a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on a report's title. || The report should be displayed on the right-hand panel of the sub-tab. ||
+|| 2 || Click on the « X » in the upper-right of the right-hand panel of the sub-tab. || The report should be closed and the right-hand panel of the sub-tab should be empty. ||
+
+
+== RDM5 ==
+=== _Title:_ Save a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on a report's title. || The report should be displayed on the right-hand panel of the sub-tab. ||
+|| 2 || Modify two different chapters and click on « Save ». || ||
+|| 3 || Close and reopen the report. || The modification made to the chapters should be retained. ||
+||
+
+== RDM6 ==
+=== _Title:_ Manipulate a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on a report's title. || The report should be displayed on the right-hand panel of the sub-tab. ||
+|| 2 || Click on Click on « Overview Mode ». || The content of the paragraphs of the report should not be displayed. ||
+|| 3 || Click on « Full mode ». || The content of the paragraphs should be displayed. ||
+|| 4 || Click on a paragraph's title. || If the content of the paragraph was visible, it should now be hidden. If it wasn't, it should now be visible. ||
+|| 5 || Click on « Modify ». || You should now be able to modify the report. ||
+|| 6 || Write some text in one of the section, select it and click on a text transformation button (B, I, S, align left, align right, center, justify, bullets list, numbered list). || The text should be transformed accordingly to the button you clicked on. || 
+|| 7 || Click on the icon with a frame and a plus on it. || A pop-up should open where you can specify the image's URL. ||
+|| 8 || Enter an image URL and click on « Ok ». || The image should be added to the report. ||
+
+== RDM7 ==
+=== _Title:_ Create a report from a project's phase page ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM8 ==
+=== _Title:_ Access a report created through the « Reports & documents » tab from a project's phase page	 ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM9 ==
+=== _Title:_ Impossible to create a report in a future phase ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM10 ==
+=== _Title:_ Impossible to create two reports for a « single » reports list field ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM11 ==
+=== _Title:_ Visibility of attached documents in the « Reports & documents » tab ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM12 ==
+=== _Title:_ Answer to a report's key question ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM13 ==
+=== _Title:_ Personal draft cycle of a report ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+
+== RDM14 ==
+=== _Title:_ Automatic saving of reports (#88) ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
