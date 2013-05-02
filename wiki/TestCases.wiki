@@ -38,7 +38,7 @@ The list of test cases is under migration from its original form as a Word file 
 
 || *Code*|| *Name* || *URL* ||
 || LPC || List of checkpoints || [ListCheckPoints] ||
-|| *1* || *Users and sessions management* || [TestScenario4UserSessionRight] ||
+|| ** || *Users and sessions management* || [TestScenario4UserSessionRight] ||
 || USR1 || User signing in || [TestScenario4UserSessionRight#USR1] ||
 || USR2 || User logging out || [TestScenario4UserSessionRight#USR2] ||
 || USR3 || Recovering lost password || [TestScenario4UserSessionRight#USR3] ||
@@ -46,14 +46,14 @@ The list of test cases is under migration from its original form as a Word file 
 || USR5 || Display of user's NGO 's information || [TestScenario4UserSessionRight#USR5] ||
 || USR6 || Pop-up help (#82) || [TestScenario4UserSessionRight#USR6] ||
 || USR7 || Pop-up credits (#91) || [TestScenario4UserSessionRight#USR7] ||
-|| *2* || * Dashboard Projects Table* || [TestScenario4DashboardProjectTable] ||
+|| ** || * Dashboard Projects Table* || [TestScenario4DashboardProjectTable] ||
 || DPT2 || Projects table loading|| [TestScenario4DashboardProjectTable#DPT2] ||
 || DPT3 || Global export live data || [TestScenario4DashboardProjectTable#DPT3] ||
 || DPT4 || Global export other format exportation || [TestScenario4DashboardProjectTable#DPT4] ||
 || DPT5 || Columns filter || [TestScenario4DashboardProjectTable#DPT5] ||
 || DPT6 || Projects' table grouping manipulation || [TestScenario4DashboardProjectTable#DPT6] ||
 || DPT7 || Limited project's access according to user's rights || [TestScenario4DashboardProjectTable#DPT7] ||
-|| *3* || *Project management* || [TestScenario4ProjectManagement] ||
+|| ** || *Project management* || [TestScenario4ProjectManagement] ||
 || PRJM2 || Open a project page || [TestScenario4ProjectManagement#PRJM2] ||
 || PRJM3 || Modify a project's attributes || [TestScenario4ProjectManagement#PRJM3] ||
 || PRJM4 || Fill project mandatory field || [TestScenario4ProjectManagement#PRJM4] ||
@@ -72,7 +72,7 @@ The list of test cases is under migration from its original form as a Word file 
 || PRJM17 || Lock information with an amendment (#89) || [TestScenario4ProjectManagement#PRJM17] ||
 || PRJM18 || Project manager modification (#92) || [TestScenario4ProjectManagement#PRJM18] ||
 || PRJM19 || Project's organizational unit modification (#93) || [TestScenario4ProjectManagement#PRJM19] ||
-|| *4* || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
+|| ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
 || POMM4 || Delete project model with test projects || [TestScenario4ProjectOrgunitModelManagement#POMM4] ||
@@ -94,18 +94,24 @@ The list of test cases is under migration from its original form as a Word file 
 || POMM20 || Modify the information's confidentiality || [TestScenario4ProjectOrgunitModelManagement#POMM20] ||
 || POMM21 || Restricted modification rights according to amendments || [TestScenario4ProjectOrgunitModelManagement#POMM21] ||
 || POMM22 || Modify files list field's constraints (#83) || [TestScenario4ProjectOrgunitModelManagement#POMM22] ||
-|| *5* || *Agenda* || [TestScenario4Agenda] ||
+|| ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
+|| RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
+|| RMM3 || Delete report model|| [TestScenario4ReportModelManagement#RMM3] ||
+|| RMM4 || Add a report model's section|| [TestScenario4ReportModelManagement#RMM4] ||
+|| RMM5 || Modify report model's sections || [TestScenario4ReportModelManagement#RMM5] ||
+|| RMM6 || Delete a report model's section || [TestScenario4ReportModelManagement#RMM6] ||
+|| ** || *Agenda* || [TestScenario4Agenda] ||
 || AGN2 || Time navigation through the calendar|| [TestScenario4Agenda#AGN2] ||
 || AGN3 || Add an event|| [TestScenario4Agenda#AGN3] ||
 || AGN4 || Modify an event || [TestScenario4Agenda#AGN4] ||
 || AGN5 || Delete an event || [TestScenario4Agenda#AGN5] ||
-|| *6* || *Logical Framework* || [TestScenario4LogicalFramework] ||
+|| ** || *Logical Framework* || [TestScenario4LogicalFramework] ||
 || LF2 || Create a minimal logframe without indicators || [TestScenario4LogicalFramework#LF2] ||
 || LF3 || Create indicators in a logframe || [TestScenario4LogicalFramework#LF3] ||
 || LF4 || Move an element from a logical frame || [TestScenario4LogicalFramework#LF4] ||
 || LF5 || Delete an element from a logical frame || [TestScenario4LogicalFramework#LF5] ||
 || LF6 || Add an activity linked to the calendar || [TestScenario4LogicalFramework#LF6] ||
-|| *7* || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
+|| ** || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
 || RDM2 || Create a new report || [TestScenario4ReportsDocumentsManagement#RDM2] ||
 || RDM3 || Open an existing report || [TestScenario4ReportsDocumentsManagement#RDM3] ||
 || RDM4 || Close a report || [TestScenario4ReportsDocumentsManagement#RDM4] ||
@@ -119,22 +125,22 @@ The list of test cases is under migration from its original form as a Word file 
 || RDM12 || Answer to a report's key question || [TestScenario4ReportsDocumentsManagement#RDM12] ||
 || RDM13 || Personal draft cycle of a report || [TestScenario4ReportsDocumentsManagement#RDM13] ||
 || RDM14 || Automatic saving of reports (#88) || [TestScenario4ReportsDocumentsManagement#RDM14] ||
-|| *8* || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
+|| ** || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
 || OUM2 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM2] ||
 || OUM3 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM3] ||
 || OUM4 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM4] ||
 || OUM5 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM5] ||
 || OUM6 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM6] ||
-|| *9* || *Rights* || [TestScenario4Rights] ||
+|| ** || *Rights* || [TestScenario4Rights] ||
 || R1 || Rights for user 4 || [TestScenario4Rights#R1] ||
 || R2 || Rights for user 5 || [TestScenario4Rights#R2] ||
 || R3 || Rights for user 6 || [TestScenario4Rights#R3] ||
-|| *10* || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
+|| ** || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
 || AGM2 || Open Administration Global Management || [TestScenario4AdministrationGlobalManagement#AGM2] ||
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
 || AGM4 || Backup all versions of each file from one orgunit || [TestScenario4AdministrationGlobalManagement#AGM4] ||
 || AGM5 || Change organization's logo and name || [TestScenario4AdministrationGlobalManagement#AGM5] ||
-|| *11* || *Indicators* || [TestScenario4Indicators] ||
+|| ** || *Indicators* || [TestScenario4Indicators] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
-|| *12* || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
+|| ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
