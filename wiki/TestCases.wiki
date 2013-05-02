@@ -6,6 +6,30 @@
 This page sums up all test cases written for the Sigmah project.
 Each time a new relase of Sigmah is made, the full list of tests below should be runned.
 
+These tests are based on the demo data set v1.2 which contains the following users : 
+ * *Demo user* : email address : demo@sigmah.org
+  * has every rights and is associated to the highest level of organizational unit of the organisation.
+
+ * *user2* : email address : user2@sigmah.org
+  * This user has only the right to view projects and belongs to an organisational unit from the highest level of them.
+
+ * *user3* : email address: user3@sigmah.org
+  * has only the right to view and modify projects and belongs to a profile having rights to modify fields belonging to the confidentiality group « Suivi RH ». He belongs to an organisational unit from the lowest level of them.
+
+ * *user4* : email address : user4@sigmah.org
+  * This user is associated to an organisational unit from the highest level of them and has every rights excepts the following : 
+   * Create project
+   * Change phase
+   * Delete a file
+
+ * *user5* : email address : user5@sigmah.org
+  * This user is associated to an organisational unit from the highest level of them and has every rights excepts the following : 
+   * Modify project
+
+ * *user6* : email address : user5@sigmah.org
+  * This user is associated to an organisational unit from the highest level of them and has every rights excepts the following : 
+   * View projects
+
 
 = Summary of all test cases =
 
