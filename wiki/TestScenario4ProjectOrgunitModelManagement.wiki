@@ -5,6 +5,7 @@
 = Introduction =
 
 This scenario is based on the demo data set.
+These tests are based on projects models but should be executed for OrgUnit models as well.
 
 
 = Test cases =
