@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This scenario is based on the demo data set.
+This scenario is based on the demo data set which is supposed to have all the required proprieties to pass these tests.
 
 
 = Test cases =
