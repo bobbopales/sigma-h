@@ -1,4 +1,4 @@
-#summary Test Scenario on Dashbboard Projects Table (DPT)
+#summary Test Scenario on Dashboard Projects Table (DPT)
 
 <wiki:toc max_depth="3" />
 
