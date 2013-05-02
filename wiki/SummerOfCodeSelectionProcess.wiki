@@ -12,6 +12,30 @@ First of all, as you may have guess it, the [Ideas4GSoC2013 given project ideas]
 The process in which we are now is more the setting of a team to work this summer together on the Sigmah project (each member with his own core responsability) than a set of individuals working totally individually on their own separate topic.
 Outside your main contribution (the project idea(s)) you've chosen to work on, you can thus already select some features you would like to develop and list them in your application. The roadmap is full of them. All of those issues are suggested originally by the NGOs using Sigmah and are looking for their contributors!
 
+=== Application template ===
+This the template that your application should follow:
+
+1. What's the Sigmah project for you?
+
+2. How would you describe yourself? (CV to be attached separately)
+
+3. Are you more keen to work on the Java/GWT Sigmah application, or the PHP/Drupal Sigmah community website?
+
+4. What's your experience in developing either in Java/GWT or PHP/Drupal? (patches with demonstration of your ability to work on Sigmah codebase attached separately)
+
+5. What's your experience in contributing to open source projects?
+
+6. Which project(s) suggested on the Ideas page appeal you the most?
+(for the other ideas, please tell us how much you might be interested to work on them: equally interesting / less interesting / far less interesting / not interesting)
+
+7. What would be your exact project around this preferred project idea and its implementation workplan for the duration of the GSOC program? (activities, days available, potential weeks off, etc.)(the basis is to consider GSoC as a full time job with a week of work being about at least 7-8 hours a day, 5 days a week)
+
+8. What are your email address and your IRC nickname?
+
+9. Last but not least: why would you like to work on the Sigmah project?
+
+
+
 == Patches are expected as part of the application ==
 On the Sigmah project, we consider each GSoC candidate as a project contributor like all others. As such, in order to evaluate technical level, we request from each contributor to send one or several patche(s) as part of the application.
 
