@@ -146,9 +146,9 @@ The « Create new draft project » popup opens up.||
 == POMM20 ==
 === _Title:_ Modify the information's confidentiality ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On the project models page management page, open a NGO project model and add a confidentiality group, to which user3 belongs, to a field. || ||
+|| 1 || On the project models page management page, open the NGO project model « Projet partenaire local v2 » and add a field with as confidentiality group the one to which user3 belongs. || ||
 || 2 || Connect as user1 and create a project depending on the NGO project model. || ||
-|| 3 || Connect to the application a user3 and open the project created by user1. || You should be able to see and to modify to the field from step 1. ||
+|| 3 || Connect to the application as user3 and open the project created by user1. || You should be able to see and to modify the field from step 1. ||
 
 == POMM21 ==
 === _Title:_ Restricted modification rights according to amendments ===
