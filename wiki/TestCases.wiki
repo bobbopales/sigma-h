@@ -101,10 +101,10 @@ The list of test cases is under migration from its original form as a Word file 
 || OUM4 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM4] ||
 || OUM5 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM5] ||
 || OUM6 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM6] ||
-|| *9* || *Rights Tests* || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RT1 || Rights test with user 4 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RT2 || Rights test with user 5 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
-|| RT3 || Rights test with user 6 || [http://www.sigmah.org/Sigmah_CasDeTests_Lot4_v1.0-rc2.docx Deprecated Word file of test cases] ||
+|| *9* || *Rights* || [TestScenario4Rights] ||
+|| R1 || Rights for user 4 || [TestScenario4Rights#R1] ||
+|| R2 || Rights for user 5 || [TestScenario4Rights#R2] ||
+|| R3 || Rights for user 6 || [TestScenario4Rights#R3] ||
 || *10* || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
 || AGM2 || Open Administration Global Management || [TestScenario4AdministrationGlobalManagement#AGM2] ||
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
