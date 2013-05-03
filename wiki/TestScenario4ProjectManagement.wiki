@@ -120,3 +120,9 @@ _This test has to reconsidered because it is not up to date._
 === _Title:_ Project's organizational unit modification (#93) ===
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From the « Details » tab on a project's dashboard, modify the OrgUnit and click on the « Save » button. || If you close and reopen the project's dashboard, the information about the project's OrgUnit has been retained. ||
+
+== PRJM20 ==
+=== _Title:_ Create a draft project (#97) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the home page, click on the « Draft project » button. || A  pop-up should open letting you specify the attributes of the new draft project. ||
+|| 2 || Fill the attributes as you want but select as project model « Projet propre v2 » and click on « Create ». || A row should be added to the table at the bottom of the pop-up and a row should be added to the project's table on the main dashboard. ||
