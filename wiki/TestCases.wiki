@@ -72,6 +72,7 @@ The list of test cases is under migration from its original form as a Word file 
 || PRJM17 || Lock information with an amendment (#89) || [TestScenario4ProjectManagement#PRJM17] ||
 || PRJM18 || Project manager modification (#92) || [TestScenario4ProjectManagement#PRJM18] ||
 || PRJM19 || Project's organizational unit modification (#93) || [TestScenario4ProjectManagement#PRJM19] ||
+|| PRJM20 || Create a draft project  (#97) || [TestScenario4ProjectManagement#PRJM20] ||
 || ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
@@ -94,6 +95,8 @@ The list of test cases is under migration from its original form as a Word file 
 || POMM20 || Modify the information's confidentiality || [TestScenario4ProjectOrgunitModelManagement#POMM20] ||
 || POMM21 || Restricted modification rights according to amendments || [TestScenario4ProjectOrgunitModelManagement#POMM21] ||
 || POMM22 || Modify files list field's constraints (#83) || [TestScenario4ProjectOrgunitModelManagement#POMM22] ||
+|| POMM23 || Edit draft project model (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM23] ||
+|| POMM24 || Make a draft project model ready (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM24] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
 || RMM3 || Delete report model|| [TestScenario4ReportModelManagement#RMM3] ||
@@ -132,9 +135,9 @@ The list of test cases is under migration from its original form as a Word file 
 || OUM5 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM5] ||
 || OUM6 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM6] ||
 || ** || *Rights* || [TestScenario4Rights] ||
-|| R1 || Rights for user 4 || [TestScenario4Rights#R1] ||
-|| R2 || Rights for user 5 || [TestScenario4Rights#R2] ||
-|| R3 || Rights for user 6 || [TestScenario4Rights#R3] ||
+|| `R1` || Rights for user 4 || [TestScenario4Rights#R1] ||
+|| `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
+|| `R3` || Rights for user 6 || [TestScenario4Rights#R3] ||
 || ** || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
 || AGM2 || Open Administration Global Management || [TestScenario4AdministrationGlobalManagement#AGM2] ||
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
