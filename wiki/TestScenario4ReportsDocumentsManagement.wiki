@@ -4,7 +4,7 @@
 
 = Introduction =
 
-This scenario is based on the demo data set.
+This scenario is based on the demo data set. These tests are based on a project page but *have to be executed for the organizational unit page as well*.
 
 
 = Test cases =
@@ -16,9 +16,10 @@ This scenario is based on the demo data set.
 == RDM2 ==
 === _Title:_ Create a new report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On project dashboard in the « Reports & Documents » sub-tab, click on « Add report » and choose to which report list you want to add the report. || A pop-up should open letting you specify the new report's title. ||
-|| 2 || Enter a title and click on « Ok ». || A row should be added to the reports and documents table with the title that you have specified. ||
-|| 3 || Click on the report's title. || An empty report should be displayed on the right-hand panel of the sub-tab. ||
+|| 1 || Open the project « LOC1247 ». || The project's page should open. ||
+|| 2 || On the project's dashboard in the « Reports & Documents » sub-tab, click on « Add report » and choose to which report list you want to add the report. || A pop-up should open letting you specify the new report's title. ||
+|| 3 || Enter a title and click on « Ok ». || A row should be added to the reports and documents table with the title that you have specified. ||
+|| 4 || Click on the report's title. || An empty report should be displayed on the right-hand panel of the sub-tab. ||
 
 
 == RDM3 ==
