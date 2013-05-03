@@ -88,8 +88,9 @@ The « Create new draft project » popup opens up.||
 == POMM12 ==
 === _Title:_ Modify elements creation's constraints of a logical frame from its model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On the project models management page, open a project model in draft status. In the « Logical frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 2 || Create a new project depending on the project model. || You are limited depending on the maximum number of groups' type you have specified.||
+|| 1 || On the project models management page, open a project model in draft status. || ||
+|| 2 ||  In the « Logical frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
+|| 3 || Create a new project depending on the project model. || You are limited depending on the maximum number of groups' type you have specified.||
 
 == POMM13 ==
 === _Title:_ Modify Date field's constraints ===
@@ -164,3 +165,18 @@ The « Create new draft project » popup opens up.||
 || 2 || Modify the upper limit of the number of files and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
 || 3 || Create a project depending on this project model. || On the « Details » tab, you should be informed how many files you can attach for this field. ||
 || 4 || Attach as many files as it is specified you can. || You should not be able to attach files for that field anymore. ||
+
+== POMM23 ==
+=== _Title:_ Edit draft project model (#97) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || On the project models management page, open the draft project model you used for the draft project you created in the scenario PRJM20. || ||
+|| 2 || Change the type and the name of a field of the current phase and click on « Save ». || ||
+|| 3 || From the main dashboard, click on the draft project IF1400, created in the scenario PRJM20. || The type and name of the field that you have changed should be changed as well on the project page. || 
+
+== POMM24 ==
+=== _Title:_ Make a draft project model ready (#97) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || On the project models management page, open the project model « Projet propre v2 ». || ||
+|| 2 || Change its status to « Ready » and click on « Save ». || A pop-up should warn you that you won't be able to update the project model anymore. ||
+|| 3 || Click on « Ok ». || ||
+|| 4 || From the main page, click on « Draft project ». || A pop-up should open. You shouldn't see the project IF1400 in the table at the bottom of the pop-up. ||
