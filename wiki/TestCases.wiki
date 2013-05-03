@@ -46,6 +46,7 @@ The list of test cases is under migration from its original form as a Word file 
 || USR5 || Display of user's NGO 's information || [TestScenario4UserSessionRight#USR5] ||
 || USR6 || Pop-up help (#82) || [TestScenario4UserSessionRight#USR6] ||
 || USR7 || Pop-up credits (#91) || [TestScenario4UserSessionRight#USR7] ||
+|| USR8 || Create a user (#105) || [TestScenario4UserSessionRight#USR8] ||
 || ** || * Dashboard Projects Table* || [TestScenario4DashboardProjectTable] ||
 || DPT2 || Projects table loading|| [TestScenario4DashboardProjectTable#DPT2] ||
 || DPT3 || Global export live data || [TestScenario4DashboardProjectTable#DPT3] ||
