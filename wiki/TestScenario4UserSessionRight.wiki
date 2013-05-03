@@ -54,3 +54,13 @@ This scenario is based on the 1.2 demo data.
 === _Title:_ Pop-up credits (#91) ===
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 ||  From any page of the application, except the sign in page, click on the link "Credits". || A pop up appears informing you about the project's version, developers, financial supports...||
+
+== USR8 ==
+=== _Title:_ Create a user (#105) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || On the main page, click on « Administration ». || The administration page should be displayed. ||
+|| 2 || Click on the « Users ». || The list of the existing users should be display on the right-hand panel. ||
+|| 3 || Click on the « Add User » button. ||  A pop-up should open letting you enter the information of the new user. || 
+|| 4 || Fill the different fields as you want but provide a valid email address and click on « Save ». || The user you have created should soon receive an email, giving him his login and password as well as the URL of the application. ||
+|| 5 || Click on the URL. || You should be brought back to the application. ||
+|| 6 || Sign in with the login and password given. || The main dashboard page should be displayed. || 
