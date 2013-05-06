@@ -62,7 +62,7 @@ This scenario is based on the v1.2 demo data set.
 || 4 || Open the « Calendar  » tab. || You should see the activity that you have added on each day between the start and end date of the activity. ||
 
 == LF7 ==
-=== _Title:_ Modify an activity ===
+=== _Title:_ Modify an activity (#113) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||  Opens the « Log frame » sub-tab of any project which has already a minimal logframe you're ready to modify. ||A screen with a logical framework is displayed.||
 || 2 || Click on an activity's link. || A contextual menu should open. ||
@@ -70,7 +70,7 @@ This scenario is based on the v1.2 demo data set.
 || 4 || Go to the main dashboard of the application and click on « Refresh » in the projects panel. || In the project table, you should see that the progress bar for the project has been updated. ||
 
 == LF8 ==
-=== _Title:_ Copy logical frame ===
+=== _Title:_ Copy logical frame (#111) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. ||A screen with a logical framework is displayed.||
 || 2 || Click on the « Copy » button. || ||
