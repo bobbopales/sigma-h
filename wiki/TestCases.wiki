@@ -26,7 +26,7 @@ These tests are based on the demo data set v1.2 which contains the following use
   * This user is associated to an organisational unit from the highest level of them and has every rights excepts the following : 
    * Modify project
 
- * *user6* : email address : user5@sigmah.org
+ * *user6* : email address : user6@sigmah.org
   * This user is associated to an organisational unit from the highest level of them and has every rights excepts the following : 
    * View projects
 
@@ -115,6 +115,7 @@ The list of test cases is under migration from its original form as a Word file 
 || LF4 || Move an element from a logical frame || [TestScenario4LogicalFramework#LF4] ||
 || LF5 || Delete an element from a logical frame || [TestScenario4LogicalFramework#LF5] ||
 || LF6 || Add an activity linked to the calendar || [TestScenario4LogicalFramework#LF6] ||
+|| LF7 || Copy logical frame (#111) || [TestScenario4LogicalFramework#LF7] ||
 || ** || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
 || RDM2 || Create a new report || [TestScenario4ReportsDocumentsManagement#RDM2] ||
 || RDM3 || Open an existing report || [TestScenario4ReportsDocumentsManagement#RDM3] ||
