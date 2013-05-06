@@ -14,13 +14,29 @@ This scenario is based on the v1.2 demo data set.
 ==== _See test on:_ [TestScenario4UserSessionRight#USR1] ====
 
 == OUM2 ==
+=== _Title:_ Create an organizational unit ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Click on the « Administration » button on the home page. || The « Administration » page should appear. ||
+|| 2 || Click on the « Organizational units » link. || 	A table of the existing organizational units should be displayed. ||
+|| 3 || Select an organizational unit which will be the parent of the organizational unit you are going to create. || The button « Add » is now enabled. ||
+|| 4 || Click on it. || A pop-up should open letting you specify the information of the new organizational unit. ||
+|| 5 || Fill the different fields. || A new row should be added to the table under the parent's row of the organizational unit created. ||
+
+== OUM3 ==
+=== _Title:_ Delete an organizational unit ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Select the row of the organizational unit that you have created. || The button « Delete » should now be enabled. ||
+|| 2 || Click on the « Delete » button. || A pop-up to confirm the action should open. ||
+|| 3 || Click on « Ok ». || The row corresponding to the organizational unit should disappear. ||
+
+== OUM4 ==
 === _Title:_ Project - Organizational Unit link ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the home page, click on « New project ». || A pop-up should open where you can specify the new project's attributes. ||
 || 2 || Click on the list corresponding to the « Organizational Unit » attributes. ||  You should see all the available Organization Units from any level. ||
 
 
-== OUM3 ==
+== OUM5 ==
 === _Title:_ Organizational Unit's flexibility ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the homepage, click on the « Administration » button. || ||
@@ -29,15 +45,15 @@ This scenario is based on the v1.2 demo data set.
 || 4 || Click on the « Add » button in the « Fields » tab. || A pop-up should open where you can specify the attributes of the new field. ||
 || 5 || Enter any information for the field and click on « Save ». || A new row should be added to the fields table. ||
 || 6 || Select the field « Pays » and click on « Delete selected fields ». || The row corresponding to the field should disappear. ||
-|| 7 || Go back to the home page and create a test project depending on the « HQ model » project. || The project should have the field that you have added but not the one that you have deleted.
+|| 7 || Go back to the home page and create a test project depending on the « HQ model » project. || The project should have the field that you have added but not the one that you have deleted. ||
 
-== OUM4 ==
+== OUM6 ==
 === _Title:_ Modify the attributes of an Organizational Unit ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On on OrgUnit dashboard, in the « Information » sub-tab, modify any attribute and click on « Save ». || ||
 || 2 || Close and reopen the OrgUnit dashboard. || The modifications that you have made are still there. ||
 
-== OUM5 ==
+== OUM7 ==
 === _Title:_ Modify the calendar of an Organizational Unit ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || In the sub-tab « Calendar » of the dashboard of an OrgUnit, click on the « Add event » button. || A pop-up should open where you can specify the information of the new event. ||
@@ -49,10 +65,8 @@ This scenario is based on the v1.2 demo data set.
 || 7 || Click on the event. ||A small window should open and display the information of the event as well as two links « Edit event » and « Delete event ». ||
 || 8 || Click on « Delete event ». || The event should disappear on the month and the week view.||
 
-== OUM6 ==
+== OUM8 ==
 === _Title:_ Organizational Unit's attribute history consultation ===
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From an OrgUnit dashboard on the « Details » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
 || 2 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the other and the value given on the modification. ||
-
-
