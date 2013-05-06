@@ -14,7 +14,7 @@ This scenario is based on the v1.2 demo data set.
 ==== _See test on:_ [TestScenario4UserSessionRight#USR1] ====
 
 == OUM2 ==
-=== _Title:_ Create an organizational unit ===
+=== _Title:_ Create an organizational unit (#126) ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Click on the « Administration » button on the home page. || The « Administration » page should appear. ||
 || 2 || Click on the « Organizational units » link. || 	A table of the existing organizational units should be displayed. ||
@@ -23,7 +23,7 @@ This scenario is based on the v1.2 demo data set.
 || 5 || Fill the different fields. || A new row should be added to the table under the parent's row of the organizational unit created. ||
 
 == OUM3 ==
-=== _Title:_ Delete an organizational unit ===
+=== _Title:_ Delete an organizational unit (#126) ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Select the row of the organizational unit that you have created. || The button « Delete » should now be enabled. ||
 || 2 || Click on the « Delete » button. || A pop-up to confirm the action should open. ||
