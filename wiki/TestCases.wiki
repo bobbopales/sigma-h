@@ -129,6 +129,7 @@ The list of test cases is under migration from its original form as a Word file 
 || RDM12 || Answer to a report's key question || [TestScenario4ReportsDocumentsManagement#RDM12] ||
 || RDM13 || Personal draft cycle of a report || [TestScenario4ReportsDocumentsManagement#RDM13] ||
 || RDM14 || Automatic saving of reports (#88) || [TestScenario4ReportsDocumentsManagement#RDM14] ||
+|| RDM15 || Export report into a text document format (#109) || [TestScenario4ReportsDocumentsManagement#RDM15] ||
 || ** || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
 || OUM2 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM2] ||
 || OUM3 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM3] ||
