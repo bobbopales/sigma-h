@@ -61,7 +61,7 @@ This scenario is based on the v1.2 demo data set.
 || 3 || Fill the activity's fields, click on « Save » and click on « Save » in the toolbar of the logical frame panel. || An activity should be added to the « Activities » row. ||
 || 4 || Open the « Calendar  » tab. || You should see the activity that you have added on each day between the start and end date of the activity. ||
 
-== LF8 ==
+== LF7 ==
 === _Title:_ Modify an activity ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||  Opens the « Log frame » sub-tab of any project which has already a minimal logframe you're ready to modify. ||A screen with a logical framework is displayed.||
@@ -69,7 +69,7 @@ This scenario is based on the v1.2 demo data set.
 || 3 || Change the progress of the activity and click on « Ok ». || ||
 || 4 || Go to the main dashboard of the application and click on « Refresh » in the projects panel. || In the project table, you should see that the progress bar for the project has been updated. ||
 
-== LF9 ==
+== LF8 ==
 === _Title:_ Copy logical frame ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. ||A screen with a logical framework is displayed.||
