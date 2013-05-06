@@ -88,7 +88,7 @@ The test project available in the application is supposed to have the necessary 
 == PRJM14 ==
 === _Title:_ Check a reminder ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || From a project's dashboard, in the « Reminders » panel,  in the « To do » table or in the « Expected » table, click on the checkbox, on the left of a reminder which is not already checked. || The checkbox should remain checked and the reminder's icon should be grayed. The reminder's title should be crossed out and the closed date should be filled with today's date on the right-hand column.
+|| 1 || From a project's dashboard, in the « Reminders » panel,  in the « To do » table or in the « Expected » table, click on the checkbox, on the left of a reminder which is not already checked. || The checkbox should remain checked and the reminder's icon should be grayed. The reminder's title should be crossed out and the closed date should be filled with today's date on the right-hand column. ||
 
 == PRJM15 ==
 === _Title:_ Add a reminder after attaching files ===
@@ -126,3 +126,12 @@ _This test has to reconsidered because it is not up to date._
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From the home page, click on the « Draft project » button. || A  pop-up should open letting you specify the attributes of the new draft project. ||
 || 2 || Fill the attributes as you want but select as project model « Projet propre v2 » and click on « Create ». || A row should be added to the table at the bottom of the pop-up and a row should be added to the project's table on the main dashboard. ||
+
+== PRJM21 ==
+=== _Title:_ Manipulate a project's links to other projects (#115) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the project IF1247's page, in the « Linked project » panel, click on one of the icon with a pencil on it of the link with the project UCF1217.  || A pop-up should open letting you change the link between this project and the page's project.  ||
+|| 2 || Change the financing budget to 10000 and click on « Save ». || The linked project's row should be updated with the new budget. || 
+|| 3 || Click on this row again. ||  ||
+|| 4 || Click on « Delete ». || A pop-up will open to confirm your action. ||
+|| 5 || Click on « Ok ». ||  The linked project's row should be disappear.||
