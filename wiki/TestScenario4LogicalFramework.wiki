@@ -18,7 +18,7 @@ This scenario is based on the v1.2 demo data set.
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || From the Main dashboard, create a new project from the model « Contrat de financement v1 » (code and title free to choose).||The new project gets available in the Projects table (visible only if table is grouped by « Source of Funding project".||
 || 2 ||Open the new project.||A new tab opens up in the application with the new project.||
-|| 3 ||Open the « Log frame » sub-tab of this new project.||A screen with an empty logical framework is displayed.||
+|| 3 ||Open the « Log frame » sub-tab of this new project.||A screen with an empty logical framework is displayed. The title of the project should appear at the upper-left part of the logical frame. ||
 || 4 || Modify the content of the Main objective, and click on the « Add » button of the « Specific objectives » row.||This first specific objective gets code « SO A. »  and the cells « Intervention logic » and « Risks and assumptions » become open for modification.||
 || 5 ||Enter any data in the « Intervention logic » and « Risks and assumptions » cells for this specific objective, and click on the « Add » button of the « Expected result » row.||A popup opens up asking you to choose a parent specific objective for this expected result.||
 || 6 ||Select « SO A. » and click on « Save".||This first expected result gets code « ER A.1. »  and the cells « Intervention logic » and « Risks and assumptions » become open for modification for this row.||
