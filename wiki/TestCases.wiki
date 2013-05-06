@@ -74,6 +74,7 @@ The list of test cases is under migration from its original form as a Word file 
 || PRJM18 || Project manager modification (#92) || [TestScenario4ProjectManagement#PRJM18] ||
 || PRJM19 || Project's organizational unit modification (#93) || [TestScenario4ProjectManagement#PRJM19] ||
 || PRJM20 || Create a draft project  (#97) || [TestScenario4ProjectManagement#PRJM20] ||
+|| PRJM21 || Manipulate a project's links to other projects (#115)|| [TestScenario4ProjectManagement#PRJM21] ||
 || ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
