@@ -60,3 +60,12 @@ This scenario is based on the v1.2 demo data set.
 || 2 || Click on « Add » in the « Activities » section. || A pop-up should open where you can specify the information of the new activity. ||
 || 3 || Fill the activity's fields, click on « Save » and click on « Save » in the toolbar of the logical frame panel. || An activity should be added to the « Activities » row. ||
 || 4 || Open the « Calendar  » tab. || You should see the activity that you have added on each day between the start and end date of the activity. ||
+
+== LF7 ==
+=== _Title:_ Copy logical frame ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. ||A screen with a logical framework is displayed.||
+|| 2 || Click on the « Copy » button. || ||
+|| 3 || Opens the « Log frame » sub-tab of another project. ||  A pop-up should open to let you confirm the action and link the indicators to the source logical frame. ||
+|| 4 || Click on « Ok ». || The logical frame you have copied should be pasted with the indicators. ||
+|| 5 || Click on « Save », close and reopen the project. || The logical frame should still be the one you pasted. ||
