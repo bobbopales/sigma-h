@@ -134,11 +134,13 @@ The list of test cases is under migration from its original form as a Word file 
 || RDM14 || Automatic saving of reports (#88) || [TestScenario4ReportsDocumentsManagement#RDM14] ||
 || RDM15 || Export report into a text document format (#109) || [TestScenario4ReportsDocumentsManagement#RDM15] ||
 || ** || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
-|| OUM2 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM2] ||
-|| OUM3 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM3] ||
-|| OUM4 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM4] ||
-|| OUM5 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM5] ||
-|| OUM6 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM6] ||
+|| OUM2 || Create an organizational unit (#126) || [TestScenario4OrgUnitManagement#OUM2] ||
+|| OUM3 || Delete an organizational unit (#126)|| [TestScenario4OrgUnitManagement#OUM3] ||
+|| OUM4 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM4] ||
+|| OUM5 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM5] ||
+|| OUM6 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM6] ||
+|| OUM7 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM7] ||
+|| OUM8 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM8] ||
 || ** || *Rights* || [TestScenario4Rights] ||
 || `R1` || Rights for user 4 || [TestScenario4Rights#R1] ||
 || `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
