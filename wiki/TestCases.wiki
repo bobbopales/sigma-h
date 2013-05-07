@@ -154,3 +154,5 @@ The list of test cases is under migration from its original form as a Word file 
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
 || ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
+|| ** || *User interface* || [TestScenario4UserInterface] ||
+|| UI2 || Main dashboard || [TestScenario4UserInterface#UI2] ||
