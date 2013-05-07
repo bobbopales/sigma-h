@@ -37,6 +37,15 @@ This scenario is based on the v1.2 demo data set.
 || 3 || Click on « Ok ». || The indicator should disappear from the indicators table. ||
 || 4 || Close and reopen the project dashboard and come back to the « Manage indicators » sub-tab. || The indicator should still not be on the indicators' table. ||
 
+== I4 ==
+=== _Title:_ Create a site (#153) ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || On the « Manage indicators » sub-tab of the project EUR1109's dashboard, on the right-hand side panel, click on the « Sites » .|| A table with all the existing sites should be displayed. ||
+|| 2 || Click on the « New site » button. ||  A pop-up should open where you can specify the information about the new site. ||
+|| 3 || Fill the different fields and click on » Ok ». || The new site should be added to the table and a message should confirm you that it has been saved. ||
+
+
+
 == I10 ==
 
 _We start with 10 for this test case because we know it is a quite advanced test case, and it won't remain 1 if we would have chosen to call it "I1"..._
