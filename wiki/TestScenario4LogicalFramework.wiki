@@ -77,3 +77,18 @@ This scenario is based on the v1.2 demo data set.
 || 3 || Opens the « Log frame » sub-tab of another project. ||  A pop-up should open to let you confirm the action and link the indicators to the source logical frame. ||
 || 4 || Click on « Ok ». || The logical frame you have copied should be pasted with the indicators. ||
 || 5 || Click on « Save », close and reopen the project. || The logical frame should still be the one you pasted. ||
+
+== LF8 ==
+=== _Title:_  Add a group to a logical frame ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. || A screen with a logical framework is displayed.||
+|| 2 || Click on « Add a group » in the « Specific objectives » section. || A pop-up should open letting you specify the name of the group you are creating. ||
+|| 3 || Give the name that you want and click on « Ok ». || The group should be added to the table in the « Specific objectives » section. ||
+||
+
+
+== LF9 ==
+=== _Title:_  Remove a group from a logical frame (#149) ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. || A contextual menu should appear.||
+|| 2 || Click on the « Delete » button. || The group should disappear from the table. ||
