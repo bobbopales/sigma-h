@@ -135,3 +135,9 @@ _This test has to reconsidered because it is not up to date._
 || 3 || Click on this row again. ||  ||
 || 4 || Click on « Delete ». || A pop-up will open to confirm your action. ||
 || 5 || Click on « Ok ». ||  The linked project's row should be disappear.||
+
+== PRJM22 ==
+=== _Title:_ Create a project (#142) ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the home page, click on the « New project » button. || A  pop-up should open letting you specify the attributes of the new draft project. ||
+|| 2 || Fill the attributes as you want and click on « Create ». || A row should be added to the project's table on the main dashboard where the information appear in its corresponding column. ||
