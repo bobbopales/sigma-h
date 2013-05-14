@@ -9,11 +9,24 @@ The test project available in the application is supposed to have the necessary 
 
 = Test cases =
 
-== UADM1 ==
+== AUSR1 ==
 === _Title:_ User signing in ===
 === _See test on:_ [TestScenario4UserSessionRight#USR1] ===
 
-== UADM2 ==
+== AUSR2 ==
 === _Title:_ Open Administration Users ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || From the main dashboard, click on the Administration button || A new tab named "Administration" opens up in the application, and should already be opened on the Users administration part. The Users administration part has 3 parts : "Users", "Profiles", "Privacy groups".  ||
+
+
+== AUSR3 ==
+=== _Title:_ Add a new user ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Click on "Add user" button || A "New user" popup opens up.  ||
+|| 2 || Enter data for Surname, First name and Email ||  ||
+|| 3 || Select an invitation language, and an organizational unit ||  ||
+|| 4 || Add two profiles to the user || The profiles should get selected below the profiles selection drop down list.  ||
+|| 5 || Remove one of the two profiles selected by clicking on the cross next to it. || The profile selected for deletion should disappear.  ||
+|| 6 || Move your mouse cursor to the bottom boundary of the "New user" popup. || The mouse cursor get changed to two-directions arrow.  ||
+|| 7 || Click with the left button of the mouse, and while keeping the mouse button pressed, move your cursor upwards until you are above the "Save" button of the popup, and then release the mouse button. || The "New User" popup should get reduced to the size you have chosen, and a scrollbar must have appear on right side to enable to scroll until the "Save" button.   ||
+|| 8 || Click on "Save" button. || A status message should inform that the user has been properly updated, and the user should now be visible in the list of users.  ||
