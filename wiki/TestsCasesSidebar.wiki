@@ -12,6 +12,7 @@
   * [TestScenario4ReportsDocumentsManagement Reports & Documents Management (RDM)]
   * [TestScenario4OrgUnitManagement Organizational Units Management (OUM)]
   * [TestScenario4Rights Rights (R)]
+  * [TestScenario4AdministrationUsers Administration Users (AUSR)]
   * [TestScenario4AdministrationGlobalManagement Administration Global Management tab (AGM)]
   * [TestScenario4Indicators Indicators (I)]
   * [TestScenario4TransversalBehaviors Transversal Behaviors (TB)]
