@@ -1,5 +1,5 @@
 #summary Test Scenario on Users, Sessions & Rights (USR)
-#sidebar TableOfContents
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
