@@ -1,0 +1,19 @@
+#summary Test Scenario on Users Administration (UADM)
+#sidebar TestsCasesSidebar
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+The test project available in the application is supposed to have the necessary properties to pass these following tests.
+
+= Test cases =
+
+== UADM1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+== UADM2 ==
+=== _Title:_ Open Administration Users ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || From the main dashboard, click on the Administration button || A new tab named "Administration" opens up in the application, and should already be opened on the Users administration part. The Users administration part has 3 parts : "Users", "Profiles", "Privacy groups".  ||
