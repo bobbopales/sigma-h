@@ -57,8 +57,9 @@ This scenario is based on the v1.2 demo data set.
 == OUM7 ==
 === _Title:_ Modify the attributes of an Organizational Unit ===
 || *#* || *Steps to reproduce* || *Expected result* || 
-|| 1 || On on OrgUnit dashboard, in the « Information » sub-tab, modify any attribute and click on « Save ». || ||
-|| 2 || Close and reopen the OrgUnit dashboard. || The modifications that you have made are still there. ||
+|| 1 || On an OrgUnit dashboard, go in the « Information » sub-tab, modify any attribute. || ||
+|| 2 || Modify the "Country" attribute and click on « Save ». || ||
+|| 3 || Close and reopen the OrgUnit dashboard. || The modifications that you have made are still there. ||
 
 == OUM8 ==
 === _Title:_ Modify the calendar of an Organizational Unit ===
