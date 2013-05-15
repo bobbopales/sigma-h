@@ -37,7 +37,7 @@ The test project available in the application is supposed to have the necessary 
 || 5 || Remove one of the two privacy groups selected by clicking on the cross next to it. || The privacy group selected for deletion should disappear.  ||
 || 6 || Move your mouse cursor to the bottom boundary of the "Add profile" popup. || The mouse cursor get changed to two-directions arrow.  ||
 || 7 || Click with the left button of the mouse, and while keeping the mouse button pressed, move your cursor upwards until you are above the "Save" button of the popup, and then release the mouse button. || The "Add profile" popup should get reduced to the size you have chosen, and a scrollbar must have appear on right side to enable to scroll until the "Save" button.   ||
-|| 8 || Click on "Save" button. || The popup gets closed, a status message should inform that the profile has been properly updated, and the profile should now be visible in the list of profiles with all the parameters selected during the creation.  ||
+|| 8 || Click on "Save" button. || The popup is frozen with a message "Saving changes", and it is impossible to click once again on the "Save" button" until the popup closes itself automatically. Then a status message should inform that the profile has been properly updated, and the profile should now be visible in the list of profiles with all the parameters selected during the creation.  ||
 
 == AUSR5 ==
 === _Title:_ Add a new user ===
@@ -49,4 +49,4 @@ The test project available in the application is supposed to have the necessary 
 || 5 || Remove one of the two profiles selected by clicking on the cross next to it. || The profile selected for deletion should disappear.  ||
 || 6 || Move your mouse cursor to the bottom boundary of the "New user" popup. || The mouse cursor get changed to two-directions arrow.  ||
 || 7 || Click with the left button of the mouse, and while keeping the mouse button pressed, move your cursor upwards until you are above the "Save" button of the popup, and then release the mouse button. || The "New User" popup should get reduced to the size you have chosen, and a scrollbar must have appear on right side to enable to scroll until the "Save" button.   ||
-|| 8 || Click on "Save" button. || The popup gets closed, a status message should inform that the user has been properly updated, and the user should now be visible in the list of users with all the parameters chosen while creating it.  ||
+|| 8 || Click on "Save" button. || The popup is frozen with a message "Saving changes", and it is impossible to click once again on the "Save" button" until the popup closes itself automatically. Then a status message informs that the user has been properly updated, and the user should now be visible in the list of users with all the parameters chosen while creating it.  ||
