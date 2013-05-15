@@ -61,5 +61,6 @@ _We start with 10 for this test case because we know it is a quite advanced test
 || 6 ||Open the "Indicator Data Entry" sub-tab of the IF1389 project.|| ||
 || 7 ||Add some value for one site for the indicator just created, and click on save.|| ||
 || 8 ||Log off, and sign in the application with login user2@sigmah.org (password: sigmah).|| ||
-|| 9 ||Open the sub-tab "Indicator Data Entry" of the IF1389 project.||You should see the value entered just before by user1.||
+|| 9 ||Open the sub-tab "Indicator Data Entry" of the IF1389 project.||You should see the value entered just before by user1, and the two sites user1 has created.||
 || 10 ||Add some value for the other site for the indicator just created by user1, and click on save.||The saving process should work without any problem.||
+|| 11 || Open the "Indicator Management" tab.|| The "Sites" list should be filled by the two sites user1 has created.||
