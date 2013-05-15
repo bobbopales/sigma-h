@@ -1,4 +1,5 @@
 #summary Test Scenario on Project Management (PRJM)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -70,8 +71,10 @@ The test project available in the application is supposed to have the necessary 
 == PRJM11 ==
 === _Title:_ Project's attribute history consultation ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || From an open phase tab in the project dashboard or the « Details » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
-|| 2 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the other and the value given on the modification. ||
+|| 1 || From an open phase tab in the project dashboard or the « Details » sub-tab, search successively to field of the following type: numeric, date, simple text, paragraph, triplet, multiple choice list, check box; as well as default fields: Code, Title, Budget, Start Date, End Date, Country, Owner, Manager, Organisational Unit. ||  ||
+|| 2 || Right-click on the field || A contextual menu should open with the action « Show history ». ||
+|| 3 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the author and the value given during the modification. ||
+|| 4 || Go back to step 1 of this test case, and repeat with the next type of field until you have tested with all of them. ||  ||
 
 == PRJM12 ==
 === _Title:_ Add a reminder ===
