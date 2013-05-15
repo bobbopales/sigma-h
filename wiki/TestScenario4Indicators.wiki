@@ -45,7 +45,18 @@ This scenario is based on the v1.2 demo data set.
 || 2 || Click on the « New site » button. ||  A pop-up should open where you can specify the information about the new site. ||
 || 3 || Fill the different fields and click on » Ok ». || The new site should be added to the table and a message should confirm you that it has been saved. ||
 
-
+== I4 ==
+=== _Title:_ Create and delete an indicator group ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Open the « Manage indicators » sub-tab of the project EUR1109 || ||
+|| 2 || Create an indicator group by clicking on the "New Indicator Group" button. ||  A pop-up should open where you can set the name of the new indicator group. ||
+|| 3 || Enter a name and click on the Save button. || The new indicator group should be added to the table. ||
+|| 4 || Create an indicator (see #I1) in this group || ||
+|| 5 || Save the modifications in the screen by clicking on the "Save" button ||  ||
+|| 6 || Click on the indicator group row. || The indicator group row gets highlighted in blue.  ||
+|| 7 || Click on the "Delete" button. || The indicator group row disappears.  ||
+|| 8 || Save the modifications in the screen by clicking on the "Save" button ||  ||
+|| 9 || Click on the "Refresh view" button. || The content of the table should remain the same.  ||
 
 == I10 ==
 
@@ -63,4 +74,4 @@ _We start with 10 for this test case because we know it is a quite advanced test
 || 8 ||Log off, and sign in the application with login user2@sigmah.org (password: sigmah).|| ||
 || 9 ||Open the sub-tab "Indicator Data Entry" of the IF1389 project.||You should see the value entered just before by user1, and the two sites user1 has created.||
 || 10 ||Add some value for the other site for the indicator just created by user1, and click on save.||The saving process should work without any problem.||
-|| 11 || Open the "Indicator Management" tab.|| The "Sites" list should be filled by the two sites user1 has created.||
+|| 11 || Open the "Manage Indicators" tab.|| The "Sites" list should be filled by the two sites user1 has created.||
