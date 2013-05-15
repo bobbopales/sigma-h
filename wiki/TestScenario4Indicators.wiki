@@ -45,7 +45,7 @@ This scenario is based on the v1.2 demo data set.
 || 2 || Click on the « New site » button. ||  A pop-up should open where you can specify the information about the new site. ||
 || 3 || Fill the different fields and click on » Ok ». || The new site should be added to the table and a message should confirm you that it has been saved. ||
 
-== I4 ==
+== I5 ==
 === _Title:_ Create and delete an indicator group ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Open the « Manage indicators » sub-tab of the project EUR1109 || ||
