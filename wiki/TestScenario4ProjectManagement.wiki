@@ -144,3 +144,13 @@ _This test has to reconsidered because it is not up to date._
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From the home page, click on the « New project » button. || A  pop-up should open letting you specify the attributes of the new draft project. ||
 || 2 || Fill the attributes as you want and click on « Create ». || A row should be added to the project's table on the main dashboard where the information appear in its corresponding column. ||
+
+== PRJM23 ==
+=== _Title:_ Add a new version of an attached file ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Open project "LOC1274", and look for a file list field. || ||
+|| 2 || Add to this field a file by clicking on the "Add file" button. ||  ||
+|| 3 || Add to this file several new version by clicking on the "New version" button. || The file name gets updated with the file name of the new version, and the "Version" number gets increased each time a new version is added. ||
+|| 4 || Click on the "History" hyperlink linked to tis file. || An "History" popup opens up. ||
+|| 5 || Delete some versions including the last by clicking on the associated dustbin icon. || The versions are removed from the list of versions. ||
+|| 6 || Add to this file a new version by clicking on the "New version" button. || The file name gets updated with the file name of the new version, and the "Version" number gets increased, as it was while adding versions previously. ||
