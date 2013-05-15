@@ -1,4 +1,5 @@
 #summary Test Scenario on Project/Orgunit Model Management (POMM)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -180,3 +181,10 @@ The « Create new draft project » popup opens up.||
 || 2 || Change its status to « Ready » and click on « Save ». || A pop-up should warn you that you won't be able to update the project model anymore. ||
 || 3 || Click on « Ok ». || ||
 || 4 || From the main page, click on « Draft project ». || A pop-up should open. You shouldn't see the project IF1400 in the table at the bottom of the pop-up. ||
+
+
+== POMM25 ==
+=== _Title:_ Edit a group of fields ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the project models management page, open a draft project model. Click on any group hyperlink in the "Group" column of the « All Fields » tab. || A pop-up should open where you can modify the attributes of the group, and all parameters of the group should have the existing value loaded, including the "Vertical position". ||
+|| 2 || Modify one or several parameters of the group, and click on the "Save" button. || The popup closes itself, and a message should appear confirming you that the fields group has been updated. ||
