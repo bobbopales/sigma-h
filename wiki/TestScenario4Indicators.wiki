@@ -1,4 +1,5 @@
 #summary Test Scenario on Indicators (I)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -26,7 +27,7 @@ This scenario is based on the v1.2 demo data set.
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the « Manage indicators » sub-tab of the project EUR1109's dashboard, click on the link of the indicator you have created. ||  A pop-up should open letting you modify the information of the new indicator. ||
 || 3 || Select « Quantitative » as type of the indicator. || The field "Possible values" should be replaced by the fields "Aggregation method", "Units" and "Target Value". ||
-|| 4 || Fill those fields as you want, add a hash to your title and click on « Ok ». || The title of the indicator should be updated on the indicators' table. ||
+|| 4 || Fill those fields as you want, add a hash to your title and add as many characters to it to make it at least 200 characters long. Then click on « Ok ». || The title of the indicator should be updated on the indicators' table. ||
 || 5 || Close and reopen the project dashboard and come back to the « Manage indicators » sub-tab. || The modification you made should still be there. ||
 
 == I3 ==
