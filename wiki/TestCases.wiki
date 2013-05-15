@@ -99,6 +99,7 @@ The list of test cases is under migration from its original form as a Word file 
 || POMM22 || Modify files list field's constraints (#83) || [TestScenario4ProjectOrgunitModelManagement#POMM22] ||
 || POMM23 || Edit draft project model (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM23] ||
 || POMM24 || Make a draft project model ready (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM24] ||
+|| POMM25 || Edit a group of fields || [TestScenario4ProjectOrgunitModelManagement#POMM25] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
 || RMM3 || Delete report model|| [TestScenario4ReportModelManagement#RMM3] ||
@@ -146,10 +147,10 @@ The list of test cases is under migration from its original form as a Word file 
 || `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
 || `R3` || Rights for user 6 || [TestScenario4Rights#R3] ||
 || ** || *Administration Users tab* || [TestScenario4AdministrationUsers] ||
-|| AUSR2 || Open Administration Users || [ TestScenario4AdministrationUsers#AUSR2] ||
-|| AUSR3 || Add a new privacy group || [ TestScenario4AdministrationUsers#AUSR3] ||
-|| AUSR4 || Add a new profile || [ TestScenario4AdministrationUsers#AUSR4] ||
-|| AUSR5 || Add a new user || [ TestScenario4AdministrationUsers#AUSR5] ||
+|| AUSR2 || Open Administration Users || [TestScenario4AdministrationUsers#AUSR2] ||
+|| AUSR3 || Add a new privacy group || [TestScenario4AdministrationUsers#AUSR3] ||
+|| AUSR4 || Add a new profile || [TestScenario4AdministrationUsers#AUSR4] ||
+|| AUSR5 || Add a new user || [TestScenario4AdministrationUsers#AUSR5] ||
 || ** || *Administration Global Management tab* || [TestScenario4AdministrationGlobalManagement] ||
 || AGM2 || Open Administration Global Management || [TestScenario4AdministrationGlobalManagement#AGM2] ||
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
