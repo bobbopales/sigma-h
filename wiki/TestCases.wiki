@@ -33,9 +33,6 @@ These tests are based on the demo data set v1.2 which contains the following use
 
 = Summary of all test cases =
 
-_Preliminary note=
-The list of test cases is under migration from its original form as a Word file in French into this set of wiki pages in English.
-
 || *Code*|| *Name* || *URL* ||
 || LPC || List of checkpoints || [ListCheckPoints] ||
 || ** || *Users and sessions management* || [TestScenario4UserSessionRight] ||
@@ -75,6 +72,8 @@ The list of test cases is under migration from its original form as a Word file 
 || PRJM19 || Project's organizational unit modification (#93) || [TestScenario4ProjectManagement#PRJM19] ||
 || PRJM20 || Create a draft project  (#97) || [TestScenario4ProjectManagement#PRJM20] ||
 || PRJM21 || Manipulate a project's links to other projects (#115)|| [TestScenario4ProjectManagement#PRJM21] ||
+|| PRJM22 || Create a project (#142)|| [TestScenario4ProjectManagement#PRJM22] ||
+|| PRJM23 || Add a new version of an attached file || [TestScenario4ProjectManagement#PRJM23] ||
 || ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
@@ -137,11 +136,13 @@ The list of test cases is under migration from its original form as a Word file 
 || ** || *Organizational Units Management* || [TestScenario4OrgUnitManagement] ||
 || OUM2 || Create an organizational unit (#126) || [TestScenario4OrgUnitManagement#OUM2] ||
 || OUM3 || Delete an organizational unit (#126)|| [TestScenario4OrgUnitManagement#OUM3] ||
-|| OUM4 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM4] ||
-|| OUM5 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM5] ||
-|| OUM6 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM6] ||
-|| OUM7 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM7] ||
-|| OUM8 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM8] ||
+|| OUM4 || Move an organizational unit (#126) || [TestScenario4OrgUnitManagement#OUM4] ||
+|| OUM5 || Project - Organizational Unit link || [TestScenario4OrgUnitManagement#OUM5] ||
+|| OUM6 || Organizational Unit's flexibility || [TestScenario4OrgUnitManagement#OUM6] ||
+|| OUM7 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM7] ||
+|| OUM8 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM8] ||
+|| OUM9 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM9] ||
+
 || ** || *Rights* || [TestScenario4Rights] ||
 || `R1` || Rights for user 4 || [TestScenario4Rights#R1] ||
 || `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
@@ -157,8 +158,14 @@ The list of test cases is under migration from its original form as a Word file 
 || AGM4 || Backup all versions of each file from one orgunit || [TestScenario4AdministrationGlobalManagement#AGM4] ||
 || AGM5 || Change organization's logo and name || [TestScenario4AdministrationGlobalManagement#AGM5] ||
 || ** || *Indicators* || [TestScenario4Indicators] ||
+|| I1 || Create an indicator || [TestScenario4Indicators#I1] ||
+|| I2 || Edit an indicator || [TestScenario4Indicators#I2] ||
+|| I3 || Delete an indicator || [TestScenario4Indicators#I3] ||
+|| I4 || Create a site (#153) || [TestScenario4Indicators#I4] ||
+|| I5 || Create and delete an indicator group || [TestScenario4Indicators#I5] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
 || ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
+|| TB3 || Timezone difference management || [TestScenario4TransversalBehaviors#TB3] ||
 || ** || *User interface* || [TestScenario4UserInterface] ||
 || UI2 || Main dashboard || [TestScenario4UserInterface#UI2] ||
