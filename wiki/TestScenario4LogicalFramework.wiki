@@ -1,4 +1,5 @@
 #summary Test Scenario on Logical Framework (LF)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -33,9 +34,12 @@ This scenario is based on the v1.2 demo data set.
 === _Title:_ Create indicators in a logframe ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logframe you're ready to modify. ||A screen with a logical framework is displayed.||
-|| 2 || For each row of the logframe (Specific objectives, Expected results, Activities), create a new indicator by clicking accordingly on the « New indicator » hyperlink. ||In each row, an indicator should be visible with its name in the « Indicators » column, and its source of verification in the « Means of verification » column.||
+|| 2 || For each row of the logframe (Specific objectives, Expected results, Activities), create a new indicator by clicking accordingly on the « New indicator » hyperlink and filling all indicators attributes. ||In each row, an indicator should be visible with its name in the « Indicators » column, and its source of verification in the « Means of verification » column.||
 || 3 || Click on the « Save » button of this screen.|| You get a confirmation message that your data has been correctly saved, and the « Save » button becomes disabled.||
-|| 4 || Go to another sub-tab and comes back to this « Log frame » sub-tab. || All the data you've entered are still here.||
+|| 4 || Go to the « Manage indicators » sub-tab. || All the indicators you've created in the logframe are also listed here, with their target values and all attributes.||
+|| 5 || Go back to the « Log frame » sub-tab. || All the data you've entered previously are still here.||
+|| 6 || Modify a cell in the logframe (like the title of a specific objective) and click on the « Save » button of this screen.|| You get a confirmation message that your data has been correctly saved, and the « Save » button becomes disabled. ||
+|| 7 || Go to the « Manage indicators » sub-tab. || All the indicators you've created in the logframe are still listed here, with their target values and all attributes still similar as what they used to be.||
 
 == LF4 ==
 === _Title:_ Move an element of a logical frame ===
