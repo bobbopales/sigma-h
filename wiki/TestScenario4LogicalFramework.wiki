@@ -33,8 +33,8 @@ This scenario is based on the v1.2 demo data set.
 == LF3 ==
 === _Title:_ Create indicators in a logframe ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logframe you're ready to modify. ||A screen with a logical framework is displayed.||
-|| 2 || For each row of the logframe (Specific objectives, Expected results, Activities), create a new indicator by clicking accordingly on the « New indicator » hyperlink and filling all indicators attributes. ||In each row, an indicator should be visible with its name in the « Indicators » column, and its source of verification in the « Means of verification » column.||
+|| 1 || Opens the « Log frame » sub-tab of any project which has already an empty logframe, or create a new project and opens its « Log frame ». ||A screen with a logical framework is displayed.||
+|| 2 || For each row of the logframe (Specific objectives, Expected results, Activities), create a logframe element with at least one element with a long name (more than 50 characters), and create a new indicator by clicking accordingly on the « New indicator » hyperlink and filling all indicators attributes. ||In each row, an indicator should be visible with its name in the « Indicators » column, and its source of verification in the « Means of verification » column.||
 || 3 || Click on the « Save » button of this screen.|| You get a confirmation message that your data has been correctly saved, and the « Save » button becomes disabled.||
 || 4 || Go to the « Manage indicators » sub-tab. || All the indicators you've created in the logframe are also listed here, with their target values and all attributes.||
 || 5 || Go back to the « Log frame » sub-tab. || All the data you've entered previously are still here.||
