@@ -50,7 +50,8 @@ These tests are based on the demo data set v1.2 which contains the following use
 || DPT4 || Global export other format exportation || [TestScenario4DashboardProjectTable#DPT4] ||
 || DPT5 || Columns filter || [TestScenario4DashboardProjectTable#DPT5] ||
 || DPT6 || Projects' table grouping manipulation || [TestScenario4DashboardProjectTable#DPT6] ||
-|| DPT7 || Limited project's access according to user's rights || [TestScenario4DashboardProjectTable#DPT7] ||
+|| DPT7 || Limited project's access according to user's rights ||  [TestScenario4DashboardProjectTable#DPT7] ||
+|| DPT8 || Reload dashboard projects table || [TestScenario4DashboardProjectTable#DPT8] ||
 || ** || *Project management* || [TestScenario4ProjectManagement] ||
 || PRJM2 || Open a project page || [TestScenario4ProjectManagement#PRJM2] ||
 || PRJM3 || Modify a project's attributes || [TestScenario4ProjectManagement#PRJM3] ||
@@ -74,6 +75,8 @@ These tests are based on the demo data set v1.2 which contains the following use
 || PRJM21 || Manipulate a project's links to other projects (#115)|| [TestScenario4ProjectManagement#PRJM21] ||
 || PRJM22 || Create a project (#142)|| [TestScenario4ProjectManagement#PRJM22] ||
 || PRJM23 || Add a new version of an attached file || [TestScenario4ProjectManagement#PRJM23] ||
+|| PRJM24 || Delete a draft project || [TestScenario4ProjectManagement#PRJM24] ||
+|| PRJM25 || Delete a project || [TestScenario4ProjectManagement#PRJM25] ||
 || ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
@@ -142,7 +145,6 @@ These tests are based on the demo data set v1.2 which contains the following use
 || OUM7 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM7] ||
 || OUM8 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM8] ||
 || OUM9 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM9] ||
-
 || ** || *Rights* || [TestScenario4Rights] ||
 || `R1` || Rights for user 4 || [TestScenario4Rights#R1] ||
 || `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
