@@ -1,10 +1,11 @@
 #summary Test Scenario on Dashboard Projects Table (DPT)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
 = Introduction =
 
-This scenario is based on the demo data set which is supposed to have all the required proprieties to pass these tests.
+This scenario is based on the v1.2 demo data set. 
 
 
 = Test cases =
@@ -87,3 +88,8 @@ All projects, except test and deleted projects, should be in one or another tab 
 <tr><td> 1 </td><td> Connect to the application as user1. </td><td> The home page should be displayed. </td></tr>
 <tr><td> 2 </td><td> Create a project P1 accessible to the user3's OrgUnit and a project P2 which shouldn't be accessible to user3 because it is attached to an OrgUnit of an upper-level or same level as his. Disconnect. </td><td> You should be redirected to the sign in page. </td></tr>  
 <tr><td> 3 </td><td> Connect as user3. </td><td> On your project table, you should see the project P1 but not the project P2. </td></tr></table>
+
+== DPT8 ==
+=== _Title:_ Reload dashboard projects table ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the home page, click on the "Reload" button of the Projects table. || The projects table is getting loaded. A progress bar show the progress of the loading of the projects in the table, until all projects are back in the list. ||
