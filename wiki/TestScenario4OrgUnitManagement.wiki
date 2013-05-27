@@ -1,4 +1,5 @@
 #summary Test Scenario on Organizational Unit Management
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -78,3 +79,10 @@ This scenario is based on the v1.2 demo data set.
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From an OrgUnit dashboard on the « Details » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
 || 2 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the other and the value given on the modification. ||
+
+== OUM10 ==
+=== _Title:_ Export Organizational Unit synthesis Excel file ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Open any organizational unit. || ||
+|| 2 || Click on the "Export" button, which looks like a normal rectangular button with rounded corners and is on the extreme right of the line where all the sub-tabs ("Overview", "Information", etc.) are. || An Excel (or OpenDocument depending of the General parameter "Default spreadsheet export file format") is downloaded on your computer.  ||
+|| 3 || Open the spreadsheet file.  || All the content of the orgunit's fields must appear in the exported file. ||
