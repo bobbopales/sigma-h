@@ -93,3 +93,24 @@ All projects, except test and deleted projects, should be in one or another tab 
 === _Title:_ Reload dashboard projects table ===
 || # || *Steps to reproduce* || *Result expected* ||
 || 1 || From the home page, click on the "Reload" button of the Projects table. || The projects table is getting loaded. A progress bar show the progress of the loading of the projects in the table, until all projects are back in the list. ||
+
+
+== DPT9 ==
+=== _Title:_ Automatic Excel global export ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || From the home page, click on the "Export" button of the Projects table. || The "Global export" popup opens up. ||
+|| 2 || Click on the "Change configuration" button. || The "Global export configuration" popup opens up. ||
+|| 3 || Set the "Auto-export schedule" frequency to "Daily", and click on the "Save configuration" button. || A status message "Global export configuration has been successfully updated." confirms to you that your options have been saved, and the "Global export configuration" closes. ||
+|| 4 || Close the "Global export" popup. || ||
+|| 5 || Create a project with code "t-export" from any project model (see [TestScenario4ProjectManagement#PRJM22 PRJM22] to see how to create a project). || The project "t-project" is added to the projects table. ||
+|| 6 || *Next day* (because auto-export are always made at midnight), open once again the "Global export" popup by clicking on the "Export" button of the Projects table. || ||
+|| 7 || Click on the "Backed-up data" radio button. || The "Export backup selection" options appear at the bottom of the "Global export" popup. ||
+|| 8 || Select two dates which after before yesterday and after today, and click on the "Search" button for "1. Specify period to search for a backup". || The "2. Select export backup to export" drop-down list should get filled. ||
+|| 9 || Select the backup you've configured the day before in the "2. Select export backup to export" drop-down list and click on the "Export" button. || The "Global export" popup close, and an Excel file should get downloaded on your computer. ||
+|| 10 || Open the Excel file you've just downloaded. || The project "t-export" should be in the tab of the project model you've chosen, and have all the attributes you've set. ||
+|| 11 || Open once again the "Global export" popup by clicking on the "Export" button of the Projects table. ||  ||
+|| 12 || Click on the "Change configuration" button. || The "Global export configuration" popup opens up. ||
+|| 13 || In the "Configure fields to export" table, click on the project model name you've chosen for your "t-export" project. || All this project model's fields are listed on the right side of the table. ||
+|| 14 || Choose any field in the list, and uncheck its "Export?" column checkbox. || ||
+|| 15 || Set the "Auto-export schedule" frequency to "Export every 3 days", and click on the "Save configuration" button. || A status message "Global export configuration has been successfully updated." confirms to you that your options have been saved, and the "Global export configuration" closes. ||
+|| 16 || *3 days later*, export the new automaticly exported Excel file created during the night (see steps 6, 7, 8, 9 & 10 of this test case). || The project "t-export" should be in the tab of the project model you've chosen, and have all the attributes you've set or modified in between, and should miss the information about the field you've unchecked for "Export?".  ||
