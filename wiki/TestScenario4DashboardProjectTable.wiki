@@ -35,7 +35,7 @@ This scenario is based on the v1.2 demo data set.
 <tr><td> 1 </td><td> From the projects table, click on the "Export all" button </td><td> The Global export popup opens up. </td></tr>
 <tr><td> 2 </td><td> Let the "Live data" checked by default and click on the "Export" button. </td><td> After a while, an Excel file should be proposed to be downloaded. </td></tr>
 <tr><td> 3 </td><td> Save the Excel file on your hard drive and open it. </td><td> The Excel file should contain a tab per project model which has projects associated to it.
-In each tab, all the fields of the project model should be given as column and each row should be a project.
+In each tab, all the fields of the project model should be given as column (except files fields) and each row should be a project.
 All projects, except test and deleted projects, should be in one or another tab of this Excel file. </td></tr></table>
 
 
