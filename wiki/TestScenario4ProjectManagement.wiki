@@ -182,3 +182,14 @@ _This test has to reconsidered because it is not up to date._
 || 3 || Click on "No". || Nothing happens, and the confirmation popup closes down. ||
 || 4 || Click once again on the "Delete project" button. || The confirmation popup opens up againand asks you "Do you really want to delete this project ?". ||
 || 5 || Click this time on "Yes". || A status message informs you that "The project was correctly deleted", the popup closes down, as well as the whole project you've just deleted. You are redirected to the main dashboard where the projects table is automatically reloaded and where you can confirm that the project "prjm22" has been removed. ||
+
+
+== PRJM26 ==
+=== _Title:_ Export Project synthesis Excel file ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Open any project. || ||
+|| 2 || Click on the "Export project" button, which looks like a normal rectangular button with rounded corners and is on the extreme right of the line where all the sub-tabs ("Management board", "Details", etc.) are. || An "Export data" popup opens. ||
+|| 3 || Check both "Logical Framework" and "Indicators list" and click on the "Export" button. || An Excel (or OpenDocument? depending of the General parameter "Default spreadsheet export file format") is downloaded on your computer.  ||
+|| 4 || Open the spreadsheet file.  || All the content of the fields, logframe and indicators must appear in the exported file. ||
+|| 5 || Once again, click on the "Export project" button. || An "Export data" popup opens. ||
+|| 6 || Click on the "Export" button without checking the "Logical Framework" and "Indicators list" checkboxes. || The exported file is similar to the previous but without the data for the logframe and the indicators. ||
