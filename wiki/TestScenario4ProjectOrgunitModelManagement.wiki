@@ -5,7 +5,7 @@
 
 = Introduction =
 
-This scenario is based on the demo data set.
+This scenario is based on the 1.2 demo data set.
 These tests are based on projects models but should be executed for OrgUnit models as well.
 
 
@@ -188,3 +188,16 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a draft project model. Click on any group hyperlink in the "Group" column of the « All Fields » tab. || A pop-up should open where you can modify the attributes of the group, and all parameters of the group should have the existing value loaded, including the "Vertical position". ||
 || 2 || Modify one or several parameters of the group, and click on the "Save" button. || The popup closes itself, and a message should appear confirming you that the fields group has been updated. ||
+
+
+== POMM26 ==
+=== _Title:_ Remove a field from Project Synthesis export files ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the project models management page, open a draft project model, like "Projet propre v2". || ||
+|| 2 || Click on any field except Files or Reports field. || A "Field" popup open. ||
+|| 3 || Uncheck the "Exportable" checkbox, and click on the "Save" button. || A status message confirms that the operation has been saved. ||
+|| 4 || Create a draft project from the draft project model you've just modified (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for more details about how to creat a draft project). || The draft project appears in the Dashboard projects table. ||
+|| 5 || Open the draft project you've just created. || ||
+|| 6 || Click on the "Export project" button, which looks like a normal rectangular button with rounded corners and is on the extreme right of the line where all the sub-tabs ("Management board", "Details", etc.) are. || An "Export data" popup opens. ||
+|| 7 || Click on the "Export" button without checking the "Logical Framework" and "Indicators list" checkboxes. || An Excel (or OpenDocument? depending of the General parameter "Default spreadsheet export file format") is downloaded on your computer.  ||
+|| 8 || Open the spreadsheet file.  || All the content of the fields must appear in the exported file except all files and reports fields, and the field you've previously unchecked as "Exportable". ||
