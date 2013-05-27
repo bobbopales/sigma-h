@@ -1,9 +1,15 @@
 #summary Test Scenario on Administration Global Management tab (AGM).
+#sidebar TestsCasesSidebar
+
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
 This scenario is based on the v1.2 demo data set. 
 
+
+
+= Test cases =
 
 == AGM1 ==
 === _Title:_ User signing in ===
@@ -70,3 +76,11 @@ This scenario is based on the v1.2 demo data set.
 <td>Log in back (see [TestScenario4UserSessionRight#USR1] for more info)</td>
 <td>The logo and the name of the organization are changed on the top banner of the application.</td></tr>
 </table>
+
+
+== AGM6 ==
+=== _Title:_ Default spreadsheet export file format ===
+|| # || *Steps to reproduce* || *Result expected* ||
+|| 1 || Go to the "Global management part" of the Administration area. || A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format". ||
+|| 2 || Change "Default spreadsheet export file format" parameter value to the other available value (if the value is ".xls", change it to ".ods"; if the value is ".ods", change if to ".xls") and click on the "Save configuration" button. || ||
+|| 3 || Open any project, and click on the "Export project" button.  || A file in the file format just set up should be downloaded. ||
