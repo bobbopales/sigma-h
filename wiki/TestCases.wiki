@@ -52,6 +52,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || DPT6 || Projects' table grouping manipulation || [TestScenario4DashboardProjectTable#DPT6] ||
 || DPT7 || Limited project's access according to user's rights ||  [TestScenario4DashboardProjectTable#DPT7] ||
 || DPT8 || Reload dashboard projects table || [TestScenario4DashboardProjectTable#DPT8] ||
+|| DPT9 || Automatic Excel global export || [TestScenario4DashboardProjectTable#DPT9] ||
 || ** || *Project management* || [TestScenario4ProjectManagement] ||
 || PRJM2 || Open a project page || [TestScenario4ProjectManagement#PRJM2] ||
 || PRJM3 || Modify a project's attributes || [TestScenario4ProjectManagement#PRJM3] ||
@@ -77,6 +78,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || PRJM23 || Add a new version of an attached file || [TestScenario4ProjectManagement#PRJM23] ||
 || PRJM24 || Delete a draft project || [TestScenario4ProjectManagement#PRJM24] ||
 || PRJM25 || Delete a project || [TestScenario4ProjectManagement#PRJM25] ||
+|| PRJM26 || Export Project synthesis Excel file || [TestScenario4ProjectManagement#PRJM26] ||
 || ** || *Project/Orgunit Model Management*  || [TestScenario4ProjectOrgunitModelManagement] ||
 || POMM2 || Import project model || [TestScenario4ProjectOrgunitModelManagement#POMM2] ||
 || POMM3 || Duplicate a project model || [TestScenario4ProjectOrgunitModelManagement#POMM3] ||
@@ -102,6 +104,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || POMM23 || Edit draft project model (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM23] ||
 || POMM24 || Make a draft project model ready (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM24] ||
 || POMM25 || Edit a group of fields || [TestScenario4ProjectOrgunitModelManagement#POMM25] ||
+|| POMM26 || Remove a field from Project Synthesis export files || [TestScenario4ProjectOrgunitModelManagement#POMM26] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
 || RMM3 || Delete report model|| [TestScenario4ReportModelManagement#RMM3] ||
@@ -121,6 +124,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || LF6 || Add an activity linked to the calendar || [TestScenario4LogicalFramework#LF6] ||
 || LF7 || Edit an activity (#113) || [TestScenario4LogicalFramework#LF7] ||
 || LF8 || Copy logical frame (#111) || [TestScenario4LogicalFramework#LF8] ||
+|| LF9 || Export a logical framework || [TestScenario4LogicalFramework#LF9] ||
 || ** || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
 || RDM2 || Create a new report || [TestScenario4ReportsDocumentsManagement#RDM2] ||
 || RDM3 || Open an existing report || [TestScenario4ReportsDocumentsManagement#RDM3] ||
@@ -145,6 +149,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || OUM7 || Modify the attributes of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM7] ||
 || OUM8 || Modify the calendar of an Organizational Unit || [TestScenario4OrgUnitManagement#OUM8] ||
 || OUM9 || Organizational Unit's attribute history consultation || [TestScenario4OrgUnitManagement#OUM9] ||
+|| OUM10 || Export Organizational Unit synthesis Excel file || [TestScenario4OrgUnitManagement#OUM10] ||
 || ** || *Rights* || [TestScenario4Rights] ||
 || `R1` || Rights for user 4 || [TestScenario4Rights#R1] ||
 || `R2` || Rights for user 5 || [TestScenario4Rights#R2] ||
@@ -159,12 +164,14 @@ These tests are based on the demo data set v1.2 which contains the following use
 || AGM3 || Backup all last versions of files from top orgunit || [TestScenario4AdministrationGlobalManagement#AGM3] ||
 || AGM4 || Backup all versions of each file from one orgunit || [TestScenario4AdministrationGlobalManagement#AGM4] ||
 || AGM5 || Change organization's logo and name || [TestScenario4AdministrationGlobalManagement#AGM5] ||
+|| AGM6 || Default spreadsheet export file format || [TestScenario4AdministrationGlobalManagement#AGM6] ||
 || ** || *Indicators* || [TestScenario4Indicators] ||
 || I1 || Create an indicator || [TestScenario4Indicators#I1] ||
 || I2 || Edit an indicator || [TestScenario4Indicators#I2] ||
 || I3 || Delete an indicator || [TestScenario4Indicators#I3] ||
 || I4 || Create a site (#153) || [TestScenario4Indicators#I4] ||
 || I5 || Create and delete an indicator group || [TestScenario4Indicators#I5] ||
+|| I6 || Export all project's indicators to Excel || [TestScenario4Indicators#I6] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
 || ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
