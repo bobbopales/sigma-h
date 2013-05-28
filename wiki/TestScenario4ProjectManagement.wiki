@@ -156,7 +156,8 @@ _This test has to reconsidered because it is not up to date._
 || 3 || Add to this file several new version by clicking on the "New version" button. || The file name gets updated with the file name of the new version, and the "Version" number gets increased each time a new version is added. ||
 || 4 || Click on the "History" hyperlink linked to tis file. || An "History" popup opens up. ||
 || 5 || Delete some versions including the last by clicking on the associated dustbin icon. || The versions are removed from the list of versions. ||
-|| 6 || Add to this file a new version by clicking on the "New version" button. || The file name gets updated with the file name of the new version, and the "Version" number gets increased, as it was while adding versions previously. ||
+|| 6 || Close the file history popup and download the file from the field. || The downloaded file should be the latest version of the file not deleted. ||
+|| 7 || Add to this file a new version by clicking on the "New version" button. || The file name gets updated with the file name of the new version, and the "Version" number gets increased, as it was while adding versions previously. ||
 
 
 == PRJM24 ==
