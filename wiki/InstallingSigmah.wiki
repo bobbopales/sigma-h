@@ -54,6 +54,7 @@ hibernate.format_sql=false
 ||_`repository.file_storage_provider_class`_|| 1.1 and later ||Use `repository.file_storage_provider_class=org.sigmah.server.endpoint.file.LocalStorageProvider`, except if you install Sigmah on the Amazon platform. In the rest of the procedure, we assume that Sigmah is not installed on the Amazon platform.||
 ||_`repository.files`_|| 1.0 ||Folder where the files uploaded by users will be stored. (ie: `repository.files=C:\\Sigmah\\Files`) (*deprecated*: replaced by `repository.name` since 1.1)||
 ||_`repository.name`_|| 1.1 and later ||Root directory name where files will be stored (ie: `repository.name=C:\\Sigmah\\Files`)||
+||_`upload.maxSize`_|| 1.2 and later ||Maximumum size of the uploaded files in bytes (default: 20971520 (20Mb) )||
 ||_`repository.images`_|| 1.0 and later ||Subfolder of the previous one where the organization's logos have to be stored. (ie: `repository.images=Images` would point to "_C:\Sigmah\Files\_Images") (_*Notice*_: in v1.0, used to be the absolute path of a folder ; since 1.1, it is a relative path from the root folder specified in `repository.name`)||
 ||_`mail.hostname`_|| 1.0 and later ||SMTP hostname used to send emails by the application. (ie: `mail.hostname=smtp.myngo.org`)||
 ||_`mail.port`_|| 1.1 and later ||SMTP port used to send emails by the application. (ie: `mail.port=25`)||
