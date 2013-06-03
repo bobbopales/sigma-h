@@ -90,6 +90,15 @@ ALTER TABLE project_model ADD COLUMN date_deleted DATE;
 ALTER TABLE org_unit_model ADD COLUMN date_deleted DATETIME;
 ALTER TABLE project_model ADD COLUMN date_deleted DATETIME;
 
+-- Increases the project code length (issue #504).
+-- ------
+
+-- POSTGRESQL
+ALTER TABLE userdatabase ALTER COLUMN name TYPE varchar(50);
+
+-- MYSQL
+ALTER TABLE userdatabase CHANGE name name varchar(50);
+
 }}}
 
 
