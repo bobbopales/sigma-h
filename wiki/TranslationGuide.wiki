@@ -4,7 +4,9 @@
 
 Some lessons have been learnt while translating Sigmah internationalization files, and this wiki page is here to share them for new translators.
 
-Sigmah is using the Pootle server kindly shared by the Sahana HFOSS project on: * http://pootle.sahanafoundation.org/pootle/ *
+Sigmah is using the Pootle online software translation platform for translation. Our Pootle server is located at * http://pootle.sigmah.org/ *
+
+_After two years of kind free hosting on Sahana HFOSS own Pootle server, we have shifted to our own server because the latest 2.5 Pootle version they migrated to is buggy with Java .properties based projects. Thanks Sahana again for those 2 years of kind hosting! Our Poootle server remains with old 2.1.5 version._ 
 
 = Guidelines for translators =
 
@@ -49,10 +51,10 @@ All second importations are taken as importation of translations, if similar fil
 _NB: since you need to use the command "Review the project's files" in the procedure to update the source strings of a file, you always need to update the strings of all the files of a translation project because this command has effect on all files of the project and can put the other files of your project in an incoherent status._
 
 To update source strings of a translation project, the following procedure has to be used:
-  # Export as XLIFF all the files of your translation project (by typing manually the URL "http://pootle.sahanafoundation.org/export/POOTLE_EXPORT/sigmah/en_GB/UIConstants.xlf" for the "en_GB" translation of the "UIConstants" Java properties" file for example)
-  # Delete all the files of your translation project (action available in the "Overview" tab of the translation project)
+  # Export as XLIFF all the files of your translation project (with the command "Translate offline" in the "Review" tab of the translation project)
+  # Delete all the files of your translation project (action available in the "Files" tab of the translation project) 
   # Import your new version of the source files containing the new source strings (with the file upload available in the "Overview" tab of the translation project, and any option can be used for the upload as it is a first importation)
-  # Analyze your imported files (with the command "Review the project's files" in the "Overview" tab of the translation project)
+  # Analyze your imported files (with the command "Review the project's files" in the "Files" tab of the translation project) 
   # Import then your just generated XLIFF files with the option "Merge", and force the upload to the new source files you've just added.
 
 
