@@ -1,4 +1,4 @@
-#summary Test Scenario on Administration Global Management tab (AGM).
+#summary Test Scenario on Administration Settings tab (AGM).
 #sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
@@ -7,6 +7,7 @@
 
 This scenario is based on the v1.2 demo data set. 
 
+_Note: the "Settings" tab used to be named "Global Management", and this is the reason of the early name of this test scenario_
 
 
 = Test cases =
@@ -17,13 +18,13 @@ This scenario is based on the v1.2 demo data set.
 
 
 == AGM2 ==
-=== _Title:_ Open Administration Global Management ===
+=== _Title:_ Open Administration Settings ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td> 1 </td>
 <td> From the main dashboard, click on the Administration button</td>
 <td>A new tab named "Administration" opens up in the application.</td></tr>
 <tr><td> 2 </td>
-<td>Click on "Global management" hyperlink on the left part of screen</td>
+<td>Click on "Settings " hyperlink on the left part of screen</td>
 <td>A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format".</td></tr>
 </table>
 
@@ -33,7 +34,7 @@ This scenario is based on the v1.2 demo data set.
 === _Title:_ Backup all last versions of files from top orgunit ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td>1 </td>
-<td> From the "Global management part" of the Administration area, select "Only the last version of each file" as "Download" option in the "Back up all files" block, and the headquarters ("Siège" in French) as root orgunit to build the backup from.</td>
+<td> From the "Settings" part of the Administration area, select "Only the last version of each file" as "Download" option in the "Back up all files" block, and the headquarters ("Siège" in French) as root orgunit to build the backup from.</td>
 <td></td></tr>
 <tr><td> 2 </td>
 <td>Click on "Backup All Files" button</td>
@@ -48,7 +49,7 @@ This scenario is based on the v1.2 demo data set.
 === _Title:_ Backup all versions of each file from one orgunit ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td>1 </td>
-<td> From the "Global management part" of the Administration area, select "All versions of each file" as "Download" option in the "Back up all files" block, and "Myanmar" as root orgunit to build the backup from.</td>
+<td> From the "Settings" part of the Administration area, select "All versions of each file" as "Download" option in the "Back up all files" block, and "Myanmar" as root orgunit to build the backup from.</td>
 <td></td></tr>
 <tr><td> 2 </td>
 <td>Click on "Backup All Files" button</td>
@@ -63,7 +64,7 @@ This scenario is based on the v1.2 demo data set.
 === _Title:_ Change organization's logo and name ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td>1 </td>
-<td> Go to the "Global management part" of the Administration area</td>
+<td> Go to the "Settings" part of the Administration area</td>
 
 <td>A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format".</td></tr>
 <tr><td> 2 </td>
@@ -81,6 +82,6 @@ This scenario is based on the v1.2 demo data set.
 == AGM6 ==
 === _Title:_ Default spreadsheet export file format ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || Go to the "Global management part" of the Administration area. || A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format". ||
+|| 1 || Go to the "Settings" part of the Administration area. || A screen with 3 parts appears on the right: "Organization management", "Back up all files", "Default spreadsheet export file format". ||
 || 2 || Change "Default spreadsheet export file format" parameter value to the other available value (if the value is ".xls", change it to ".ods"; if the value is ".ods", change if to ".xls") and click on the "Save configuration" button. || ||
 || 3 || Open any project, and click on the "Export project" button.  || A file in the file format just set up should be downloaded. ||
