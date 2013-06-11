@@ -32,3 +32,12 @@ This scenario is based on the demo data set which is supposed to have all the re
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Connect as user6. || The home page should be displayed. There should be a « New project » button in the lower-left section of the dashboard. In the project section, there should be a message informing you that you don't have the right to view projects. ||
 || 2 || Create a project. || A message should inform you that the project has been created but you should still not be able to view projects, including the one you have just created. ||
+
+
+
+
+== `R4` ==
+=== _Title:_ Rights for user 2 ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Connect as user2. || The home page should be displayed. There should be no button in the lower-left section of the dashboard. ||
+|| 2 || Click on any Organisational Unit in Organisation chart. || You should not be able to view the content of the Organisational unit. ||
