@@ -47,6 +47,9 @@ ALTER TABLE userdatabase ALTER COLUMN startdate TYPE TIMESTAMP;
 ALTER TABLE project ALTER COLUMN end_date TYPE TIMESTAMP;
 ALTER TABLE project ALTER COLUMN close_date TYPE TIMESTAMP;
 
+ALTER TABLE personalevent ALTER COLUMN enddate TYPE TIMESTAMP WITH TIME ZONE;
+ALTER TABLE personalevent ALTER COLUMN startdate TYPE TIMESTAMP WITH TIME ZONE;
+
 -- MYSQL
 ALTER TABLE userdatabase CHANGE startdate startdate TIMESTAMP;
 ALTER TABLE project CHANGE end_date end_date TIMESTAMP;
@@ -98,14 +101,6 @@ ALTER TABLE userdatabase ALTER COLUMN name TYPE varchar(50);
 
 -- MYSQL
 ALTER TABLE userdatabase CHANGE name name varchar(50);
-
-
--- Changes the type of enddate and startdate from personalevent table (issue #463).
--- ------
-
--- POSTGRESQL
-ALTER TABLE personalevent ALTER COLUMN enddate TYPE TIMESTAMP WITH TIME ZONE;
-ALTER TABLE personalevent ALTER COLUMN startdate TYPE TIMESTAMP WITH TIME ZONE;
 
 }}}
 
