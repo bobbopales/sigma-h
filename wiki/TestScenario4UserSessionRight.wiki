@@ -41,7 +41,7 @@ This scenario is based on the 1.2 demo data.
 == USR5 ==
 === _Title:_ Display of user's NGO 's information ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || Open the "Administration " tab, then click on the link "Global management". || A page where you can modify tour NGO's information is displayed. ||
+|| 1 || Open the "Administration " tab, then click on the link "Settings". || A page where you can modify tour NGO's information is displayed. ||
 || 2 || In the section "Organization management", change the logo end the name of the connected user's NGO, click on the "Save Changes" button and reload the page.|| The logo of the NGO, in the upper-left, has been modified.||
 
 == USR6 ==
