@@ -21,8 +21,7 @@ These tests are based on projects models but should be executed for OrgUnit mode
 || 1 ||From the Main dashboard, click on the "Administration" button || The Administration tab opens up.||
 || 2 || Click on the « Project models » hyperlink|| The list of existing project models is loaded on the right of the screen.||
 || 3 || Click on the « Import » Button|| The « Importing project model... » popup opens up.||
-|| 4 || Click on the « Project models » hyperlink. || The list of existing project models is loaded on the right of the screen.||
-|| 5 || Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.|| A status message pops up with the message « The project model has been imported », and a new project model appears in the list in "Draft status.||
+|| 4 || Select one project model file coming from the [http://www.sigmah.org/issues/file_download.php?file_id=62&type=bug ProjectModelsFiles.zip] archive you've unzipped beforehand, choose any project type, and click on the "OK" button.|| A status message pops up with the message « The project model has been imported », and a new project model appears in the list in "Draft status.||
 
 
 
@@ -68,13 +67,16 @@ The « Create new draft project » popup opens up.||
 == POMM8 ==
 === _Title:_ Switch two fields in a model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On the project models management page, open a project model in draft status and switch the order of two fields. || The position of the fields should change. The field that was above the other should now be under the other. ||
+|| 1 || On the project models management page, open a project model in draft status and choose two fields from the same container and group. Click on the title of each of these fields to read and remember their current "Order" value. || ||
+|| 2 || Open once again both fields and switch the value of their "Order" attribute, and then click "Save" to exit the field edition popup. ||  ||
+|| 3 || Open a project created from this model, or create a new draft project from it, and go the container containing those fields in this project. || The position of the fields should change. The field that was above the other should now be under the other. ||
+
 
 == POMM9 ==
 === _Title:_ Add a mandatory field to a project ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on the « Add » button in the « Fields » tab. ||A pop-up should open where you can specify the attributes of the new field. ||
-|| 2 || Fill the different fields, check the checkbox « Mandatory » and click on the « Save » button. || The projects depending on the project model should be updated, so, on the field's phase of these projects, the field should be added to the mandatory fields' list. 
+|| 2 || Fill the different fields, check the checkbox « Mandatory » and click on the « Save » button. || The projects depending on the project model should be updated, so, on the field's phase of these projects, the field should be added to the mandatory fields' list. ||
 
 == POMM10 ==
 === _Title:_ Reorganize a project model's attributes of the synthesis section ===
@@ -91,35 +93,35 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model in draft status. || ||
 || 2 ||  In the « Logical frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a new project depending on the project model. || You are limited depending on the maximum number of groups' type you have specified.||
+|| 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). || You are limited depending on the maximum number of groups' type you have specified.||
 
 == POMM13 ==
 === _Title:_ Modify Date field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Date field in the « Fields » tab. || A pop-up should open where you can change the attributes of the field. ||
 || 2 || Specify the upper and lower limit of the Date field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new project depending on the project model. Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
+|| 3 ||  Create a new draft project depending on the project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
 
 == POMM14 ==
 === _Title:_ Modify Number field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Number field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the upper and lower limit of the Number field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new project depending on the project model. Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
 
 == POMM15 ==
 === _Title:_ Modify a Number field's numeric type ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Number field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the type of the Number field (decimal or not) and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new project depending on the project model. Click on the « Details » tab. || You should not be able to modify the field with a decimal or a non decimal number depending on the choice made. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a decimal or a non decimal number depending on the choice made. ||
 
 == POMM16 ==
 === _Title:_ Modify text field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a text field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the maximal length of the text field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new project depending on the project model. Click on the « Details » tab. || You should not be able to modify the field with a text longer than maximal length. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a text longer than maximal length. ||
 
 
 == POMM17 ==
@@ -127,14 +129,14 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a reports' list field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 ||  Check the checkbox « Mandatory » and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new project depending on the project model. Click on the « Details » tab. || You should not be able to close the phase without having creating and validating the corresponding report and the name of report's list field is added to the mandatory fields' list. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to close the phase without having creating and validating the corresponding report and the name of report's list field is added to the mandatory fields' list. ||
 
 == POMM18 ==
 === _Title:_ Key question modification of a report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the report models management page, click a report model. Then, click on a key question in the table on the right. || You should be able to modify the question. ||
 || 2 ||  Write the new key question and click on the « Save » button.|| A message should appear confirming you that the report model has been updated. ||
-|| 3 ||  Create a new project with a reports' list depending on the report model. Create a report. || You see that the corresponding key question has been changed. ||
+|| 3 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Create a report. || You see that the corresponding key question has been changed. ||
 
 
 == POMM19 ==
@@ -143,7 +145,7 @@ The « Create new draft project » popup opens up.||
 || 1 ||   On the report models management page, click a report model. Then, in the right-hand panel, click on the « Add » button. || A row should be added to the sections table. ||
 || 2 ||  Click on the cell of the new row corresponding to the « Section name » column. || You should be able to specify the question. ||
 || 3 || Write the new key question and click on the « Save » button.|| A message should appear confirming you that the report model has been updated. ||
-|| 4 ||  Create a new project with a reports' list depending on the report model. Create a report. || You see that the corresponding key question has been added. ||
+|| 4 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Create a report. || You see that the corresponding key question has been added. ||
 
 == POMM20 ==
 === _Title:_ Modify the information's confidentiality ===
@@ -157,14 +159,14 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model. Click on any field in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Check the « Amendable » checkbox and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. || The field made amendable should not be editable anymore. ||
+|| 3 || Create a draft project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || The field made amendable should not be editable anymore. ||
 
 == POMM22 ==
 === _Title:_ Modify files list field's constraints (#83) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model. Click on a files' list field in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Modify the upper limit of the number of files and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a project depending on this project model. || On the « Details » tab, you should be informed how many files you can attach for this field. ||
+|| 3 || Create a draft project depending on this project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || On the « Details » tab, you should be informed how many files you can attach for this field. ||
 || 4 || Attach as many files as it is specified you can. || You should not be able to attach files for that field anymore. ||
 
 == POMM23 ==
