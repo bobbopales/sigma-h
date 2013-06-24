@@ -1,4 +1,5 @@
 #summary Test Scenario on Reports & Documents Management (RDM)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -46,10 +47,10 @@ This scenario is based on the demo data set. These tests are based on a project 
 === _Title:_ Manipulate a report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On a project dashboard in the « Reports & Documents » sub-tab, click on a report's title. || The report should be displayed on the right-hand panel of the sub-tab. ||
-|| 2 || Click on Click on « Overview Mode ». || The content of the paragraphs of the report should not be displayed. ||
+|| 2 || Click on « Overview Mode ». || The content of the paragraphs of the report should not be displayed. ||
 || 3 || Click on « Full mode ». || The content of the paragraphs should be displayed. ||
 || 4 || Click on a paragraph's title. || If the content of the paragraph was visible, it should now be hidden. If it wasn't, it should now be visible. ||
-|| 5 || Click on « Modify ». || You should now be able to modify the report. ||
+|| 5 || Click on « Edit ». || You should now be able to modify the report. ||
 || 6 || Write some text in one of the section, select it and click on a text transformation button (B, I, S, align left, align right, center, justify, bullets list, numbered list). || The text should be transformed accordingly to the button you clicked on. || 
 || 7 || Click on the icon with a frame and a plus on it. || A pop-up should open where you can specify the image's URL. ||
 || 8 || Enter an image URL and click on « Ok ». || The image should be added to the report. ||
@@ -75,8 +76,8 @@ This scenario is based on the demo data set. These tests are based on a project 
 == RDM10 ==
 === _Title:_ Impossible to create two reports for a « single » reports list field ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On a project's page in its initial phase, click on the « Reports & Documents » sub-tab and click on « New report » and click on the reports list field that can contain only one report. ||
-|| 2 || Try to add another report to the same report model. || You should not be able to add a new report. || 
+|| 1 || Open "Reports & document" sub-tab of project 'IF1389'. || ||
+|| 2 || Try to add a second report of type "Programmation | Rapport de mission" (if no report of that type has been created yet, create a first version and then try to create a second one) by clicking on the « New report »  || You should not be able to add a new report. || 
 
 == RDM11 ==
 === _Title:_ Visibility of attached documents in the « Reports & documents » tab ===
@@ -87,6 +88,8 @@ This scenario is based on the demo data set. These tests are based on a project 
 
 
 == RDM12 ==
+_Test disabled for version 1.2. This test will be enabled when be revised when issue #541 (Key question management missing in report models administration) will be developed._
+
 === _Title:_ Answer to a report's key question ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On a project's page in its initial phase, click on the « Reports & Documents » sub-tab and open an existing report. || The report should be displayed on the right-hand panel of the sub-tab. ||
@@ -98,8 +101,8 @@ This scenario is based on the demo data set. These tests are based on a project 
 == RDM13 ==
 === _Title:_ Personal draft cycle of a report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || Connect as user1, who has the right to modify a report. Modify the report and save it in this state called « A » and click on « Share ». || ||
-|| 2 || Reopen the same report, modify it and save it in this state called « B ». || ||
+|| 1 || Connect as user1, who has the right to modify a report. Modify the report with the "Edit" button, save it and click on the « Share » button. Let's called for this test the current state of the content of this report "state A". || ||
+|| 2 || Reopen the same report, modify it and save it in a state called « B ». Don't click on the "Share" button. || ||
 || 3 || Close the report and the project and reopen them. || The report should be displayed as it was in the state « B ». || 
 || 4 || Connect as user2 who only has the right to consult the report and open it. || You should see the report as it was in state « A ». ||   
 
