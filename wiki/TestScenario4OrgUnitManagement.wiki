@@ -77,7 +77,7 @@ This scenario is based on the v1.2 demo data set.
 == OUM9 ==
 === _Title:_ Organizational Unit's attribute history consultation ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || From an OrgUnit dashboard on the « Details » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
+|| 1 || From an OrgUnit « Information » sub-tab, right click on one of the following field's type ( numeric, date, simple text, paragraph, triplet, multiple choice list, check box). || A contextual menu should open with the action « Show history ». ||
 || 2 || Click on the action « Show history ». || A pop-up should open with the field's modification history with, for each modification, the date, the other and the value given on the modification. ||
 
 == OUM10 ==
