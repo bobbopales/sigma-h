@@ -18,7 +18,7 @@ This scenario is based on the v1.2 demo data set.
 || 3 || Select « Qualitative » as type of the indicator. || The fields "Aggregation method", "Units" and "Target Value" should be replaced by the field "Possible values". ||
 || 4 || Check the « Other indicators? » checkbox. || A table should appear underneath the field letting add indicators from other projects. ||
 || 5 || Click on the « Add » button of the table. || A pop-up should appear with the different projects. ||
-|| 6 || Open the project « Formation local birmane », select one of its indicator and click on « Ok ». ||The indicator selected should be added to the other indicators' table. ||
+|| 6 || Open the project « Aide d’urgence pour améliorer les conditions de vie des populations affectées par la reprise du conflit au Nord Kivu », select one of its indicator and click on « Ok ». ||The indicator selected should be added to the other indicators' table. ||
 || 7 || Fill the other fields as you want and click on « Ok ». || The indicator created should be added to the indicators table. ||
 || 8 || Close and reopen the project dashboard and come back to the « Manage indicators » sub-tab. || The indicator should still be there. ||
 
