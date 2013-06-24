@@ -80,9 +80,10 @@ This scenario is based on the v1.2 demo data set.
 || 2 || Click on the « Copy » button. || ||
 || 3 || Open the « Log frame » sub-tab of another project. ||  A pop-up should open to let you confirm the action and link the indicators to the source logical frame. ||
 || 4 || Click on « Ok ». || The logical frame you have copied should be pasted with the indicators. ||
-|| 5 || Click on « Save », close and reopen the project. || The logical frame should still be the one you pasted. ||
+|| 5 || Close and reopen the project. || The logical frame should still be the one you pasted. ||
 
-== LF8 ==
+== LF9 ==
+_Note: used to be LF8 by mistake, and known as LF8bis_
 === _Title:_  Add a group to a logical framework ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Open the « Log frame » sub-tab of any project which has already a minimal logical frame. || A screen with a logical framework is displayed.||
@@ -91,7 +92,8 @@ This scenario is based on the v1.2 demo data set.
 ||
 
 
-== LF9 ==
+== LF10 ==
+_Note: used to be LF9, because there were 2 LF8 by mistake_
 === _Title:_  Remove a group from a logical framework (#149) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Open the « Log frame » sub-tab of any project which has already a minimal logical framework and contains groups. || ||
@@ -100,7 +102,8 @@ This scenario is based on the v1.2 demo data set.
 
 
 
-== LF10 ==
+== LF11 ==
+_Note: used to be LF10, because there were 2 LF8 by mistake_
 === _Title:_  Export a logical framework ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Open the « Log frame » sub-tab of any project which has already a minimal logical framework (like "IF1389"). || ||
