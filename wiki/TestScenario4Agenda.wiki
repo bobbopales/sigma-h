@@ -1,4 +1,5 @@
 #summary Test Scenario on Agenda (AGN)
+#sidebar TestsCasesSidebar
 
 <wiki:toc max_depth="3" />
 
@@ -16,7 +17,7 @@ This scenario is based on the demo data set.
 == AGN2 ==
 === _Title :_ Time navigation through the calendar ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On a project dashboard in the « Calendar » tab, click on the « Week » button. || The page of the calendar should display 7 days from Monday to Sunday. ||
+|| 1 || On a project dashboard in the « Calendar » tab, click on the « Week » button. || The page of the calendar should display 7 days from Sunday to Monday (if user logged in with English language). ||
 || 2 || Click on the « Next » button. || The page should display the week after the one that was displayed. ||
 || 3 || Click on the « Previous » button. || The page should display the week before the one that was displayed. ||
 || 4 || Click on the « Today » button. || The page should now display the week we are in today. ||
