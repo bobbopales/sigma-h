@@ -39,7 +39,7 @@ This scenario is based on the v1.2 demo data set.
 || 4 || Go to the « Manage indicators » sub-tab. || All the indicators you've created in the logframe are also listed here, with their target values and all attributes.||
 || 5 || Go back to the « Log frame » sub-tab. || All the data you've entered previously are still here.||
 || 6 || Modify a cell in the logframe (like the title of a specific objective) and click on the « Save » button of this screen.|| You get a confirmation message that your data has been correctly saved, and the « Save » button becomes disabled. ||
-|| 7 || Go to the « Manage indicators » sub-tab. || All the indicators you've created in the logframe are still listed here, with their target values and all attributes still similar as what they used to be.||
+|| 7 || Go to the « Manage indicators » sub-tab, and click on the "Refresh Preview" button. || All the indicators you've created in the logframe are still listed here, with their target values and all attributes still similar as what they used to be.||
 
 == LF4 ==
 === _Title:_ Move an element of a logical framework ===
