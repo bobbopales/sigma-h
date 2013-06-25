@@ -81,7 +81,7 @@ The « Create new draft project » popup opens up.||
 == POMM10 ==
 === _Title:_ Reorganize a project model's attributes of the synthesis section ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On the project models management page, open a project model in draft status. Click on any field by default in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
+|| 1 || On the project models management page, open a project model in draft status. Click on any field of "Default element" type in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Check the « Banner » checkbox and set the position in the banner to 1. || The field should now be the one displayed on the upper-left of the banner of every projects depending on the project model. ||
 
 == POMM11 ==
@@ -96,6 +96,7 @@ The « Create new draft project » popup opens up.||
 || 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). || You are limited depending on the maximum number of groups' type you have specified.||
 
 == POMM13 ==
+_Test case disabled until feature "0000569: Missing a calendar component to enter constraints for date fields" is developed._
 === _Title:_ Modify Date field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Date field in the « Fields » tab. || A pop-up should open where you can change the attributes of the field. ||
@@ -150,7 +151,7 @@ The « Create new draft project » popup opens up.||
 == POMM20 ==
 === _Title:_ Modify the information's confidentiality ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || On the project models page management page, open the NGO project model « Projet propre v2 » and add a field with as confidentiality group the one to which user3 belongs. || ||
+|| 1 || On the project models page management page, open the NGO project model « Projet propre v2 » and add a new field with "Suivi RH" as confidentiality group (which is a confidentiality group editable by user3). || ||
 || 2 || Connect as user1 and create a project depending on the NGO project model. || ||
 || 3 || Connect to the application as user3 and open the project created by user1. || You should be able to see and to modify the field from step 1. ||
 
@@ -159,7 +160,7 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model. Click on any field in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Check the « Amendable » checkbox and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a draft project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || The field made amendable should not be editable anymore. ||
+|| 3 || Create a draft project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || The field made amendable should not be editable anymore in the project. ||
 
 == POMM22 ==
 === _Title:_ Modify files list field's constraints (#83) ===
