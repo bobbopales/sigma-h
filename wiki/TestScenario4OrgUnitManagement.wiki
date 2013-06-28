@@ -48,12 +48,13 @@ This scenario is based on the v1.2 demo data set.
 === _Title:_ Organizational Unit's flexibility ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the homepage, click on the « Administration » button. || ||
-|| 2 || Click on « Organizational unit models ». || The list of all the OrgUnit models should be displayed. ||
+|| 2 || Click on « Organisational unit models ». || The list of all the OrgUnit models should be displayed. ||
 || 3 || Click on « HQ model ». || The OrgUnit should open and you should be able to modify it. ||
 || 4 || Click on the « Add » button in the « Fields » tab. || A pop-up should open where you can specify the attributes of the new field. ||
 || 5 || Enter any information for the field and click on « Save ». || A new row should be added to the fields table. ||
-|| 6 || Select the field « Pays » and click on « Delete selected fields ». || The row corresponding to the field should disappear. ||
-|| 7 || Go back to the home page and create a test project depending on the « HQ model » project. || The project should have the field that you have added but not the one that you have deleted. ||
+|| 6 || Click on the « Add » button in the « Fields » tab once again, and enter any information in the popup for this second new field and click on « Save ». ||A new row should be added to the fields table. ||
+|| 7 || Select the latest field you've added and click on « Delete selected fields ». || The row corresponding to the field should disappear. ||
+|| 8 || Go back to the home page, open the OrgUnit "HQ - Siège(Paris)" and then click on the "Information" sub-tab. || The orgunit should have the field that you have added but not the one that you have deleted. ||
 
 == OUM7 ==
 === _Title:_ Modify the attributes of an Organizational Unit ===
