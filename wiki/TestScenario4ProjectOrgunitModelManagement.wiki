@@ -93,7 +93,7 @@ The « Create new draft project » popup opens up.||
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model in draft status. || ||
 || 2 ||  In the « Logical frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). || You are limited depending on the maximum number of groups' type you have specified.||
+|| 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). || You are limited depending on the maximum number of groups' type you have specified.||
 
 == POMM13 ==
 _Test case disabled until feature "0000569: Missing a calendar component to enter constraints for date fields" is developed._
@@ -101,28 +101,28 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Date field in the « Fields » tab. || A pop-up should open where you can change the attributes of the field. ||
 || 2 || Specify the upper and lower limit of the Date field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new draft project depending on the project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
+|| 3 ||  Create a new draft project depending on the project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure) Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
 
 == POMM14 ==
 === _Title:_ Modify Number field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Number field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the upper and lower limit of the Number field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with values that are out of bounds. ||
 
 == POMM15 ==
 === _Title:_ Modify a Number field's numeric type ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a Number field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the type of the Number field (decimal or not) and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a decimal or a non decimal number depending on the choice made. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a decimal or a non decimal number depending on the choice made. ||
 
 == POMM16 ==
 === _Title:_ Modify text field's constraints ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a text field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 || Specify the maximal length of the text field and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a text longer than maximal length. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Click on the « Details » tab. || You should not be able to modify the field with a text longer than maximal length. ||
 
 
 == POMM17 ==
@@ -130,14 +130,14 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the project models management page, open a project model in draft status. Click on a reports' list field in the « Fields » tab. || A pop-up should open where you can specify the attributes of the field. ||
 || 2 ||  Check the checkbox « Mandatory » and click on the « Save » button.|| A message should appear confirming you that the field has been updated. ||
-|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Click on the « Details » tab. || You should not be able to close the phase without having creating and validating the corresponding report and the name of report's list field is added to the mandatory fields' list. ||
+|| 3 ||  Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Click on the « Details » tab. || You should not be able to close the phase without having creating and validating the corresponding report and the name of report's list field is added to the mandatory fields' list. ||
 
 == POMM18 ==
 === _Title:_ Key question modification of a report ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||   On the report models management page, click a report model. Then, click on a key question in the table on the right. || You should be able to modify the question. ||
 || 2 ||  Write the new key question and click on the « Save » button.|| A message should appear confirming you that the report model has been updated. ||
-|| 3 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Create a report. || You see that the corresponding key question has been changed. ||
+|| 3 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Create a report. || You see that the corresponding key question has been changed. ||
 
 
 == POMM19 ==
@@ -146,7 +146,7 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || 1 ||   On the report models management page, click a report model. Then, in the right-hand panel, click on the « Add » button. || A row should be added to the sections table. ||
 || 2 ||  Click on the cell of the new row corresponding to the « Section name » column. || You should be able to specify the question. ||
 || 3 || Write the new key question and click on the « Save » button.|| A message should appear confirming you that the report model has been updated. ||
-|| 4 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure). Create a report. || You see that the corresponding key question has been added. ||
+|| 4 ||  Create a new draft project with a reports' list depending on the report model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). Create a report. || You see that the corresponding key question has been added. ||
 
 == POMM20 ==
 === _Title:_ Modify the information's confidentiality ===
@@ -160,20 +160,20 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model. Click on any field in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Check the « Amendable » checkbox and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a draft project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. (see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || The field made amendable should not be editable anymore in the project. ||
+|| 3 || Create a draft project depending on this project model and click on the « Lock the Amendment » link with active amendment from the project page. (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure) || The field made amendable should not be editable anymore in the project. ||
 
 == POMM22 ==
 === _Title:_ Modify files list field's constraints (#83) ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model. Click on a files' list field in the « Fields » tab. || A pop-up should open where you can modify the attributes of the field. ||
 || 2 || Modify the upper limit of the number of files and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
-|| 3 || Create a draft project depending on this project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20 for draft project creation procedure) || On the « Details » tab, you should be informed how many files you can attach for this field. ||
+|| 3 || Create a draft project depending on this project model.(see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure) || On the « Details » tab, you should be informed how many files you can attach for this field. ||
 || 4 || Attach as many files as it is specified you can. || You should not be able to attach files for that field anymore. ||
 
 == POMM23 ==
 === _Title:_ Edit draft project model (#97) ===
 || # || *Steps to reproduce* || *Result expected* ||
-|| 1 || On the project models management page, open the draft project model you used for the draft project you created in the scenario PRJM20. || ||
+|| 1 || On the project models management page, open the draft project model you used for the draft project you created in the scenario PRJM20]. || ||
 || 2 || Change the type and the name of a field of the current phase and click on « Save ». || ||
 || 3 || From the main dashboard, click on the draft project IF1400, created in the scenario PRJM20. || The type and name of the field that you have changed should be changed as well on the project page. || 
 
@@ -204,3 +204,21 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || 6 || Click on the "Export project" button, which looks like a normal rectangular button with rounded corners and is on the extreme right of the line where all the sub-tabs ("Management board", "Details", etc.) are. || An "Export data" popup opens. ||
 || 7 || Click on the "Export" button without checking the "Logical Framework" and "Indicators list" checkboxes. || An Excel (or OpenDocument? depending of the General parameter "Default spreadsheet export file format") is downloaded on your computer.  ||
 || 8 || Open the spreadsheet file.  || All the content of the fields must appear in the exported file except all files and reports fields, and the field you've previously unchecked as "Exportable". ||
+
+
+== POMM27 ==
+=== _Title:_ Add category to a project model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the Administration page, click on "Categories" menu item on the left. || A screen divided in two columns opens. ||
+|| 2 || Use the drop-down list on the top-left corner to choose a symbol, enter any title in text field next and click on the "Add" button to create a new category. || A status message confirms to you the creation of the new category, and you can see in the list of categories a new row with the symbol and the title you've chosen.  ||
+|| 3 || Click on the title hyperlink of the new category. || An empty table with 2 columns (Colour, Label) is loaded on the right part of the screen. ||
+|| 4 || In the right side of the screen, enter a value, select a color in the color selection drop-down list and click on the "Add" button to add a new value to your new category. || A status message informs you that your category has been correctly updated, and a new row is added on the right side of the screen with the values you've entered. ||
+|| 5 || Repeat previous step at least 2 times to add 2 more items to this category. || ||
+|| 6 || Select one of the category item you've just created, and click on the "Delete" button of the right side of the screen. || After a little while during which you can see message "Verifying and deleting...", your category item is properly deleted. ||
+|| 7 || Open the "Project models" part of the Administration area, and open from it the "Projet propre v2" draft project model. ||  ||
+|| 8 || Add a new Choice list field (see [TestScenario4ProjectOrgunitModelManagement#POMM6 POMM6]), select the category you've just created as "Related category" and check the "Multiple answers" checkbox.   || Your field is added in the list of fields. ||
+|| 9 || Create a draft project from project model "Projet propre v2" or open an existing project created from this model. ||  ||
+|| 10 || In this draft project, check several values of the field you've created from your category, and Save. ||  ||
+|| 11 || Go back to the Main dashboard, and click on the "Reload" button of the projects table. || You should see your category symbols in the Category column for the project you've just modified. ||
+|| 12 || Go back to your draft project, uncheck all values for the category field you've created, and click on "Save". ||  ||
+|| 13 || Go back to the Main dashboard, and click on the "Reload" button of the projects table. || You should no more see any category symbol in the Category column for the project you've just modified. ||
