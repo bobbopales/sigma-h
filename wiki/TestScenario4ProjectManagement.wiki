@@ -106,11 +106,7 @@ _Test disabled for version 1.2. This test should be revised when [http://www.sig
 
 == PRJM16 ==
 === _Title:_ Accessing project's information according to user's rights ===
-_This test has to reconsidered because it is not up to date._
-|| # || *Steps to reproduce* || *Result expected* ||
-|| 1 || Connect as user1. Create a NGO project P1 in an OrgUnit accessible to any other user. Fill the field « Nombre de bénéficiaires » in the « Details » sub-tab and any other field from the « Préliminaire » phase in the project's dashboard.|| ||
-|| 2 || Disconnect and connect as user3, open the « Details » sub-tab of the project P1 and modify the « Nombre de bénéficiaires »  field. || You should not be able to access the information in the « Préliminaire » phase but can see the information entered by user1 for the « Nombre de bénéficiaires »  field and modify it. ||
-|| 3 || Disconnect, connect as user2 and consult the project P1. || You should be able to consult the information entered by user1 in the « Préliminaire » phase but also the last value given to the « Nombre de bénéficiaires »  field by user3 in the « Details » sub-tab. ||
+_Test case removed because no more up-to-date and replaced by test cases of TestScenario4Rights ._
 
 == PRJM17 ==
 === _Title:_ Lock information with an amendment (#89) ===
