@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-[TestScenario4UserSessionRight Summary of all test cases]
+[TestCases Summary of all test cases]
 
 *Test scenarios pages :*
 
