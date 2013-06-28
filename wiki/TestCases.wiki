@@ -107,10 +107,10 @@ These tests are based on the demo data set v1.2 which contains the following use
 || POMM26 || Remove a field from Project Synthesis export files || [TestScenario4ProjectOrgunitModelManagement#POMM26] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
-|| RMM3 || Delete report model|| [TestScenario4ReportModelManagement#RMM3] ||
 || RMM4 || Add a report model's section|| [TestScenario4ReportModelManagement#RMM4] ||
 || RMM5 || Modify report model's sections || [TestScenario4ReportModelManagement#RMM5] ||
 || RMM6 || Delete a report model's section || [TestScenario4ReportModelManagement#RMM6] ||
+|| RMM7 || Delete report model|| [TestScenario4ReportModelManagement#RMM7] ||
 || ** || *Agenda* || [TestScenario4Agenda] ||
 || AGN2 || Time navigation through the calendar|| [TestScenario4Agenda#AGN2] ||
 || AGN3 || Add an event|| [TestScenario4Agenda#AGN3] ||
