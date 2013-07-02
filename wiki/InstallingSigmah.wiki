@@ -126,7 +126,7 @@ postgres=# CREATE DATABASE sigmah_db OWNER sigmah;
 postgres=# ALTER USER sigmah WITH ENCRYPTED PASSWORD 'sigmah';
 # ALTER ROLE
 postgres=# \q
-postgres@EeePC-Maya13 ~ $ [ctrl+d] to logout
+postgres@hostname ~ $ [ctrl+d] to logout
 user@hostname:~$
 }}}
 
