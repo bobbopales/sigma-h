@@ -1,3 +1,5 @@
+#sidebar TableListing
+
 =Table project=
 ==Remarks==
 The table project contains all projects of the organizations. 
@@ -24,4 +26,3 @@ A project is set by a project_model that defines how it will be displayed.
 
 ==Diagram==
 <img src="http://www.sigmah.org/svg_load.php?file=http://sigma-h.googlecode.com/svn/wiki/diagrams/project.svg" />
-
