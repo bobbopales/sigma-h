@@ -105,6 +105,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || POMM24 || Make a draft project model ready (#97) || [TestScenario4ProjectOrgunitModelManagement#POMM24] ||
 || POMM25 || Edit a group of fields || [TestScenario4ProjectOrgunitModelManagement#POMM25] ||
 || POMM26 || Remove a field from Project Synthesis export files || [TestScenario4ProjectOrgunitModelManagement#POMM26] ||
+|| POMM27 || Add category to a project model || [TestScenario4ProjectOrgunitModelManagement#POMM27] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
 || RMM4 || Add a report model's section|| [TestScenario4ReportModelManagement#RMM4] ||
