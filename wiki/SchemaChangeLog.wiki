@@ -130,6 +130,17 @@ WHERE name LIKE 'Auto-created default model at%';
 
 -- Removes temporarily ACTIVITY INFO permission (issue #591)
 DELETE FROM global_permission WHERE permission = 'VIEW_ACTIVITYINFO';
+
+-- Deletes the projects links linked to a deleted project (issue #565)
+DELETE FROM project_funding AS pf
+	USING userdatabase AS ud
+	WHERE ud.databaseid = pf.id_project_funded 
+		AND ud.datedeleted is not null;
+		
+DELETE FROM project_funding AS pf
+	USING userdatabase AS ud
+	WHERE ud.databaseid = pf.id_project_funding
+		AND ud.datedeleted is not null;
 }}}
 
 = Release 1.1 =
