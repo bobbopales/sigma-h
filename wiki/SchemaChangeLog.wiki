@@ -128,6 +128,8 @@ UPDATE Country SET ISO2 = 'VN' WHERE CountryId = 487;
 UPDATE log_frame_model SET a_gp_max=1, a_max=1, a_per_er_max=1, a_per_gp_max=1, a_enable_groups=false, er_enable_groups=false, p_enable_groups=false, so_enable_groups=false, er_gp_max=1, er_max=1, er_per_gp_max=1, er_per_so_max=1, p_gp_max=1, p_max=1, p_per_gp_max=1, so_gp_max=1, so_max=1, so_per_gp_max=1 
 WHERE name LIKE 'Auto-created default model at%';
 
+-- Removes temporarily ACTIVITY INFO permission (issue #591)
+DELETE FROM global_permission WHERE permission = 'VIEW_ACTIVITYINFO';
 }}}
 
 = Release 1.1 =
