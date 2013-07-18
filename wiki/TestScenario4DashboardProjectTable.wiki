@@ -86,7 +86,7 @@ All projects, except test and deleted projects, should be in one or another tab 
 === _Title:_ Limited project's access according on user's rights ===
 <table border="1"><th> *#* </th><th> *Steps to reproduce* </th><th> *Expected result* </th>
 <tr><td> 1 </td><td> Connect to the application as user1, with the adress user1@sigmah.org and the password: sigmah </td><td> The home page should be displayed. </td></tr>
-<tr><td> 2 </td><td> Create a project P1 accessible to the user3's OrgUnit and a project P2 which shouldn't be accessible to user3 because it is attached to an OrgUnit of an upper-level or same level as his. Disconnect. </td><td> You should be redirected to the sign in page. </td></tr>  
+<tr><td> 2 </td><td> Create a project P1 accessible to the user3's OrgUnit (Myanmar) and a project P2 which shouldn't be accessible to user3 because it is attached to an OrgUnit of an upper-level or same level as his. Disconnect. </td><td> You should be redirected to the sign in page. </td></tr>  
 <tr><td> 3 </td><td> Connect as user3. </td><td> On your project table, you should see the project P1 but not the project P2. </td></tr></table>
 
 == DPT8 ==
