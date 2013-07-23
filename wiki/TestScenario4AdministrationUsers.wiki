@@ -23,7 +23,7 @@ The test project available in the application is supposed to have the necessary 
 === _Title:_ Add a new privacy group ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || In the "Privacy groups" block, click on "Add" button || An "Add" popup opens up.  ||
-|| 2 || Enter data for Code and Title ||  ||
+|| 2 || Enter data for Code (only numbers for Code) and Title ||  ||
 || 3 || Click on "Save" button. || The popup gets closed, a status message should inform that the privacy group has been properly created, and the privacy group should now be visible in the list of privacy groups with all the parameters entered during the creation.  ||
 
 
@@ -56,7 +56,7 @@ The test project available in the application is supposed to have the necessary 
 == AUSR6 ==
 === _Title:_ Delete a privacy group ===
 || *#* || *Steps to reproduce* || *Expected result* ||
-|| 1 || In the "Privacy groups" block, select a row || The row should get highlighted.  ||
+|| 1 || In the "Privacy groups" block, select a row of a privacy group you've created and that you haven't attached to any field || The row should get highlighted.  ||
 || 2 || Click on the "Delete" button. || A deletion confirmation popup should open up. ||
 || 3 || Confirm the deletion. || A status message should confirm the deletion of the privacy group.  ||
 
