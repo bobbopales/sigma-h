@@ -125,7 +125,9 @@ These tests are based on the demo data set v1.2 which contains the following use
 || LF6 || Add an activity linked to the calendar || [TestScenario4LogicalFramework#LF6] ||
 || LF7 || Edit an activity (#113) || [TestScenario4LogicalFramework#LF7] ||
 || LF8 || Copy logical frame (#111) || [TestScenario4LogicalFramework#LF8] ||
-|| LF9 || Export a logical framework || [TestScenario4LogicalFramework#LF9] ||
+|| LF9 || Add a group to a logical framework || [TestScenario4LogicalFramework#LF9] ||
+|| LF10 || Remove a group from a logical framework (#149) || [TestScenario4LogicalFramework#LF10] ||
+|| LF11 || Export a logical framework || [TestScenario4LogicalFramework#LF11] ||
 || ** || *Reports & Documents Management* || [TestScenario4ReportsDocumentsManagement] ||
 || RDM2 || Create a new report || [TestScenario4ReportsDocumentsManagement#RDM2] ||
 || RDM3 || Open an existing report || [TestScenario4ReportsDocumentsManagement#RDM3] ||
