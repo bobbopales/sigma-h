@@ -78,7 +78,7 @@ This scenario is based on the v1.2 demo data set.
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || Opens the « Log frame » sub-tab of any project which has already a minimal logical frame. ||A screen with a logical framework is displayed.||
 || 2 || Click on the « Copy » button. || ||
-|| 3 || Open the « Log frame » sub-tab of another project. ||  A pop-up should open to let you confirm the action and link the indicators to the source logical frame. ||
+|| 3 || Open the « Log frame » sub-tab of another project, and click on the "Paste" button. ||  A pop-up should open to let you confirm the action and link the indicators to the source logical frame. ||
 || 4 || Click on « Ok ». || The logical frame you have copied should be pasted with the indicators. ||
 || 5 || Close and reopen the project. || The logical frame should still be the one you pasted. ||
 
