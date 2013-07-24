@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table adminlevel=
 ==Remarks==
 An adminlevel corresponds to a hierarchy of locationtype related to a country.

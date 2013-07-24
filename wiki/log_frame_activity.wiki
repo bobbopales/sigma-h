@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_activity=
 ==Remarks==
 A log_frame_activity is an activity created in a logical framework. Do not confuse with the table Activity created in order to organize indicators in several groups in the indicator view.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table layout=
 ==Remarks==
 A layout is the place where all elements are put. A layout is formed by several layout groups formed themself by several layout constraints formed finally by several flexible elements.

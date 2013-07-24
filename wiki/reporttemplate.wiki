@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table reporttemplate=
 ==Remarks==
 A report template is a model of a report created with ActivityInfo. All its columns are defined with the xml column. 

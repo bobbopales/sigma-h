@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_banner=
 ==Remarks==
 The table project_banner is an association table between the table project_model and the table layout. It defines the layout which is associated with a project model on the banner.

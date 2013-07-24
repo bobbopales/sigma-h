@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table site=
 ==Remarks==
 A site associates a location to an activity (a group of indicators), a project and a partner.

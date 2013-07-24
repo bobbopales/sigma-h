@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_model=
 ==Remarks==
 The table project_model is the table which defines how a project is formed, which elements composed this project.

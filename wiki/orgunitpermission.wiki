@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table orgunitpermission=
 ==Remarks==
 This table was used for giving permissions on a organizational unit for a user. But this table is now *obsolete*.

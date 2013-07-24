@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table locationtype=
 ==Remarks==
 A locationtype corresponds to a type of site like a distribution site, a school, a health center, a well, ...

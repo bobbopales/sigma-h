@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table location=
 ==Remarks==
 A location corresponds to a site in Sigmah. An indicator needs a site in order to have a value. A site corresponds to a place in the world. These informations are set with the Google Maps panel and has some geographical coordinates.

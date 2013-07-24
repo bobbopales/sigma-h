@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table projectreportmodel=
 ==Remarks==
 A ProjectReportModel is a model of report. It defines how the report must be displayed.

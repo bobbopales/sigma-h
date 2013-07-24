@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table phase_model_sucessors=
 ==Remarks==
 This table defines which are the models of phase that will succeed to another one.

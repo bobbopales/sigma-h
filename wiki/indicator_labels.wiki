@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table indicator_labels=
 ==Remarks==
 This table contains all possible values of an indicator which have is aggregation column with the value 3 (=AGGREGATE_MULTINOMIAL). The indicator related is like a listbox.

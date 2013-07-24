@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table profile=
 ==Remarks==
 A profile corresponds to a profile in the user view in the admin tab. It defines a global profile that will get several permissions.

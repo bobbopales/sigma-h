@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_details=
 ==Remarks==
 The table project_details is an association table between the table project_model and the table Layout. It defines the layout which is associated with a project model on the details view.

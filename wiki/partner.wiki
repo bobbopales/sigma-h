@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table partner=
 ==Remarks==
 A partner is another word for organizational unit (concise to org unit in several columns or tables in the database). It corresponds to a headquarter or a center of the NGO related.

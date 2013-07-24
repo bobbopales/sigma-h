@@ -1,3 +1,4 @@
+#sidebar TableListing  
 ﻿=Table files_list_element=
 ==Remarks==
 With a File_List_Element, the user can add several files to a project.

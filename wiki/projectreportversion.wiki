@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table projectreportversion=
 ==Remarks==
 Each time an user edits a project, a version of the report is created. Older versions are kept in the database.

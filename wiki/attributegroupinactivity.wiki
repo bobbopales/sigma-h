@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table attributegroupinactivity=
 ==Remarks==
 This table associates an attribute group with an activity. It means that the group belongs to this activity.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table checkbox_element=
 ==Remarks==
 This table corresponds to a Checkbox in the software and is intended for save a boolean value.

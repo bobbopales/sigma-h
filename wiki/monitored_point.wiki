@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table monitored_point=
 ==Remarks==
 A monitored point is an action referenced in the panel named Expected in the project view. 

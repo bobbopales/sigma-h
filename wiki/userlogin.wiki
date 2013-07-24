@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table userlogin=
 ==Remarks==
 The table UserLogin is the table that save all informations of the users of Sigmah. 

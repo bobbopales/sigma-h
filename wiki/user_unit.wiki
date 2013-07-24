@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table user_unit=
 ==Remarks==
 This table associates an user to an organizational unit.

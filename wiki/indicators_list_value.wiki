@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table indicators_list_value=
 ==Remarks==
 This table associates an indicator with an indicator list. 

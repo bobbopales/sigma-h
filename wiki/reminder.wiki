@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table reminder=
 ==Remarks==
 A reminder is an action referenced in the panel named "To do" in the project view.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table category_type=
 ==Remarks==
 A category_type is composed of a set of category elements. It can used on a question_element instead of adding yourself all elements.

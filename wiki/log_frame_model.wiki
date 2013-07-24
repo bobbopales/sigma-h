@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_model=
 ==Remarks==
 The table log_frame_model corresponds to a logical framework model created in the same time that a project model. It has some informations used for each tab of a log_frame (Specific Objectives, Expected Results, Activities and Prerequisites).

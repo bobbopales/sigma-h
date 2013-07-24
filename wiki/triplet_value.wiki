@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table triplet_value=
 ==Remarks==
 A triplet_value is a value of a triplets_list_element.

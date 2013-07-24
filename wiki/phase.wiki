@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table phase=
 ==Remarks==
 A project is formed by several phases. A phase is created with a model which defines how the configuration of the phase.

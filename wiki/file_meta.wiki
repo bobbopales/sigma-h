@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table file_meta=
 ==Remarks==
 The table file_meta corresponds to a file in a file_list_element.

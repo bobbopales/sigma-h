@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table activity=
 ==Remarks==
 The table Activity is used to represent an indicator group used to difference each activity type these indicators can be assigned. 

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table personalevent=
 ==Remarks==
 A personalevent is an event directly created in the calendar, contrary to others events which are automatically inserted.

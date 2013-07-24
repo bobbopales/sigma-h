@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table projectreportmodelsection=
 ==Remarks==
 This table contains all sections related to a projectReportModel. Indeed, a report is composed of several sections.

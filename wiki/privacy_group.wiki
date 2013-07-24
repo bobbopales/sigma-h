@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table privacy_group=
 ==Remarks==
 The table privacy_group defines all type of privacy group. These privacy group are used to say if someone can read and/or write in a flexible element.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table adminentity=
 ==Remarks==
 An adminentity corresponds to an administrative entity. These entities are created in order to split a country in administratrive areas.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table reportingperiod=
 ==Remarks==
 The table reportingperiod is created for defining period. These periods is needed for the indicators because an indicator change over the time. The period commonly used on Sigmah corresponds to a month of the year. 

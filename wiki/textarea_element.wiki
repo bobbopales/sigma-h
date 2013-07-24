@@ -1,3 +1,4 @@
+#sidebar TableListing  
 ﻿=Table textarea_element=
 ==Remarks==
 A Textarea_Element corresponds to a textual field that can take either a number, a little or large string or a date (formatted by a string).

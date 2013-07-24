@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table file_version=
 ==Remarks==
 The table file_version contains all versions of each file. Each version is stored in the filesystem and can be retrieved with this table. 

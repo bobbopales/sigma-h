@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table org_unit_model=
 ==Remarks==
 An org unit model is a model of organizational unit. An organizational unit belongs to a model created before it. A model can be used by an infinite number of organizational units.

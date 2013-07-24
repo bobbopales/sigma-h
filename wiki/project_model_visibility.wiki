@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_model_visibility=
 ==Remarks==
 This table defines in which type of project this project model should be displayed.

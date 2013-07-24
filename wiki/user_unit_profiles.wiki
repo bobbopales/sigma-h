@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table user_unit_profiles=
 ==Remarks==
 This table associates an user_unit to a profile.

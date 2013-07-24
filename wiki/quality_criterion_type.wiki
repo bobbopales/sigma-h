@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table quality_criterion_type=
 ==Remarks==
 This table defines the type of each level of criteria.

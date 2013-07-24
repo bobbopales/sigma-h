@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_group=
 ==Remarks==
 A log_frame_group is used in order to organize all logical framework elements in the view. Each group can have several elements according to the configuration written in the table log_frame (table that is related with a foreign key).

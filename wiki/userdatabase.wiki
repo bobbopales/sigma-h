@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table userdatabase=
 ==Remarks==
 This table is an extension of the table Project. These tables are not merged in order to not touch to the ActivityInfo datamodel.

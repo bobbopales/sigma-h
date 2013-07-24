@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table layout_group=
 ==Remarks==
 A layout_group is a group of elements. It was created to gather some flexible elements with a same idea or concept.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table quality_criterion_children=
 ==Remarks==
 A quality criterion can have several sub criteria.

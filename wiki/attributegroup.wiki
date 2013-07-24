@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table attributegroup=
 ==Remarks==
 An attributegroup is a group of attributes.

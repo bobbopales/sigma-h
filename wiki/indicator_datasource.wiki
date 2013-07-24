@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table indicator_datasource=
 ==Remarks==
 This table associates an indicator to another indicator. The last one corresponds to the datasource of the first one. The primary key is formed by both columns .

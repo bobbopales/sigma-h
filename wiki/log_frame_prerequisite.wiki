@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_prerequisite=
 ==Remarks==
 A log_frame_prerequisite indicates what are the prerequisites of a logical framework. 

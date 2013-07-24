@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table country=
 ==Remarks==
 This table contains a list of country. It can contain some coords that represents the country with a rectangle. In Sigmah, this table is initialized in the beginning and it is not updated after in the software. The coords system is also not used.

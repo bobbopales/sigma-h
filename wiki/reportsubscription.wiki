@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table reportsubscription=
 ==Remarks==
 This table contains subscriptions on a report.

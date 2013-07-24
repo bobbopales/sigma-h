@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_userlogin=
 ==Remarks==
 Users which have put a project into his favorite projects appeared here.

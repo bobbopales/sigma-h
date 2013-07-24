@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table global_permission=
 ==Remarks==
 This table defines the global permissions of a profile.

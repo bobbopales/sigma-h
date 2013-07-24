@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table privacy_group_permission=
 ==Remarks==
 This table corresponds associates a privacy group to a profile.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table amendment_history_token=
 ==Remarks==
 The table amendment_history_token associates values of elements in a project to an amendment.

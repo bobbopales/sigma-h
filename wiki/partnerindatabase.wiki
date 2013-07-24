@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table partnerindatabase=
 ==Remarks==
 This table associates an organizational unit with a project (an userdatabase is a project). The primary key is formed by both columns of the table.

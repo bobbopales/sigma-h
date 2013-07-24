@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table triplets_list_element=
 ==Remarks==
 A Triplet_List_Element corresponds to a table of three columns (Code, Name, Period).

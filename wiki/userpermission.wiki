@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table userpermission=
 ==Remarks==
 This table contains all data relative to the permission of one user. These permissions are defined with the organizational unit which the user belongs and also some booleans that indicates if an user can read or edit a project.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table locationadminlink=
 ==Remarks==
 This is an association table between the table AdminEntity and the table Location.

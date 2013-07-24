@@ -1,3 +1,4 @@
+#sidebar TableListing  
 ﻿=Table flexible_element=
 ==Remarks==
 This table corresponds to an element of the view. In Java, the class related is abstract. Each concrete element inherits of the class FlexibleElement. As inheritance doesn’t exist in the SQL format, Hibernate transforms this inheritance into joint (with the strategy InheritanceType.JOINED). So each element has a foreign-key (called id_flexible_element) to its parent table so the table flexible_element. You can notice that these foreign-keys are also primary-keys for these elements.

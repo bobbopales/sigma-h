@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table projectreport=
 ==Remarks==
 This table corresponds to a concrete report based on a report model (contained in the table ProjectReportModel).

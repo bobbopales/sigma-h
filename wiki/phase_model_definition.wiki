@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table phase_model_definition=
 ==Remarks==
 This table corresponds to the definition of a phase. It seems to be unused when looking at the unique column of this table. So it seems to be *obsolete*.

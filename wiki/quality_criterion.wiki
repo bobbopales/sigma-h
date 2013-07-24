@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table quality_criterion=
 ==Remarks==
 This table contains all criterion relative to a quality framework.

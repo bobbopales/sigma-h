@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table indicator=
 ==Remarks==
 The table Indicator is used for defining an indicator, a numeric value that can change over time.

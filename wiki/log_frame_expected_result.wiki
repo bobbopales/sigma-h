@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_expected_result=
 ==Remarks==
 A log_frame_expected_result is an element in a logical framework that indicates what are the expected results of the logical framework. 

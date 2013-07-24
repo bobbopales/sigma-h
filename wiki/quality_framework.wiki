@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table quality_framework=
 ==Remarks==
 This table contains a list of quality framework that could be used in Sigmah. You can notice that this feature is already not implemented. It should be done in a future release.

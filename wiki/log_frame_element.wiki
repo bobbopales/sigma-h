@@ -1,3 +1,4 @@
+#sidebar TableListing  
 ﻿=Table log_frame_element=
 ==Remarks==
 This table corresponds to an element of the logical framework view. In Java, the class related is abstract. Each concrete element inherits of the class LogFrameElement. As inheritance doesn’t exist in the SQL format, Hibernate transforms this inheritance into joint (with the strategy InheritanceType.JOINED). So each element has a foreign-key (called id_element) to its parent table so the table log_frame_element. You can notice that these foreign-keys are also primary-keys for these elements.

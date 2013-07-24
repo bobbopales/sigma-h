@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table value=
 ==Remarks==
 A flexible_element in an available project can have a value. This table corresponds to the current value of the flexible_element. Old values are sent to the table [history_token].

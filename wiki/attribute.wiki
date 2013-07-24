@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table attribute=
 ==Remarks==
 An attribute is like a boolean parameter or a caracterisation of an activity followed in Activity Info. Indeed, this notion does not exist in Sigmah, only in Activity Info.

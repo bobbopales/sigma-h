@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table reminder_list=
 ==Remarks==
 This table corresponds to a list of reminders.

@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table history_token=
 ==Remarks==
 A flexible_element in an available project can have a value stored in  the table [value]. But when a flexible element has its value replaced by another one, the old value is sent to the table [history_token].

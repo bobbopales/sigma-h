@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table project_funding=
 ==Remarks==
 The table project_funding was created for knowing which are the projects that fund other projects.

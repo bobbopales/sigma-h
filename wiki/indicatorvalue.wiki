@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table indicatorvalue=
 ==Remarks==
 This table associates an indicator with a reportingperiod. It corresponds to the indicator value in a given period.

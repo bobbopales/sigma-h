@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table personalcalendar=
 ==Remarks==
 A personalcalendar is a visual calendar which can contain several events.

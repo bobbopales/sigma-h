@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame_specific_objective=
 ==Remarks==
 A log_frame_specific_objective is an element in a logical framework that indicates what are the specific objectives of the logical framework. 

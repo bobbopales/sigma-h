@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table phase_model=
 ==Remarks==
 A phase_model corresponds to a model of phase that can be modified while the model of project is in draft mode.

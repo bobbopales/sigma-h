@@ -1,3 +1,4 @@
+#sidebar TableListing  
 ﻿=Table default_flexible_element=
 ==Remarks==
 A Default_Flexible_Element corresponds to a default element, an element directly assigned to a project (like Code, Title, Budget, …).

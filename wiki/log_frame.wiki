@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table log_frame=
 ==Remarks==
 A log_frame corresponds to a logical framework related to a model of logical framework. It belongs to a project.

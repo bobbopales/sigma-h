@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table richtextelement=
 ==Remarks==
 This table contains the content of a text area that belongs to a section of a report.

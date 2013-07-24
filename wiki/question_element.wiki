@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table question_element=
 ==Remarks==
 A Question_Element corresponds to a list of choices, a ListBox for GUI designers or in a more programming vision an enumeration of strings. 

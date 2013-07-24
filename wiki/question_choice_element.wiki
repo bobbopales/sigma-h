@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table question_choice_element=
 ==Remarks==
 Each entry of this table corresponds to an element of an entry of the table Question_Element. In other words, an entry of the table Question_Element has several entry of the table Question_Choice_Element. So in Java code, the class Question_Element has a list of Question_Element.

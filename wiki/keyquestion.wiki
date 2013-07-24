@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table keyquestion=
 ==Remarks==
 A keyquestion is a question related to a section in a report. This question must be completed in order to valid a report.

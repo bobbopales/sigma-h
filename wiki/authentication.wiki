@@ -1,3 +1,4 @@
+#sidebar TableListing  
 =Table authentication=
 ==Remarks==
 The table authentication corresponds to session of a user with a secure session id and starting at the current time
