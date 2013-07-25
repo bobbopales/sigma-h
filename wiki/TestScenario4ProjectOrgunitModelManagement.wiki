@@ -87,12 +87,15 @@ The « Create new draft project » popup opens up.||
 == POMM11 ==
 === _Title:_ Modify available groups' types from a logical frame model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || On the project models management page, open a project model in draft status. || ||
+|| 2 ||  In the « Log frame » tab, modify the "Enable groups" parameter for any the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
+|| 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure), and open the Logframe sub-tab of this new project. || The "Add group" hyperlink is present or not according to the parameter you've just modified.||
 
 == POMM12 ==
 === _Title:_ Modify elements creation's constraints of a logical frame from its model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || On the project models management page, open a project model in draft status. || ||
-|| 2 ||  In the « Logical frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
+|| 2 ||  In the « Log frame » tab, modify the maximum number of groups and elements which is possible to create for each of the four elements type of the logical frame and click on the « Save » button. || A message should appear confirming you that the project model has been updated. ||
 || 3 || Create a new draft project depending on the project model (see [TestScenario4ProjectManagement#PRJM20 PRJM20] for draft project creation procedure). || You are limited depending on the maximum number of groups' type you have specified.||
 
 == POMM13 ==
