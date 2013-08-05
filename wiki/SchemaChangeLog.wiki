@@ -8,6 +8,16 @@ Every attempt will be made to keep new versions of Sigmah backwards compatible w
 
 All SQL commands below should be able to be runned on PostgreSQL database. Ideally, they should be written respecting the ANSI SQL norm. 
 
+
+== Remarks for developers in need to change the database model ==
+
+Each time a developer needs to change the database, he should do the following:
+  # go through the database naming policy to know how he should call the new columns/tables he wants to create _(database naming policy should come soon...)_
+  # modify the graphical wiki schema of the database according to your change on TableListing
+  # modified the [http://code.google.com/p/sigma-h/source/browse/#svn%2Ftrunk%2Fscripts%2Fsql trunk/scripts/sql] files of the MinimumDataKit to be sure that the fresh installation will have installation scripts which are up to date
+  # modified the wiki page below with the following rule: give the SQL commands to modify the structure of the database... and the data which may need to me updated according to your schema modification 
+
+
 = Release 1.2 =
 
 == 1. Schema changes ==
