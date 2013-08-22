@@ -225,3 +225,18 @@ _Test case disabled until feature "0000569: Missing a calendar component to ente
 || 11 || Go back to the Main dashboard, and click on the "Reload" button of the projects table. || You should see your category symbols in the Category column for the project you've just modified. ||
 || 12 || Go back to your draft project, uncheck all values for the category field you've created, and click on "Save". ||  ||
 || 13 || Go back to the Main dashboard, and click on the "Reload" button of the projects table. || You should no more see any category symbol in the Category column for the project you've just modified. ||
+
+
+== POMM28 ==
+=== _Title:_ Change budget field composition ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || Open the "Project models" part of the Administration area, and open from it the "Projet propre v2" draft project model. ||  ||
+|| 2 || In the list of fields in the "All fields" tab, search for the "Budget" default field and open it. || The Field popup for the "Budget" default element gets open.  ||
+|| 3 || Add a "Planned budget at end of project" sub-field in the list of sub-fields. || A new row "Planned budget at end of project" should now be visible in the list of budget sub-fields.  ||
+|| 4 || Move this "Planned budget at end of project" sub-field on top of the list of sub-fields. || The row "Planned budget at end of project" should now be on top of the list of budget sub-fields.  ||
+|| 5 || Replace the "Planned budget" sub-field by this "Planned budget at end of project" sub-field in the computation formula of the budget consumption, and click on "Save". || A notification message informs you that your modifications are saved, and the Field popup is closed.  ||
+|| 6 || Create a draft project from project model "Projet propre v2" or open an existing project created from this model. ||  ||
+|| 7 || In this draft project, open the "Details" sub-tab and search for the Budget field. || A "Planned budget at end of project" sub-field should now be visible on top of the Budget group of fields.  ||
+|| 8 || Enter any value in the "Planned budget at end of project"  and "Spend budget" sub-fields, and click on "Save". ||  ||
+|| 9 || Go back to the main Dashboard page and click on the "Reload" button of the projects table.  || The budget consumption of your draft project should have changed. ||
+|| 10 || Move your mouse cursor above the budget consumption progress bar of your draft project. || You should see a tooltip like "44% (Spend budget/Planned budget at end of project)".  ||
