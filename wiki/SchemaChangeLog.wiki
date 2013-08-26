@@ -17,6 +17,93 @@ Each time a developer needs to change the database, he should do the following:
   # modified the [http://code.google.com/p/sigma-h/source/browse/#svn%2Ftrunk%2Fscripts%2Fsql trunk/scripts/sql] files of the MinimumDataKit to be sure that the fresh installation will have installation scripts which are up to date
   # modified the wiki page below with the following rule: give the SQL commands to modify the structure of the database... and the data which may need to me updated according to your schema modification 
 
+= Release 1.3 =
+
+== 1. Schema changes ==
+
+{{{
+
+-- Adds tables for managing reminders and monitored points history  (issue #550)
+-- ------
+
+-- POSTGRESQL
+
+CREATE TABLE reminder_history (
+	id_reminder_history integer PRIMARY KEY,
+	generated_date timestamp without time zone NOT NULL,
+	id_reminder integer REFERENCES reminder NOT NULL,
+	id_user integer NOT NULL,
+	value text,
+	change_type character varying(255) NOT NULL
+);
+
+CREATE TABLE monitored_point_history (
+	id_monitored_point_history integer PRIMARY KEY,
+	generated_date timestamp without time zone NOT NULL,
+	id_monitored_point integer REFERENCES monitored_point NOT NULL,
+	id_user integer NOT NULL,
+	value text,
+	change_type character varying(255) NOT NULL
+);
+
+
+-- Adds tables for managing the flexibility of budget element and sets by default the planned and spent budget  (issue #336)
+-- ------
+
+-- POSTGRESQL
+
+CREATE TABLE budget_element
+(
+  id_flexible_element bigint NOT NULL,
+  id_ratio_divisor bigint,
+  id_ratio_dividend bigint,
+  CONSTRAINT budget_element_pkey PRIMARY KEY (id_flexible_element),
+  CONSTRAINT fk1ba06002a82c370 FOREIGN KEY (id_flexible_element)
+      REFERENCES default_flexible_element (id_flexible_element) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE budget_sub_field
+(
+  id_budget_sub_field bigint NOT NULL,
+  label character varying(255),
+  id_budget_element bigint NOT NULL,
+  fieldorder integer,
+  type character varying(255),
+  CONSTRAINT budget_sub_field_pkey PRIMARY KEY (id_budget_sub_field),
+  CONSTRAINT fkc12629c1a251b09 FOREIGN KEY (id_budget_element)
+      REFERENCES budget_element (id_flexible_element) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+ALTER TABLE budget_element ADD  CONSTRAINT fk1ba0600222f4f59 FOREIGN KEY (id_ratio_divisor)
+      REFERENCES budget_sub_field (id_budget_sub_field) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION;
+	  
+ALTER TABLE budget_element ADD  CONSTRAINT fk1ba06002a2a3285a FOREIGN KEY (id_ratio_dividend)
+      REFERENCES budget_sub_field (id_budget_sub_field) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION;
+	  
+
+INSERT INTO budget_element (id_flexible_element)
+	SELECT id_flexible_element FROM default_flexible_element WHERE default_flexible_element.type = 'BUDGET' AND default_flexible_element.id_flexible_element NOT IN (SELECT budget_element.id_flexible_element FROM budget_element );
+INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fieldorder, type) 
+			SELECT nextval('hibernate_sequence'), NULL, budget_element.id_flexible_element, 0, 'RECEIVED' FROM  budget_element;
+INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fieldorder, type) 
+			SELECT nextval('hibernate_sequence'), NULL, budget_element.id_flexible_element, 0, 'SPENT' FROM  budget_element;
+INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fieldorder, type) 
+			SELECT nextval('hibernate_sequence'), NULL, budget_element.id_flexible_element, 0, 'PLANNED' FROM  budget_element;
+	UPDATE budget_element  SET id_ratio_divisor = bsf.id_budget_sub_field FROM budget_sub_field bsf WHERE  id_flexible_element =  bsf.id_budget_element AND bsf.type = 'PLANNED';
+	UPDATE budget_element  SET id_ratio_dividend = bsf.id_budget_sub_field FROM budget_sub_field bsf WHERE  id_flexible_element =  bsf.id_budget_element AND bsf.type = 'SPENT';
+
+
+}}}
+
+== 2. Existing data updates ==
+
+{{{
+}}}
+
 
 = Release 1.2 =
 
