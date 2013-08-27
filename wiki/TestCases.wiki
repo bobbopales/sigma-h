@@ -106,6 +106,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || POMM25 || Edit a group of fields || [TestScenario4ProjectOrgunitModelManagement#POMM25] ||
 || POMM26 || Remove a field from Project Synthesis export files || [TestScenario4ProjectOrgunitModelManagement#POMM26] ||
 || POMM27 || Add category to a project model || [TestScenario4ProjectOrgunitModelManagement#POMM27] ||
+|| POMM28 || Change budget field composition || [TestScenario4ProjectOrgunitModelManagement#POMM28] ||
 || ** || *Report model management (#96) * || [TestScenario4ReportModelManagement] ||
 || RMM2 || Create report model|| [TestScenario4ReportModelManagement#RMM2] ||
 || RMM4 || Add a report model's section|| [TestScenario4ReportModelManagement#RMM4] ||
@@ -182,5 +183,6 @@ These tests are based on the demo data set v1.2 which contains the following use
 || ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
 || TB3 || Timezone difference management || [TestScenario4TransversalBehaviors#TB3] ||
+|| TB4 || Create and test a scheme to import a line-by-line projects .xlsx file || [TestScenario4TransversalBehaviors#TB4] ||
 || ** || *User interface* || [TestScenario4UserInterface] ||
 || UI2 || Main dashboard || [TestScenario4UserInterface#UI2] ||
