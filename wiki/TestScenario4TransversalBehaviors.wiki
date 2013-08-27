@@ -53,3 +53,31 @@ This scenario is based on the v1.2 demo data set.
 || 10 || Log in with the demo@sigmah.org / sigmah credentials. || You're now on the main dashboard. ||
 || 11 || Open the IF1389 project, and then click on the "Details" sub-tab. || The start date in the project banner and in the field of the "Details" sub-tab should have the same value as the one you've entered when your operating system was set to a different timezone. ||
 || 12 || Open the "Indicator Data Entry" tab and search for the Month view where you've entered a new indicator value previously (you must be in a "Month" view, and not in an "Indicator" or "Site" view) || The value you've entered previously is still visible and is unchanged.  ||
+
+
+
+== TB4 ==
+=== _Title:_ Create and test a scheme to import a line-by-line projects .xlsx file ===
+_NOTE: this scenario has been written without the mockups of the screen, many labels, buttons, messages and screens might be different from what is described in it_
+
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Log in with admin@sigmah.org / sigmah credentials, and open the Administration tab. ||  ||
+|| 2 || In the Administration tab, click to open the "Importation schemes" screen. || The "Importation schemes" opens. ||
+|| 3 || Click on the button to create a new importation scheme. || The "New importation scheme" popup opens.  ||
+|| 4 || Give "Own and local projects budget" as name to the scheme, select the "Line by line" importation mode, and click on the "Next" button to go to the next importation step.  || The second step of the creation of new importation scheme opens.  ||
+|| 5 || Enter "5" for first row of data, add new imported variables from columns A to E according to this [http://www.sigmah.org/issues/file_download.php?file_id=122&type=bug import example file], and click on "Save". || The "New importation scheme" closes, a status message confirms the creation of the new importation scheme, and a new row has appeared in the list of importation schemes of the Importation schemes part of the Administration area. ||
+|| 6 || In the Administration tab, click to open the "Project models" screen. || The Project models screen opens with the list of projects models. ||
+|| 7 || Open the "Projet propre v2" project model. ||  ||
+|| 8 || Open the "Importation" tab. ||  ||
+|| 9 || Click on the "Add new importation scheme" button. || An "importation scheme" selection popup opens.  ||
+|| 10 || Select "Own and local projects budget" as importation scheme and closes the popup. ||  ||
+|| 11 || For the scheme you've just added, add a matching rule between the Code variable of your source file and the Code field of the project model. || The matching rule should be added in the list of rules. ||
+|| 12 || For the scheme you've just added, add 4 rules to import each of the 4 columns (Start date, End date, Spend budget, Planned budget) into the correct fields of your project model. || The 4 rules should be added in the list of rules. ||
+|| 13 || Repeat steps 6 to 12 for the "Project partenaire local v1" project model. ||  ||
+|| 14 || Go back to the main dashboard, and click on the "Import" button. || The "Import" popup opens. ||
+|| 15 || Select the "Own and local projects budget" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=122&type=bug import example file], select the "Projet propre v2" as target project model, and click on the "Import" button. || The "Importation confirmation" popup opens.  ||
+|| 16 || Check all the importation steps that will take place, and click on the "Confirm" button. || A status message "Importation completed" confirms to you that the importation has been successful.  ||
+|| 17 || Repeat steps 14 to 16 with project model "Projet partenaire local v1" as target project model. ||  ||
+|| 18 || Reload the Dashboard Projects table, and display the "Spend budget" column in it (from any column, open the context menu available from the little triangle which appear when you move your cursor above the column, and open the "Columns" menu item in it).  || For projects IF1247, IF1389, LOC1274, you should see 120453, 197891, 32089 as value.  ||
+|| 19 || Open the "Details" sub-tab of the IF1247 project, and open the history popup for the "Spend budget" field (right click on the field). || The last value of the history of modification of this field should be 120453, and a comment should be added to this modification informing the user that this value comes from the importation of a file with the file name.  ||
+
