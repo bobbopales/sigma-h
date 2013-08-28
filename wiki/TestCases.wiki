@@ -180,6 +180,21 @@ These tests are based on the demo data set v1.2 which contains the following use
 || I5 || Create and delete an indicator group || [TestScenario4Indicators#I5] ||
 || I6 || Export all project's indicators to Excel || [TestScenario4Indicators#I6] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
+|| ** || *Importation* || [TestScenario4Import] ||
+|| IMP1 || Create an importation scheme|| [TestScenario4Import#IMP1] ||
+|| IMP2 || Edit an importation scheme || [TestScenario4Import#IMP2] ||
+|| IMP3 || Delete an importation scheme || [TestScenario4Import#IMP3] ||
+|| IMP4 || Create a variable|| [TestScenario4Import#IMP4] ||
+|| IMP5 || Edit a variable ||  [TestScenario4Import#IMP5] ||
+|| IMP6 || Delete a variable ||  [TestScenario4Import#IMP6] ||
+|| IMP7 || Associate an importation scheme to a project model || [TestScenario4Import#IMP7] ||
+|| IMP8 || Associate an importation scheme to an org unit model || [TestScenario4Import#IMP8] ||
+|| IMP9 || Add a matching rule ||  [TestScenario4Import#IMP9] ||
+|| IMP10 || Add a budget matching rule || [TestScenario4Import#IMP10] ||
+|| IMP11 || Import a sheet-by-sheet (Several) projects .xlsx file || [TestScenario4Import#IMP11] ||
+|| IMP12 || Import a sheet-by-sheet (Several) projects .odsfile || [TestScenario4Import#IMP12] ||
+|| IMP13 || Import a unique project .xlsx file || [TestScenario4Import#IMP13] ||
+|| IMP14 || Import a unique project .ods file || [TestScenario4Import#IMP14] ||
 || ** || *Transversal Behaviors* || [TestScenario4TransversalBehaviors] ||
 || TB2 || Quit without saving || [TestScenario4TransversalBehaviors#TB2] ||
 || TB3 || Timezone difference management || [TestScenario4TransversalBehaviors#TB3] ||
