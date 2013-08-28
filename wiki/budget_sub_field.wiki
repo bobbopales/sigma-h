@@ -1,0 +1,12 @@
+#sidebar TableListing
+=Table checkbox_element=
+==Remarks==
+This table corresponds to a Budget elements's sub field in the software.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_budget_sub_field|| bigint || X || X ||  || This is the primary key of the table. ||
+|| label|| bigint ||  ||  ||  || This is the label displayed for the field. ||
+|| id_budget_element|| bigint || X ||  || [budget_element](id_flexible_element) || This is a foreign key to the budget element to which the budget sub field belongs to. ||
+|| fieldorder|| bigint ||  ||  ||  || This is the order in which the field should be displayed in the budget element. ||
+|| type|| character varying(255)|| || ||  || This is type of the budget sub field, it can be 'PLANNED', 'RECEIVED', 'SPENT' or NULL for the budget sub fields created by the user. ||
