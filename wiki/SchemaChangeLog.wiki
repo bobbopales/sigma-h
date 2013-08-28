@@ -47,7 +47,7 @@ CREATE TABLE monitored_point_history (
 );
 
 
--- Adds tables for managing the flexibility of budget element and sets by default the planned and spent budget  (issue #336)
+-- Adds tables for managing the flexibility of budget element and sets by default the planned and spent budget  (issue #386)
 -- ------
 
 -- POSTGRESQL
@@ -102,8 +102,34 @@ INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fiel
 == 2. Existing data updates ==
 
 {{{
-}}}
+-- Updates history_token and value to table to fit the new structure of a budget element (issue #386)
+-- ------
 
+-- POSTGRESQL
+
+UPDATE history_token SET value = planned_budget_id || '%' || coalesce(budgetValues[1], '0.0') || '~' || received_budget_id || '%' || coalesce(budgetValues[2], '0.0')  || '~' || spent_budget_id || '%' ||  coalesce(budgetValues[3], '0.0') 
+FROM (
+	SELECT value, string_to_array(value, '~') AS budgetValues, flexible_element.id_flexible_element, id_history_token,
+		planned.id_budget_sub_field  AS planned_budget_id,
+		spent.id_budget_sub_field    AS spent_budget_id,
+		received.id_budget_sub_field AS received_budget_id
+	FROM history_token AS ht
+	INNER JOIN flexible_element ON ( flexible_element.id_flexible_element = ht.id_element )
+	LEFT  JOIN budget_sub_field AS planned  ON ( planned.id_budget_element = flexible_element.id_flexible_element  AND planned.type = 'PLANNED' )
+	LEFT  JOIN budget_sub_field AS spent    ON ( spent.id_budget_element = flexible_element.id_flexible_element    AND spent.type = 'SPENT' )
+	LEFT  JOIN budget_sub_field AS received ON ( received.id_budget_element = flexible_element.id_flexible_element AND received.type = 'RECEIVED' )
+	WHERE flexible_element.id_flexible_element IN (Select id_flexible_element from budget_element)
+) AS ssrequete
+WHERE history_token.id_history_token = ssrequete.id_history_token;
+
+
+INSERT INTO value (id_value, id_project, action_last_modif, date_last_modif, value, id_flexible_element, id_user_last_modif)
+SELECT nextval('hibernate_sequence'), ht.id_project, CASE change_type WHEN 'EDIT' THEN 'U' ELSE 'C' END, history_date, value, ht.id_element, id_user
+FROM history_token AS ht JOIN ( SELECT history_token.id_project, history_token.id_element, MAX (id_history_token) AS max_history_id FROM history_token GROUP BY id_project, id_element) AS requete
+  ON requete.id_project = ht.id_project AND requete.id_element = ht.id_element AND requete.max_history_id = ht.id_history_token
+WHERE (ht.id_project, ht.id_element) NOT IN (SELECT id_project, id_flexible_element FROM value) AND ht.id_element IN (SELECT id_flexible_element FROM budget_element);
+
+}}}
 
 = Release 1.2 =
 
