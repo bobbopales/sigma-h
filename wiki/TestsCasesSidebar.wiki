@@ -17,5 +17,6 @@
   * [TestScenario4AdministrationUsers Administration Users (AUSR)]
   * [TestScenario4AdministrationGlobalManagement Administration Settings tab (AGM)]
   * [TestScenario4Indicators Indicators (I)]
+  * [TestScenario4Import Importation (IMP)]
   * [TestScenario4TransversalBehaviors Transversal Behaviors (TB)]
   * [TestScenario4UserInterface User interface (UI)]
