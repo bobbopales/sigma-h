@@ -101,6 +101,8 @@ INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fiel
 
 == 2. Existing data updates ==
 
+*After the schema is updated*, in order to update the existing data, the following request has to be applied (request required because of the issue [http://www.sigmah.org/issues/view.php?id=386 0000386: Flexible budget field] which lets user modify the budget sub fields) 
+
 {{{
 -- Updates history_token and value to table to fit the new structure of a budget element (issue #386)
 -- ------
