@@ -89,20 +89,54 @@ _NOTE: this scenario has been written without the mockups of the screen, many la
 || 1 || Log in with admin@sigmah.org / sigmah credentials, and open the Administration tab. ||  ||
 || 2 || In the Administration tab, click to open the "Import settings" screen. || The "Import settings" opens. ||
 || 3 || Click on the button to create a new importation scheme. || The "New importation scheme" popup opens.  ||
-|| 4 || Give "Own and local projects budget" as name to the scheme, select  "Excel" as file format, "Several" as importation mode and click on the "Save" button.|| The importation scheme should be added to left-side with the corresponding information that you have given.  ||
+|| 4 || Give "Own and local projects budget(Excel,Several)" as name to the scheme, select  "Excel" as file format, "Several" as importation mode and click on the "Save" button.|| The importation scheme should be added to left-side with the information corresponding to what you have entered.  ||
 || 5 || Click on the name of the importation scheme just added, and click on the "Add" button on the right hand panel. || An "Add variable pop-up window should open. ||
 || 6 || Enter in the cell field "B1" and "VariableCode" in the name field and click on "Save" || The varable should be added to the right hand panel with the corresponding information that you have entered. || 
-|| 7 || Repeat the step 5 for with {"B2", "VariableTitle"}, {"B2", "VariableStartDate"}, {"B2", "VariableEndDate"}, {"B2", "VariableSpentBudget"}, {"B2", "VariablePlannedBudget"}. || The corresponding variables should be added to the corresponding table. ||
+|| 7 || Repeat the step 5 for with  {"B2", "VariableStartDate"}, {"B3", "VariableEndDate"}, {"B4", "VariableSpentBudget"}, {"B5", "VariablePlannedBudget"}. || The corresponding variables should be added to the corresponding table. ||
 || 8 || In the Administration tab, click to open the "Project models" screen. || The Project models screen opens with the list of projects models. ||
 || 9 || Open the "Projet propre v2" project model. ||  ||
 || 10 || Open the "Importation schemes" tab. ||  ||
 || 11 || Click on the "Add" button. || An "Configure another scheme" selection popup opens.  ||
-|| 12 || Select "Own and local projects budget" as importation scheme and close the popup. || Another popup should open for configure the matching rule bnetween the project model and the importation scheme.  ||
+|| 12 || Select "Own and local projects budget(Excel,Several)" as importation scheme and close the popup. || Another popup should open for configure the matching rule between the project model and the importation scheme.  ||
 || 13|| For the scheme you've just added, add a matching rule between the Code variable of your source file and the Code field of the project model. || The matching rule should be added in the list of rules. ||
-|| 14 || For the scheme you've just added, add 4 rules to import each of the 2 columns (Start date, End date) into the correct fields of your project model. || The 2 rules should be added in the list of rules. ||
+|| 14 || For the scheme you've just added, add 2 rules to import each of the 2 columns (Start date, End date) into the correct fields of your project model. || The 2 rules should be added in the list of rules. ||
 || 15 || Add another rule with the budget field, check the rows corresponding to the budget sub fields ( Spend budget, Planned budget) and choose the corresponding variables. || The rule should be added in the list of rules.||
 || 16 || Repeat steps 7 to 14 for the "Project partenaire local v1" project model. ||  ||
 || 17 || Go back to the main dashboard, and click on the "Import" button. || The "Import" popup opens. ||
-|| 18 || Select the "Own and local projects budget" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=123&type=bug import example file], and click on the "Import" button. || The "Importation confirmation" popup opens.  ||
+|| 18 || Select the "Own and local projects budget(Excel,Several)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=123&type=bug import example file], and click on the "Import" button. || The "Importation confirmation" popup opens.  ||
 || 19 || Check all the importation steps that will take place, and click on the "Confirm" button. || A notification confirms to you that the importation has been successful.  ||
 || 20 || Reload the Dashboard Projects table, and display the "Spend budget" column in it (from any column, open the context menu available from the little triangle which appear when you move your cursor above the column, and open the "Columns" menu item in it).  || For projects IF1247, IF1389, LOC1274, you should see 120453, 197891, 32089 as value.  ||
+
+
+
+== TB6 ==
+=== _Title:_ Create and test a scheme to import a unique project .xlsx file ===
+
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Log in with admin@sigmah.org / sigmah credentials, and open the Administration tab. ||  ||
+|| 2 || In the Administration tab, click to open the "Import settings" screen. || The "Import settings" opens. ||
+|| 3 || Click on the button to create a new importation scheme. || The "New importation scheme" popup opens.  ||
+|| 4 || Give "Own and local projects budget(Excel,Unique)" as name to the scheme, select  "Excel" as file format, "Several" as importation mode and click on the "Save" button.|| The importation scheme should be added to left-side with the information corresponding to what you have entered.  ||
+|| 5 || Click on the name of the importation scheme just added, and click on the "Add" button on the right hand panel. || An "Add variable pop-up window should open. ||
+|| 6 || Enter in the cell field "Code:A2" and "VariableCode" in the name field and click on "Save" || The varable should be added to the right hand panel with the corresponding information that you have entered. || 
+|| 7 || Repeat the step 5 for with {"StartDate:A2", "VariableStartDate"}, {"EndDate:A2", "VariableEndDate"}, {"SpentBudget:A2", "VariableSpentBudget"}, {"PlannedBudget:A2", "VariablePlannedBudget"}. || The corresponding variables should be added to the corresponding table. ||
+|| 8 || Repeat steps 8 to 17 of the test TB5 || You should have the same result as in the test case . ||
+|| 9 || Select the "Own and local projects budget(Excel,Unique)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=123&type=bug import example file], and click on the "Import" button. || The "Importation confirmation" popup opens.  ||
+|| 10 || Check all the importation steps that will take place, and click on the "Confirm" button. || A notification confirms to you that the importation has been successful.  ||
+|| 11 || Reload the Dashboard Projects table, and open the project IF1247  || The project's dashboard should be displayed. ||
+|| 12 || Go to the "Details" sub-tab,  you should see as start date 01/05/2012, as end date 30/10/2014, as spent budget 155 455€ and as planned budget 385000€. ||
+
+== TB7 ==
+=== _Title:_ Create and test a scheme to import a sheet-by-sheet (SEVERAL) projects .ods file ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Repeat the steps 1 to 3 of the test case TB5 || You should observe the same results as in the test case TB5 ||
+|| 2 || Give "Own and local projects budget(Ods, Several)" as name to the scheme, select  "OpenDocumentSpreadsheet" as file format, "Several" as importation mode and click on the "Save" button.|| The importation scheme should be added to left-side with the information corresponding to what you have entered.  ||
+|| 3 || Repeat the steps 5 to 17 of the test case TB5 with the importation scheme "Own and local projects budget(Ods, Several)". || The same results should be observed. ||
+|| 4 || Select the "Own and local projects budget(Ods, Several)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=123&type=bug import example file], and click on the "Import" button. || The "Importation confirmation" popup opens.  ||
+|| 5 || Check all the importation steps that will take place, and click on the "Confirm" button. || A notification confirms to you that the importation has been successful.  ||
+|| 6 || Reload the Dashboard Projects table, and open the project IF1247  || The project's dashboard should be displayed. ||
+|| 7 || Go to the "Details" sub-tab,  you should see as start date 01/05/2012, as end date 30/10/2014, as spent budget 155 455€ and as planned budget 385000€. ||
+
+
+
+
