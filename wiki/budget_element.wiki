@@ -1,0 +1,10 @@
+#sidebar TableListing
+=Table budget_element=
+==Remarks==
+This table corresponds to a Budget element in the software and is intended for several budget fields.
+
+==Schema==
+|| *Name* || *Type* || *Not Null* || *Primary Key* || *Foreign Key* || *Remarks * ||
+|| id_flexible_element || bigint || X || X || [flexible_element](id_flexible_element) || This is the primary key of the table and also a foreign key on the table flexible_element which is its parent table. ||
+|| id_ratio_divisor|| bigint ||  ||  || [budget_sub_field](id_budget_sub_field) || This is a foreign key on the table budget_sub_field referring to the divisor of the budget consumption ratio. ||
+|| id_ratio_dividend|| bigint ||  ||  || [budget_sub_field](id_budget_sub_field) || This a foreign key on the table budget_sub_field  referring to the dividend of the budget consumption ratio. ||
