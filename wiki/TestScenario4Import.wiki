@@ -1,0 +1,111 @@
+#summary Test Scenario on Importation (IMP)
+#sidebar TestsCasesSidebar
+
+<wiki:toc max_depth="3" />
+
+= Introduction =
+
+This scenario is based on the v1.3 demo data set.
+
+
+= Test cases =
+
+== IMP1 ==
+=== _Title:_ Create an importation scheme ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 ||	From the Main dashboard, click on the « Administration » button. ||  The Administration tab opens up. ||
+|| 2 || Click on the « Import settings » link. ||  The "Import settings" tab should appear, displaying two grids. ||
+|| 3 || Click on the "Add" button to create a new importation scheme. ||  The "New importation scheme" popup opens. ||
+|| 4 || Give "Own and local projects budget" as name to the scheme, select "Excel" as file format, "Several" as importation mode and click on the "Save" button. || The importation scheme should be added to left-side grid. ||
+
+
+== IMP2	==
+=== _Title:_ Edit an importation scheme ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Click on the "Edit" button of the just created importation scheme. ||  The "Edit importation scheme" popup opens. ||
+|| 2 || Give  "Own and local projects budget(Excel,Several)" as new name of the importation schema and click on the "Save" button.  || You should be notified that the importation scheme has been updated and the name of the importation scheme should be updated on the grid. ||
+
+== IMP3 ==
+=== _Title:_ Create  a variable ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Click on the title  the just created importation scheme. ||  The "Add" button of the variable grid should be enabled. ||
+|| 2 || Click on the "Add" button to create a new variable. ||  The "New ivariable" popup opens. ||
+|| 3 || Enter "B1" in the cell field and "Variable" for the variable name and click on the "Save" button. || The variable should be added to right-hand side grid. ||
+|| 4 || Repeat the step 2 and 3 with {"B2", "VariableStartDate"}, {"B3", "VariableEndDate"}, {"B4", "VariableSpentBudget"}, {"B5", "VariablePlannedBudget"}. || All the variables should be added to the grid. ||
+
+== IMP4 ==
+=== _Title:_ Edit a variable  ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Click on the "Edit" button of variable "Variable". ||  The "Edit variable" popup opens. ||
+|| 2 || Give  "VariableCode" as new name of variable and click on the "Save" button.  || You should be notified that the variable has been updated and the name of the variable should be updated on the grid. ||
+
+
+
+== IMP5 ==
+=== _Title:_ Associate an importation scheme to a project model ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 || In the "Administration" side bar, click on the « Project mmodels » link. ||  The list of the project models should be displayed. ||
+|| 2 || Open the "Projet propre v2" project model. ||  ||
+|| 3 || Open the "Importation schemes" tab. ||  ||
+|| 4 || Click on the "Add" button of the left-side grid. || The "Configure another scheme" popup should open. ||
+|| 5 || Select the importation scheme "Own and local projects budget(Excel,Several)" and click on the "Save" button. ||  The importation scheme should be added to the left-side grid and a "Set matching rule" popup should open. ||
+|| 6 || Select the flexible element "Code" and the variable "VariableCode" and click on the "Save" button. || The matching rule should be added to the right-hand grid. ||
+
+
+== IMP6 ==
+=== _Title:_ Associate an importation scheme to an org unit model ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || In the "Administration" side bar, click on the « Project models » link. ||  The list of the project models should be displayed. ||
+|| 2 || Open the "Projet propre v1" project model. ||  ||
+|| 3 || Open the "Importation schemes" tab. ||  ||
+|| 4 || Click on the "Add" button of the left-side grid. || The "Configure another scheme" popup should open. ||
+|| 5 || Select the importation scheme "Own and local projects budget(Excel,Several)" and click on the "Save" button. ||  The importation scheme should be added to the left-side grid and a "Set matching rule" popup should open. ||
+|| 6 || Select the flexible element "Code" and the variable "VariableCode" and click on the "Save" button. || The matching rule should be added to the right-hand grid. ||
+
+== IMP7 ==
+=== _Title:_ Add a matching rule ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || On the "Importation scheme" tab of the project model "Projet propre v1", click on the title of the importation scheme "Own and local projects budget(Excel,Several)". || ||
+|| 2 || Click on the "Add" button of the right-hand side grid. || The "Set matching rule" popup should open. ||
+|| 3 || Select the flexible element "Start date" and the variable "VariableStartDate". || The matching rule should be added to the grid. ||
+|| 4 || Repeat the steps 2 and " for the flexible element "End date" and the variable "VariableEndDate". ||  The matching rules should all be added to the grid. ||
+
+== IMP8 ==
+=== _Title:_ Add a budget matching rule ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || On the "Importation scheme" tab of the project model "Projet propre v1", click on the title of the importation scheme "Own and local projects budget(Excel,Several)". || ||
+|| 2 || Click on the "Add" button of the right-hand side grid. || The "Set matching rule" popup should open. ||
+|| 3 || Select the flexible element "Budget" . || The list of budget sub fields should appear. ||
+|| 4 || For the budget fields "Planned budget" and "Spend budget", select correspondingly the variables "VariablePlannedBudget" and "VariableSpentBudget" and check their corresponding checkboxes and click on the "Save" button. ||  The matching rule should be added to the grid, in the variable's name column, there should be "VariablePlannedBudget" and "VariableSpentBudget". ||
+
+
+== IMP9 ==
+=== _Title:_ Import a sheet-by-sheet (Several) projects .xlsx file ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Repeat the test cases IMP5, IMP7 and IMP8 for the project model "Projet partenaire local v1". || You should observe the same results as the one observed previously. ||
+|| 2 || Go back on the main dashboard, open the project "IF1389". || ||
+|| 3 || Lock its amendment. || ||
+|| 4 || Go back to the main dashboard, and click on the "Import" button. || The "Import" popup opens. ||
+|| 5 || Select the "Own and local projects budget(Excel,Several)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=125&type=bug import example file], and click on the "Import" button. || The "Importation validation" popup opens, there should be one row for the idkey "IF1247" with the status "Project found and importation ready", one row for the idkey  "IF1389" with the status "Project found but importation impossible because modifications required on a locked project core" and  another row for the idkey "LOC1275" with the status "Project not found" (Don't close the window, you will need it for the next test cases.) ||
+
+
+== IMP10 ==
+=== _Title:_ Unlock project core from "Import validation" popup ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 ||  On the "Import validation" popup, click on the "Unlock project core". || The status should become "Project found and importation ready" and the "Unlock project code button" is now a "Confirm importation details" button. ||
+|| 2 || On another tab of your  browser, open the project  "IF1389". || Its amendement should be unlocked. ||
+
+== IMP11 ==
+=== _Title:_ Create a project  from "Import validation" popup ===
+|| *#* || *Steps to reproduce* || *Expected result* ||
+|| 1 ||  On the "Import validation" popup, click on the "Create" button. || The "Create project" window should open, the "Code" field should contain "LOC1275". ||
+|| 2 || Complete the information asked for in the window and click on "Create". || The project should be added to the projects list panel. ||
+
+......
+
+
+== IMP20 ==
+=== _Title:_ Delete an importation scheme ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+|| 1 || Select the just created importation scheme and click on the "Delete" button. || A message should ask you to confirm the deletion of the importation scheme. ||
+|| 2 || Click on "Yes". || You should be notified that the importation scheme has been deleted and the importation scheme should be deleted from the grid. ||
