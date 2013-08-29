@@ -10,7 +10,13 @@ This scenario is based on the v1.3 demo data set.
 
 = Test cases =
 
+
 == IMP1 ==
+=== _Title:_ User signing in ===
+=== _See test on:_ [TestScenario4UserSessionRight#USR1] ===
+
+
+== IMP2 ==
 === _Title:_ Create an importation scheme ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 ||	From the Main dashboard, click on the « Administration » button. ||  The Administration tab opens up. ||
@@ -19,13 +25,13 @@ This scenario is based on the v1.3 demo data set.
 || 4 || Give "Own and local projects budget" as name to the scheme, select "Excel" as file format, "Several" as importation mode and click on the "Save" button. || The importation scheme should be added to left-side grid. ||
 
 
-== IMP2	==
+== IMP3	==
 === _Title:_ Edit an importation scheme ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Click on the "Edit" button of the just created importation scheme. ||  The "Edit importation scheme" popup opens. ||
 || 2 || Give  "Own and local projects budget(Excel,Several)" as new name of the importation schema and click on the "Save" button.  || You should be notified that the importation scheme has been updated and the name of the importation scheme should be updated on the grid. ||
 
-== IMP3 ==
+== IMP4 ==
 === _Title:_ Create  a variable ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Click on the title  the just created importation scheme. ||  The "Add" button of the variable grid should be enabled. ||
@@ -33,7 +39,7 @@ This scenario is based on the v1.3 demo data set.
 || 3 || Enter "B1" in the cell field and "Variable" for the variable name and click on the "Save" button. || The variable should be added to right-hand side grid. ||
 || 4 || Repeat the step 2 and 3 with {"B2", "VariableStartDate"}, {"B3", "VariableEndDate"}, {"B4", "VariableSpentBudget"}, {"B5", "VariablePlannedBudget"}. || All the variables should be added to the grid. ||
 
-== IMP4 ==
+== IMP5 ==
 === _Title:_ Edit a variable  ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Click on the "Edit" button of variable "Variable". ||  The "Edit variable" popup opens. ||
@@ -41,7 +47,7 @@ This scenario is based on the v1.3 demo data set.
 
 
 
-== IMP5 ==
+== IMP6 ==
 === _Title:_ Associate an importation scheme to a project model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || In the "Administration" side bar, click on the « Project mmodels » link. ||  The list of the project models should be displayed. ||
@@ -51,7 +57,7 @@ This scenario is based on the v1.3 demo data set.
 || 5 || Select the importation scheme "Own and local projects budget(Excel,Several)" and click on the "Save" button. ||  The importation scheme should be added to the left-side grid and a "Set matching rule" popup should open. ||
 || 6 || Select the flexible element "Code" and the variable "VariableCode" and click on the "Save" button. || The matching rule should be added to the right-hand grid. ||
 
-== IMP6 ==
+== IMP7 ==
 === _Title:_ Add a matching rule for a project model===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the "Importation scheme" tab of the project model "Projet propre v1", click on the title of the importation scheme "Own and local projects budget(Excel,Several)". || ||
@@ -59,7 +65,7 @@ This scenario is based on the v1.3 demo data set.
 || 3 || Select the flexible element "Start date" and the variable "VariableStartDate". || The matching rule should be added to the grid. ||
 || 4 || Repeat the steps 2 and " for the flexible element "End date" and the variable "VariableEndDate". ||  The matching rules should all be added to the grid. ||
 
-== IMP7 ==
+== IMP8 ==
 === _Title:_ Add a budget matching rule for a project model ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the "Importation scheme" tab of the project model "Projet propre v1", click on the title of the importation scheme "Own and local projects budget(Excel,Several)". || ||
@@ -68,7 +74,7 @@ This scenario is based on the v1.3 demo data set.
 || 4 || For the budget fields "Planned budget" and "Spend budget", select correspondingly the variables "VariablePlannedBudget" and "VariableSpentBudget" and check their corresponding checkboxes and click on the "Save" button. ||  The matching rule should be added to the grid, in the variable's name column, there should be "VariablePlannedBudget" and "VariableSpentBudget". ||
 
 
-== IMP8 ==
+== IMP9 ==
 === _Title:_ Associate an importation scheme to an org unit model ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || In the "Administration" side bar, click on the « Organisational Unit models » link. ||  The list of the project models should be displayed. ||
@@ -79,7 +85,7 @@ This scenario is based on the v1.3 demo data set.
 || 6 || Select the flexible element "Code" and the variable "VariableCode" and click on the "Save" button. || The matching rule should be added to the right-hand grid. ||
 
 
-== IMP9 ==
+== IMP10 ==
 === _Title:_ Add a budget matching rule for an org unit model===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || On the "Importation scheme" tab of the project model "Mission v1", click on the title of the importation scheme "Own and local projects budget(Excel,Several)". || ||
@@ -89,7 +95,7 @@ This scenario is based on the v1.3 demo data set.
 
 
 
-== IMP10 ==
+== IMP11 ==
 === _Title:_ Import a sheet-by-sheet (Several) projects .xlsx file ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Repeat the test cases IMP5, IMP7 and IMP8 for the project model "Projet partenaire local v1". || You should observe the same results as the one observed previously. ||
@@ -99,20 +105,20 @@ This scenario is based on the v1.3 demo data set.
 || 5 || Select the "Own and local projects budget(Excel,Several)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=125&type=bug import example file(Excel,Several)], and click on the "Import" button. || The "Importation validation" popup opens, there should be one row for the idkey "IF1247" with the status "Project found and importation ready", one row for the idkey  "IF1389" with the status "Project found but importation impossible because modifications required on a locked project core" and  another row for the idkey "LOC1275" with the status "Project not found" (Don't close the window, you will need it for the next test cases.) ||
 
 
-== IMP11 ==
+== IMP12 ==
 === _Title:_ Unlock project core from "Import validation" popup ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||  On the "Import validation" popup, click on the "Unlock project core". || The status should become "Project found and importation ready",the "Unlock project code button" is now a "Confirm importation details" button and the corresponding row should now be selected. ||
 || 2 || On another tab of your  browser, open the project  "IF1389". || Its amendement should be unlocked. ||
 
 
-== IMP12 ==
+== IMP13 ==
 === _Title:_ Create a project  from "Import validation" popup ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||  On the "Import validation" popup, click on the "Create" button. || The "Create project" window should open, the "Code" field should contain "LOC1275". ||
 || 2 || Complete the information asked for in the window and click on "Create". || The project should be added to the projects list panel and the row corresponding to the id key "LOC1275" should be removed . ||
 
-== IMP13 ==
+== IMP14 ==
 === _Title:_ Confirm the validation details  from "Import validation" popup ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 ||  On the "Import validation" popup, click on the "Confirm importation details" button for the project "IF1389". || A "Confirm importation details" should open and there should be a row for each field (Code, Start date, End date, Planned budget, Spent budget}, in the old value column should appear the old value of the field, in the new value should respectively be { 01/04/2012, 31/12/2014, 120 453€, 350000€}. ||
@@ -122,8 +128,8 @@ This scenario is based on the v1.3 demo data set.
 || 5 || Go back on the main dashboard, open the project "IF1389". || The fields "End date" and "Spent budget" should contains respectively 30/11/2013, 156561€. ||
 
 
-== IMP14 ==
-=== _Title:_ Import a sheet-by-sheet (Unique) projects .xlsx file ===
+== IMP15 ==
+=== _Title:_ Import a unique project .xlsx file ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Repeat the test case IMP1 (name = "Own and local projects budget(Excel,Unique)"). || You should observe the same results as the one observed previously. ||
 || 2 || Repeat the test case IMP3 with the following variables definitions {"Code:B2", "VariableCode"},{"StartDate:B2", "VariableStartDate"}, {"EndDate:B2", "VariableEndDate"}, {"SpentBudget:B2", "VariableSpentBudget"}, {"PlannedBudget:B2", "VariablePlannedBudget"} || You should observe the same results as the one observed previously. ||
@@ -137,7 +143,7 @@ This scenario is based on the v1.3 demo data set.
 
 
 
-== IMP15 ==
+== IMP16 ==
 === _Title:_ Import a sheet-by-sheet (Several) projects .ods file ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Repeat the test cases IMP1 (name = "Own and local projects budget(Ods,Several)", file format = "OpenDocumentSpreasheet"), IMP3, IMP5, IMP7, IMP8 for the importation scheme with the  . || You should observe the same results as the one observed previously. ||
@@ -153,8 +159,8 @@ This scenario is based on the v1.3 demo data set.
 || 11 || Go back on the main dashboard, open the organisational unit "SE". || The fields "Planned budget" and "Spent budget" should contain the respective values   32089€, 100000€. ||
 
 
-== IMP16 ==
-=== _Title:_ Import a sheet-by-sheet (Unique) projects .ods file ===
+== IMP17 ==
+=== _Title:_ Import a unique project .ods file ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Repeat the test case IMP1 (name = "Own and local projects budget(Ods,Unique)"). || You should observe the same results as the one observed previously. ||
 || 2 || Repeat the test case IMP3 with the following variables definitions {"Code:B2", "VariableCode"},{"StartDate:B2", "VariableStartDate"}, {"EndDate:B2", "VariableEndDate"}, {"SpentBudget:B2", "VariableSpentBudget"}, {"PlannedBudget:B2", "VariablePlannedBudget"}.||  You should observe the same results as the one observed previously. ||
@@ -167,8 +173,17 @@ This scenario is based on the v1.3 demo data set.
 || 8 || Check that the rows corresponding for the id key "IF1389" are selected and click on the "Import" button. || A pop up should inform you that the importation for the projects "IF1389" has been successful. ||
 || 10 || Go back on the main dashboard, open the project "IF1389". || The fields "StartDate", "End date", "Planned budget" and "Spent budget" should contain the respective values  08/06/2013, 30/01/2014, 252000€, 363000€. ||
 
+== IMP18 ==
+=== _Title:_ Import a line-by-line projects .xls file *(NOT IMPLEMENTED YET)* ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
 
-== IMP17 ==
+
+== IMP19 ==
+=== _Title:_ Import a line-by-line projects .ods file *(NOT IMPLEMENTED YET)* ===
+|| *#* || *Steps to reproduce* || *Expected result* || 
+
+
+== IMP20 ==
 === _Title:_ Delete a variable  ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Go the "Import settings" on he "Administration" tab. || ||
@@ -177,7 +192,7 @@ This scenario is based on the v1.3 demo data set.
 || 4 || Click on "Yes". || A notification should confirm you the deletion of the variables and all the variables should be removed from the grid. ||
 
 
-== IMP18 ==
+== IMP21 ==
 === _Title:_ Delete an importation scheme ===
 || *#* || *Steps to reproduce* || *Expected result* || 
 || 1 || Select the importation schemes "Own and local projects budget(Excel,Several)" and "Own and local projects budget(Excel,Several)"  and click on the "Delete" button. || A message should ask you to confirm the deletion of the importation scheme. ||
