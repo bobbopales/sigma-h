@@ -180,7 +180,7 @@ These tests are based on the demo data set v1.2 which contains the following use
 || I5 || Create and delete an indicator group || [TestScenario4Indicators#I5] ||
 || I6 || Export all project's indicators to Excel || [TestScenario4Indicators#I6] ||
 || I10 || Team work on indicator data entry || [TestScenario4Indicators#I10] ||
-|| ** || *Importation* || [TestScenario4Import] ||
+|| ** || *Importation(#387)* || [TestScenario4Import] ||
 || IMP2 || Create an importation scheme|| [TestScenario4Import#IMP2] ||
 || IMP3 || Edit an importation scheme || [TestScenario4Import#IMP3] ||
 || IMP4 || Create a variable|| [TestScenario4Import#IMP4] ||
