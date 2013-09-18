@@ -152,9 +152,54 @@ ALTER TABLE flexible_element ADD exportable bit(1) NOT NULL DEFAULT b'1';
 ALTER TABLE flexible_element ADD globally_exportable bit(1) NOT NULL DEFAULT b'1';
 
 
--- Add basic default settings for Global Export (issue #388)
+-- Add tables and basic default settings for Global Export (issue #388)
 -- ------
--- Must be runned after the application v1.2 has been runned a first time to let Hibernate create the global_export_settings table that the query below is filling
+
+-- tables in POSTGRESQL
+CREATE TABLE global_export (
+    id bigint NOT NULL,
+    generated_date timestamp without time zone NOT NULL,
+    organization_id integer NOT NULL
+);
+
+CREATE TABLE global_export_content (
+    id bigint NOT NULL,
+    csv_content text,
+    project_model_name character varying(8192) NOT NULL,
+    global_export_id bigint NOT NULL
+);
+
+CREATE TABLE global_export_settings (
+    id bigint NOT NULL,
+    auto_delete_frequency integer,
+    auto_export_frequency integer,
+    default_organization_export_format character varying(255),
+    export_format character varying(255),
+    last_export_date timestamp without time zone,
+    locale_string character varying(4) NOT NULL,
+    organization_id integer NOT NULL
+);
+
+ALTER TABLE ONLY global_export_content
+    ADD CONSTRAINT global_export_content_pkey PRIMARY KEY (id);
+
+ALTER TABLE ONLY global_export
+    ADD CONSTRAINT global_export_pkey PRIMARY KEY (id);
+
+ALTER TABLE ONLY global_export_settings
+    ADD CONSTRAINT global_export_settings_pkey PRIMARY KEY (id);
+
+ALTER TABLE ONLY global_export_settings
+    ADD CONSTRAINT fk2fb477b2f85c2c3c FOREIGN KEY (organization_id) REFERENCES organization(id_organization);
+
+ALTER TABLE ONLY global_export
+    ADD CONSTRAINT fk9e763fd0f85c2c3c FOREIGN KEY (organization_id) REFERENCES organization(id_organization);
+
+ALTER TABLE ONLY global_export_content
+    ADD CONSTRAINT fkdca84b0af33647b9 FOREIGN KEY (global_export_id) REFERENCES global_export(id);
+
+
+
 
 -- POSTGRESQL
 INSERT INTO global_export_settings(id, auto_delete_frequency, auto_export_frequency, default_organization_export_format, export_format, last_export_date, locale_string, organization_id)
