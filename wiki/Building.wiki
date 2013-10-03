@@ -121,9 +121,8 @@ Make sure you choose _check out as a  project configured using the New Project W
 <font color="red"><strong><i>Important temporary note:</i></strong></font> currently, the maven build will not work due to missing library on the Maven repository. We're fixing this by setting up a new Maven repository elsewhere. In the meantime, the solution is to download and install those libraries manually. Those jar libraries can be downloaded from this location: http://code.google.com/p/sigma-h/downloads/detail?name=missing-jar-to-build-Sigmah.zip . To install those libraries, here is the [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html documentation], and the commands you should use:
 {{{
 mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gwt-maps-1.1.1.jar -DgroupId=com.google.gwt.google-apis -DartifactId=gwt-maps -Dversion=1.1.1 -Dpackaging=jar
-mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gxt-2.2.5-gwt22.jar -DgroupId=com.extjs -DartifactId=gxt -Dversion=2.2.5 -Dpackaging=jar
+mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gxt-2.2.5-gwt22.jar -DgroupId=com.extjs -DartifactId=gxt -Dversion=2.2.5-gwt22 -Dpackaging=jar
 }}}
-You might need to set version as 2.2.5 for gxt in Sigmah pom.xml to make the whole thing works properly.
 
 ==== Enable Maven Dependency Management ====
 
