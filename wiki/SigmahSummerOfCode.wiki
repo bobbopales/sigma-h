@@ -1,0 +1,59 @@
+#summary How Sigmah Summer of Code programme is running
+#sidebar SummerOfCodeSideBar
+
+= Introduction =
+
+This page presents how concretely the Sigmah Summer of Code programme is running
+
+
+<wiki:toc max_depth="2" />
+
+
+= Phases =
+
+The Sigmah Summer of Code programme has the following phases :
+
+
+
+== Phase 1: promotion, searching for mentors and potential students ==
+The purpose of this phase is to spread the word about the Summer of Code programe and the Sigmah project so that we will get the maximum number of potential students.
+During this phase, we will also start to look for project committers ready to become mentors.
+
+== Phase 2: Sigmah project's application to GSoC ==
+During this phase, we need to:
+  * see with the users what are the priorities they would like to see developed during the summer
+  * build the project ideas from those priorities
+  * set up the org admin team for the Google Summer of Code programme
+  * write and send the GSoC application to Google
+
+== Phase 3: students selection ==
+For more information about the student selection process, see SummerOfCodeSelectionProcess .
+Application will include a detailled weekly availability planning for each student.
+
+== Phase 4: launch of the programme ==
+During the launch of the programme we will have:
+  * a presentation of the application to all students
+  * refinement of each student project, including the division into smaller tasks of big and complex projects
+  * an online meeting between the users and the students: first explain to the users once again their need, and the second the solution they will develop: this meeting will take place during a Steering Cooperative meeting so that every member of the project will now each other
+  * an online launch event with all the selected students and mentors !
+
+
+== Phase 5: summer of code ==
+Apart from coding and getting support from mentors, the tasks of the students during this phase will be:
+  * logging everyday on IRC: #sigmah IRC channel is like our office, sometimes you can go the office a full day without speaking a word and hearing the bad jokes of the others.. but once you will need a short help or having anything to share, the office open space is the best place for that !
+  * monthly team video meeting: every month, we will all gather to say to the others how our work has progressed, etc.
+  * before this monthly meeting, student will have to revise their availability planning for the upcoming month
+  * to improve the work of the student and help build a better UI, meetings between two students (one playing the role of the user, the other the developer of the feature)
+  * communication channels prioritization:
+    * 1. through mantis issues notes
+    * 2. with sigmah-dev
+    * 3. with the mentor through direct email
+    
+
+
+== Phase 6: closure of the programme ==
+To end the programme and continue improving it:
+  * there will be an individual student debriefing meeting with the mentor and one of the org admin
+  * optionnally, if students want it, a students only debriefing meeting could take place to give proposition of improvements for the programme
+  * a mentors debriefing meeting will take place to debrief the general programme
+  * an online closure event for each student to make a demo, to give the conclusions of the debriefing, and to celebrate !
