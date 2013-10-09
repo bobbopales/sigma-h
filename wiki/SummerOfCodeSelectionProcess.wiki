@@ -1,4 +1,5 @@
 #summary Students selection process to Google Summer of Code
+#sidebar SummerOfCodeSideBar
 
 <wiki:toc max_depth="3" />
 
