@@ -1,4 +1,5 @@
 #summary Project Ideas for Google Summer of Code 2013.
+#sidebar SummerOfCodeSideBar
 
 <wiki:toc max_depth="3" />
 
