@@ -8,6 +8,6 @@ Sigmah's technical documentation consist of 4 documents:
   * the [TestCases Summary of all Test Cases]
 
 =Project planning management=
-[Roadmap Roadmap of the project]
+[http://www.sigmah.org/issues/roadmap_page.php Roadmap of the project]
 
-[SprintsPlanning Planning of the sprints of development]
+[SigmahSummerOfCode Summer of Code programme description]
