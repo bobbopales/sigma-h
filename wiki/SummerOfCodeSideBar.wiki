@@ -1,0 +1,7 @@
+#summary Wiki index for all pages on Summer of Code.
+
+  * [SigmahSummerOfCode]
+  * [SummerOfCodeSelectionProcess]
+  * Project ideas
+    * [Ideas4GSoC2013 Project ideas for GSoC2013]
+    * [Ideas4GSoC2012 Project ideas for GSoC2012]
