@@ -266,3 +266,4 @@ To implement the decisions taken during this Sigmah Developer Community Summit, 
 || UNV mission publication || osarrat || A mission will be published on UNV website to look for volunteer wanting to participate in the SSoC programme, to work during the year with us, or to translate Sigmah. || The mission will be published before the end of February.  || 1/2 day ||
 || Data model modification procedure wiki page || || || || ||
 || Mantis to Redmine migration || || || || ||
+|| Google Code to MediaWiki migration || ? || A running MediaWiki instance on wiki.sigmah.org with all the content of the current Sigmah Google Code wiki, with no transformation of the content. || (i) A test MediaWiki instance with all the content of the current Sigmah Google Code wiki, with no transformation of the content. (ii) A procedure to reproduce easily the migration. || 2 full days ? ||
