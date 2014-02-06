@@ -40,17 +40,29 @@ The final objective of this summit is dual: *to take shared decisions on all tho
 
 == Process ==
 
-=== Step 1: asynchronous debate ===
+=== Original process ===
+
+==== Step 1: asynchronous debate ====
 
 The first step of the summit will be to have a long month of "asynchronous debate". The debate will go from now until the online final meeting. They are asynchronous because they will be conducted only through our sigmah-dev mailing list and this wiki page.
 
 The objective of this long period of asynchronous debate is to give to anyone the possibility to express himself about the topics of this summit. If we can't come to a conclusion in our asynchronous debate on a specific topic, we will conclude the debate during the online final meeting.
 
-=== Step 2: online final meeting ===
+==== Step 2: online final meeting ====
 
 The online final meeting will be the festive conclusion of the Sigmah Developer Community Summit, and the opening ceremony of the new structuring of our community. It will be used to conclude the debates on topics which haven't come to a conclusion. It will also be used to decide together which T-shirt design we find the best!
 
-The exact time slot for our online final meeting will be decided through the following poll: http://framadate.org/studs.php?sondage=4hdasqu9r5xmy1z9
+The exact time slot for our online final meeting will be decided through the following poll: http://framadate.org/studs.php?sondage=4hdasqu9r5xmy1z9 => date found: 5th of February
+
+=== Evolution of the process after the 5th of February online meeting ===
+Participating to a debate only on each one scarce spare time can be difficult. Even if we get many positive feedbacks and ideas (thanks to all contributors !), we haven't managed to cover all the topics during the month and an half of "asynchronous debate". We had finally nonetheless on the 5th of February an online meeting even if it couldn't end this required Developer Community Summit process.
+
+It has been accepted that the process of this Developer Community Summit should be modified as following:
+  * end of the process: the process will no more end on a specific date, but will end once all the topics will have found a conclusive decision ;
+  * the process will now mix debates and concrete work following a monthly rythm ;
+  * each month, we will have an online meeting with chat on IRC about the topics which have become more mature to be covered, and this meeting will always be ended with a concrete action plan.
+
+And the first Sigmah Illustrious Developer Untamed Community Online Meeting (SIDUCOM#1, if everybody like this name... :)) we had on 5th of February has been very productive! The page below has been modified to include the decisions and tasks decided during this meeting.
 
 
 = Discussions and decisions =
@@ -116,11 +128,34 @@ Some missions on the project are not linked with issues on the Sigmah applicatio
 
 But if we agree on the idea to have monthly mission committment, we should have a tool to keep track of all those missions committments. And of course, it will occur that mission committments will be the fixing of an issue (either bug or feature)... so this tool which looks like a kind of project management tool should merge with an issue tracker.
 
-An open source tool which merge project management feature with issue tracking already exist, and it is called Redmine. To structure differently our community life, I would then suggest to migrate from Mantis to Redmine.
+Here are the features expected for this improved issue tracker:
+  * due dates for issues or tasks to be able to register monthly committments
+  * issues or tasks for non-software related topics (ex: translation, outreach, etc.)
+  * an easy view on issues or tasks by monthly "sprint period" , to be able to monitor the current work
+  * simpler issue statuses set than the one we have now: {"assigned", "resolved", "closed"} will be enough
+  * simpler Priority and Severity statuses set than the one we have now: simplifications should be debated
+  * the new issue tracker solution must contain all issues presently in Mantis (closed and open issues): the full migration is required
+  * full and easy integration with Github
+  * _a bonus but not a requirement:_ an intuitive and attractive interface: intuitive for non-IT contributors (translators, etc.), and attractive to motivate people to join
+
+
+An open source tool which merge project management feature with issue tracking already exist, and it is called Redmine. To structure differently our community life, we could imagine to migrate from Mantis to Redmine.
+
+
 
 *Discussion*
 
 What is your opinion about it?
+Are you ok with the new features to expect?
+Would migrating to Redmine could be a solution?
+
+
+*Decision*
+
+The debate is still open on this topic. The idea to have monthly task committment is agreed and is actually tried for the month of February 2014. But we no decision is taken after SIDUCOM#1 between keeping and improving Mantis or migrating to Redmine to cover needs.
+
+The proposition above has been completed to include a list of new features we should expect from our issue tracker. In the action plan decided during SIDUCOM#1, the Improved Mantis solution and the Redmine Migration solution will be both tested during February 2014 so that we will have a way to decide during SIDUCOM#2 which issue tracker we should use.
+
 
 === Source code management: better management of branches with Git ===
 
@@ -136,6 +171,10 @@ Having a central repository of all issues is something very important for the pr
 Is everybody ok to move to Git?
 
 Which forge should we then use? Google Code with Git? Github? Our own Git server?? another forge???
+
+*Decision*
+Migration to Github has been decided by the community during SIDUCOM#1, after discussions on sigmah-dev.
+Main remaining question is: how easy will be the integration between Mantis or Redmine and Github?
 
 === A new wiki engine ===
 
@@ -258,12 +297,16 @@ Are you ok with the idea of this promotion package?
 Which other idea for promotion would you have?
   
 
-= Missions: after Summit action plan, and others =
+= Tasks: Summit action plan=
 
-To implement the decisions taken during this Sigmah Developer Community Summit, a lot of work have to be done. The following table describes all the missions which have to be conducted starting from the final Sigmah Developer Community Summit online meeting which will occur a the end of January.
+To implement the decisions taken during this Sigmah Developer Community Summit, a lot of work have to be done. The following table describes all the tasks which have to be conducted to implement decisions of the Summit.
 
-|| *Mission title* || *Responsible* || *Final result* || _*Next month committment*_ || _*Committment required time*_ ||
+|| *Task title* || *Responsible* || *Final result* || _*Next month committment*_ || _*Committment required time*_ ||
+|| Mantis to Redmine migration test || pravin || A fully workable Redmine test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~5 full days ||
+|| Sigmah Mantis issue tracker improvement demo || tmiette || A fully workable new and improved Mantis test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~2 full days ||
+|| Developer Environment Installation procedure for dummies || tmiette || A complete revision of the developer environment installation procedure, totally detailled, with screenshots, etc. || The procedure. / For end of February. || ~1 full day ||
+|| Feedbacks on Github || spM || Feedbacks should be collected on Github trial so that we can take a decision altogether on migrating ot not, and how for the last details. || the feedbacks / For end of February. || ~1 day ||
+|| Prepare a Github environment for Sigmah|| osarrat || At best, a Sigmah organization should be created on Github. If not possible, another should be found and discussed. || the solution for Sigmah presence on GitHub / For end of February. || ~1/2 day ||
 || UNV mission publication || osarrat || A mission will be published on UNV website to look for volunteer wanting to participate in the SSoC programme, to work during the year with us, or to translate Sigmah. || The mission will be published before the end of February.  || 1/2 day ||
 || Data model modification procedure wiki page || || || || ||
-|| Mantis to Redmine migration || || || || ||
 || Google Code to MediaWiki migration || ? || A running MediaWiki instance on wiki.sigmah.org with all the content of the current Sigmah Google Code wiki, with no transformation of the content. || (i) A test MediaWiki instance with all the content of the current Sigmah Google Code wiki, with no transformation of the content. (ii) A procedure to reproduce easily the migration. || 2 full days ? ||
