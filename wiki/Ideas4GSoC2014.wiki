@@ -25,8 +25,8 @@ Sigmah software is developed in Java using GWT + ExtJS. Access to database is do
 
 Some of the projects listed below are linked with Sigmah community website. Sigmah community website is developed in PHP using Drupal, and its forge is available at https://github.com/osarrat/sigmah-website.
 
-== Sigmah project and GSoC2013 ==
-For Google Summer of Code 2013, Sigmah will be represented by  [http://www.urd.org/ Groupe URD], functional project leader which will play the role of organization administrator. 
+== Sigmah project and GSoC2014 ==
+For Google Summer of Code 2014, Sigmah will be represented by  [http://www.urd.org/ Groupe URD], functional project leader which will play the role of organization administrator. 
 
 
 == Resources for new contributors ==
@@ -77,4 +77,3 @@ Impacts of this feature are many: better coordination for the humanitarian secto
 *Knowledge prerequisite*
 
 Java/GWT.
-
