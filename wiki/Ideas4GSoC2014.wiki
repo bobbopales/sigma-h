@@ -1,4 +1,4 @@
-#summary Project Ideas for Google Summer of Code 2013.
+#summary Project Ideas for Google Summer of Code 2014.
 #sidebar SummerOfCodeSideBar
 
 <wiki:toc max_depth="3" />
@@ -73,6 +73,85 @@ This project idea corresponds to feature request [http://www.sigmah.org/issues/v
 *Impact*
 
 Impacts of this feature are many: better coordination for the humanitarian sector, possibility to build maps of projects by organisations for their own websites, possibility to build maps of projects using Sigmah in the world, etc.
+
+*Knowledge prerequisite*
+
+Java/GWT.
+
+
+
+== Project idea 2: From a standalone project data collection tool to an integrated project management and analysis platform ==
+
+_Project Difficulty:_ Medium
+
+_This project is a continuation and extension of the project started during 2013._
+
+*Presentation*
+
+In its version 1.2, Sigmah works as a tool to collect and organize data about projects. It is already useful, but too limited for wider adoption in the NGOs. Sigmah must integrate itself better in NGOs information system, and provides more means to analyze the data it helps to collect.
+
+The lack of integration with other software used by NGOs has for result many cases of double data-entry and loss of efficiency.
+Users are happy with information-sharing abilities of Sigmah but frustrated not to be able yet to analyze all this information collected. And with stronger capacity of analysis of all information collected, humanitarian workers will be able to more easily learn lessons out of their experiences and improve that wat the quality of their work.
+
+*Examples*
+
+The request features which illustrate thie need to make Sigmah a real integrated project management and analysis platform are:
+
+_User Prority:_ 1
+
+  * [http://www.sigmah.org/issues/view.php?id=389 0000389: Organizational Unit aggregation field]
+  * [http://www.sigmah.org/issues/view.php?id=515 0000515: New indicator aggregation method: last value]
+  * [http://www.sigmah.org/issues/view.php?id=530 0000530: New type of orgunit/project field: computation field]
+
+_User Prority:_ 2
+
+  * [http://www.sigmah.org/issues/view.php?id=513 0000513: Budget Excel export improvement]
+  * [http://www.sigmah.org/issues/view.php?id=484 0000484: Files field Excel export]
+
+*Impact*
+
+With more facilities to integrate Sigmah into the global IT system of humanitarian organizations, it will make humanitarian organizations more efficient and ease the process of adoption. By easing the process of analyzing information collected on projects, humanitarian NGOs will be able to better prepare their project and improve the way they reply to the needs of people. They will also be more efficient in the preparation of their work, with more time spend on building lessons out of their data than on manipulating and collecting it.
+
+*Knowledge prerequisite*
+
+Java/GWT.
+
+
+
+== Project idea 3: Advanced project model and privileges management  ==
+
+_Project Difficulty:_ Medium
+
+_This project is a continuation and extension of the project started during 2013._
+
+
+*Presentation*
+
+Sigmah's most fundamental feature is the flexibility it gives to organization in the way they can configure it. With this flexibility provided through project models and privileges management, organizations are able to design their project information system by themselves, through a graphical interface they're able to use and not by configuration files which scare them in most of the case.
+
+Sigmah flexibility is already provided a great service to its users, but it needs to be enhanced to reply to new needs expressed by users.
+
+*Examples*
+
+Here is the list of feature requests or ideas as forum posts expressed by users to improve the project model and privileges system:
+
+_User Prority:_ 1
+
+  * [http://www.sigmah.org/issues/view.php?id=419 0000419: Project/orgunit models modifications with Available status]
+  * Other ideas to improve privileges in the forum: http://www.sigmah.org/node/682 , http://www.sigmah.org/node/692 , http://www.sigmah.org/node/705 , http://www.sigmah.org/node/711
+  * [http://www.sigmah.org/issues/view.php?id=534 0000534: Field-linked reminders incentives]
+  * [http://www.sigmah.org/issues/view.php?id=438 0000438: Own password modification by user]
+    * While developing this feature, a technical reply should be found for other issues regarding password as expression by users in the forum posts:http://www.sigmah.org/node/709 and http://www.sigmah.org/node/682#comment-347
+
+
+_User Prority:_ 2
+
+  * [http://www.sigmah.org/issues/view.php?id=501 0000501: Group iterations]
+
+*Impact*
+
+By developing a project idea of that sort, the GSoC volunteer will contribute to allow new usages of Sigmah by its users. It will help Sigmah adoption in wider parts of organization already adopting it.
+
 
 *Knowledge prerequisite*
 
