@@ -82,7 +82,9 @@ Java/GWT.
 
 == Project idea 2: From a standalone project data collection tool to an integrated project management and analysis platform ==
 
-_Project Difficulty:_ Medium
+_Project Difficulty:_ Hard
+
+_Difficulty comment_: Hard project idea because it will require a deeper knowledge of the purpose and behavior of the whole software.
 
 _This project is a continuation and extension of the project started during 2013._
 
@@ -152,6 +154,36 @@ _User Prority:_ 2
 
 By developing a project idea of that sort, the GSoC volunteer will contribute to allow new usages of Sigmah by its users. It will help Sigmah adoption in wider parts of organization already adopting it.
 
+
+*Knowledge prerequisite*
+
+Java/GWT.
+
+== Project idea 4: File upload improvement  ==
+
+_Project Difficulty:_ Easy
+
+_Difficulty comment_: Project idea considered easy because this project might be to as wide to develop than others, but it will require a lot of imagination and creativeness to provide a lot of robustness and image all cases which might interrupt the connection.
+
+
+*Presentation*
+
+Attaching file in Sigmah is one of its core features. This feature must be very robust and user-friendly. And users having poor connection face some problems which make them reject the software.
+
+
+*Examples*
+
+Here is the list of feature requests expressed by users to improve the file upload system:
+
+_User Prority:_ 1
+
+  * [http://www.sigmah.org/issues/view.php?id=605 0000605: Background and robust uploading of files]
+  * [http://www.sigmah.org/issues/view.php?id=592 0000592: Huge files can't be uploaded without proper information message to user]
+
+
+*Impact*
+
+With a robust and user-friendly file upload system, Sigmah adoption inside NGOs will be able to expand because its core feature will be much more responsive to their expectations.
 
 *Knowledge prerequisite*
 
