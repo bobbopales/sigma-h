@@ -200,6 +200,8 @@ You should make sure the user that you specify has enough rights to access and m
 
 Now it is ready to build and debug our Sigmah project.
 
+<strong><i>Important!</i></strong> Make sure you are using JDK 1.6.
+
 ==== Set Up Debug Configuration ====
 
 {{{
@@ -237,6 +239,8 @@ This kind of Debug configuration will launch the GWT Development Mode for Sigmah
 The *_offline_ feature* makes Maven use the local repository to build your project after the first build. If you want Maven to download all libraries every time, you uncheck that feature.
 
 After you finish the configuration of the Debug, you could start to debug.
+
+<strong><i>Note:</i></strong> When you compile you may receive the following error: "DummyConnection is not abstract and does not override abstract method getNetworkTimeout() in Connection". This is because your JDK is not set to 1.6. Check and update to JDK 1.6 your PATH in Windows Environment Variables and project Properties/Run Configurations in Eclipse to fix this issue.
 
 ==== Resolve the "OutOfMemory" Problem ====
 
