@@ -62,7 +62,7 @@ It has been accepted that the process of this Developer Community Summit should 
   * the process will now mix debates and concrete work following a monthly rythm ;
   * each month, we will have an online meeting with chat on IRC about the topics which have become more mature to be covered, and this meeting will always be ended with a concrete action plan.
 
-And the first Sigmah Illustrious Developer Untamed Community Online Meeting (SIDUCOM#1, if everybody like this name... :)) we had on 5th of February has been very productive! The page below has been modified to include the decisions and tasks decided during this meeting.
+And the first Sigmah In-house Developer Community Online Meeting (SIDCOM#1) we had on 5th of February has been very productive! The page below has been modified to include the decisions and tasks decided during this meeting.
 
 
 = Discussions and decisions =
@@ -110,11 +110,15 @@ We are all humans... we all know that most of us have difficulties to start doin
 The major developer community internal functioning innovation might be to structure a monthly rythm in our community life.
 Each month, we might have a monthly meeting (on IRC to keep it light and with meeting minutes automatically produced) to decide what we should do for the following month. During the next meeting, each one having committed to complete a mission with his monthly precise objectives should give a feedback about his progress.
 
+
+For each commitment made by someone, we have to find a "commitment peer" which will have check the progress of the commitment. This "commitment peer" should be someone not having a commitment during the month, or having finished in time his past month commitment.
+
+
 I would add another idea: *small is beautiful!*. We should all take good care that each of us should commit to complete monthly missions which are compatible with his time free.. including rest! The fix of a trivial bug (like on line of code modified) or the committment to find and describe a possible solution to fix a complex issue is far better than no bug fix at all... and much much better than a commitment to finish to develop a super cool feature that the users will expect by the end of the month and will be very dissapointed not to have.
 
 *Discussion*
 
-Are you ok with this idea of monthly mission committments?
+Are you ok with this idea of monthly mission commitments?
 
 And with the monthly meetings? On IRC?
 
@@ -299,14 +303,17 @@ Which other idea for promotion would you have?
 
 = Tasks: Summit action plan=
 
-To implement the decisions taken during this Sigmah Developer Community Summit, a lot of work have to be done. The following table describes all the tasks which have to be conducted to implement decisions of the Summit.
+To implement the decisions taken during this Sigmah Developer Community Summit, a lot of work have to be done. The following table describes all the tasks which have to be conducted to implement decisions of the Summit. The table also show progress in the completion of the tasks
 
-|| *Task title* || *Responsible* || *Final result* || _*Next month committment*_ || _*Committment required time*_ ||
-|| Mantis to Redmine migration test || pravin || A fully workable Redmine test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~5 full days ||
-|| Sigmah Mantis issue tracker improvement demo || tmiette || A fully workable new and improved Mantis test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~2 full days ||
-|| Developer Environment Installation procedure for dummies || tmiette || A complete revision of the developer environment installation procedure, totally detailled, with screenshots, etc. || The procedure. / For end of February. || ~1 full day ||
-|| Feedbacks on Github || spM || Feedbacks should be collected on Github trial so that we can take a decision altogether on migrating ot not, and how for the last details. || the feedbacks / For end of February. || ~1 day ||
-|| Prepare a Github environment for Sigmah|| osarrat || At best, a Sigmah organization should be created on Github. If not possible, another should be found and discussed. || the solution for Sigmah presence on GitHub / For end of February. || ~1/2 day ||
-|| UNV mission publication || osarrat || A mission will be published on UNV website to look for volunteer wanting to participate in the SSoC programme, to work during the year with us, or to translate Sigmah. || The mission will be published before the end of February.  || 1/2 day ||
-|| Data model modification procedure wiki page || || || || ||
-|| Google Code to MediaWiki migration || ? || A running MediaWiki instance on wiki.sigmah.org with all the content of the current Sigmah Google Code wiki, with no transformation of the content. || (i) A test MediaWiki instance with all the content of the current Sigmah Google Code wiki, with no transformation of the content. (ii) A procedure to reproduce easily the migration. || 2 full days ? ||
+|| *Month* || *Task title* || *Responsible* || *Final result* || _*End of the month commitment*_ || _*Commitment required time*_ || *Task peer* || *Completion* ||
+|| February || Prepare a Github environment for Sigmah|| osarrat || At best, a Sigmah organization should be created on Github. If not possible, another should be found and discussed. || the solution for Sigmah presence on GitHub / For end of February. || ~1/2 day || _none_ || *completed* ||
+|| February || UNV mission publication || osarrat || A mission will be published on UNV website to look for volunteer wanting to participate in the SSoC programme, to work during the year with us, or to translate Sigmah. || The mission will be published before the end of February.  || 1/2 day || _none_ || *completed* ||
+|| February || Mantis to Redmine migration test || pravin || A fully workable Redmine test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~5 full days || _none_ || in progress ||
+|| February || Sigmah Mantis issue tracker improvement demo || tmiette || A fully workable new and improved Mantis test demo respecting all the requirements set above for the issue tracker. || The demo. / For end of February. || ~2 full days || _none_ || in progress ||
+|| February || Developer Environment Installation procedure for dummies || tmiette || A complete revision of the developer environment installation procedure, totally detailed, with screenshots, etc. || The procedure. / For end of February. || ~1 full day || _none_ || in progress ||
+|| February || Feedbacks on Github || spM || Feedbacks should be collected on Github trial so that we can take a decision altogether on migrating ot not, and how for the last details. || the feedbacks / For end of February. || ~1 day || _none_ || discarded ||
+|| March || Google Code to Github migration || spM || All Sigmah source code is managed through Github. || 1. test the hook between Github and the issue tracker selected (Mantis or Redmine) on demo repo and demo issue tracker (with a proof of success sent by email; 4. Perform the migration of the source code from SVN to Github; 5. set up a server-side hook with the issue tracker. || 2 days? || osarrat || in progress ||
+|| March || Google Code to Github migration || osarrat || All Sigmah source code is managed through Github.  || 2. remove commit rights on Google Code for everybody to prevent any other commit ; 3. create a "sigmah" repository on the sigmah-dev Github org ; 6. invite all committers removed from Google Code to become committers on sigmah-dev Github org "sigmah" repo ; 7. replace in Mantis URL of SVN commits on Google Code by URL of Git commits on Github (can be done manually, because only 9 issues having lins to commits currently) || 1 day || _none_|| in progress ||
+|| March || Data model modification procedure wiki page || aponcon || || || || osarrat || in progress ||
+|| March || Sigmah Developer Environment virtual machine + documentation on the wiki || aponcon || || || || osarrat || in progress ||
+|| Unplanned || Google Code to MediaWiki migration || ? || A running MediaWiki instance on wiki.sigmah.org with all the content of the current Sigmah Google Code wiki, with no transformation of the content.  || (i) A test MediaWiki instance with all the content of the current Sigmah Google Code wiki, with no transformation of the content. (ii) A procedure to reproduce easily the migration. || 2 full days ? || || ||
