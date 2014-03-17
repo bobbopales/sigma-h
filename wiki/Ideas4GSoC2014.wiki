@@ -163,7 +163,7 @@ Java/GWT.
 
 _Project Difficulty:_ Easy
 
-_Difficulty comment_: Project idea considered easy because this project might be to as wide to develop than others, but it will require a lot of imagination and creativeness to provide a lot of robustness and image all cases which might interrupt the connection.
+_Difficulty comment_: Project idea considered easy because this project might be to as wide to develop than others, but it will require a lot of imagination and creativeness to provide a lot of robustness and imagine all cases which might interrupt the connection. A good proposal on this project idea should demonstrate which kind of programmatic testing framework will be used to provide conditions with all kinds of extreme bad and impredictible connection. This framework should virtualize a network with all sort of cases. Maybe such a programmatic testing framework is not feasible, and then an alternative solution should be proposed.
 
 
 *Presentation*
