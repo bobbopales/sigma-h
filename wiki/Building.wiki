@@ -124,7 +124,7 @@ mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gxt-2.2.5-gwt2
 }}}
 
 = PostgreSQL Installation for windows =
-As a developer, before you test the sigmah project, you have to set up your own database system. Sigmah is now based on the database system MySql 5. But it also works with PostgreSQL 8 +. For the instructions purpose, we will use PostgreSQL 9.3.
+As a developer, before you test the sigmah project, you have to set up your own database system. Sigmah is now based on the database system !MySql 5. But it also works with PostgreSQL 8 +. For the instructions purpose, we will use PostgreSQL 9.3.
 
 First, download [http://www.postgresql.org/download/windows/ PostgreSQL for windows]. The version includes pgAdmin III which is a useful tool to set up the DB.
 Perform the installation.
@@ -164,13 +164,13 @@ Since the script are not kept up to date for each new sigmah version, you need t
 Now we have to run the new organization script. This will insert data of your (dummy) organization for dev purpose. [http://code.google.com/p/sigma-h/downloads/detail?name=newOrganizationLaunchScript-1.2%2B.postgresql.sql&can=2&q= Get the scripts].
 Before running it, you will have to replace some values by your own parameters:
 || *Parameter to replace* || *Description* ||
-|| §OrganizationName§ || The name of your organization ||
-|| §OrganizationLogoFilename§ || The filename of the logo (i.e. logo.png) ||
-|| §HeadquartersCountryCode§ || Use an ISO 2-letters code like "AF" from [http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements Officially assigned code elements] ||
-|| §UserEmail§ || Your mail address ||
-|| §UserName§ || Your name ||
-|| §UserFirstName§ || Your first name ||
-|| §UserLocale§ || Must be "fr" or "en" or "es" don't include quotes (") ||
+|| §!OrganizationName§ || The name of your organization ||
+|| §!OrganizationLogoFilename§ || The filename of the logo (i.e. logo.png) ||
+|| §!HeadquartersCountryCode§ || Use an ISO 2-letters code like "AF" from [http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements Officially assigned code elements] ||
+|| §!UserEmail§ || Your mail address ||
+|| §!UserName§ || Your name ||
+|| §!UserFirstName§ || Your first name ||
+|| §!UserLocale§ || Must be "fr" or "en" or "es" don't include quotes (") ||
 
 == Sigmah properties ==
 Now you can tell sigmah how to connect to your database. In eclipse open the “sigmah.properties” file, and replace the hooked parameters with your own values. Here is an example of the result.
@@ -269,7 +269,7 @@ Now try to go to <http://localhost:8080/appName>. Here it would be: http://local
 
 = Known bugs =
 == Out of memory error ==
-When you launch sigmah in GWT Development Mode, you may have an "OutOfMemory:PermSpace" error. To fix this error, you should specify a bigger PermSpace in the Pom.xml file, which is in your project root directory. In the “extraJvmArgs” tag, add the option –XX:MaxPermSize=512M (or more).
+When you launch sigmah in GWT Development Mode, you may have an "!OutOfMemory:!PermSpace" error. To fix this error, you should specify a bigger !PermSpace in the Pom.xml file, which is in your project root directory. In the “extraJvmArgs” tag, add the option –XX:!MaxPermSize=512M (or more).
 {{{
 <!-- configure the GWT-Maven plugin -->
 <plugin>
