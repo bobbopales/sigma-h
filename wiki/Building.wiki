@@ -1,270 +1,294 @@
 #summary Guide to building Sigmah on Windows
 #sidebar ContributorGuideSideBar
 
-<wiki:toc max_depth="4" />
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
 This guide assumes that you're using Windows. 
 
-== Tools to download and Install ==
+= Install Java6 and Java7 =
+Sigmah is a Java project. This project is using the GWT tools which only supports (for now) java 6. In order to build and run the project, we will need to install Java 6. However, we will also need to install Java 7 because this version of the java edition is required to run some component we will install later.
 
-Some of the functionality below is available through Eclipse or IntelliJ, but at some point you'll probably want to make a quick call to the command line.
+== Download Java SE ==
+To download this version, go to [http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html Java SE Development Kit 7u51] and get the latest available Java SE Development Kit 7.
+Then run the install program. You should keep the default settings. It will install the JDK, and the JRE
 
-  # [http://download.java.net/jdk6/ JDK, v1.6]
-  # [http://tortoisesvn.net/downloads Tortoise SVN] - Windows explorer client for Subversion Version Control System
-  # [http://www.open.collab.net/downloads/subversion/ CollabNet Subversion Command-Line Client] - Command-line client for Windows
-  # [http://maven.apache.org/download.html Apache Maven] 2.2.1 - a build manager for Java. You just need to unzip it in the c:\Program Files folder.
-  # Add the paths to the JDK, CollabNet subversion, and Maven paths to the path environment variable. (instructions for [http://www.computerhope.com/issues/ch000549.htm XP] [http://www.question-defense.com/2009/06/22/modify-a-users-path-in-windows-vista-vista-path-environment-variable/ Vista]
-  # [http://www.mysql.com/downloads/mysql/ MySQL v5]
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/01_Java_install.png" />
 
-*Note:* Microsoft SQL server is no longer a supported database. We are now actively testing against MySQL 5.x and PostgreSQL.
+Now you should have “jdk1.7.0_51” and “jre7” folders in the installation repository, which is by default for windows: “C:\Program Files\Java”.
+To install Java 6 we have to do the same operations. The latest version is available here: [http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html Java SE Development Kit 6u45]
 
-== Quick build in command line ==
+*Warning:* to download early version of Java, you may have to create an Oracle account.
 
-We'll get to the IDE in a moment, but first it would be good to confirm that you can successfully build Sigmah/ActivityInfo
+= Eclipse installation =
+== Download eclipse ==
+Eclipse is available on the [http://www.eclipse.org/downloads/ Eclipse download page]
+For this tutorial, we will use the latest eclipse version this date, which is “Eclipse Kepler 4.3.2”. After having downloading the zip file, just unzip it into the repository you want.
 
-  # Checkout a working copy 
-{{{
-svn checkout http://sigma-h.googlecode.com/svn/trunk sigmah
-}}}
-  # Change directory to the working copy
-{{{
-cd sigmah
-}}}
-  # Invoke the Maven compile and test phases
-{{{
-mvn test
-}}}
+== Before launch ==
+Before launching Eclipse, we will set the default jvm. Go to your Eclipse repository, and open the “eclipse.ini” file. Add the option “-vm path/to/jvm/bin” at the very beginning of the file.
 
-Note :: the maven build fails on ubuntu if a subversion client 1.7 or greater is used to checkout the project. Please downgrade your subversion client to v1.6, and that should solve the issue. You can use synaptic package manager on ubuntu to easily downgrade libsvn1 and subversion to v1.6
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/02_eclipse.ini.png" />
 
-Maven will automatically download all required dependencies, compile the project, and run unit and integration tests against an embedded database. 
+== Set others jvm ==
+We need now to set Java 6 into the Eclipse environment. Go to the “Preferences” options.
 
-== Setting up a development database ==
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/03_open_preference.png" />
 
-Out of the box, Sigmah will run against H2, an embedded database. As a developer, you will probably want to develop against a running database like MySQL that you can easily inspect and manipulate. 
+Open Java > Installed JREs
+We already have the jdk 7 installed. We will add jdk 6. Click « Add… ».
 
-You can tell sigmah to connect to your local database by creating a sigmah.properties file and saving it to your home directory. (C:\Users\XXXX on Windows Vista and later)
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/04_add_JRE.png" />
 
-{{{
-#
-# All Sigmah code is released under the GNU General Public License v3
-# See COPYRIGHT.txt and LICENSE.txt.
-#
+Select Standard VM, and browse to the java 6 directory. Eclipse should then find it. Click Finish.
 
-hibernate.dialect=org.hibernate.dialect.MySQLDialect
-hibernate.connection.driver_class=com.mysql.jdbc.Driver
-hibernate.connection.username=sa
-hibernate.connection.password=adminpwd
-hibernate.connection.url=jdbc:mysql://localhost/sigmah
-hibernate.hbm2ddl.auto=update
-hibernate.show_sql=true
-hibernate.format_sql=true
-}}}
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/05_add_JRE.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/06_add_JRE.png" />
 
-In order to populate your database with minimum data, you can run follow the procedure to populate a new Sigmah instance as defined in the Administrator Guide at the following pages: 1.[http://code.google.com/p/sigma-h/wiki/InstallingSigmah#Preparing_the_Sigmah_database Preparing_the_Sigmah_database] and 2.[http://code.google.com/p/sigma-h/wiki/InstallingSigmah#Creating_your_first_organization Creating_your_first_organization]
+Now close the Preferences window, and re-open it. Open Open Java > Installed JREs > Execution Envronment. Check the JREs corresponding to the Execution Envirronment for Java SE-1.6 and Java SE-1.7.
 
-== Starting GWT development mode in command line ==
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/07_add_JRE.png" />
 
-For the time being, we are maintaining two separate GWT entry points: ActivityInfoEntryPoint, which will continue to meet the day-to-day needs of existing users, and SigmahEntryPoint, which adds a great deal of new functionality but is not yet ready for production use. 
+== Plugins installation: ==
+Eclipse plugins are available in the “Help” menu, “Eclipse Marketplace…” option.
 
-You can launch GWT development mode for ActivityInfo by running
-{{{
-mvn gwt:run
-}}}
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/08_Marketplace.png" />
 
-and 
-{{{
-mvn -P Sigmah gwt:run
-}}}
+=== Subclipse ===
+Subclipse is an Eclipse support for subversion. It is used to get the sigmah project, and synchronize with the remote sigmah repository. Get “Subclipse 1.10.4” or newer.
 
-for the Sigmah module.
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/09_install_subclipse.png" />
 
-In order to run maven goal in offline mode, add -o option :
-{{{
-mvn -o gwt:run
-}}}
+Click Install > Select all > confirm > accept agreements > finish
 
-== Build Sigmah under Eclipse ==
+You may restart Eclipse before continuing.
 
-With IDE Eclipse, Java developer can benefit of many usefull plugins to edit the codes, build up the project and debug the project.This guide is based on the Eclipse IDE 3.6 Helios. 
+=== Maven plugin ===
+Maven is a build manager for java. We will use “Maven integration for Eclipse 1.4” which allow using Maven with Eclipse.
 
-=== Tools and Plugins to Install ===
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/10_install_maven.png" />
 
-  # [http://www.eclipse.org/downloads/ Eclipse] - The Eclipse IDE for Java EE developers
-  #  [http://maven.apache.org/download.html Apache Maven] - a build manager for Java.
-  # [http://subclipse.tigris.org/ Subclipse] or [http://www.eclipse.org/subversive/documentation/gettingStarted/aboutSubversive/install.php Subversive] - Two Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
-  # [http://m2eclipse.sonatype.org/installing-m2eclipse.html Maven plugin]2.2.1 - Plugins to allow developers to use Maven directly in Eclipse IDE
- 
-*Note:* You should add path of JDK and Maven into the environment PATH. See the instructions for both Windows and Unix [http://maven.apache.org/download.html]
+Click Install > Select all > confirm > accept agreements > finish
 
- 
+You may restart Eclipse before continuing.
 
-=== Check Out Project from SVN Server===
+=== Gwt plugin ===
+Sigmah project is a full GWT app. This plugin integrates the “Google Web Toolkit” tools into Eclipse. Get the “Google plugin for Eclipse 4.3” or newer. You must have the jdk 1.7 installed to be able to run this plugin, but keep in mind that the Sigmah project is built under java 1.6.
 
-==== Checkout a working copy in Eclipse ====
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/11_install_gwt.png" />
 
-{{{
-File->New->Other->SVN->Check Out Projects from SVN
-}}} 
-Then you enter the SVN server address
-{{{
-http://sigma-h.googlecode.com/svn/trunk
-}}} 
-Choose the folder *Sigmah* to check out.
+Click Install > Select all except “google app engine tools for Android” > confirm > accept agreements > finish
 
-Make sure you choose _check out as a  project configured using the New Project Wizard_ and then choose the _Java->Java Project_ .
+You may restart Eclipse before continuing.
 
-*Note:* You may have a "Missing artifact com.sun:tools:jar:1.5.0" error on the pom.xml. To solve it, add the argument -vm path\to\jdk\bin(ex. C:\Program Files\Java\jdk1.6.0_43\bin) in the eclipse.ini in the eclipse folder. Beware of adding this option before the -vmargs option.
+== Get Sigmah project on Eclipse ==
+We will create a new project using Eclipse. Go to File > new > other. Search for SVN, and select “Checkout Projects from SVN”.
 
-<font color="red"><strong><i>Important temporary note:</i></strong></font> currently, the maven build will not work due to missing library on the Maven repository. We're fixing this by setting up a new Maven repository elsewhere. In the meantime, the solution is to download and install those libraries manually. Those jar libraries can be downloaded from this location: http://code.google.com/p/sigma-h/downloads/detail?name=missing-jar-to-build-Sigmah.zip . To install those libraries, here is the [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html documentation], and the commands you should use:
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/12_create_project.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/13_create_project.png" />
+
+For the location, enter the following URL: http://sigma-h.googlecode.com/svn/trunk, and then select the “sigma” folder.
+
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/14_create_project.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/15_create_project.png" />
+
+Thick “Check out as a project in the workspace”, give the name you want and go to Next.
+
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/16_create_project.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/17_create_project.png" />
+
+The new created project should appear into the Package/Project explorer tab.
+
+<img border="1" src="http://sigma-h.googlecode.com/svn/wiki/install/18_Package_explorer.png" />
+
+Now we will convert this project to a “Maven project”. Right click on it, Configure > Convert to Maven Project.
+
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/19_Convert_to_maven.png" />
+<img border="1" src="http://sigma-h.googlecode.com/svn/wiki/install/20_Convert_to_maven.png" />
+
+== Add missing libraries ==
+==== Important temporary note: ====
+Currently, the maven build will not work due to missing library on the Maven repository. We're fixing this by setting up a new Maven repository elsewhere. In the meantime, the solution is to download and install those libraries manually.
+
+=== Get Apache maven ===
+First you will need to get the “real” Apache Maven. Go to the [http://maven.apache.org/download.cgi Apache download page] and get the last version (3.2.1) and unzip it anywhere on your computer.
+
+Now we will use this Maven to get the missing libraries.
+The jar libraries can be downloaded from this [http://code.google.com/p/sigma-h/downloads/detail?name=missing-jar-to-build-Sigmah.zip location]. Then unzip the archive.
+
+Go to your maven folder, open bin, and form there run: 
 {{{
 mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gwt-maps-1.1.1.jar -DgroupId=com.google.gwt.google-apis -DartifactId=gwt-maps -Dversion=1.1.1 -Dpackaging=jar
 mvn install:install-file -Dfile=..\..\missing-jar-to-build-Sigmah\gxt-2.2.5-gwt22.jar -DgroupId=com.extjs -DartifactId=gxt -Dversion=2.2.5-gwt22 -Dpackaging=jar
 }}}
 
-==== Enable Maven Dependency Management ====
+= PostgreSQL Installation for windows =
+As a developer, before you test the sigmah project, you have to set up your own database system. Sigmah is now based on the database system MySql 5. But it also works with PostgreSQL 8 +. For the instructions purpose, we will use PostgreSQL 9.3.
 
-After you check out the project to your IDE workspace, you may have many errors. It is normal because you should enable the Maven Dependency Management 
-{{{
-Right-Click Project->Maven->Enable Dependency Management
-}}} 
+First, download [http://www.postgresql.org/download/windows/ PostgreSQL for windows]. The version includes pgAdmin III which is a useful tool to set up the DB.
+Perform the installation.
 
-Then you refresh your project. 
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/21_Install_pgSQL.png" />
 
-*Note:* If you do not have a Maven menu by right clicking your project in Eclipse, you might need to convert it to a Maven project.
-{{{
-Right-Click Project->Configure->Convert to Maven project
-}}}
-If you can't see this option or it doesn't work, it means your maven plugin is not completely installed.
+You can keep default parameters:
+  * Repository : C:\Program Files\PostgreSQL\9.3
+  * Data repository : C:\Program Files\PostgreSQL\9.3\data
+  * Port : 5432
 
-=== Set Up Local Database ===
+== Database creation using pgAdmin III ==
+Now you should have a PostgreSQL server and pgAdmin III installed. Open pgAdmin III.
 
-As a developer, before you test the sigmah project, you have to set up your own database system.
-Sigmah is now based on the database system MySql 5. But it also works with Postgresql 8 +.
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/22_pgAdminIII.png" />
 
-==== Create the Database ====
+Connect to your server, and add a new database.
 
-In order to create a correct database for Sigmah and populate your database with default data, you can run step by step all the SQL scripts contained in this zip file:
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/23_pgAdminIII.png" />
 
-# [http://code.google.com/p/sigma-h/downloads/list MinimumDataKit-1.0-postgresql]
+Name it “sigmah”, keep “postgres” as the owner, and UTF8 encoding.
+Now we will run scripts to create the tables and populate it. [http://code.google.com/p/sigma-h/downloads/detail?name=MinimumDataKit-1.2-postgresql.zip&can=2&q= Get the scripts]
+Right click on the database, and “Script CREATE”
 
-# [http://code.google.com/p/sigma-h/downloads/list New Organization creation script (for Postgresql or Mysql)]
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/24_pgAdminIII.png" />
 
-You can use some graphical management tools to accomplish that task, such as _phpMyAdmin_ for Mysql and _phpPgAdmin_ for postgresql.
+Run each of the four downloaded scripts in the given order:
+  * 0-structure.postgres.sql
+  * 1-actinfo-data-withoutUser.postgresql.sql
+  * 2-compas_quality_framework.postgresql.sql
+  * 3-DRC-adminentities.postgresql.sql 
 
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/25_pgAdminIII.png" />
 
-==== Configure Project to Use Local Database ====
+Since the script are not kept up to date for each new sigmah version, you need to check out if there are differences between the last sigma model version, and the one you just installed. Go to [https://code.google.com/p/sigma-h/wiki/SchemaChangeLog the changeLog page], and run the given extra scripts.
 
-Now you should tell Sigmah project to use your own database. All you need to do is just to modify some values in a properties file: _Sigmah.properties_,which is in _main/resources/sigmah.properties_. 
+Now we have to run the new organization script. This will insert data of your (dummy) organization for dev purpose. [http://code.google.com/p/sigma-h/downloads/detail?name=newOrganizationLaunchScript-1.2%2B.postgresql.sql&can=2&q= Get the scripts].
+Before running it, you will have to replace some values by your own parameters:
+|| *Parameter to replace* || *Description* ||
+|| §OrganizationName§ || The name of your organization ||
+|| §OrganizationLogoFilename§ || The filename of the logo (i.e. logo.png) ||
+|| §HeadquartersCountryCode§ || Use an ISO 2-letters code like "AF" from [http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements Officially assigned code elements] ||
+|| §UserEmail§ || Your mail address ||
+|| §UserName§ || Your name ||
+|| §UserFirstName§ || Your first name ||
+|| §UserLocale§ || Must be "fr" or "en" or "es" don't include quotes (") ||
 
-For Mysql 5, it should like this:
-
-{{{
-#
-# All Sigmah code is released under the GNU General Public License v3
-# See COPYRIGHT.txt and LICENSE.txt.
-#
-
-hibernate.dialect=org.hibernate.dialect.MySQLDialect
-hibernate.connection.driver_class=com.mysql.jdbc.Driver
-hibernate.connection.username=your_username
-hibernate.connection.password=your_password
-hibernate.connection.url=jdbc:mysql://localhost:3306/your_database
-hibernate.hbm2ddl.auto=update
-hibernate.show_sql=true
-hibernate.format_sql=true
-
-}}}
-
-For Postgresql it should like this:
+== Sigmah properties ==
+Now you can tell sigmah how to connect to your database. In eclipse open the “sigmah.properties” file, and replace the hooked parameters with your own values. Here is an example of the result.
 
 {{{
+# --
+# DATABASE
+# --
 
 hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 hibernate.connection.driver_class=org.postgresql.Driver
-hibernate.connection.username=your_username
-hibernate.connection.password=your_password
-hibernate.connection.url=jdbc:postgresql://localhost:5432/your_database
+hibernate.connection.username=postgres
+hibernate.connection.password=root
+hibernate.connection.url=jdbc:postgresql://localhost:5433/sigmah
 hibernate.hbm2ddl.auto=update
-hibernate.show_sql=false
-hibernate.format_sql=false
-
-
+hibernate.show_sql=true
+hibernate.format_sql=true
 }}}
 
-You should make sure the user that you specify has enough rights to access and modify the database. The user is the owner is of the database, for example.
-
-=== Build and Debug Sigmah ===
-
-Now it is ready to build and debug our Sigmah project.
-
-<strong><i>Important!</i></strong> Make sure you are using JDK 1.6.
-
-==== Set Up Debug Configuration ====
+Fill also file storage and mail server definitions.
 
 {{{
-Run->Debug Configuration->Maven Build
+# --
+# FILES STORAGE
+# -------------
+# Files can be stored 2 ways :
+# * local storage : files are stored on the local disk
+# * s3 storage : files are stored in buckets with the AWS infrastructure
+# --
+
+# Storage policy (if missing or error, the default policy is the local one)
+# * Local : org.sigmah.server.endpoint.file.LocalStorageProvider
+# * S3 : org.sigmah.server.endpoint.file.S3StorageProvider
+repository.file_storage_provider_class=org.sigmah.server.endpoint.file.LocalStorageProvider
+
+# Root directory name (local) or bucket name (s3) where files are stored.
+repository.name=C:/Users/jbr/Documents/Dev/Workspaces/Sigmah/files
+
+#Maximum size of the uploaded files (bytes)
+upload.maxSize=20971520
+
+# Sub directory name (local) or key prefix (s3) where dynamically served images are stored.
+repository.images=images
+
+# Credentials, only for s3 storage.
+# aws.access_key=<aws access key>
+# aws.secret_key=<aws secret key>
 }}}
-and then
+
+= Running Sigmah =
+Before running Sigmah, make sure you have JDK 1.6 installed on your computer, and set in the Eclipse > preference > Compiler.
+To run the project, select it in the package explorer and deploy “Run > Run Configuration…”. Right click on “Maven build > new”.
+
+<img border="1" src="http://sigma-h.googlecode.com/svn/wiki/install/26_Run_sigmah.png" />
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/27_Run_sigmah.png" />
+
+Add goals “clean” and “gwt:run”, set the profiles as “sigmah” and check “skip tests”. Don’t forget to point out your base directory. In the JRE tab, select jdk1.6 in Runtime JRE. Apply and Run.
+
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/28_Run_sigmah.png" />
+
+Once the project is running, you should have a GWT development mode window open. From there you can open the app in your default browser. On the first time you run it, your browser will ask you to download and install the “GWT Developer Plugin”. Install it and you will be able to access Sigmah.
+
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/29_Run_sigmah.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/30_Run_sigmah.png" />
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/31_Run_sigmah.png" />
+
+
+= Run Sigmah on an external server =
+== Install Tomcat7 ==
+[https://tomcat.apache.org/download-70.cgi Get Tomcat7 here]
+Get the zip file for your OS (not the installer)
+
+`<path>`/bin/sartup.bat to start the tomcat7 server
+
+`<path>`/bin/shutdown.bat to stop the tomcat7 server
+
+== Create the Sigmah Package ==
+To create the war of the application, we will create a new run Configuration.
+Add goals “clean” and “gwt:package”, set the profiles as “sigmah” and check “skip tests”. Don’t forget to point out your base directory. In the JRE tab, select jdk1.6 in Runtime JRE. Apply and Run.
+
+<img border="1" height="400px" src="http://sigma-h.googlecode.com/svn/wiki/install/32_Ext_server.png" />
+
+The packaging can take a while, because of the multiple permutations we have (nb of languages {{{*}}} nb of supported browser). After building success, refresh your project (F5 on the project in the package explorer), and you should have a new war file in the “target” folder.
+
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/33_Ext_server.png" />
+
+Copy this file, and paste it in the “webapp” folder of your tomcat7 repository. Then start tomcat7. A new folder, named as the war file should be created.
+
+<img border="1" src="http://sigma-h.googlecode.com/svn/wiki/install/34_Ext_server.png" />
+
+Now try to go to <http://localhost:8080/appName>. Here it would be: http://localhost:8080/sigmah-1.3-rc1
+
+*NB:* Before starting the server, you can give the war any name that fits you. Then, change the url a you will be able to access the app. That way you can keep a history of your built war.
+
+*Warning:* If your want to rebuilt the app with a new war, shutdown your tomcat server, delete the old war AND the old app folder, and only then you can paste the new war and start the server.
+
+= Known bugs =
+== Out of memory error ==
+When you launch sigmah in GWT Development Mode, you may have an "OutOfMemory:PermSpace" error. To fix this error, you should specify a bigger PermSpace in the Pom.xml file, which is in your project root directory. In the “extraJvmArgs” tag, add the option –XX:MaxPermSize=512M (or more).
 {{{
-Right-Click Maven Build ->New
+<!-- configure the GWT-Maven plugin -->
+<plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>gwt-maven-plugin</artifactId>
+	<version>${gwt.maven.plugin.version}</version>
+
+	<configuration>
+		<runTarget>/</runTarget>
+		<logLevel>TRACE</logLevel>
+		<inplace>true</inplace>
+		<gwtVersion>${com.google.gwt.version}</gwtVersion>
+		<port>9090</port>
+		<module>org.sigmah.ActivityInfoProduction</module>
+		<extraJvmArgs>-Xmx512M -Xss1M -XX:MaxPermSize=512M</extraJvmArgs>
+	</configuration>
 }}}
 
-Rename the configuration as you want.Then you will have some properties to configure:
-{{{
-Base Directory: your project directory
-Goals: gwt:run
-Profiles: sigmah
-Debug output: check
-Offline: check
+== Missing artifact error ==
+You may have an error in the pom.xml: “Missing artifact com.sun:tools:jar:1.5.0”. To fix this, go to your Eclipse repository, and open the “eclipse.ini” file. Add the option “-vm path/to/jvm/bin” at the very beginning of the file.
 
-Add a parameter
-  Parameter name: -Dgwt:run  Value:9999
-}}}
-
-Create another run configuration for generation of the sources automatically.For example,every time you create a new key/value paire in the .properties files, you could run eclipse with this configuration to generate the Java code.
-{{{
-Base Directory: your project directory
-Goals: generate-sources
-Profiles: sigmah
-Debug output: check
-Offline: check
-}}}
-
-
-This kind of Debug configuration will launch the GWT Development Mode for Sigmah project. Maven will be responsible for downloading all dependencies including GWT Libraries,GXT Libraries into a local repository(By default, it is ~/.m2/repository). 
-
-The *_offline_ feature* makes Maven use the local repository to build your project after the first build. If you want Maven to download all libraries every time, you uncheck that feature.
-
-After you finish the configuration of the Debug, you could start to debug.
-
-<strong><i>Note:</i></strong> When you compile you may receive the following error: "DummyConnection is not abstract and does not override abstract method getNetworkTimeout() in Connection". This is because your JDK is not set to 1.6. Check and update to JDK 1.6 your PATH in Windows Environment Variables and project Properties/Run Configurations in Eclipse to fix this issue.
-
-==== Resolve the "OutOfMemory" Problem ====
-
-For this moment, when you launch sigmah in GWT Development Mode,you may have a "OutOfMemory:PermSpace" error. To solve this error, you should specify a bigger PermSpace in the *Pom.xml* file, which is in your project root directory.
-{{{
-
-            <!--  configure the GWT-Maven plugin -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-                <version>1.2</version>
-                <configuration>
-                    <runTarget>/</runTarget>
-                    <logLevel>TRACE</logLevel>
-                    <inplace>false</inplace>
-                    <gwtVersion>${gwtVersion}</gwtVersion>
-                    <port>9090</port>
-                    <module>org.sigmah.ActivityInfoProduction</module>
-                    <webappDirectory>${basedir}/war</webappDirectory>
-                    <warSourceDirectory>${basedir}/war</warSourceDirectory>
-                    <extraJvmArgs>-Xmx512M -Xss1M -XX:MaxPermSize=512M
-                    </extraJvmArgs>                                                                
-                </configuration>
-
-}}}
-
-For the _extraJvmArgs_ property, you can add a new option *-XX:MaxPermSize* to give a bigger Perm Space.
+<img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/02_eclipse.ini.png" />
