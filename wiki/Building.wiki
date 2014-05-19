@@ -50,7 +50,7 @@ Now close the Preferences window, and re-open it. Open Open Java > Installed JRE
 
 <img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/07_add_JRE.png" />
 
-== Plugins installation: ==
+== Plugins installation ==
 Eclipse plugins are available in the “Help” menu, “Eclipse Marketplace…” option.
 
 <img border="1" height="300px" src="http://sigma-h.googlecode.com/svn/wiki/install/08_Marketplace.png" />
