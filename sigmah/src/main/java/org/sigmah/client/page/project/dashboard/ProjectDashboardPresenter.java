@@ -887,8 +887,12 @@ public class ProjectDashboardPresenter implements SubPresenter {
 		// --
 
 		// Disabled until a field is modified.
-		view.getButtonSavePhase().setEnabled(false);
-		view.getButtonSavePhase().removeAllListeners();
+		if(hasValueChanged()) {
+			view.getButtonSavePhase().setEnabled(true);
+		} else {
+			view.getButtonSavePhase().setEnabled(false);
+			view.getButtonSavePhase().removeAllListeners();
+		}	
 
 		// If the phase isn't ended, adds the save action.
 		if (!isEndedPhase(projectPresenter.getCurrentDisplayedPhaseDTO())) {
