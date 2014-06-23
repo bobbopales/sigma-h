@@ -178,8 +178,9 @@ public class AdminModelActionListener implements ActionListener {
             };
 
             MessageBox deleteConfirmMsgBox =
-                    MessageBox.confirm(I18N.CONSTANTS.deleteConfirm(), I18N.CONSTANTS.deleteDraftProjectModelConfirm(),
+                    MessageBox.confirm(I18N.MESSAGES.adminDeleteDraftModel(getProjectModel().getName()), I18N.CONSTANTS.deleteDraftProjectModelConfirm(),
                         l);
+
             deleteConfirmMsgBox.show();
 
         } else if (isOrgUnit) {// Delete draft OrgUnit model
@@ -205,7 +206,7 @@ public class AdminModelActionListener implements ActionListener {
             };
 
             MessageBox deleteConfirmMsgBox =
-                    MessageBox.confirm(I18N.CONSTANTS.deleteConfirm(), I18N.CONSTANTS.deleteDraftOrgUnitModelConfirm(),
+                    MessageBox.confirm(I18N.MESSAGES.adminDeleteDraftModel(getOrgUnit().getName()), I18N.CONSTANTS.deleteDraftOrgUnitModelConfirm(),
                         l);
             deleteConfirmMsgBox.show();
 
