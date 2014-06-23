@@ -644,10 +644,11 @@ public class ProjectReportsView extends LayoutContainer {
                                 }
                             }
 
+                            updateChanges();
+
                             autoSaveTimer.cancel();
                             autoSaveTimer.schedule(AUTO_SAVE_PERIOD);
                         }
-
                     });
                 }
             };
@@ -1021,6 +1022,15 @@ public class ProjectReportsView extends LayoutContainer {
             }
         }
         return changed;
+    }
+
+    public void updateChanges() {
+        if (textAreas != null) {
+            for (Map.Entry<Integer, String> entry : oldContents.entrySet()) {
+                RichTextArea textArea = textAreas.get(entry.getKey());
+                oldContents.put(entry.getKey(), textArea.getText());
+            }
+        }
     }
 
     public void eraseChanges() {
