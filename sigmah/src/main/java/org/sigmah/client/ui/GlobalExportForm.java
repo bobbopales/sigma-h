@@ -121,6 +121,7 @@ public class GlobalExportForm {
 				periods.setEditable(false);
 				periods.setTriggerAction(TriggerAction.ALL);
 				periods.setHideLabel(false);
+				periods.setEnabled(false);
 
 				final FlexTable periodTable = new FlexTable();
 				periodTable.setHTML(0, 0, "<b>" + I18N.CONSTANTS.exportBackSelection() + "</b>");
@@ -181,6 +182,7 @@ public class GlobalExportForm {
 										                }
 										                periodsStore.add(result.getList());
 										                periodsStore.commitChanges();
+										                periods.setEnabled(true);
 									                }
 								                }
 							                });
