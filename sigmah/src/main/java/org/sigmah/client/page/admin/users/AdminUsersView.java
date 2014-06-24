@@ -573,7 +573,9 @@ public class AdminUsersView extends View {
 			@Override
 			public boolean select(Store<UserDTO> store, UserDTO parent, UserDTO item, String property) {
 				boolean selected = false;
-				selected = item.getName().toUpperCase().startsWith(filterUser.toUpperCase());
+				selected = item.getName().toUpperCase().contains(filterUser.toUpperCase()) 
+						|| item.getFirstName().toUpperCase().contains(filterUser.toUpperCase())
+						|| item.getEmail().toUpperCase().contains(filterUser.toUpperCase());
 				return selected;
 			}
 		};
