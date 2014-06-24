@@ -24,6 +24,7 @@ import org.sigmah.shared.dto.ProjectModelDTO;
 import org.sigmah.shared.dto.UpdateGlobalExportSettings;
 import org.sigmah.shared.dto.element.DefaultFlexibleElementDTO;
 import org.sigmah.shared.dto.element.FlexibleElementDTO;
+import org.sigmah.shared.dto.layout.LayoutGroupDTO;
 
 import com.extjs.gxt.ui.client.Style.Orientation;
 import com.extjs.gxt.ui.client.data.BaseModelData;
@@ -135,7 +136,7 @@ public class GlobalExportSettingsForm {
 		w.setModal(true);
 		w.setBlinkModal(true);
 		w.setLayout(new FitLayout());
-		w.setSize(600, 420);
+		w.setSize(900, 420);
 		w.setHeading(I18N.CONSTANTS.globalExportConfiguration());
 
 		final FormPanel panel = new FormPanel();
@@ -363,10 +364,11 @@ public class GlobalExportSettingsForm {
 			public Object render(FlexibleElementDTO model, String property, ColumnData config, int rowIndex,
 			                int colIndex, ListStore<FlexibleElementDTO> store, Grid<FlexibleElementDTO> grid) {
 				String title = null;
-				if (ElementTypeEnum.DEFAULT.equals(model.getElementType()))
-					title = DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO) model).getType());
-				else
+				if (ElementTypeEnum.DEFAULT.equals(model.getElementType())){                         
+					title = DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO) model).getType());                    
+				} else {
 					title = model.getLabel();
+				}
 				final Text text = AdminUtil.createGridText(title);
 				text.setTitle(title);
 				return text;
@@ -374,10 +376,56 @@ public class GlobalExportSettingsForm {
 
 		});
 		configs.add(column);
+		
+		column = new ColumnConfig("container",I18N.CONSTANTS.adminFlexibleContainer(), 120);   
+        column.setRenderer(new GridCellRenderer<FlexibleElementDTO>(){
+
+              @Override
+              public Object render(FlexibleElementDTO model, String property,
+                        ColumnData config, int rowIndex, int colIndex,
+                        ListStore<FlexibleElementDTO> store, Grid<FlexibleElementDTO> grid) { 
+                   
+                   /**
+                   if (ElementTypeEnum.DEFAULT.equals(model.getElementType())){
+                        
+                        //System.out.println("Property ::: "+property);
+                        //System.out.println("Model Properties :::: "+model.getLabel());
+                        //System.out.println("Model ::: "+model);
+                        //System.out.println("Model Properties :::: "+model.getContainerModel().getProperties().toString());
+                        
+                        return AdminUtil.createGridText("DEFAULT_CASE");
+                   }else{
+                   **/
+                        BaseModelData container = model.getContainerModel();
+                        return AdminUtil.createGridText((String)container.get("name"));
+                        
+                   //}
+              
+              
+              }
+         
+        }); 
+        configs.add(column);
+        
+        column = new ColumnConfig("group",I18N.CONSTANTS.adminFlexibleGroup(), 200);
+        column.setRenderer(new GridCellRenderer<FlexibleElementDTO>(){
+
+        	@Override
+            public Object render(final FlexibleElementDTO model, String property,
+            		ColumnData config, int rowIndex, int colIndex,
+                    ListStore<FlexibleElementDTO> store, Grid<FlexibleElementDTO> grid) { 
+                    
+        		LayoutGroupDTO group = model.getGroup();
+                return AdminUtil.createGridText((String)group.get("title"));
+        	}
+        }); 
+        configs.add(column);
+		
+		
 		ColumnModel cm = new ColumnModel(configs);
 		Grid<FlexibleElementDTO> grid = new Grid<FlexibleElementDTO>(fieldsStore, cm);
 		grid.setStyleName("global-export-fields-table");
-		grid.setSize(250, 200);
+		grid.setSize(500, 200);
 		grid.getView().setForceFit(true);
 		return grid;
 	}
