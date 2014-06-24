@@ -210,7 +210,7 @@ public class FormWindow {
         fieldsPanel.setLayout(fieldsPanelLayout);
         fieldsPanel.setBorders(false);
         fieldsPanel.setWidth("100%");
-
+        
         // Builds the main panel.
         final ContentPanel mainPanel = new ContentPanel();
         final VBoxLayout layout = new VBoxLayout();
@@ -470,8 +470,8 @@ public class FormWindow {
         fieldPanel.setHeaderVisible(false);
         fieldPanel.setLayout(new HBoxLayout());
 
-        fieldPanel.add(fieldLabel, new HBoxLayoutData(new Margins(4, 5, 0, 0)));
-        final HBoxLayoutData flex = new HBoxLayoutData(new Margins(0, 5, 0, 0));
+        fieldPanel.add(fieldLabel, new HBoxLayoutData(new Margins(4, 20, 0, 0)));
+        final HBoxLayoutData flex = new HBoxLayoutData(new Margins(0, 20, 0, 0));
         flex.setFlex(1);
         fieldPanel.add(field, flex);
 

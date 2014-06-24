@@ -393,7 +393,7 @@ public class CreateProjectWindow {
 		formPanel = new FormPanel();
 		formPanel.setBodyBorder(false);
 		formPanel.setHeaderVisible(false);
-		formPanel.setPadding(5);
+		formPanel.setPadding(20);
 		formPanel.setLabelWidth(170);
 		formPanel.setFieldWidth(350);
 
@@ -419,7 +419,7 @@ public class CreateProjectWindow {
 		projectPanel = new FormPanel();
 		projectPanel.setBodyBorder(false);
 		projectPanel.setHeaderVisible(false);
-		projectPanel.setPadding(5);
+		projectPanel.setPadding(0);
 		projectPanel.add(formPanel);
 		projectPanel.add(testProjectPanel);
 
@@ -431,7 +431,7 @@ public class CreateProjectWindow {
 
 		// Window.
 		window = new Window();
-		window.setWidth(560);
+		window.setWidth(590);
 		window.setAutoHeight(true);
 
 		window.setPlain(true);
