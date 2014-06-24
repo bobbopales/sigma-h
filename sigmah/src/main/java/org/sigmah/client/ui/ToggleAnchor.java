@@ -95,7 +95,7 @@ public class ToggleAnchor extends HTML {
         this.anchorMode = anchorMode;
 
         if(anchorMode) {
-            setHTML("<a href=\""+target+"\" class=\""+className+"\">"+label+"</a>");
+        	setHTML("<a href=\"" + target + "\" class=\"" + className+"\">" + label + "</a>");
         } else {
             setHTML(label);
         }
@@ -106,5 +106,18 @@ public class ToggleAnchor extends HTML {
      */
     public void toggleAnchorMode() {
         setAnchorMode(!this.anchorMode);
+    }
+    
+    /*
+     * Sets a given style for the HTML. 
+     * Keeps the anchor hyperlink is present.
+     */
+    public void setHTMLStyle(String style) {
+    	if (anchorMode) {
+    		setHTML("<p style=\"" + style + "\">" + "<a href=\"" + target
+    				+ "\" class=\"" + className+"\">" + label + "</a>" + "</p>");
+    	} else {
+    		setHTML("<p style=\"" + style + "\">" + label + "</p>");
+    	}
     }
 }
