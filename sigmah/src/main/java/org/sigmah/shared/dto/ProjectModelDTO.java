@@ -176,33 +176,51 @@ public class ProjectModelDTO extends BaseModelData implements EntityDTO {
     	List<FlexibleElementDTO> allElements = new ArrayList<FlexibleElementDTO>();
     	
     	List<LayoutGroupDTO> layoutGroupDTOs=new ArrayList<LayoutGroupDTO>();
+    	
     	//add phase groups
-    	for(PhaseModelDTO phaseDTO : getPhaseModelsDTO()){
-    		layoutGroupDTOs.addAll(phaseDTO.getLayoutDTO().getLayoutGroupsDTO());
-			 
-    	}
-    	//add details groups
-    	if(getProjectDetailsDTO().getLayoutDTO()!=null){
-    		layoutGroupDTOs.addAll(getProjectDetailsDTO().getLayoutDTO().getLayoutGroupsDTO());
+    	for(PhaseModelDTO phaseDTO : getPhaseModelsDTO()){          
+	         for(LayoutGroupDTO lg : phaseDTO.getLayoutDTO().getLayoutGroupsDTO()){
+                   for(LayoutConstraintDTO lc : lg.getLayoutConstraintsDTO()){
+                        FlexibleElementDTO element = lc.getFlexibleElementDTO();
+                        element.setGroup(lg);
+                        element.setConstraint(lc);
+                        element.setContainerModel(phaseDTO);
+                        
+                        ElementTypeEnum type=element.getElementType();
+                        if(ElementTypeEnum.DEFAULT.equals(type)||
+                                  ElementTypeEnum.CHECKBOX.equals(type)||
+                                  ElementTypeEnum.TEXT_AREA.equals(type)||
+                                  ElementTypeEnum.TRIPLETS.equals(type)||
+                                  ElementTypeEnum.QUESTION.equals(type)){                     
+                             allElements.add(element);
+                        } 
+                   }
+              }
     	}
     	
-    	//gather elements
-    	for(LayoutGroupDTO lg : layoutGroupDTOs){
-			for(LayoutConstraintDTO lc : lg.getLayoutConstraintsDTO()){
-				FlexibleElementDTO element = lc.getFlexibleElementDTO();
-				ElementTypeEnum type=element.getElementType();
-				
- 				if(ElementTypeEnum.DEFAULT.equals(type)||
- 						ElementTypeEnum.CHECKBOX.equals(type)||
- 						ElementTypeEnum.TEXT_AREA.equals(type)||
- 						ElementTypeEnum.TRIPLETS.equals(type)||
- 						ElementTypeEnum.QUESTION.equals(type)){                	
-					allElements.add(element);
-				}
-			     
-				
-			}
-		}
+    	//add details groups
+    	ProjectDetailsDTO p = getProjectDetailsDTO();
+    	p.setName();
+    	setProjectDetailsDTO(p);
+    	if(getProjectDetailsDTO().getLayoutDTO()!=null){
+    		for(LayoutGroupDTO lg : getProjectDetailsDTO().getLayoutDTO().getLayoutGroupsDTO()){
+    			for(LayoutConstraintDTO lc : lg.getLayoutConstraintsDTO()){
+                    FlexibleElementDTO element = lc.getFlexibleElementDTO();
+                    element.setGroup(lg);
+                    element.setConstraint(lc);
+                    element.setContainerModel(getProjectDetailsDTO());
+                    
+                    ElementTypeEnum type=element.getElementType();
+                    if(ElementTypeEnum.DEFAULT.equals(type)||
+                              ElementTypeEnum.CHECKBOX.equals(type)||
+                              ElementTypeEnum.TEXT_AREA.equals(type)||
+                              ElementTypeEnum.TRIPLETS.equals(type)||
+                              ElementTypeEnum.QUESTION.equals(type)){                     
+                         allElements.add(element);
+                    } 
+    			}
+    		}
+    	}
     	    	 	
 		return allElements;		      
     }
