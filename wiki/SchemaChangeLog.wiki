@@ -17,7 +17,7 @@ Each time a developer needs to change the database, he should do the following:
   # modified the [http://code.google.com/p/sigma-h/source/browse/#svn%2Ftrunk%2Fscripts%2Fsql trunk/scripts/sql] files of the MinimumDataKit to be sure that the fresh installation will have installation scripts which are up to date
   # modified the wiki page below with the following rule: give the SQL commands to modify the structure of the database... and the data which may need to me updated according to your schema modification 
 
-= Release 1.3 =
+= Release 2.0 =
 
 == 1. Schema changes ==
 
