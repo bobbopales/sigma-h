@@ -502,4 +502,8 @@ public class PivotGridPanel extends ContentPanel implements HasValue<PivotElemen
 	public EditorTreeGrid<PivotTableRow> getGrid() {
 		return grid;
 	}
+	
+	public boolean hasIndicatorsInStore() {
+		return (indicators != null && indicators.size() != 0);
+	}
 }
