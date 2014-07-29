@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern  ;
+
 
 import org.sigmah.client.cache.UserLocalCache;
 import org.sigmah.client.dispatch.Dispatcher;
@@ -79,6 +82,8 @@ public class UserSigmahForm extends FormPanel {
 	private final static int LABEL_WIDTH = 90;
 	private final static int MAX_PROFILES_TENTATIVES_PER_USER = 100;
 	private final static String ID_PROFILE = "idProfile";
+	private static final String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"+"[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
 
 	public UserSigmahForm(Dispatcher dispatcher, UserLocalCache cache, final AsyncCallback<CreateResult> callback,
 			UserDTO userToUpdate) {
@@ -384,7 +389,19 @@ public class UserSigmahForm extends FormPanel {
 
 		final String name = nameField.getValue();
 		final String firstName = firstNameField.getValue();
-		final String email = emailField.getValue();
+		final String email = emailField.getValue().trim();
+		
+		//Validate Email by matching with the given regex
+		Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+		Matcher matcher = pattern.matcher(email);
+		if(!matcher.matches()){
+			MessageBox.alert(I18N.CONSTANTS.createFormIncomplete(), I18N.MESSAGES.invalidEmailAddress(), null);
+			unmask();
+			return;
+		}
+		//Validated Email
+		
+		
 		//Get the value only if the admin wants to change the password
 		final String pwd = pwdField.isVisible() ? pwdField.getValue() : null;
 
