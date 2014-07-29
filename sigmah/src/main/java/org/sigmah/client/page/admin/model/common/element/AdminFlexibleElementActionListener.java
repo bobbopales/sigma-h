@@ -5,14 +5,13 @@ import java.util.List;
 
 import org.sigmah.client.dispatch.Dispatcher;
 import org.sigmah.client.i18n.I18N;
+import org.sigmah.client.page.admin.model.common.element.AdminFlexibleElementsPresenter.View;
 import org.sigmah.client.page.common.grid.ConfirmCallback;
 import org.sigmah.client.page.common.toolbar.ActionListener;
 import org.sigmah.client.page.common.toolbar.UIActions;
-import org.sigmah.client.page.admin.model.common.element.AdminFlexibleElementsPresenter.View;
 import org.sigmah.client.util.Notification;
 import org.sigmah.shared.command.DeleteFlexibleElements;
 import org.sigmah.shared.command.result.VoidResult;
-import org.sigmah.shared.domain.element.DefaultFlexibleElementType;
 import org.sigmah.shared.dto.element.DefaultFlexibleElementDTO;
 import org.sigmah.shared.dto.element.FlexibleElementDTO;
 
@@ -50,9 +49,9 @@ public class AdminFlexibleElementActionListener implements ActionListener {
 		String names = "";
 		for(FlexibleElementDTO s : selection){
 			ids.add(s.getId());
-			names = s.getLabel() + ", " + names;
-			if(s instanceof DefaultFlexibleElementDTO){
-				notDeletableNames += DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO)s).getType()) + ", ";
+			names = s.getFormattedLabel() + ", " + names;
+			if (s instanceof DefaultFlexibleElementDTO){
+				notDeletableNames += s.getFormattedLabel() + ", ";
 			}
 		}
 		

@@ -7,7 +7,6 @@ import org.sigmah.client.dispatch.Dispatcher;
 import org.sigmah.client.dispatch.monitor.MaskingAsyncMonitor;
 import org.sigmah.client.i18n.I18N;
 import org.sigmah.client.icon.IconImageBundle;
-import org.sigmah.client.page.admin.model.common.element.ElementTypeEnum;
 import org.sigmah.client.page.admin.model.common.importation.AdminImportationSchemeModelsPresenter.View;
 import org.sigmah.client.page.common.grid.ConfirmCallback;
 import org.sigmah.client.page.common.toolbar.UIActions;
@@ -15,10 +14,8 @@ import org.sigmah.client.ui.ToggleAnchor;
 import org.sigmah.shared.command.GetImportationSchemes;
 import org.sigmah.shared.command.result.CreateResult;
 import org.sigmah.shared.command.result.ImportationSchemeListResult;
-import org.sigmah.shared.domain.element.DefaultFlexibleElementType;
 import org.sigmah.shared.dto.EntityDTO;
 import org.sigmah.shared.dto.OrgUnitDTO;
-import org.sigmah.shared.dto.element.DefaultFlexibleElementDTO;
 import org.sigmah.shared.dto.importation.ImportationSchemeDTO;
 import org.sigmah.shared.dto.importation.ImportationSchemeModelDTO;
 import org.sigmah.shared.dto.importation.VariableBudgetElementDTO;
@@ -174,13 +171,7 @@ public class AdminImportationSchemeModelsView extends View {
 			public Object render(VariableFlexibleElementDTO model, String property, ColumnData config, int rowIndex,
 			                int colIndex, ListStore<VariableFlexibleElementDTO> store,
 			                Grid<VariableFlexibleElementDTO> grid) {
-				if (model.getFlexibleElementDTO().getElementType() == ElementTypeEnum.DEFAULT) {
-					DefaultFlexibleElementDTO defaultElementDTO = (DefaultFlexibleElementDTO) model
-					                .getFlexibleElementDTO();
-					return DefaultFlexibleElementType.getName(defaultElementDTO.getType());
-				} else {
-					return model.getFlexibleElementDTO().getLabel();
-				}
+				return model.getFlexibleElementDTO().getFormattedLabel();
 			}
 		});
 		configs.add(column);
@@ -425,15 +416,7 @@ public class AdminImportationSchemeModelsView extends View {
 		} else {
 			String confirmMessage = "";
 			for (VariableFlexibleElementDTO variableFlexibleElementsToDelete : getVariableFlexibleElementsSelection()) {
-				String elementLabel = "";
-				if (ElementTypeEnum.DEFAULT.equals(variableFlexibleElementsToDelete.getFlexibleElementDTO()
-				                .getElementType())) {
-					elementLabel = DefaultFlexibleElementType
-					                .getName(((DefaultFlexibleElementDTO) variableFlexibleElementsToDelete
-					                                .getFlexibleElementDTO()).getType());
-				} else {
-					elementLabel = variableFlexibleElementsToDelete.getFlexibleElementDTO().getElementLabel();
-				}
+				String elementLabel = variableFlexibleElementsToDelete.getFlexibleElementDTO().getFormattedLabel();
 				confirmMessage += elementLabel + ", ";
 			}
 			if (!confirmMessage.isEmpty()) {

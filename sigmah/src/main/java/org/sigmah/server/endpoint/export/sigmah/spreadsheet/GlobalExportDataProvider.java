@@ -20,6 +20,7 @@ import org.sigmah.server.Translator;
 import org.sigmah.server.UIConstantsTranslator;
 import org.sigmah.server.dao.GlobalExportDAO;
 import org.sigmah.server.dao.hibernate.GlobalExportHibernateDAO;
+import org.sigmah.server.endpoint.export.sigmah.ExporterUtil;
 import org.sigmah.server.endpoint.export.sigmah.spreadsheet.ExportConstants.MultiItemText;
 import org.sigmah.server.endpoint.export.sigmah.spreadsheet.data.LogFrameExportData;
 import org.sigmah.server.endpoint.gwtrpc.handler.GetValueHandler;
@@ -454,7 +455,7 @@ public class GlobalExportDataProvider {
 	                final Translator translator) {
 
 		Object value = null;
-		String label = null;
+		String label = ExporterUtil.getFlexibleElementLabel(element, translator, locale);
 
 		final DefaultFlexibleElement defaultElement = (DefaultFlexibleElement) element;
 
@@ -462,8 +463,6 @@ public class GlobalExportDataProvider {
 
 		switch (defaultElement.getType()) {
 		case CODE: {
-
-			label = translator.translate("projectName", locale);
 			if (hasValue) {
 				value = valueResult.getValueObject();
 			} else {
@@ -472,7 +471,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case TITLE: {
-			label = translator.translate("projectFullName", locale);
 			if (hasValue) {
 				value = valueResult.getValueObject();
 			} else {
@@ -481,7 +479,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case START_DATE: {
-			label = translator.translate("projectStartDate", locale);
 			if (hasValue) {
 				value = new Date(Long.parseLong(valueResult.getValueObject()));
 			} else {
@@ -490,7 +487,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case END_DATE: {
-			label = translator.translate("projectEndDate", locale);
 			if (hasValue) {
 				value = new Date(Long.parseLong(valueResult.getValueObject()));
 			} else {
@@ -501,7 +497,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case BUDGET: {
-			label = translator.translate("projectBudget", locale);
 			BudgetElement budgetElement = (BudgetElement) element;
 
 			Double pb = 0d;
@@ -527,7 +522,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case COUNTRY: {
-			label = translator.translate("projectCountry", locale);
 			if (hasValue) {
 				int countryId = Integer.parseInt(valueResult.getValueObject());
 				value = entityManager.find(Country.class, countryId).getName();
@@ -537,7 +531,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case OWNER: {
-			label = translator.translate("projectOwner", locale);
 			if (hasValue) {
 				value = valueResult.getValueObject();
 			} else {
@@ -546,7 +539,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case MANAGER: {
-			label = translator.translate("projectManager", locale);
 			if (hasValue) {
 				int userId = Integer.parseInt(valueResult.getValueObject());
 				value = getUserName(entityManager.find(User.class, userId));
@@ -556,7 +548,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case ORG_UNIT: {
-			label = translator.translate("orgunit", locale);
 			int orgUnitId = -1;
 			if (hasValue) {
 				orgUnitId = Integer.parseInt(valueResult.getValueObject());
@@ -580,9 +571,8 @@ public class GlobalExportDataProvider {
 	public ValueLabel getDefElementPair(final ValueResult valueResult, final FlexibleElement element,
 	                final OrgUnit orgUnit, final EntityManager entityManager, final Locale locale,
 	                final Translator translator) {
-
 		Object value = null;
-		String label = null;
+		String label = ExporterUtil.getFlexibleElementLabel(element, translator, locale);
 
 		final DefaultFlexibleElement defaultElement = (DefaultFlexibleElement) element;
 
@@ -590,8 +580,6 @@ public class GlobalExportDataProvider {
 
 		switch (defaultElement.getType()) {
 		case CODE: {
-
-			label = translator.translate("projectName", locale);
 			if (hasValue) {
 				value = valueResult.getValueObject();
 			} else {
@@ -600,7 +588,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case TITLE: {
-			label = translator.translate("projectFullName", locale);
 			if (hasValue) {
 				value = valueResult.getValueObject();
 			} else {
@@ -610,7 +597,6 @@ public class GlobalExportDataProvider {
 			break;
 
 		case BUDGET: {
-			label = translator.translate("projectBudget", locale);
 			BudgetElement budgetElement = (BudgetElement) element;
 
 			Double pb = 0d;
@@ -636,7 +622,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case COUNTRY: {
-			label = translator.translate("projectCountry", locale);
 			if (hasValue) {
 				int countryId = Integer.parseInt(valueResult.getValueObject());
 				value = entityManager.find(Country.class, countryId).getName();
@@ -646,7 +631,6 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case MANAGER: {
-			label = translator.translate("projectManager", locale);
 			if (hasValue) {
 				int userId = Integer.parseInt(valueResult.getValueObject());
 				value = getUserName(entityManager.find(User.class, userId));
@@ -656,14 +640,12 @@ public class GlobalExportDataProvider {
 		}
 			break;
 		case ORG_UNIT: {
-			label = translator.translate("orgunit", locale);
 			OrgUnit parentOrgUnit = orgUnit.getParent();
 			if (parentOrgUnit == null)
 				parentOrgUnit = orgUnit;
 			value = parentOrgUnit.getName() + " - " + parentOrgUnit.getFullName();
 		}
 			break;
-
 		}
 		return new ValueLabel(label, value);
 	}

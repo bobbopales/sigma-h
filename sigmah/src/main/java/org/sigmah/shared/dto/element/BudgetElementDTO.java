@@ -177,8 +177,7 @@ public class BudgetElementDTO extends DefaultFlexibleElementDTO {
 		fieldset.add(ratioLabel);
 
 		// Sets the field label.
-		setLabel(I18N.CONSTANTS.projectBudget());
-		fieldset.setHeading(getLabel());
+		fieldset.setHeading(getFormattedLabel());
 
 		component = fieldset;
 		return component;

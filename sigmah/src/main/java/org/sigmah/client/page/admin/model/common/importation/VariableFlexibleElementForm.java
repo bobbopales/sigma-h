@@ -72,8 +72,8 @@ public class VariableFlexibleElementForm extends FormPanel {
 		}
 		for (FlexibleElementDTO fle : allElements) {
 			if (fle instanceof DefaultFlexibleElementDTO) {
-				((DefaultFlexibleElementDTO) fle).setLabel(DefaultFlexibleElementType
-				                .getName(((DefaultFlexibleElementDTO) fle).getType()));
+				DefaultFlexibleElementDTO dfle = (DefaultFlexibleElementDTO) fle;
+				dfle.setLabel(dfle.getFormattedLabel());
 				if (fle instanceof BudgetElementDTO) {
 
 					BudgetElementDTO budgetElementDTO = (BudgetElementDTO) fle;
