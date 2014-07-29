@@ -71,24 +71,46 @@ public class AutoExportJob implements Job {
 				if(setting.getAutoExportFrequency()==null 
 						|| setting.getAutoExportFrequency()<1) continue;
 				
-				final Calendar systemCalendar = Calendar.getInstance();
-				final Calendar scheduledCalendar = Calendar.getInstance();
+				final Calendar systemCalendar = Calendar.getInstance();			
 				
- 				Date lastExportDate = setting.getLastExportDate();
-				if(lastExportDate==null){
-					lastExportDate = systemCalendar.getTime();
-					setting.setLastExportDate(lastExportDate);
-					em.merge(setting);
+				boolean doExport = false;
+									
+				if( (setting.getAutoExportFrequency()>=31) && (setting.getAutoExportFrequency()<=58)){
+					//Case of Monthly Auto Export
+					if((setting.getAutoExportFrequency()-30) == systemCalendar.get(Calendar.DAY_OF_MONTH)){
+						doExport = true;
+					}
+				}else if((setting.getAutoExportFrequency() >= 61) && (setting.getAutoExportFrequency() <=67)){
+					//Case of Weekly Auto Export
+					if((setting.getAutoExportFrequency()-60) == systemCalendar.get(Calendar.DAY_OF_WEEK)){
+						doExport = true;
+					}
+					
 				}else{
-					scheduledCalendar.setTime(lastExportDate);
-					// add scheduled days to the last exported date
-					scheduledCalendar.add(Calendar.DAY_OF_MONTH,setting.getAutoExportFrequency());
+					//Regular Auto-Export every N-days
+					
+					final Calendar scheduledCalendar = Calendar.getInstance();
+	 				Date lastExportDate = setting.getLastExportDate();
+					if(lastExportDate==null){
+						lastExportDate = systemCalendar.getTime();
+						setting.setLastExportDate(lastExportDate);
+						em.merge(setting);
+					}else{
+						scheduledCalendar.setTime(lastExportDate);
+						// add scheduled days to the last exported date
+						scheduledCalendar.add(Calendar.DAY_OF_MONTH,setting.getAutoExportFrequency());
+					}
+													
+					final Date systemDate=getZeroTimeDate(systemCalendar.getTime());
+					final Date scheduledDate=getZeroTimeDate(scheduledCalendar.getTime());
+					
+					if(systemDate.compareTo(scheduledDate)>=0){
+						doExport = true;
+					}
 				}
-												
-				final Date systemDate=getZeroTimeDate(systemCalendar.getTime());
-				final Date scheduledDate=getZeroTimeDate(scheduledCalendar.getTime());
+				
 				 
-				if(systemDate.compareTo(scheduledDate)>=0){ 
+				if(doExport){ 
 					/*
 					 * Start auto export  
 					 */
