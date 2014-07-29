@@ -1,5 +1,7 @@
 package org.sigmah.client.page.project.pivot;
 
+import java.util.ArrayList;
+
 import org.sigmah.client.EventBus;
 import org.sigmah.client.dispatch.Dispatcher;
 import org.sigmah.client.dispatch.monitor.MaskingAsyncMonitor;
@@ -23,9 +25,12 @@ import org.sigmah.client.util.state.IStateManager;
 import org.sigmah.shared.command.GenerateElement;
 import org.sigmah.shared.command.GetIndicators;
 import org.sigmah.shared.command.GetProject;
+import org.sigmah.shared.command.GetSites;
 import org.sigmah.shared.command.result.BatchResult;
 import org.sigmah.shared.command.result.IndicatorListResult;
+import org.sigmah.shared.command.result.SiteResult;
 import org.sigmah.shared.domain.profile.GlobalPermissionEnum;
+import org.sigmah.shared.dao.Filter;
 import org.sigmah.shared.dto.IndicatorDTO;
 import org.sigmah.shared.dto.ProjectDTO;
 import org.sigmah.shared.dto.SiteDTO;
@@ -633,7 +638,7 @@ public class ProjectPivotContainer extends ContentPanel implements ProjectSubPre
 		gridPanel.getStore().rejectChanges();
 		toolBar.setDirty(false);
 	}
-
+	
 	@Override
 	public Component getView() {
 		return this;
@@ -646,6 +651,38 @@ public class ProjectPivotContainer extends ContentPanel implements ProjectSubPre
 
 	@Override
 	public void viewDidAppear() {
+
+		if (gridPanel.hasIndicatorsInStore()) {
+
+			Filter filter = new Filter();
+			filter.addRestriction(DimensionType.Database, currentDatabaseId);
+
+			GetSites request = new GetSites();
+			request.setFilter(filter);
+
+			dispatcher.execute(request, null, new AsyncCallback<SiteResult>() {
+
+				@Override
+				public void onFailure(Throwable caught) {
+				}
+
+				@Override
+				public void onSuccess(SiteResult result) {
+					if (result.getData().size() == 0) {
+						MessageBox box = new MessageBox();
+						box.setButtons(MessageBox.OK);
+						box.setIcon(MessageBox.INFO);
+						box.addCallback(new Listener<MessageBoxEvent>() {
+							public void handleEvent(MessageBoxEvent ce) {
+								ce.getButtonClicked();
+							}
+						});
+						box.setMessage(I18N.CONSTANTS.projectWithNoSitesWarning());
+						box.show();
+					}
+				}
+			});
+		}
 
 	}
 

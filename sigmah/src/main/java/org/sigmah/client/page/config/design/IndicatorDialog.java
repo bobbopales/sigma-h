@@ -1,5 +1,7 @@
 package org.sigmah.client.page.config.design;
 
+import java.util.ArrayList;
+
 import org.sigmah.client.EventBus;
 import org.sigmah.client.dispatch.Dispatcher;
 import org.sigmah.client.dispatch.monitor.MaskingAsyncMonitor;
@@ -8,12 +10,22 @@ import org.sigmah.client.event.IndicatorEvent.ChangeType;
 import org.sigmah.client.i18n.I18N;
 import org.sigmah.client.page.common.dialog.FormDialogCallback;
 import org.sigmah.shared.command.BatchCommand;
+import org.sigmah.shared.command.GetSites;
 import org.sigmah.shared.command.UpdateEntity;
 import org.sigmah.shared.command.result.BatchResult;
+import org.sigmah.shared.command.result.SiteResult;
+import org.sigmah.shared.dao.Filter;
 import org.sigmah.shared.dto.IndicatorDTO;
+import org.sigmah.shared.dto.SiteDTO;
+import org.sigmah.shared.report.model.DimensionType;
 
+import com.extjs.gxt.ui.client.event.ComponentEvent;
+import com.extjs.gxt.ui.client.event.Events;
+import com.extjs.gxt.ui.client.event.Listener;
+import com.extjs.gxt.ui.client.event.MessageBoxEvent;
 import com.extjs.gxt.ui.client.Style.Scroll;
 import com.extjs.gxt.ui.client.widget.Dialog;
+import com.extjs.gxt.ui.client.widget.MessageBox;
 import com.extjs.gxt.ui.client.widget.TabItem;
 import com.extjs.gxt.ui.client.widget.TabPanel;
 import com.extjs.gxt.ui.client.widget.button.Button;
@@ -54,7 +66,7 @@ public class IndicatorDialog extends Dialog {
 		indicatorForm.setHeaderVisible(false);
 		indicatorForm.setScrollMode(Scroll.AUTOY);
 		indicatorForm.setStyleAttribute("backgroundColor", "white");
-
+		
 		String title = "";
 
 		title = "Definition";
@@ -67,6 +79,11 @@ public class IndicatorDialog extends Dialog {
 		tabPanel.add(defTab);
 
 		valuesTab = new TabItem(I18N.CONSTANTS.value());
+		valuesTab.addListener(Events.Select, new Listener<ComponentEvent>() {
+			public void handleEvent(ComponentEvent be) {
+				onValuesTabSelected();
+			}
+		});
 		valuesTab.setLayout(new FitLayout());
 		valuesTab.add(pivotPanel);
 		tabPanel.add(valuesTab);
@@ -137,6 +154,41 @@ public class IndicatorDialog extends Dialog {
 				                hide();
 			                }
 		                });
+	}
+
+	private void onValuesTabSelected() {
+
+		// GWT DialogBox / PopupPanel cannot be displayed on top of
+		// IndicatorDialog. Keep GXT components until the application
+		// is migrated to pure GWT ui.
+
+		Filter filter = new Filter();
+		filter.addRestriction(DimensionType.Database, indicator.getDatabaseId());
+
+		GetSites cmd = new GetSites();
+		cmd.setFilter(filter);
+
+		dispatcher.execute(cmd, null, new AsyncCallback<SiteResult>() {
+			@Override
+			public void onFailure(Throwable caught) {
+			}
+
+			@Override
+			public void onSuccess(SiteResult result) {
+				if (((ArrayList<SiteDTO>) result.getData()).size() == 0) {
+					MessageBox box = new MessageBox();
+					box.setButtons(MessageBox.OK);
+					box.setIcon(MessageBox.INFO);
+					box.addCallback(new Listener<MessageBoxEvent>() {
+						public void handleEvent(MessageBoxEvent ce) {
+							ce.getButtonClicked();
+						}
+					});
+					box.setMessage(I18N.CONSTANTS.projectWithNoSitesWarning());
+					box.show();
+				}
+			}
+		});
 	}
 
 	public void removeDef() {
