@@ -15,10 +15,8 @@ import org.sigmah.shared.command.GetProjectModel;
 import org.sigmah.shared.command.result.CreateResult;
 import org.sigmah.shared.command.result.UpdateModelResult;
 import org.sigmah.shared.domain.ProjectModelStatus;
-import org.sigmah.shared.domain.element.DefaultFlexibleElementType;
 import org.sigmah.shared.dto.OrgUnitModelDTO;
 import org.sigmah.shared.dto.ProjectModelDTO;
-import org.sigmah.shared.dto.element.DefaultFlexibleElementDTO;
 import org.sigmah.shared.dto.element.FlexibleElementDTO;
 import org.sigmah.shared.dto.layout.LayoutGroupDTO;
 import org.sigmah.shared.dto.profile.PrivacyGroupDTO;
@@ -277,12 +275,7 @@ public class AdminFlexibleElementsView extends View {
 				
 				if((projectModel != null && ProjectModelStatus.DRAFT.equals(projectModel.getStatus()))
 						|| (orgUnitModel != null && ProjectModelStatus.DRAFT.equals(orgUnitModel.getStatus()))){
-					final Anchor nameHyperlink ;
-					if(ElementTypeEnum.DEFAULT.equals(model.getElementType())){
-						nameHyperlink = new Anchor(DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO)model).getType()), true);	
-					}			
-					else
-						nameHyperlink = new Anchor(model.getLabel(), true);
+					final Anchor nameHyperlink = new Anchor(model.getFormattedLabel(), true);
 	                nameHyperlink.addStyleName("credits-partner-url");
 	                nameHyperlink.addClickHandler(new ClickHandler(){
 
@@ -293,11 +286,8 @@ public class AdminFlexibleElementsView extends View {
 	                	
 	                });
 	                return nameHyperlink;
-				}else{				
-					if(ElementTypeEnum.DEFAULT.equals(model.getElementType()))
-						return AdminUtil.createGridText(DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO)model).getType()));
-					else
-						return AdminUtil.createGridText(model.getLabel());					
+				} else {		
+					return AdminUtil.createGridText(model.getFormattedLabel());				
 				}
 			}
         });
@@ -499,16 +489,12 @@ public class AdminFlexibleElementsView extends View {
 	public void confirmDeleteSelected(final ConfirmCallback confirmCallback) {
 		List<FlexibleElementDTO> deleteElements = getDeleteSelection();
 		String names = "";
-		for(FlexibleElementDTO s : deleteElements){			
-			if(s instanceof DefaultFlexibleElementDTO){
-				names += DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO)s).getType()) + ", ";
-			}else{
-				names += s.getLabel() + ", ";
-			}
+		for (FlexibleElementDTO s : deleteElements) {			
+			names += s.getFormattedLabel() + ", ";
 		}
-		if(names.isEmpty()){
+		if (names.isEmpty()) {
 			MessageBox.alert(I18N.CONSTANTS.delete(), I18N.MESSAGES.adminFlexibleDeleteNone(), null);
-		}else{
+		} else {
 			names = names.substring(0, names.lastIndexOf(", "));
 			MessageBox.confirm(I18N.CONSTANTS.delete(), I18N.MESSAGES.adminFlexibleConfirmDelete(names), new Listener<MessageBoxEvent>() {
 				
@@ -520,7 +506,5 @@ public class AdminFlexibleElementsView extends View {
 				}
 			});
 		}
-		
-				
 	}
 }

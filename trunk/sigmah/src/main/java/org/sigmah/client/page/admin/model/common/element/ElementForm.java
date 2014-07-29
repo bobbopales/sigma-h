@@ -540,7 +540,6 @@ public class ElementForm extends ContentPanel {
 		commonPanel.setHeaderVisible(false);
 
 		htmlArea = new HtmlEditor();
-		htmlArea.hide();
 		htmlArea.setEnableAlignments(false);
 		htmlArea.setEnableLinks(false);
 		htmlArea.setEnableFont(false);
@@ -549,45 +548,29 @@ public class ElementForm extends ContentPanel {
 		htmlArea.setSourceEditMode(false);
 		htmlArea.setHeight(75);
 		htmlArea.setFieldLabel(constants.adminFlexibleName());
-		if (flexibleElement != null && flexibleElement.getLabel() != null) {
-			htmlArea.setValue(flexibleElement.getLabel());
-			oldFieldProperties.put(AdminUtil.PROP_FX_NAME, flexibleElement.getLabel());
+		if (flexibleElement != null && flexibleElement.getFormattedLabel() != null) {
+			htmlArea.setValue(flexibleElement.getFormattedLabel());
+			oldFieldProperties.put(AdminUtil.PROP_FX_NAME, flexibleElement.getFormattedLabel());
 		}
-
-		LabelField label = new LabelField();
-		label.hide();
-		label.setFieldLabel(constants.adminFlexibleName());
 
 		if (flexibleElement != null && flexibleElement.getElementType() != null) {
 			if (ElementTypeEnum.DEFAULT.equals(flexibleElement.getElementType())) {
-				label.setText(DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO) flexibleElement)
-				                .getType()));
-				label.show();
-				oldFieldProperties.put(AdminUtil.PROP_FX_NAME, DefaultFlexibleElementType
-				                .getName(((DefaultFlexibleElementDTO) flexibleElement).getType()));
-				htmlArea.setValue(DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO) flexibleElement)
-				                .getType()));
 				if (DefaultFlexibleElementType.BUDGET.equals(((DefaultFlexibleElementDTO) flexibleElement).getType())) {
 					final BudgetElementDTO budgetElement = (BudgetElementDTO) flexibleElement;
 					upBudgetSubFieldCombo.addListener(Events.OnChange, new Listener<BaseEvent>() {
-
 						@Override
 						public void handleEvent(BaseEvent be) {
 							updateRatioCombos(upBudgetSubFieldCombo);
-
 						}
-
 					});
 
 					downBudgetSubFieldCombo.addListener(Events.OnChange, new Listener<BaseEvent>() {
-
 						@Override
 						public void handleEvent(BaseEvent be) {
 							updateRatioCombos(downBudgetSubFieldCombo);
-
 						}
-
 					});
+					
 					updateElementFormForBudgetElement(budgetElement);
 
 					final Window window = new Window();
@@ -598,7 +581,6 @@ public class ElementForm extends ContentPanel {
 					window.setLayout(new FitLayout());
 
 					anchorAddSubField.addClickHandler(new ClickHandler() {
-
 						@Override
 						public void onClick(ClickEvent event) {
 							final BudgetSubFieldForm budgetSubFieldForm = new BudgetSubFieldForm(dispatcher, null,
@@ -705,17 +687,10 @@ public class ElementForm extends ContentPanel {
 							window.show();
 						}
 					});
-
 				}
-
-			} else {
-				htmlArea.show();
 			}
-		} else {
-			htmlArea.show();
 		}
 
-		commonPanel.add(label);
 		commonPanel.add(htmlArea);
 
 		typeList = new SimpleComboBox<String>();

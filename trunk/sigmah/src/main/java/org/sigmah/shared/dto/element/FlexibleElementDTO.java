@@ -491,6 +491,10 @@ public abstract class FlexibleElementDTO extends BaseModelData implements Entity
         }
         return type;
     }
+    
+    public String getFormattedLabel() {
+    	return getLabel(); // may be overridden
+    }
 
     public LayoutGroupDTO getGroup() {
         return get("group");

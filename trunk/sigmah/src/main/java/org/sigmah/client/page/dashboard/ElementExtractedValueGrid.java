@@ -9,14 +9,12 @@ import org.sigmah.client.i18n.I18N;
 import org.sigmah.shared.command.result.ValueResultUtils;
 import org.sigmah.shared.domain.ElementExtractedValue;
 import org.sigmah.shared.domain.element.BudgetSubFieldType;
-import org.sigmah.shared.domain.element.DefaultFlexibleElementType;
 import org.sigmah.shared.dto.ElementExtractedValueStatus;
 import org.sigmah.shared.dto.EntityDTO;
 import org.sigmah.shared.dto.OrgUnitDTOLight;
 import org.sigmah.shared.dto.ProjectDTO;
 import org.sigmah.shared.dto.element.BudgetElementDTO;
 import org.sigmah.shared.dto.element.BudgetSubFieldDTO;
-import org.sigmah.shared.dto.element.DefaultFlexibleElementDTO;
 import org.sigmah.shared.dto.element.QuestionChoiceElementDTO;
 import org.sigmah.shared.dto.element.QuestionElementDTO;
 import org.sigmah.shared.dto.element.TextAreaElementDTO;
@@ -111,12 +109,8 @@ public class ElementExtractedValueGrid extends ContentPanel {
 						}
 					}
 					elementLabel = budgetSubFieldNames;
-				} else if (model.getElement() instanceof DefaultFlexibleElementDTO) {
-					DefaultFlexibleElementDTO defaultElement = (DefaultFlexibleElementDTO) model.getElement();
-					elementLabel = DefaultFlexibleElementType.getName(defaultElement.getType());
-
 				} else {
-					elementLabel = model.getElement().getLabel();
+					elementLabel = model.getElement().getFormattedLabel();
 				}
 				return elementLabel;
 			}

@@ -16,7 +16,6 @@ import javax.persistence.EntityManager;
 import javax.servlet.ServletException;
 
 import org.dozer.Mapper;
-import org.sigmah.client.page.admin.model.common.element.ElementTypeEnum;
 import org.sigmah.server.Translator;
 import org.sigmah.server.UIConstantsTranslator;
 import org.sigmah.server.endpoint.export.sigmah.spreadsheet.GlobalExportDataProvider;
@@ -349,7 +348,7 @@ public abstract class Importer {
 			if (Log.isDebugEnabled()) {
 				Log.debug("Key identification is " + cellValue.toString());
 			}
-			String fleName = getFlexibleElementLabel(fleDTO);
+			String fleName = ExporterUtil.getFlexibleElementLabel(fleDTO, translator, locale);
 
 			Map<EntityDTO, List<ElementExtractedValue>> mapEntityCorrespondances = new HashMap<EntityDTO, List<ElementExtractedValue>>();
 
@@ -732,56 +731,6 @@ public abstract class Importer {
 		}
 		return value;
 	}
-
-	/**
-	 * Gets the label of the flexible element
-	 * 
-	 * @param fleDTO
-	 * @return
-	 */
-	public String getFlexibleElementLabel(FlexibleElementDTO fleDTO) {
-		String fleName = null;
-		if (ElementTypeEnum.DEFAULT.equals(fleDTO.getElementType())) {
-			DefaultFlexibleElementDTO defaultElementDTO = (DefaultFlexibleElementDTO) fleDTO;
-			switch (defaultElementDTO.getType()) {
-			case BUDGET:
-				fleName = translator.translate("projectBudget", locale);
-				break;
-			case CODE:
-				fleName = translator.translate("projectName", locale);
-				break;
-			case COUNTRY:
-				fleName = translator.translate("projectCountry", locale);
-				break;
-			case END_DATE:
-				fleName = translator.translate("projectEndDate", locale);
-				break;
-			case MANAGER:
-				fleName = translator.translate("projectManager", locale);
-				break;
-			case ORG_UNIT:
-				fleName = translator.translate("orgUnit", locale);
-				break;
-			case OWNER:
-				fleName = translator.translate("projectOwner", locale);
-				break;
-			case START_DATE:
-				fleName = translator.translate("projectStartDate", locale);
-				break;
-			case TITLE:
-				fleName = translator.translate("projectFullName", locale);
-				break;
-			default:
-				break;
-
-			}
-		} else {
-			fleName = fleDTO.getLabel();
-		}
-		return fleName;
-	}
-
-	
 
 	protected int getColumnFromReference(String reference) {
 		int column = 0;

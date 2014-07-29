@@ -87,7 +87,16 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 	public ListStore<UserDTO> getManagersStore() {
 		return usersStore;
 	}
+	
+	@Override
+	public String getFormattedLabel() {
+		return getLabel() != null ? getLabel() : getTypeLabel();
+	}
 
+	public String getTypeLabel() {
+		return DefaultFlexibleElementType.getName(getType());
+	}
+	
 	@Override
 	protected Component getComponent(ValueResult valueResult, boolean enabled) {
 		if (valueResult != null && valueResult.isValueDefined())
@@ -141,8 +150,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectName());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -165,8 +173,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectFullName());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -193,8 +200,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectStartDate());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -220,8 +226,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectEndDate());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -336,8 +341,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectCountry());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -347,8 +351,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			final LabelField labelField = createLabelField();
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectOwner());
-			labelField.setFieldLabel(getLabel());
+			labelField.setFieldLabel(getFormattedLabel());
 
 			// Sets the value to the field.
 			labelField.setValue(container.getOwnerFirstName() != null ? container.getOwnerFirstName() + " "
@@ -556,8 +559,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectManager());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1035,8 +1037,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.orgunit());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1073,8 +1074,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectName());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1097,8 +1097,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectFullName());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1125,8 +1124,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectStartDate());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1152,8 +1150,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			}
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectEndDate());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1185,8 +1182,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			});
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectCountry());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 
@@ -1197,8 +1193,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			final LabelField labelField = createLabelField();
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectOwner());
-			labelField.setFieldLabel(getLabel());
+			labelField.setFieldLabel(getFormattedLabel());
 
 			// Sets the value to the field.
 			labelField.setValue(valueResult.getValueObject());
@@ -1237,8 +1232,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 							});
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.projectManager());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}
@@ -1272,8 +1266,7 @@ public class DefaultFlexibleElementDTO extends FlexibleElementDTO {
 			});
 
 			// Sets the field label.
-			setLabel(I18N.CONSTANTS.orgunit());
-			field.setFieldLabel(getLabel());
+			field.setFieldLabel(getFormattedLabel());
 
 			component = field;
 		}

@@ -118,7 +118,7 @@ public class AdminPrivacyGroupsActionListener implements ActionListener {
 											if( flexibleElement.getPrivacyGroup() != null && flexibleElement.getPrivacyGroup().getId() == selectedPrivacyGroup.getId()){
 												canBeDeleted = false;
 												if(flexibleElement instanceof DefaultFlexibleElementDTO){
-													elementNamesList += DefaultFlexibleElementType.getName(((DefaultFlexibleElementDTO)flexibleElement).getType()) + ", ";
+													elementNamesList += flexibleElement.getFormattedLabel() + ", " + I18N.CONSTANTS.flexibleElementDefault();
 												}
 												elementNamesList += flexibleElement instanceof DefaultFlexibleElementDTO? I18N.CONSTANTS.flexibleElementDefault() :  flexibleElement.getElementLabel() + " ( Model : " + projectModel.getName()+ "), ";
 											} 
@@ -129,7 +129,7 @@ public class AdminPrivacyGroupsActionListener implements ActionListener {
 										for(FlexibleElementDTO flexibleElement : orgUnitModel.getAllElements()){
 											if( flexibleElement.getPrivacyGroup() != null && flexibleElement.getPrivacyGroup().getId() == selectedPrivacyGroup.getId()){
 												canBeDeleted = false;
-												elementNamesList += flexibleElement.getLabel() + " ( OrgUnit : " + orgUnitModel.getName() + "), ";
+												elementNamesList += flexibleElement.getFormattedLabel() + " ( OrgUnit : " + orgUnitModel.getName() + "), ";
 											} 
 										}
 									}
