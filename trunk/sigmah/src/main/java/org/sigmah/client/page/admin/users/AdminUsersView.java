@@ -72,7 +72,6 @@ import com.google.gwt.user.client.ui.HTML;
  * Displays users administration screen.
  * 
  * @author nrebiai
- * 
  */
 public class AdminUsersView extends View {
 
@@ -123,9 +122,8 @@ public class AdminUsersView extends View {
 		usersListPanel.add(usersGrid);
 
 		/*
-		 * final VBoxLayoutData topVBoxLayoutData = new VBoxLayoutData();
-		 * topVBoxLayoutData.setFlex(1.0); usersPanel.add(usersListPanel,
-		 * topVBoxLayoutData);
+		 * final VBoxLayoutData topVBoxLayoutData = new VBoxLayoutData(); topVBoxLayoutData.setFlex(1.0);
+		 * usersPanel.add(usersListPanel, topVBoxLayoutData);
 		 */
 
 		// Profiles Panel
@@ -158,17 +156,15 @@ public class AdminUsersView extends View {
 		profilesPanel.add(privacyGroupsPanel, rightLayoutData);
 
 		/*
-		 * final VBoxLayoutData bottomVBoxLayoutData = new VBoxLayoutData();
-		 * bottomVBoxLayoutData.setFlex(2.0); usersPanel.add(profilesPanel,
-		 * bottomVBoxLayoutData);
+		 * final VBoxLayoutData bottomVBoxLayoutData = new VBoxLayoutData(); bottomVBoxLayoutData.setFlex(2.0);
+		 * usersPanel.add(profilesPanel, bottomVBoxLayoutData);
 		 */
 
 		insufficient = new HTML(I18N.CONSTANTS.permManageUsersInsufficient());
 		insufficient.addStyleName("important-label");
 		/*
-		 * final VBoxLayoutData vBoxLayoutData = new VBoxLayoutData();
-		 * vBoxLayoutData.setFlex(3.0); usersPanel.add(insufficient,
-		 * vBoxLayoutData);
+		 * final VBoxLayoutData vBoxLayoutData = new VBoxLayoutData(); vBoxLayoutData.setFlex(3.0);
+		 * usersPanel.add(insufficient, vBoxLayoutData);
 		 */
 	}
 
@@ -198,7 +194,7 @@ public class AdminUsersView extends View {
 
 			@Override
 			public Object render(final PrivacyGroupDTO model, final String property, ColumnData config, int rowIndex,
-			                int colIndex, ListStore<PrivacyGroupDTO> store, Grid<PrivacyGroupDTO> grid) {
+					int colIndex, ListStore<PrivacyGroupDTO> store, Grid<PrivacyGroupDTO> grid) {
 
 				Button button = new Button(I18N.CONSTANTS.edit());
 				button.setItemId(UIActions.edit);
@@ -208,40 +204,36 @@ public class AdminUsersView extends View {
 					public void handleEvent(ButtonEvent be) {
 						final Window window = new Window();
 
-						final PrivacyGroupSigmahForm form = AdminUsersView.this.showNewPrivacyGroupForm(window,
-						                new AsyncCallback<CreateResult>() {
+						final PrivacyGroupSigmahForm form =
+								AdminUsersView.this.showNewPrivacyGroupForm(window, new AsyncCallback<CreateResult>() {
 
-							                @Override
-							                public void onFailure(Throwable arg0) {
-								                window.hide();
+									@Override
+									public void onFailure(Throwable arg0) {
+										window.hide();
 
-							                }
+									}
 
-							                @Override
-							                public void onSuccess(CreateResult result) {
-								                window.hide();
-								                AdminUsersView.this.getAdminPrivacyGroupsStore().remove(model);
-								                AdminUsersView.this.getAdminPrivacyGroupsStore().add(
-								                                (PrivacyGroupDTO) result.getEntity());
-								                AdminUsersView.this.getAdminPrivacyGroupsStore().commitChanges();
+									@Override
+									public void onSuccess(CreateResult result) {
+										window.hide();
+										AdminUsersView.this.getAdminPrivacyGroupsStore().remove(model);
+										AdminUsersView.this.getAdminPrivacyGroupsStore().add((PrivacyGroupDTO) result.getEntity());
+										AdminUsersView.this.getAdminPrivacyGroupsStore().commitChanges();
 
-								                // question to refresh profiles
-												// panel
-								                MessageBox.confirm("", I18N.CONSTANTS.adminRefreshProfilesBox(),
-								                                new Listener<MessageBoxEvent>() {
-									                                @Override
-									                                public void handleEvent(MessageBoxEvent be) {
+										// question to refresh profiles
+										// panel
+										MessageBox.confirm("", I18N.CONSTANTS.adminRefreshProfilesBox(), new Listener<MessageBoxEvent>() {
 
-										                                if (Dialog.YES.equals(be.getButtonClicked()
-										                                                .getItemId())) {
-											                                AdminUsersPresenter.refreshProfilePanel(
-											                                                dispatcher,
-											                                                AdminUsersView.this);
-										                                }
-									                                }
-								                                });
-							                }
-						                }, model);
+											@Override
+											public void handleEvent(MessageBoxEvent be) {
+
+												if (Dialog.YES.equals(be.getButtonClicked().getItemId())) {
+													AdminUsersPresenter.refreshProfilePanel(dispatcher, AdminUsersView.this);
+												}
+											}
+										});
+									}
+								}, model);
 
 						window.add(form);
 						window.show();
@@ -281,7 +273,7 @@ public class AdminUsersView extends View {
 
 			@Override
 			public Object render(ProfileDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
+					ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
 				String content = "";
 				// get selected permissions
 				Set<GlobalPermissionEnum> selectedGlobalPermissions = model.get(property);
@@ -289,6 +281,9 @@ public class AdminUsersView extends View {
 					String perm = GlobalPermissionEnum.getName(gpEnum);
 					if (perm != null && !perm.isEmpty())
 						content = perm + ", " + content;
+				}
+				if (content != "") { // removes the trailing comma
+					content = content.substring(0, content.lastIndexOf(", "));
 				}
 				return createUserGridText(content);
 
@@ -302,12 +297,22 @@ public class AdminUsersView extends View {
 
 			@Override
 			public Object render(ProfileDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
+					ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
 				Map<PrivacyGroupDTO, PrivacyGroupPermissionEnum> privacyGroups = model.get(property);
 				String content = "";
 				for (Map.Entry<PrivacyGroupDTO, PrivacyGroupPermissionEnum> pg : privacyGroups.entrySet()) {
-					content = "(" + pg.getKey().getTitle() + ", " + PrivacyGroupPermissionEnum.getName(pg.getValue())
-					                + ")" + ", " + content;
+					content =
+							"("
+								+ pg.getKey().getTitle()
+								+ ", "
+								+ PrivacyGroupPermissionEnum.getName(pg.getValue())
+								+ ")"
+								+ ", "
+								+ content;
+				}
+
+				if (content != "") {// removes the trailing comma
+					content = content.substring(0, content.lastIndexOf(", "));
 				}
 				return createUserGridText(content);
 			}
@@ -322,7 +327,7 @@ public class AdminUsersView extends View {
 
 			@Override
 			public Object render(final ProfileDTO model, final String property, ColumnData config, int rowIndex,
-			                int colIndex, ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
+					int colIndex, ListStore<ProfileDTO> store, Grid<ProfileDTO> grid) {
 
 				Button button = new Button(I18N.CONSTANTS.edit());
 				button.setItemId(UIActions.edit);
@@ -331,42 +336,36 @@ public class AdminUsersView extends View {
 					@Override
 					public void handleEvent(ButtonEvent be) {
 						final Window window = new Window();
-						ProfileSigmahForm form = AdminUsersView.this.showNewProfileForm(window,
-						                new AsyncCallback<CreateResult>() {
+						ProfileSigmahForm form = AdminUsersView.this.showNewProfileForm(window, new AsyncCallback<CreateResult>() {
 
-							                @Override
-							                public void onFailure(Throwable caught) {
-								                window.hide();
-							                }
+							@Override
+							public void onFailure(Throwable caught) {
+								window.hide();
+							}
 
-							                @Override
-							                public void onSuccess(CreateResult result) {
-								                window.hide();
-								                // refresh profiles view
-								                AdminUsersView.this.getAdminProfilesStore().remove(model);
-								                AdminUsersView.this.getAdminProfilesStore().add(
-								                                (ProfileDTO) result.getEntity());
-								                AdminUsersView.this.getAdminProfilesStore().commitChanges();
-								                // question to refresh users
-												// panel
-								                if (!model.getName()
-								                                .equals(((ProfileDTO) result.getEntity()).getName())) {
-									                MessageBox.confirm("", I18N.CONSTANTS.adminRefreshUsersBox(),
-									                                new Listener<MessageBoxEvent>() {
-										                                @Override
-										                                public void handleEvent(MessageBoxEvent be) {
+							@Override
+							public void onSuccess(CreateResult result) {
+								window.hide();
+								// refresh profiles view
+								AdminUsersView.this.getAdminProfilesStore().remove(model);
+								AdminUsersView.this.getAdminProfilesStore().add((ProfileDTO) result.getEntity());
+								AdminUsersView.this.getAdminProfilesStore().commitChanges();
+								// question to refresh users
+								// panel
+								if (!model.getName().equals(((ProfileDTO) result.getEntity()).getName())) {
+									MessageBox.confirm("", I18N.CONSTANTS.adminRefreshUsersBox(), new Listener<MessageBoxEvent>() {
 
-											                                if (Dialog.YES.equals(be.getButtonClicked()
-											                                                .getItemId())) {
-												                                AdminUsersPresenter.refreshUserPanel(
-												                                                dispatcher,
-												                                                AdminUsersView.this);
-											                                }
-										                                }
-									                                });
-								                }
-							                }
-						                }, model);
+										@Override
+										public void handleEvent(MessageBoxEvent be) {
+
+											if (Dialog.YES.equals(be.getButtonClicked().getItemId())) {
+												AdminUsersPresenter.refreshUserPanel(dispatcher, AdminUsersView.this);
+											}
+										}
+									});
+								}
+							}
+						}, model);
 
 						window.add(form);
 						window.show();
@@ -424,12 +423,12 @@ public class AdminUsersView extends View {
 
 		column = new ColumnConfig("active", I18N.CONSTANTS.adminUsersActive(), 50);
 		column.setRenderer(new GridCellRenderer<UserDTO>() {
+
 			@Override
 			public Object render(UserDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<UserDTO> store, Grid<UserDTO> grid) {
+					ListStore<UserDTO> store, Grid<UserDTO> grid) {
 				final boolean isActive = model.getActive();
-				return createUserGridText(isActive ? I18N.CONSTANTS.adminUsersIsActive() : I18N.CONSTANTS
-				                .adminUsersNotActive());
+				return createUserGridText(isActive ? I18N.CONSTANTS.adminUsersIsActive() : I18N.CONSTANTS.adminUsersNotActive());
 			}
 		});
 		configs.add(column);
@@ -442,12 +441,12 @@ public class AdminUsersView extends View {
 
 		column = new ColumnConfig("orgUnit", I18N.CONSTANTS.adminUsersOrgUnit(), 110);
 		column.setRenderer(new GridCellRenderer<UserDTO>() {
+
 			@Override
 			public Object render(UserDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<UserDTO> store, Grid<UserDTO> grid) {
+					ListStore<UserDTO> store, Grid<UserDTO> grid) {
 				final OrgUnitDTO orgUnit = (OrgUnitDTO) model.get(property);
-				return createUserGridText(orgUnit != null ? (orgUnit.getFullName() != null ? orgUnit.getFullName() : "")
-				                : "");
+				return createUserGridText(orgUnit != null ? (orgUnit.getFullName() != null ? orgUnit.getFullName() : "") : "");
 			}
 		});
 		configs.add(column);
@@ -457,9 +456,10 @@ public class AdminUsersView extends View {
 		column.setHeader(I18N.CONSTANTS.adminUsersDatePasswordChange());
 		column.setDateTimeFormat(format);
 		column.setRenderer(new GridCellRenderer<UserDTO>() {
+
 			@Override
 			public Object render(UserDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<UserDTO> store, Grid<UserDTO> grid) {
+					ListStore<UserDTO> store, Grid<UserDTO> grid) {
 				final Date d = (Date) model.get(property);
 				return createUserGridText(d != null ? format.format(d) : "");
 			}
@@ -474,7 +474,7 @@ public class AdminUsersView extends View {
 
 			@Override
 			public Object render(UserDTO model, String property, ColumnData config, int rowIndex, int colIndex,
-			                ListStore<UserDTO> store, Grid<UserDTO> grid) {
+					ListStore<UserDTO> store, Grid<UserDTO> grid) {
 
 				String content = "";
 
@@ -482,6 +482,7 @@ public class AdminUsersView extends View {
 					for (ProfileDTO oneProfileDTO : model.getProfilesDTO()) {
 						content = oneProfileDTO.getName() + ", " + content;
 					}
+					content = content.substring(0, content.lastIndexOf(", ")); // removes the trailing comma
 				} else {
 					content = I18N.CONSTANTS.adminUsersNoProfiles();
 				}
@@ -498,8 +499,8 @@ public class AdminUsersView extends View {
 		column.setRenderer(new GridCellRenderer<UserDTO>() {
 
 			@Override
-			public Object render(final UserDTO model, final String property, ColumnData config, int rowIndex,
-			                int colIndex, ListStore<UserDTO> store, Grid<UserDTO> grid) {
+			public Object render(final UserDTO model, final String property, ColumnData config, int rowIndex, int colIndex,
+					ListStore<UserDTO> store, Grid<UserDTO> grid) {
 
 				Button button = new Button(I18N.CONSTANTS.edit());
 				button.setItemId(UIActions.edit);
@@ -508,24 +509,22 @@ public class AdminUsersView extends View {
 					@Override
 					public void handleEvent(ButtonEvent be) {
 						final Window window = new Window();
-						UserSigmahForm form = AdminUsersView.this.showNewUserForm(window,
-						                new AsyncCallback<CreateResult>() {
+						UserSigmahForm form = AdminUsersView.this.showNewUserForm(window, new AsyncCallback<CreateResult>() {
 
-							                @Override
-							                public void onFailure(Throwable caught) {
-								                window.hide();
-							                }
+							@Override
+							public void onFailure(Throwable caught) {
+								window.hide();
+							}
 
-							                @Override
-							                public void onSuccess(CreateResult result) {
-								                window.hide();
-								                // refresh view
-								                AdminUsersView.this.getAdminUsersStore().remove(model);
-								                AdminUsersView.this.getAdminUsersStore().add(
-								                                (UserDTO) result.getEntity());
-								                AdminUsersView.this.getAdminUsersStore().commitChanges();
-							                }
-						                }, model);
+							@Override
+							public void onSuccess(CreateResult result) {
+								window.hide();
+								// refresh view
+								AdminUsersView.this.getAdminUsersStore().remove(model);
+								AdminUsersView.this.getAdminUsersStore().add((UserDTO) result.getEntity());
+								AdminUsersView.this.getAdminUsersStore().commitChanges();
+							}
+						}, model);
 
 						window.add(form);
 						window.show();
@@ -545,18 +544,11 @@ public class AdminUsersView extends View {
 
 		final Grid<UserDTO> grid = new Grid<UserDTO>(adminUsersStore, cm);
 		/*
-		 * adminUsersStore.addListener(Events.Add, new
+		 * adminUsersStore.addListener(Events.Add, new Listener<StoreEvent<UserDTO>>() {
+		 * @Override public void handleEvent(StoreEvent<UserDTO> be) { } }); adminUsersStore.addListener(Events.Clear, new
 		 * Listener<StoreEvent<UserDTO>>() {
-		 * 
-		 * @Override public void handleEvent(StoreEvent<UserDTO> be) { } });
-		 * 
-		 * adminUsersStore.addListener(Events.Clear, new
+		 * @Override public void handleEvent(StoreEvent<UserDTO> be) { } }); adminUsersStore.addListener(Store.Filter, new
 		 * Listener<StoreEvent<UserDTO>>() {
-		 * 
-		 * @Override public void handleEvent(StoreEvent<UserDTO> be) { } });
-		 * adminUsersStore.addListener(Store.Filter, new
-		 * Listener<StoreEvent<UserDTO>>() {
-		 * 
 		 * @Override public void handleEvent(StoreEvent<UserDTO> be) { } });
 		 */
 
@@ -570,12 +562,14 @@ public class AdminUsersView extends View {
 
 	private void addFilterByUser() {
 		StoreFilter<UserDTO> filter = new StoreFilter<UserDTO>() {
+
 			@Override
 			public boolean select(Store<UserDTO> store, UserDTO parent, UserDTO item, String property) {
 				boolean selected = false;
-				selected = item.getName().toUpperCase().contains(filterUser.toUpperCase()) 
-						|| item.getFirstName().toUpperCase().contains(filterUser.toUpperCase())
-						|| item.getEmail().toUpperCase().contains(filterUser.toUpperCase());
+				selected =
+						item.getName().toUpperCase().contains(filterUser.toUpperCase())
+							|| item.getFirstName().toUpperCase().contains(filterUser.toUpperCase())
+							|| item.getEmail().toUpperCase().contains(filterUser.toUpperCase());
 				return selected;
 			}
 		};
@@ -583,8 +577,10 @@ public class AdminUsersView extends View {
 	}
 
 	private void applyFilterByUser() {
-		if (filterUser != null && !filterUser.isEmpty() && !filterUser.trim().equals("")
-		                && !DEFAULT_FILTER.equals(filterUser)) {
+		if (filterUser != null
+			&& !filterUser.isEmpty()
+			&& !filterUser.trim().equals("")
+			&& !DEFAULT_FILTER.equals(filterUser)) {
 			adminUsersStore.applyFilters(null);
 		} else {
 			adminUsersStore.clearFilters();
@@ -602,6 +598,7 @@ public class AdminUsersView extends View {
 			adminUsersStore.clearFilters();
 			final TextField<String> filterUserName = new TextField<String>();
 			filterUserName.addKeyListener(new KeyListener() {
+
 				public void componentKeyUp(ComponentEvent event) {
 					filterUser = filterUserName.getValue();
 					applyFilterByUser();
@@ -619,8 +616,7 @@ public class AdminUsersView extends View {
 			toolBar.setListener(new AdminProfilesActionListener(this, dispatcher));
 		} else if (panel == 3) {
 			toolBar.addButton(UIActions.add, I18N.CONSTANTS.addItem(), IconImageBundle.ICONS.add());
-			toolBar.addButton(UIActions.delete, I18N.CONSTANTS.adminPrivacyGroupDelete(),
-			                IconImageBundle.ICONS.delete());
+			toolBar.addButton(UIActions.delete, I18N.CONSTANTS.adminPrivacyGroupDelete(), IconImageBundle.ICONS.delete());
 			toolBar.setListener(new AdminPrivacyGroupsActionListener(this, dispatcher));
 		}
 
@@ -670,7 +666,7 @@ public class AdminUsersView extends View {
 
 	@Override
 	public ProfileSigmahForm showNewProfileForm(Window window, AsyncCallback<CreateResult> asyncCallback,
-	                ProfileDTO profileToUpdate) {
+			ProfileDTO profileToUpdate) {
 		window.setHeading(I18N.CONSTANTS.adminProfileAdd());
 		window.setSize(550, 600);
 		window.setPlain(true);
@@ -685,7 +681,7 @@ public class AdminUsersView extends View {
 
 	@Override
 	public PrivacyGroupSigmahForm showNewPrivacyGroupForm(Window window, AsyncCallback<CreateResult> asyncCallback,
-	                PrivacyGroupDTO privacyGroupToUpdate) {
+			PrivacyGroupDTO privacyGroupToUpdate) {
 		window.setHeading(I18N.CONSTANTS.addItem());
 		window.setSize(400, 150);
 		window.setPlain(true);
@@ -693,8 +689,8 @@ public class AdminUsersView extends View {
 		window.setBlinkModal(true);
 		window.setLayout(new FitLayout());
 
-		final PrivacyGroupSigmahForm form = new PrivacyGroupSigmahForm(dispatcher, cache, asyncCallback,
-		                privacyGroupToUpdate);
+		final PrivacyGroupSigmahForm form =
+				new PrivacyGroupSigmahForm(dispatcher, cache, asyncCallback, privacyGroupToUpdate);
 
 		return form;
 	}
@@ -760,8 +756,7 @@ public class AdminUsersView extends View {
 					privacyGroupsNamesList += privacyGroup.getTitle() + ", ";
 				}
 				if (!privacyGroupsNamesList.isEmpty()) {
-					privacyGroupsNamesList = privacyGroupsNamesList.substring(0,
-					                privacyGroupsNamesList.lastIndexOf(", "));
+					privacyGroupsNamesList = privacyGroupsNamesList.substring(0, privacyGroupsNamesList.lastIndexOf(", "));
 				}
 				confirmMessage = I18N.MESSAGES.adminPrivacyGroupsConfirmDelete(privacyGroupsNamesList);
 			}
