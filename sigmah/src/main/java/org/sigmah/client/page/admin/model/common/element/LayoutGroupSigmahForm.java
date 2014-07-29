@@ -6,6 +6,7 @@
 package org.sigmah.client.page.admin.model.common.element;
 
 import java.util.HashMap;
+import java.util.List;
 
 import com.extjs.gxt.ui.client.data.BaseModelData;
 import com.extjs.gxt.ui.client.event.BaseEvent;
@@ -56,6 +57,7 @@ public class LayoutGroupSigmahForm extends FormPanel {
 	
 	private final Dispatcher dispatcher;
 	private HashMap<String, Object> newPrivacyGroupProperties;
+	private HashMap<Integer, String> availableVerticalPositions; 
 	
 	private final static int LABEL_WIDTH = 90;
 	
@@ -149,12 +151,31 @@ public class LayoutGroupSigmahForm extends FormPanel {
 						 container = ((OrgUnitDetailsDTO)containerList.getValue()).getLayout();
 					 }
 				 }
-				 if(container != null){
+				 if(container != null){					
+					 
 					 rowField.removeAll();
-					 for(int i=0; i<=container.getRowsCount();i++){						 						 
+					 availableVerticalPositions = new HashMap<Integer,String>();
+					
+					 for(int i=0; i<=container.getRowsCount();i++){					 
+						 for(LayoutGroupDTO lg : container.getLayoutGroupsDTO()){
+							 //Mark all vertical positions(using a HashMap) which are taken up by other groups in the same container
+							 if(lg.getRow()==i){
+								 availableVerticalPositions.put(i, lg.getTitle());
+							 }
+						 }
 						 rowField.add(i);
 					 }
+					 
 				 }				 
+			}
+		});
+		
+		rowField.addListener(Events.Select, new Listener<BaseEvent>() {			
+			@Override
+			public void handleEvent(BaseEvent be) {
+				if(availableVerticalPositions.get(rowField.getSimpleValue())!=null){
+					MessageBox.alert(I18N.CONSTANTS.verticalPositionConflict(), I18N.MESSAGES.verticalPositionConflict(availableVerticalPositions.get(rowField.getSimpleValue())),null);
+				}
 			}
 		});
 		
@@ -166,7 +187,7 @@ public class LayoutGroupSigmahForm extends FormPanel {
         createButton.addListener(Events.OnClick, new Listener<ButtonEvent>() {
             @Override
             public void handleEvent(ButtonEvent be) {
-                createLayoutGroup(callback);
+            	createLayoutGroup(callback); 
             }
         });
         add(createButton);
