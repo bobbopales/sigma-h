@@ -1181,7 +1181,7 @@ public class ElementForm extends ContentPanel {
 		Integer maxLimitDate = null;
 		Integer minLimitDate = null;
 
-		if(textTypeC != 'D'){
+		if(textTypeC != null && textTypeC != 'D'){
 		//Case 1 :: when the textArea is not of Date Type
 			if (maxLimitField.getValue() != null)
 				maxLimit = new Integer(maxLimitField.getValue().intValue());
@@ -1231,7 +1231,7 @@ public class ElementForm extends ContentPanel {
 		if (length != null)
 			newFieldProperties.put(AdminUtil.PROP_FX_LENGTH, length);
 		
-		if(textTypeC != 'D'){
+		if(textTypeC != null && textTypeC != 'D'){
 			//Case 1 :: when the textArea is not of Date Type(Date	
 			if (maxLimit != null)
 				newFieldProperties.put(AdminUtil.PROP_FX_MAX_LIMIT, maxLimit);
