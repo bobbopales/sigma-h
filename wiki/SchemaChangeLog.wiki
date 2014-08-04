@@ -97,6 +97,14 @@ INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fiel
 	UPDATE budget_element  SET id_ratio_dividend = bsf.id_budget_sub_field FROM budget_sub_field bsf WHERE  id_flexible_element =  bsf.id_budget_element AND bsf.type = 'SPENT';
 
 
+-- Deletes all entries from the AdminEntity table which contains only admin entities from the Democratic Republic of the Congo 
+-- ------
+
+-- POSTGRESQL
+
+DELETE FROM adminentity;
+
+
 }}}
 
 == 2. Existing data updates ==
