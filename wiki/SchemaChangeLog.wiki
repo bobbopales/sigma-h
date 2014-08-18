@@ -22,6 +22,46 @@ Each time a developer needs to change the database, he should do the following:
 == 1. Schema changes ==
 
 {{{
+-- Add table for storing the password expiration policy of an organization (issue #438 / #517)
+-- ------
+CREATE TABLE password_expiration_policy
+(
+  id bigint NOT NULL,
+  policy_type character varying(255),
+  reference_date date,
+  frequency integer,
+  reset_for_new_users boolean NOT NULL,
+  organization_id integer NOT NULL,
+  CONSTRAINT password_expiration_policy_pkey PRIMARY KEY (id),
+  CONSTRAINT fk2fb477b2f85c2c3c FOREIGN KEY (organization_id)
+      REFERENCES organization (id_organization) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE password_expiration_policy OWNER TO sigmah;
+-- default password expiration policy (with no automatic reset set)
+INSERT INTO password_expiration_policy (id, policy_type, reset_for_new_users, organization_id) SELECT nextval('hibernate_sequence'), 'NEVER', false, MAX(id_organization) FROM organization;
+
+
+
+-- Add column to store the last password change of an user. (issue #438 / #517)
+-- ------
+ALTER TABLE UserLogin ADD COLUMN last_password_change timestamp without time zone;
+
+
+
+-- Add columns to store the start date of maintenance periods. (issue #419)
+-- ------
+ALTER TABLE flexible_element ADD COLUMN creation_date timestamp without time zone not null default current_timestamp;
+
+ALTER TABLE project_model ADD COLUMN date_maintenance timestamp without time zone;
+ALTER TABLE org_unit_model ADD COLUMN date_maintenance timestamp without time zone;
+
+ALTER TABLE flexible_element ADD COLUMN is_disabled boolean default false;
+ALTER TABLE question_choice_element ADD COLUMN is_disabled boolean default false;
+
 
 -- Adds tables for managing reminders and monitored points history  (issue #550)
 -- ------
@@ -112,6 +152,40 @@ DELETE FROM adminentity;
 *After the schema is updated*, in order to update the existing data, the following request has to be applied (request required because of the issue [http://www.sigmah.org/issues/view.php?id=386 0000386: Flexible budget field] which lets user modify the budget sub fields) 
 
 {{{
+
+-- Updates existing users 'last password change' with current timestamp (issue #438 / #517)
+-- ------
+UPDATE UserLogin SET last_password_change = current_timestamp;
+
+
+
+-- Updates existing global permissions to the new hierarchy of privileges (issue #616 and related)
+-- ------
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'CREATE_TEST_PROJECT', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'REMOVE_PROJECT_FILE', p.id_profile FROM global_permission p WHERE p.permission='REMOVE_FILE';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'LOCK_PROJECT_CORE', p.id_profile FROM global_permission p WHERE p.permission='EDIT_PROJECT';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'VIEW_PROJECT_AGENDA', p.id_profile FROM global_permission p WHERE p.permission='VIEW_AGENDA';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'EDIT_PROJECT_AGENDA', p.id_profile FROM global_permission p WHERE p.permission='EDIT_AGENDA';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'RELATE_PROJECT', p.id_profile FROM global_permission p WHERE p.permission='EDIT_PROJECT';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'EDIT_ORG_UNIT', p.id_profile FROM global_permission p WHERE p.permission='MANAGE_UNIT';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'REMOVE_ORG_UNIT_FILE', p.id_profile FROM global_permission p WHERE p.permission='REMOVE_FILE';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'VIEW_ORG_UNIT_AGENDA', p.id_profile FROM global_permission p WHERE p.permission='VIEW_AGENDA';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'EDIT_ORG_UNIT_AGENDA', p.id_profile FROM global_permission p WHERE p.permission='EDIT_AGENDA';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_USERS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_ORG_UNITS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_PROJECT_MODELS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_ORG_UNIT_MODELS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_REPORT_MODELS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_CATEGORIES', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_IMPORTATION_SCHEMES', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+INSERT INTO global_permission (id_global_permission, permission, id_profile) SELECT nextval('hibernate_sequence'), 'MANAGE_SETTINGS', p.id_profile FROM global_permission p WHERE p.permission='VIEW_ADMIN';
+
+DELETE FROM global_permission p WHERE p.permission='MANAGE_UNIT';
+DELETE FROM global_permission p WHERE p.permission='REMOVE_FILE';
+DELETE FROM global_permission p WHERE p.permission='MANAGE_USER';
+DELETE FROM global_permission p WHERE p.permission='VIEW_AGENDA';
+DELETE FROM global_permission p WHERE p.permission='EDIT_AGENDA';
+
 -- Updates history_token and value to table to fit the new structure of a budget element (issue #386)
 -- ------
 
