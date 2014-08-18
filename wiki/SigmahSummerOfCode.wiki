@@ -41,6 +41,7 @@ During the launch of the programme we will have:
 == Phase 5: summer of code ==
 Apart from coding and getting support from mentors, the tasks of the students during this phase will be:
   * logging everyday on IRC: #sigmah IRC channel is like our office, sometimes you can go the office a full day without speaking a word and hearing the bad jokes of the others.. but once you will need a short help or having anything to share, the office open space is the best place for that !
+  * weekly activity report by email on sigmah-dev (one thread per student)
   * monthly team video meeting: every month, we will all gather to say to the others how our work has progressed, etc.
   * before this monthly meeting, student will have to revise their availability planning for the upcoming month
   * to improve the work of the student and help build a better UI, meetings between two students (one playing the role of the user, the other the developer of the feature)
