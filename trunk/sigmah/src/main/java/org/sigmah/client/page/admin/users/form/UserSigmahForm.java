@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern  ;
-
 
 import org.sigmah.client.cache.UserLocalCache;
 import org.sigmah.client.dispatch.Dispatcher;
@@ -49,6 +46,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.regexp.shared.RegExp;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.Label;
@@ -162,6 +160,7 @@ public class UserSigmahForm extends FormPanel {
 		pwdField.setAllowBlank(true);
 		pwdField.setPassword(true);
 		pwdField.addKeyListener(new KeyListener() {
+			@Override
 			public void componentKeyUp(ComponentEvent event) {
 				if (pwdField.getValue() != null && !pwdField.getValue().isEmpty())
 					checkPwdField.setAllowBlank(false);
@@ -179,6 +178,7 @@ public class UserSigmahForm extends FormPanel {
 		checkPwdField.setAllowBlank(true);
 		checkPwdField.setPassword(true);
 		checkPwdField.addKeyListener(new KeyListener() {
+			@Override
 			public void componentKeyUp(ComponentEvent event) {
 				if (checkPwdField.getValue() != null && !checkPwdField.getValue().isEmpty()) {
 					pwdField.setAllowBlank(false);
@@ -259,7 +259,7 @@ public class UserSigmahForm extends FormPanel {
 				@Override
 				public void onClick(ClickEvent arg0) {
 					label.hide();
-					selectedProfilesIds.remove((Integer) label.getData(ID_PROFILE));
+					selectedProfilesIds.remove(label.getData(ID_PROFILE));
 				}
 
 			});
@@ -392,9 +392,7 @@ public class UserSigmahForm extends FormPanel {
 		final String email = emailField.getValue().trim();
 		
 		//Validate Email by matching with the given regex
-		Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-		Matcher matcher = pattern.matcher(email);
-		if(!matcher.matches()){
+		if(!RegExp.compile(EMAIL_PATTERN).test(email)){
 			MessageBox.alert(I18N.CONSTANTS.createFormIncomplete(), I18N.MESSAGES.invalidEmailAddress(), null);
 			unmask();
 			return;
@@ -438,6 +436,7 @@ public class UserSigmahForm extends FormPanel {
 
 		dispatcher.execute(new CreateEntity("User", newUserProperties), null, new AsyncCallback<CreateResult>() {
 
+			@Override
 			public void onFailure(Throwable caught) {
 				MessageBox.alert(I18N.CONSTANTS.adminUserCreationBox(),
 						I18N.MESSAGES.adminUserCreationFailure(firstName + " " + name), null);
