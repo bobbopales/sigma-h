@@ -80,16 +80,6 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-    <repository>
-      <id>ideia-central-releases</id>
-      <name>Central Repository IDEIA</name>
-      <url>http://maven3.ideia.fr/content/repositories/releases</url>
-    </repository>
-    <repository>
-      <id>ideia-central-snapshots</id>
-      <name>Central Repository IDEIA - SNAPSHOTS</name>
-      <url>http://maven3.ideia.fr/content/repositories/snapshots</url>
-    </repository>
 	</repositories>
 
 	<pluginRepositories>
@@ -575,7 +565,7 @@
 						</goals>
 						<configuration>
 							<disableClassMetadata>true</disableClassMetadata>
-							<extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
+							<extraJvmArgs>-Xmx1024M -Xss1024k -XX:MaxPermSize=512m</extraJvmArgs>
 							<logLevel>INFO</logLevel>
 							<!-- Takes WAY to long for all 12 permutations -->
 							<!-- run with profile soyc enabled to generate maps for a single perm -->
