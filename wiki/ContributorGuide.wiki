@@ -21,7 +21,7 @@ Then, you can read step this Contributor Guide from general introduction about t
   # [SigmahFlexibility Sigmah flexibility] An important page to understand the core concepts to handle the high flexibility let to users with Sigmah
   # [Building Build Up Environment (Eclipse)] Finally, the page explaining how to install your environment
 
-When you will have finished to install your environment, you can take a look at the [http://www.sigmah.org/issues/roadmap_page.php project roadmap page] and pick some simple bugs to start to build your capacity to work on the project by solving simple issues. If you don't know which issue you should pick up, please feel free to ask on the sigmah-dev mailing list.
+When you will have finished to install your environment, you can take a look at the [http://www.sigmah.org/issues/roadmap_page.php project roadmap page] and pick some simple bugs to start to build your capacity to work on the project by solving simple issues. The simplest issues are marked with the tag "NewComersSpecial", and here is the full list of them: [http://www.sigmah.org/issues/search.php?sticky_issues=1&sortby=last_updated&dir=DESC&hide_status_id=90&tag_string=NewComersSpecial&match_type=0 NewComersSpecial]. If you don't know which issue you should pick up, please feel free to ask on the sigmah-dev mailing list.
 
 *And very important*: please feel free to ask questions to the mailing list anytime you have one! :) There are no stupid questions, only people stupid enough not to ask them. :)
 
