@@ -51,7 +51,7 @@ This scenario is based on the v1.3 demo data set.
 === _Title:_ Associate an importation scheme to a project model ===
 || *#* || *Steps to reproduce* || *Expected result* ||
 || 1 || In the "Administration" side bar, click on the « Project mmodels » link. ||  The list of the project models should be displayed. ||
-|| 2 || Open the "Projet propre v2" project model. ||  ||
+|| 2 || Open the "Projet propre v1" project model. ||  ||
 || 3 || Open the "Importation schemes" tab. ||  ||
 || 4 || Click on the "Add" button of the left-side grid. || The "Configure another scheme" popup should open. ||
 || 5 || Select the importation scheme "Own and local projects budget(Excel,Several)" and click on the "Save" button. ||  The importation scheme should be added to the left-side grid and a "Set matching rule" popup should open. ||
@@ -131,9 +131,9 @@ This scenario is based on the v1.3 demo data set.
 == IMP15 ==
 === _Title:_ Import a unique project .xlsx file ===
 || *#* || *Steps to reproduce* || *Expected result* || 
-|| 1 || Repeat the test case IMP1 (name = "Own and local projects budget(Excel,Unique)"). || You should observe the same results as the one observed previously. ||
-|| 2 || Repeat the test case IMP3 with the following variables definitions {"Code:B2", "VariableCode"},{"StartDate:B2", "VariableStartDate"}, {"EndDate:B2", "VariableEndDate"}, {"SpentBudget:B2", "VariableSpentBudget"}, {"PlannedBudget:B2", "VariablePlannedBudget"} || You should observe the same results as the one observed previously. ||
-|| 3 || Repeat the test cases IMP5, IMP7, IMP8 for the importation scheme "Own and local projects budget(Excel,Unique)" . || You should observe the same results as the one observed previously. ||
+|| 1 || Repeat the test case IMP2 (name = "Own and local projects budget(Excel,Unique)"). || You should observe the same results as the one observed previously. ||
+|| 2 || Repeat the test case IMP4 with the following variables definitions {"B1", "VariableCode"},{"B2", "VariableStartDate"}, {"B3", "VariableEndDate"}, {"B4", "VariableSpentBudget"}, {"B5", "VariablePlannedBudget"} || You should observe the same results as the one observed previously. ||
+|| 3 || Repeat the test cases IMP6, IMP7, IMP8 for the importation scheme "Own and local projects budget(Excel,Unique)" . || You should observe the same results as the one observed previously. ||
 || 4 || Go back on the main dashboard, open the project "IF1389" and lock its amendment. || ||
 || 5 || Go back to the main dashboard, and click on the "Import" button. || The "Import" popup opens. ||
 || 6 || Select the "Own and local projects budget(Excel, Unique)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=127&type=bug import example file(Excel, Unique)], and click on the "Import" button. || The "Importation validation" popup opens, there should be one row for the idkey  "IF1389" with the status "Project found but importation impossible because modifications required on a locked project core" . ||
@@ -160,11 +160,11 @@ This scenario is based on the v1.3 demo data set.
 
 
 == IMP17 ==
-=== _Title:_ Import a unique project .ods file ===
+=== _Title:_ Import a unique project .ods file *(NO FILE AVAILABLE YET FOR TESTING)* ===
 || *#* || *Steps to reproduce* || *Expected result* || 
-|| 1 || Repeat the test case IMP1 (name = "Own and local projects budget(Ods,Unique)"). || You should observe the same results as the one observed previously. ||
-|| 2 || Repeat the test case IMP3 with the following variables definitions {"Code:B2", "VariableCode"},{"StartDate:B2", "VariableStartDate"}, {"EndDate:B2", "VariableEndDate"}, {"SpentBudget:B2", "VariableSpentBudget"}, {"PlannedBudget:B2", "VariablePlannedBudget"}.||  You should observe the same results as the one observed previously. ||
-|| 3 || Repeat the test cases IMP5, IMP7, IMP8 for the importation scheme "Own and local projects budget(Ods,Unique)" . || You should observe the same results as the one observed previously. ||
+|| 1 || Repeat the test case IMP2 (name = "Own and local projects budget(Ods,Unique)"). || You should observe the same results as the one observed previously. ||
+|| 2 || Repeat the test case IMP4 with the following variables definitions {"B1", "VariableCode"},{"B2", "VariableStartDate"}, {"B3", "VariableEndDate"}, {"B4", "VariableSpentBudget"}, {"B5", "VariablePlannedBudget"}.||  You should observe the same results as the one observed previously. ||
+|| 3 || Repeat the test cases IMP6, IMP7, IMP8 for the importation scheme "Own and local projects budget(Ods,Unique)" . || You should observe the same results as the one observed previously. ||
 || 4 || Go back on the main dashboard, open the project "IF1389" and lock its amendment. || ||
 || 5 || Go back to the main dashboard, and click on the "Import" button. || The "Import" popup opens. ||
 || 6 || Select the "Own and local projects budget(Ods, Unique)" importation scheme, load the [http://www.sigmah.org/issues/file_download.php?file_id=128&type=bug import example file (Ods, Unique)], and click on the "Import" button. || The "Importation validation" popup opens, there should be one row for the idkey  "IF1389" with the status "Project found but importation impossible because modifications required on a locked project core" . ||
