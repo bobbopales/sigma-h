@@ -3,6 +3,7 @@
   * [SigmahSummerOfCode]
   * [SummerOfCodeSelectionProcess]
   * Project ideas
+    * [Ideas4SoC2015 Project ideas for SoC2015]
     * [Ideas4GSoC2014 Project ideas for GSoC2014]
     * [Ideas4GSoC2013 Project ideas for GSoC2013]
     * [Ideas4GSoC2012 Project ideas for GSoC2012]
