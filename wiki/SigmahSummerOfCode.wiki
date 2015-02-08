@@ -67,6 +67,7 @@ The Sigmah Summer of Code program has the following phases:
   # The mentors and the developers provide mid-term progress evaluations.
   # The mentors provide a final evaluation of the developers’ progress at the end of the program; the developers submit a final review of their mentor and the program.
   # Developers and mentors are rewarded for their work (cf. [#1.4_What%E2%80%99s_in_it_for_me?1.4 What’s in it for me?])
+  # Sigmah Summer of Code is a free will-based programme: anyone is free to quit at any time for any reason. People who quit (or don't achieve their objectives or fail their evaluations) will of course don't received the planned retributions except what they would have already learned and the pleasure we hope they have get before quitting.
 
 
 
