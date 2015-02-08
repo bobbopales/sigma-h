@@ -78,18 +78,20 @@ Any developer over the age of 18 can take part.
 == 2.2 Project ideas and general contributions ==
 First of all, as you may have guessed, the given project ideas will be mainly the core of the actual contribution you would be able to give to the Sigmah project. The process in which we are now is more the setting of a team to work this summer together on the Sigmah project (each member with his own core responsibility) than a set of individuals working totally individually on their own separate topic. Outside your main contribution (the project idea(s)) you've chosen to work on, you can thus already select some features you would like to develop and list them in your application. The roadmap is full of them. All of those issues are suggested originally by the NGOs using Sigmah and are looking for their contributors! 
 
+Look at this page for [Ideas4SoC2015 Summer of Code 2015 project ideas].
 
 == 2.3 How do you apply to Sigmah Summer of Code? ==
-Go to the page provided for this purpose on the Sigmah website: http://
+Go to the page provided for this purpose on the Sigmah website: http://www.urd.org/survey/index.php/392295/lang-en
+
 And complete the form:
 
   # What do you understand about the Sigmah project?
   # How would you describe yourself? (CV to be attached separately)
-  # What experience do you have in developing either in Java/GWT? (patches with demonstration of your ability to work on the Sigmah codebase attached separately)
+  # What is your email address, your phone number and your IRC nickname?
+  # What experience do you have in developing either in Java/GWT? (patches with demonstration of your ability to work on the Sigmah codebase attached in Sigmah issue tracker)
   # Do you have any experience of working on open source projects? If so, please give a brief description 
   # Which project(s) on the Ideas page appeal(s) to you the most? (please also tell us how interested you would be to work on the other ideas: equally interested / less interested / far less interested / not interested)
-  # What exactly would your project involve in relation to your preferred project idea and what would be the implementation workplan for the duration of the Google Summer of Code program? (activities, days available, potential weeks off, etc. – Google Summer of Code should be considered a full-time job with a week of work being about at least 7-8 hours a day, 5 days a week)
-  # What is your email address, your phone number and your IRC nickname?
+  # What exactly would your project involve in relation to your preferred project idea and what would be the implementation workplan for the duration of the Sigmah Summer of Code program? (activities, days available, potential weeks off, etc. – Sigmah Summer of Code time commitment should be an half-time job, so with about 18 hours of work in a week)
   # Last but not least: why would you like to work on the Sigmah project?
 
 == 2.4 Patches are expected as part of the application ==
