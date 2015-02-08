@@ -43,11 +43,10 @@ This project ideas list is just given as a suggestion. As written in the introdu
 
 But user priority might not be SoC volunteer priority... A new important feature requested urgently by some users may be felt as boring to develop by a SoC volunteer. We just give those _User priority_ because we believe that an exciting thing about contributing to Sigmah is that you're helping real users to work more efficiently in their daily work at managing humanitarian projects, and knowing where your help would be the most appreciated by users might be useful.
 
-As a consequence, if a student wants to write its own proposal by mixing some of those projects or taking some inspiration from the [project roadmap], he's also welcomed to do so.
+As a consequence, if a student wants to write its own proposal by mixing some of those projects or taking some inspiration from the [http://www.sigmah.org/issues/roadmap_page.php project roadmap], he's also welcomed to do so.
 
 Finally, for each project idea, we provide a _Development Difficulty_ level to give an hint about how easy or challenging it would be to deal with this idea.
 
-* project ideas list coming soon *
 
 == Project idea 1: Sigmah project for better coordination   ==
 
@@ -91,7 +90,7 @@ _Project Difficulty:_ Hard
 
 _Difficulty comment_: Hard project idea because it will require a deeper knowledge of the purpose and behavior of the whole software.
 
-_This project is a continuation and extension of the project started during 2013._
+_This project is a continuation and extension of the project started during summer 2013._
 
 *Presentation*
 
@@ -108,11 +107,14 @@ _User Prority:_ 1
 
   * [http://www.sigmah.org/issues/view.php?id=389 0000389: Organizational Unit aggregation field]
   * [http://www.sigmah.org/issues/view.php?id=530 0000530: New type of orgunit/project field: computation field]
+  * [http://www.sigmah.org/issues/view.php?id=524 0000524: Dashboard projects table indentation]
+  * [http://www.sigmah.org/issues/view.php?id=526 0000526: Base currency setting]
 
 _User Prority:_ 2
 
   * [http://www.sigmah.org/issues/view.php?id=513 0000513: Budget Excel export improvement]
   * [http://www.sigmah.org/issues/view.php?id=515 0000515: New indicator aggregation method: last value]
+  * [http://www.sigmah.org/issues/view.php?id=525 0000525: Filtered global export]
 
 == Project idea 3: Easing deployments of Sigmah ==
 
@@ -145,3 +147,46 @@ With easier deployments facilities, organizations would be more able to try easi
 
 Java/GWT.
 Prior knowledge of installation technical solution(s) like NSIS would also be a plus.
+
+
+
+== Project idea 4: Advanced project model and privileges management  ==
+
+_Project Difficulty:_ Medium
+
+_This project is a continuation and extension of the project started during summer 2013._
+
+
+*Presentation*
+
+Sigmah's most fundamental feature is the flexibility it gives to organization in the way they can configure it. With this flexibility provided through project models and privileges management, organizations are able to design their project information system by themselves, through a graphical interface they're able to use and not by configuration files which scare them in most of the case.
+
+Sigmah flexibility is already provided a great service to its users, but it needs to be enhanced to reply to new needs expressed by users.
+
+*Examples*
+
+Here is the list of feature requests or ideas as forum posts expressed by users to improve the project model and privileges system:
+
+_User Prority:_ 1
+
+  * [http://www.sigmah.org/issues/view.php?id=501 0000501: Group iterations]
+  * [http://www.sigmah.org/issues/view.php?id=506 0000506: Projects visibility by attachment orgunit]
+  * [http://www.sigmah.org/issues/view.php?id=509 0000509: Active Directory user authentication]
+  * [http://www.sigmah.org/issues/view.php?id=511 0000511: Category modification flexibility]
+  * [http://www.sigmah.org/issues/view.php?id=510 0000510: Interruption project phases]
+  * [http://www.sigmah.org/issues/view.php?id=243 0000243: User attached to several OrgUnit]
+  * [http://www.sigmah.org/issues/view.php?id=514 0000514: Hypertext link in field titles]
+
+
+_User Prority:_ 2
+
+  * [http://www.sigmah.org/issues/view.php?id=534 0000534: Field-linked reminders incentives]
+
+*Impact*
+
+By developing a project idea of that sort, the GSoC volunteer will contribute to allow new usages of Sigmah by its users. It will help Sigmah adoption in wider parts of organization already adopting it.
+
+
+*Knowledge prerequisite*
+
+Java/GWT.
