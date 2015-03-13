@@ -32,7 +32,7 @@ The table below presents the main differences and similarities between the Sigma
 
 || || *SSoC* || *GSoC* ||
 || *Participants* || All developers over 18 years of age || Students above 18 years old from eligible nationalities ||
-|| *Remuneration* || symbolic || stipend ||
+|| *Remuneration* || symbolic + 1000€ || US$5000 stipend ||
 || *Expected amount of work* || Part time|| Full time||
 || *Number of evaluations during the summer* || 2|| 2||
 || *Recruitment* || Project proposal|| Project proposal||
@@ -40,6 +40,7 @@ The table below presents the main differences and similarities between the Sigma
 
 == 1.4 What’s in it for me? ==
 By the end of the Sigmah Summer of Code, if the 2 evaluations are positive, each developer will have received: 
+  * 1000€ stipend for all successful students at the end of the summer
   * X months of experience working alongside an experienced/professional developer;
   * A "Sigmah Summer of code 2015" t-shirt;
   * A page in the "Sigmah hall of fame";
@@ -55,7 +56,7 @@ Sigmah Summer of Code has several goals:
   # To have fun, meet other developers from around the world and enjoy working together!
 
 == 1.6 What is the program timeline ? ==
-http://www.sigmah.org/sites/default/files/user3/SSoC2015-timeline.png
+http://www.sigmah.org/sites/default/files/user3/SSoC2015-timeline2.png
 
 
 == 1.7 How does it work? ==
