@@ -152,6 +152,11 @@ DELETE FROM adminentity;
 *After the schema is updated*, in order to update the existing data, the following request has to be applied (request required because of the issue [http://www.sigmah.org/issues/view.php?id=386 0000386: Flexible budget field] which lets user modify the budget sub fields) 
 
 {{{
+-- Updates all existing default fields to set them as part of project core (issue #167)
+update flexible_element
+set amendable = TRUE
+where id_flexible_element in (select id_flexible_element from default_flexible_element);
+
 
 -- Updates existing users 'last password change' with current timestamp (issue #438 / #517)
 -- ------
