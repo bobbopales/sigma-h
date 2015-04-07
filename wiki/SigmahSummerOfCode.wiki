@@ -104,11 +104,12 @@ Patches (diff file) must be submitted as a file attached to the issue they are s
 If you are selected, we will be working together all summer! A videocall meeting will help to get to know each other. These meetings will be part of the first selection round and will be organized with all the students who have submitted an application.
 
 == 2.6 Application process ==
-The application process for Sigmah developers will include the following steps:
-  * 9 February: developer application period begins
-  * 18 February: deadline for developer applications. Applications should respect the application template and include at least one patch fixing an issue. If a developer does not submit his/her proposal before this deadline, they will not be able to take part in the Sigmah Summer of Code 2015 .
+The application process for Sigmah Summer of Code volonteers will include the following steps:
+  * 9 February: volunteer application period begins
+  * 18 February: deadline for first batch application period. Applications should respect the application template and include at least one patch fixing an issue.
   * After the first selection round, selected developers will be invited to have a Skype interview.
   * 20 February: accepted developer proposals published 
+  * 5th of May: deadline for second and final batch application period. Applications should respect the application template and include at least one patch fixing an issue. If an applicant does not submit his/her proposal before this deadline, they will not be able to take part in the Sigmah Summer of Code 2015 .
 
 
 
