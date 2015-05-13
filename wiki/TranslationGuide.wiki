@@ -26,10 +26,10 @@ The community of the Liferay project has written a good introduction guide for P
 = Guidelines for Pootle admin =
 == Internationalization files location ==
 The internationalization files are the following ones:
-  * `src\main\java\org\sigmah\client\i18n\UIConstants.properties`
-  * `src\main\java\org\sigmah\client\i18n\UIConstants_$$.properties`
-  * `src\main\java\org\sigmah\client\i18n\UIMessages.properties`
-  * `src\main\java\org\sigmah\client\i18n\UIMessages_$$.properties`
+  * `src\main\resources\org\sigmah\client\i18n\UIConstants.properties`
+  * `src\main\resources\org\sigmah\client\i18n\UIConstants_$$.properties`
+  * `src\main\resources\org\sigmah\client\i18n\UIMessages.properties`
+  * `src\main\resources\org\sigmah\client\i18n\UIMessages_$$.properties`
   * `src\main\resources\org\sigmah\server\mail\model\MailModels.properties`
   * `src\main\resources\org\sigmah\server\mail\model\MailModels_$$.properties`
 
