@@ -61,7 +61,10 @@ To update source strings of a translation project, the following procedure has t
 
 == Importing files from translators into the code ==
 Things to take in mind:
-  * Check that the `UIMessages` and `MailModels` files exported from Pootle do not contain any simple quote (') which is not doubled (this does not apply to `UIConstants`). Each simple quote should be preceded by a second one ('' instead of ' (ie: -window''s title- instead of -window's title-)). You can use the "singlequoting" option of the "Review" tab of your translation project to see faster all strings which have translated with a different number of single quotes.
   * For all language except English, rename the `*.properties` exported files from Pootle with the suffix of the target language (`_fr`, `_es` so far).
+  * Check that the `UIMessages` and `MailModels` files exported from Pootle do not contain any simple quote (') (or triple quotes...) which is not doubled (this does not apply to `UIConstants`). Each simple quote should be preceded by a second one ('' instead of ' (ie: -window''s title- instead of -window's title-)). Two solutions for that:
+    * In Pootle, you can use the "singlequoting" option of the "Review" tab of your translation project to see faster all strings which have translated with a different number of single quotes. But this solution actually works poorly...
+    * In your advanced text editor (like Notepad++), you can search for any single/triple quote with this regular expression: `(^['][^']|[^'][']$|[^']['][^']|''')` 
+  * Check that the `UIMessages` files have all required parameters. Easiest almost exhaustive solution for this check is to search for all `{1}` in the files: if there is a {1} without a {0} in the same string, it should be corrected.
   * An update of your working copy of the source code is naturally required.
   * Check for potential conflicts with the current copy in the source code repository.
