@@ -152,6 +152,9 @@ DELETE FROM adminentity;
 *After the schema is updated*, in order to update the existing data, the following request has to be applied (request required because of the issue [http://www.sigmah.org/issues/view.php?id=386 0000386: Flexible budget field] which lets user modify the budget sub fields) 
 
 {{{
+-- Add South Sudan newest country in Sigmah list of countries
+INSERT INTO Country (CountryId, x1, x2, y1, y2, ISO2, Name) VALUES (495, -180, 180, -90, 180, 'SS', 'South Sudan');
+
 -- Updates all existing default fields to set them as part of project core (issue #167)
 update flexible_element
 set amendable = TRUE
