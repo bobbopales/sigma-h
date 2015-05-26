@@ -19,7 +19,7 @@ This installation guide only covers installation of Sigmah both on a Windows and
 == Prerequisites == 
 
 For better performance and security, it is recommended to maintain an installation environment for Sigmah with latest versions of the 3 key components it requires. Those components and the known minimum required version are:
-  * *Java 1.8 and above*: visit http://www.java.com to download and get installation procedures for the Java runtime environment
+  * *Java 1.8 and above*: visit http://www.java.com to download and get installation procedures for the Java runtime environment (if you have a 64bit environment, be sure to download a x64 version which will produce `Java HotSpot(TM) 64-Bit Server VM` in reply to `java -version`)
   * *PostgreSQL 9 and above*: download and run the One-click-installer available at http://www.postgresql.org/download/windows to get your copy of the PostgreSQL relational database management system (_tip_: when installing the database, give all the rights to your database user). For the rest of this procedure, we'll assume that the PostgreSQL database will be installed on same server as application server (database server name will be <font color="blue">`localhost`</font>), and that to connect to the database man should use the default port number <font color="blue">`5432`</font>. NB : it seems that Postgres doesn't worked properlly when installed on C:/Program Files (it seems better to install it at directly at the root C:/, especially on windows 7)
   * *Tomcat 7 and above*: download and get installation procedures of the Tomcat Java application server at http://tomcat.apache.org/index.html . NB : Sigmah does work also properly with Jetty application server
 
