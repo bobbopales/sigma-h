@@ -86,7 +86,7 @@ Sigmah should be now technically installed on your server, congratulations! The 
 
 == Creating your first organization ==
   # Download the newOrganizationLaunchScript.postgresql.sql script from http://code.google.com/p/sigma-h/downloads/list .
-  # Edit the logo of your organization to produce a PNG file of 126x56 pixels, and save this file in the images folder of your Sigmah installation (ie: `C:\Sigmah\Files\Images`).
+  # Edit the logo of your organization to produce a PNG file of 126x56 pixels, and save this file in the files folder of your Sigmah installation (ie: `C:\Sigmah\Files`). _(*Notice*: in v1.2 and earlier versions, there was a specific `images` folder to store logo on the filesystem, but since v2.0 all files including organisations' logos are stored in a single folder)_
   # Edit the script, and use the search&replace tool of your text editor to replace all the parameters (strings which starts and ends by a '§') by the values you want to give to them.
   # Run the script on your database.
 
