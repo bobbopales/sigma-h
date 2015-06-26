@@ -155,10 +155,18 @@ DELETE FROM adminentity;
 -- Add South Sudan newest country in Sigmah list of countries
 INSERT INTO Country (CountryId, x1, x2, y1, y2, ISO2, Name) VALUES (495, -180, 180, -90, 180, 'SS', 'South Sudan');
 
--- Updates all existing default fields to set them as part of project core (issue #167)
+-- Updates all project model existing default fields to set them as part of project core (issue #167) (but not orgunit default fields)
 update flexible_element
 set amendable = TRUE
-where id_flexible_element in (select id_flexible_element from default_flexible_element);
+where id_flexible_element in 
+	(select dfe.id_flexible_element 
+	from default_flexible_element dfe
+	where dfe.id_flexible_element not in 
+		(select id_flexible_element 
+		from layout_constraint lc
+			inner join layout_group lg on lg.id_layout_group = lc.id_layout_group
+			inner join org_unit_details oud on oud.id_layout = lg.id_layout)
+	);
 
 
 -- Updates existing users 'last password change' with current timestamp (issue #438 / #517)
