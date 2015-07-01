@@ -164,13 +164,6 @@ CREATE TABLE importation_scheme
   datedeleted timestamp without time zone,
   sch_file_format character varying(255) NOT NULL,
   sch_first_row integer,
-
--- Set all users as active by default (issue #771)
--- ------
-ALTER TABLE UserLogin ALTER COLUMN active SET default true;
-
-
-
   sch_import_type character varying(255) NOT NULL,
   sch_name character varying(255) NOT NULL,
   sch_sheet_name character varying(255),
