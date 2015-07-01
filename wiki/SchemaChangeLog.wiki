@@ -138,6 +138,12 @@ INSERT INTO budget_sub_field (id_budget_sub_field,label, id_budget_element, fiel
 DELETE FROM adminentity;
 
 
+-- Set all users as active by default (issue #771)
+-- ------
+ALTER TABLE UserLogin ALTER COLUMN active SET default true;
+
+
+
 -- Add column for the main site
 -- ------
 ALTER TABLE project ADD COLUMN mainsite int;
@@ -158,6 +164,13 @@ CREATE TABLE importation_scheme
   datedeleted timestamp without time zone,
   sch_file_format character varying(255) NOT NULL,
   sch_first_row integer,
+
+-- Set all users as active by default (issue #771)
+-- ------
+ALTER TABLE UserLogin ALTER COLUMN active SET default true;
+
+
+
   sch_import_type character varying(255) NOT NULL,
   sch_name character varying(255) NOT NULL,
   sch_sheet_name character varying(255),
@@ -350,6 +363,16 @@ SELECT nextval('hibernate_sequence'), ht.id_project, CASE change_type WHEN 'EDIT
 FROM history_token AS ht JOIN ( SELECT history_token.id_project, history_token.id_element, MAX (id_history_token) AS max_history_id FROM history_token GROUP BY id_project, id_element) AS requete
   ON requete.id_project = ht.id_project AND requete.id_element = ht.id_element AND requete.max_history_id = ht.id_history_token
 WHERE (ht.id_project, ht.id_element) NOT IN (SELECT id_project, id_flexible_element FROM value) AND ht.id_element IN (SELECT id_flexible_element FROM budget_element);
+
+
+
+-- Set all users as active by default (issue #771)
+-- ------
+UPDATE UserLogin SET active = true WHERE active is null;
+
+
+
+
 
 }}}
 
